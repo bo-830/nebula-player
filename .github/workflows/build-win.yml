@@ -54,11 +54,14 @@ jobs:
 
       # 只发布"本次版本"的产物：显式按 package.json 的版本号拼路径，
       # 避免 dist/ 里有历史版本时被一并上传。
+      # 用 node 读版本号（不依赖 shell 的默认编码 —— package.json 含中文描述，
+      # 在非 UTF-8 默认编码的 PowerShell 会话里会被读成乱码而解析失败）。
       - name: Read version
         id: ver
         shell: pwsh
         run: |
-          $v = (Get-Content package.json -Raw | ConvertFrom-Json).version
+          $v = (node -p "require('./package.json').version").Trim()
+          if (-not $v) { throw 'cannot read version from package.json' }
           "v=$v" >> $env:GITHUB_OUTPUT
           Write-Output "building version $v"
 

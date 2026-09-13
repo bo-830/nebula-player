@@ -1,0 +1,64 @@
+{
+  "control": {
+    "after": {
+      "isPlaying": false,
+      "chips": []
+    },
+    "miniChips": [
+      "已暂停播放",
+      "已暂停播放",
+      "已暂停播放",
+      "已暂停播放",
+      "已暂停播放",
+      "已暂停播放"
+    ]
+  },
+  "destructive": {
+    "seeded": {
+      "ids": [
+        "48340575992a4a0b1a06",
+        "f6d99f294b9932accaa9"
+      ],
+      "trackIds": [
+        "f6d99f294b9932accaa9",
+        "48340575992a4a0b1a06"
+      ]
+    },
+    "parked": {
+      "pending": {
+        "summary": "从歌单《夜跑》移除 1 首：《song-c》"
+      },
+      "trackIds": [
+        "f6d99f294b9932accaa9",
+        "48340575992a4a0b1a06"
+      ]
+    },
+    "bar": {
+      "buttons": [
+        "确认执行",
+        "取消"
+      ]
+    },
+    "cancelClick": "clicked",
+    "afterCancel": {
+      "trackIds": [
+        "f6d99f294b9932accaa9",
+        "48340575992a4a0b1a06"
+      ]
+    },
+    "confirmClick": "clicked",
+    "afterConfirm": {
+      "trackIds": [
+        "f6d99f294b9932accaa9"
+      ]
+    }
+  },
+  "pass": {
+    "controlPaused": true,
+    "parkedNotExecuted": true,
+    "barInMini": true,
+    "cancelKept": true,
+    "confirmRemoved": true
+  },
+  "passAll": true
+}

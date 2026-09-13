@@ -1,0 +1,255 @@
+{
+  "capturedAt": "2026-09-13T13:52:16.459Z",
+  "tree": {
+    "chatStoreTs": "3c4edd11171b4d0f517b05fbaab1be43dce5c5c8",
+    "chatStoreSize": 22970,
+    "prefixCopy": "920fcb05ac5d873f609ac84bb36ca806ffea61b7",
+    "prefixCopySource": "reviewer evidence dir .devdata/t7-review/t52-discrim/cur (NOT reconstructed by verifier)"
+  },
+  "drip100": {
+    "gapMs": 100,
+    "visibleBeforeSend": "hidden",
+    "visibleAssertion": false,
+    "sent": {
+      "typed": "ok",
+      "sent": "ok"
+    },
+    "expectedText": "第1轮-甲段。第1轮-乙段。第1轮-丙段。",
+    "mainLastAssistant": "第1轮-甲段。第1轮-乙段。第1轮-丙段。",
+    "persistedLastAssistant": "第1轮-甲段。第1轮-乙段。第1轮-丙段。",
+    "miniLastAi": "第1轮-甲段。第1轮-乙段。第1轮-丙段。",
+    "threeWayIdentical": true,
+    "isFullText": true,
+    "segmentsSeen": 3,
+    "trace": {
+      "mirrors": [
+        "47355.5:7/0",
+        "47456:14/0",
+        "47564.4:14/5",
+        "47567.7:21/5"
+      ],
+      "catchUps": [],
+      "grewAfterCatchUp": false,
+      "settleAt": 47573.9
+    },
+    "gateway": {
+      "gapMs": 100,
+      "deltaWrittenAtMs": [
+        1,
+        104,
+        214
+      ],
+      "expectedText": "第1轮-甲段。第1轮-乙段。第1轮-丙段。",
+      "errors400": []
+    },
+    "fullEvents": [
+      {
+        "t": 47335.6,
+        "busy": false,
+        "rawLen": 0,
+        "shown": 0,
+        "msgs": 0
+      },
+      {
+        "t": 47335.7,
+        "busy": true,
+        "rawLen": 0,
+        "shown": 0,
+        "msgs": 0
+      },
+      {
+        "t": 47335.8,
+        "busy": true,
+        "rawLen": 0,
+        "shown": 0,
+        "msgs": 1
+      },
+      {
+        "t": 47355.5,
+        "busy": true,
+        "rawLen": 7,
+        "shown": 0,
+        "msgs": 1
+      },
+      {
+        "t": 47456,
+        "busy": true,
+        "rawLen": 14,
+        "shown": 0,
+        "msgs": 1
+      },
+      {
+        "t": 47564.4,
+        "busy": true,
+        "rawLen": 14,
+        "shown": 5,
+        "msgs": 1
+      },
+      {
+        "t": 47567.7,
+        "busy": true,
+        "rawLen": 21,
+        "shown": 5,
+        "msgs": 1
+      },
+      {
+        "t": 47573.8,
+        "busy": false,
+        "rawLen": 0,
+        "shown": 21,
+        "msgs": 1
+      },
+      {
+        "t": 47573.9,
+        "busy": false,
+        "rawLen": 0,
+        "shown": 0,
+        "msgs": 2
+      }
+    ],
+    "pass": false
+  },
+  "drip2000": {
+    "gapMs": 2000,
+    "visibleBeforeSend": "hidden",
+    "visibleAssertion": false,
+    "sent": {
+      "typed": "ok",
+      "sent": "ok"
+    },
+    "expectedText": "第2轮-甲段。第2轮-乙段。第2轮-丙段。",
+    "mainLastAssistant": "第2轮-甲段。第2轮-乙段。第2轮-丙段。",
+    "persistedLastAssistant": "第2轮-甲段。第2轮-乙段。第2轮-丙段。",
+    "miniLastAi": "第2轮-甲段。第2轮-乙段。第2轮-丙段。",
+    "threeWayIdentical": true,
+    "isFullText": true,
+    "segmentsSeen": 3,
+    "trace": {
+      "mirrors": [
+        "57391.1:7/0",
+        "57566:7/5",
+        "57569.4:7/7",
+        "59399:14/7",
+        "59554.8:14/12",
+        "60559.8:14/14",
+        "61406.1:21/14"
+      ],
+      "catchUps": [
+        {
+          "t": 57569.4,
+          "rawLen": 7
+        },
+        {
+          "t": 60559.8,
+          "rawLen": 14
+        }
+      ],
+      "grewAfterCatchUp": true,
+      "settleAt": 61411.5
+    },
+    "gateway": {
+      "gapMs": 2000,
+      "deltaWrittenAtMs": [
+        0,
+        2007,
+        4015
+      ],
+      "expectedText": "第2轮-甲段。第2轮-乙段。第2轮-丙段。",
+      "errors400": []
+    },
+    "fullEvents": [
+      {
+        "t": 57385.4,
+        "busy": false,
+        "rawLen": 0,
+        "shown": 0,
+        "msgs": 0
+      },
+      {
+        "t": 57386.4,
+        "busy": true,
+        "rawLen": 0,
+        "shown": 0,
+        "msgs": 0
+      },
+      {
+        "t": 57386.4,
+        "busy": true,
+        "rawLen": 0,
+        "shown": 0,
+        "msgs": 1
+      },
+      {
+        "t": 57391.1,
+        "busy": true,
+        "rawLen": 7,
+        "shown": 0,
+        "msgs": 1
+      },
+      {
+        "t": 57566,
+        "busy": true,
+        "rawLen": 7,
+        "shown": 5,
+        "msgs": 1
+      },
+      {
+        "t": 57569.4,
+        "busy": true,
+        "rawLen": 7,
+        "shown": 7,
+        "msgs": 1
+      },
+      {
+        "t": 59399,
+        "busy": true,
+        "rawLen": 14,
+        "shown": 7,
+        "msgs": 1
+      },
+      {
+        "t": 59554.8,
+        "busy": true,
+        "rawLen": 14,
+        "shown": 12,
+        "msgs": 1
+      },
+      {
+        "t": 60559.8,
+        "busy": true,
+        "rawLen": 14,
+        "shown": 14,
+        "msgs": 1
+      },
+      {
+        "t": 61406.1,
+        "busy": true,
+        "rawLen": 21,
+        "shown": 14,
+        "msgs": 1
+      },
+      {
+        "t": 61411.3,
+        "busy": false,
+        "rawLen": 0,
+        "shown": 21,
+        "msgs": 1
+      },
+      {
+        "t": 61411.5,
+        "busy": false,
+        "rawLen": 0,
+        "shown": 0,
+        "msgs": 2
+      }
+    ],
+    "pass": false
+  },
+  "summary": {
+    "drip100": false,
+    "drip2000": false,
+    "isolation": null,
+    "t47f1": null,
+    "tools": null
+  }
+}
