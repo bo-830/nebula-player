@@ -86,14 +86,28 @@ jobs:
             dist/nebula-player-${{ steps.ver.outputs.v }}-setup.exe.blockmap
             dist/latest.yml
 
+      # Release 正文用仓库里的 RELEASE-NOTES-v<version>.md；缺失时生成一个最小占位，
+      # 避免 body_path 指向不存在的文件导致发布步骤失败。
+      - name: Prepare release body
+        shell: pwsh
+        run: |
+          $p = "RELEASE-NOTES-v${{ steps.ver.outputs.v }}.md"
+          if (-not (Test-Path $p)) {
+            "# NEBULA Player ${{ steps.ver.outputs.v }}`n`n- 构建产物见下方附件" |
+              Set-Content -Path $p -Encoding utf8
+            Write-Output "created fallback $p"
+          } else {
+            Write-Output "using $p"
+          }
+
       # 只有打 tag（v*）时才建 Release；latest.yml 一并上传，
       # 应用内 electron-updater 的 generic feed 才能工作（updateURL 指向该 feed）。
       - name: Publish release
         if: startsWith(github.ref, 'refs/tags/v')
         uses: softprops/action-gh-release@v2
         with:
+          body_path: RELEASE-NOTES-v${{ steps.ver.outputs.v }}.md
           files: |
             dist/nebula-player-${{ steps.ver.outputs.v }}-setup.exe
             dist/nebula-player-${{ steps.ver.outputs.v }}-setup.exe.blockmap
             dist/latest.yml
-          generate_release_notes: true
