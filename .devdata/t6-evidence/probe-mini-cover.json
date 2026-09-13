@@ -1,0 +1,170 @@
+﻿{
+  "targets": [
+    "http://localhost:5173/#mini"
+  ],
+  "samples": [
+    {
+      "round": 0,
+      "mainTitle": "测试歌曲A",
+      "miniTitle": "测试歌曲A",
+      "imgs": [
+        {
+          "natural": 512,
+          "complete": true,
+          "tail": "GIwMmNjZjc3ZmRhODQ2MS5wbmc"
+        }
+      ]
+    },
+    {
+      "round": 0,
+      "mainTitle": "测试歌曲A",
+      "miniTitle": "测试歌曲A",
+      "imgs": [
+        {
+          "natural": 512,
+          "complete": true,
+          "tail": "GIwMmNjZjc3ZmRhODQ2MS5wbmc"
+        }
+      ]
+    },
+    {
+      "round": 0,
+      "mainTitle": "测试歌曲A",
+      "miniTitle": "测试歌曲A",
+      "imgs": [
+        {
+          "natural": 512,
+          "complete": true,
+          "tail": "GIwMmNjZjc3ZmRhODQ2MS5wbmc"
+        }
+      ]
+    },
+    {
+      "round": 0,
+      "mainTitle": "测试歌曲A",
+      "miniTitle": "测试歌曲A",
+      "imgs": [
+        {
+          "natural": 512,
+          "complete": true,
+          "tail": "GIwMmNjZjc3ZmRhODQ2MS5wbmc"
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "mainTitle": "测试歌曲A",
+      "miniTitle": "测试歌曲A",
+      "imgs": [
+        {
+          "natural": 512,
+          "complete": true,
+          "tail": "GIwMmNjZjc3ZmRhODQ2MS5wbmc"
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "mainTitle": "测试歌曲A",
+      "miniTitle": "测试歌曲A",
+      "imgs": [
+        {
+          "natural": 512,
+          "complete": true,
+          "tail": "GIwMmNjZjc3ZmRhODQ2MS5wbmc"
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "mainTitle": "测试歌曲A",
+      "miniTitle": "测试歌曲A",
+      "imgs": [
+        {
+          "natural": 512,
+          "complete": true,
+          "tail": "GIwMmNjZjc3ZmRhODQ2MS5wbmc"
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "mainTitle": "测试歌曲A",
+      "miniTitle": "测试歌曲A",
+      "imgs": [
+        {
+          "natural": 512,
+          "complete": true,
+          "tail": "GIwMmNjZjc3ZmRhODQ2MS5wbmc"
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "mainTitle": "测试歌曲A",
+      "miniTitle": "测试歌曲A",
+      "imgs": [
+        {
+          "natural": 512,
+          "complete": true,
+          "tail": "GIwMmNjZjc3ZmRhODQ2MS5wbmc"
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "mainTitle": "测试歌曲A",
+      "miniTitle": "测试歌曲A",
+      "imgs": [
+        {
+          "natural": 512,
+          "complete": true,
+          "tail": "GIwMmNjZjc3ZmRhODQ2MS5wbmc"
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "mainTitle": "测试歌曲A",
+      "miniTitle": "测试歌曲A",
+      "imgs": [
+        {
+          "natural": 512,
+          "complete": true,
+          "tail": "GIwMmNjZjc3ZmRhODQ2MS5wbmc"
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "mainTitle": "测试歌曲A",
+      "miniTitle": "测试歌曲A",
+      "imgs": [
+        {
+          "natural": 512,
+          "complete": true,
+          "tail": "GIwMmNjZjc3ZmRhODQ2MS5wbmc"
+        }
+      ]
+    }
+  ],
+  "playback": [
+    {
+      "id": "f1da4b02ccf77fda8461",
+      "title": "测试歌曲A",
+      "playing": true
+    },
+    {
+      "id": "f1da4b02ccf77fda8461",
+      "title": "测试歌曲A",
+      "playing": true
+    },
+    {
+      "id": "f1da4b02ccf77fda8461",
+      "title": "测试歌曲A",
+      "playing": true
+    }
+  ],
+  "artworkRenderObserved": true,
+  "matchingSamples": 12
+}

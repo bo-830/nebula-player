@@ -1,0 +1,17 @@
+{
+  "api": {
+    "baseURL": "http://127.0.0.1:9998/v1",
+    "model": "deepseek-v4-flash",
+    "keyMode": "enc",
+    "hasKey": true,
+    "keyEnc": "djEwPhz7AJpVARfoNez4L3QC+1Tb92KipKBtxXY6tE0L3qnEa7qc"
+  },
+  "general": {
+    "closeToTray": true,
+    "alwaysOnTop": false,
+    "resumeOnLaunch": true,
+    "mediaKeys": false,
+    "scanFolders": [],
+    "updateURL": "http://127.0.0.1:8888/"
+  }
+}

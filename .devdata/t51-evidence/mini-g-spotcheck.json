@@ -1,0 +1,87 @@
+{
+  "group": "spot-check of t47 passing items (geometry / search→main play / hide→reopen)",
+  "geometry": {
+    "gStart": {
+      "innerW": 360,
+      "innerH": 540,
+      "dataExpanded": "true",
+      "searchZones": 1,
+      "chatPanes": 1,
+      "searchInputs": 1,
+      "hasNebula": "undefined"
+    },
+    "gExpanded": {
+      "innerW": 360,
+      "innerH": 540,
+      "dataExpanded": "true",
+      "searchZones": 1,
+      "chatPanes": 1,
+      "searchInputs": 1,
+      "hasNebula": "undefined"
+    },
+    "gCollapsed": {
+      "innerW": 360,
+      "innerH": 540,
+      "dataExpanded": "true",
+      "searchZones": 1,
+      "chatPanes": 1,
+      "searchInputs": 1,
+      "hasNebula": "undefined"
+    }
+  },
+  "search": {
+    "query": "so",
+    "typed": "ok",
+    "rows": [
+      {
+        "title": "song-c"
+      },
+      {
+        "title": "SongB"
+      },
+      {
+        "title": "SongD"
+      },
+      {
+        "title": "SongE"
+      }
+    ],
+    "clicked": "clicked",
+    "playState": {
+      "currentId": "48340575992a4a0b1a06",
+      "currentTitle": "song-c",
+      "isPlaying": true,
+      "queueLen": 4,
+      "index": 0
+    },
+    "expectedId": "48340575992a4a0b1a06"
+  },
+  "hideReopen": {
+    "beforeHide": {
+      "innerW": 360,
+      "innerH": 540,
+      "dataExpanded": "true",
+      "searchZones": 1,
+      "chatPanes": 1,
+      "searchInputs": 1,
+      "hasNebula": "undefined"
+    },
+    "afterReopen": {
+      "innerW": 360,
+      "innerH": 128,
+      "dataExpanded": "false",
+      "searchZones": 0,
+      "chatPanes": 0,
+      "searchInputs": 0,
+      "hasNebula": "undefined"
+    }
+  },
+  "pass": {
+    "expanded360x540": true,
+    "collapsed360x128NoResidue": false,
+    "searchPlayedInMain": true,
+    "miniHasNoNebula": true,
+    "reopenCollapsed": true
+  },
+  "passAll": false
+}

@@ -1,0 +1,125 @@
+﻿{
+  "preflight": {
+    "playlistId": "mty2mnta3i35z0j",
+    "seedIds": [
+      "48340575992a4a0b1a06",
+      "f6d99f294b9932accaa9",
+      "e99efd776d8aec6aa81f"
+    ],
+    "view": {
+      "type": "playlist",
+      "id": "mty2mnta3i35z0j"
+    },
+    "title": "歌单",
+    "buttons": [
+      "全部播放",
+      "重命名",
+      "删除歌单",
+      "播放"
+    ],
+    "tracksShown": 3
+  },
+  "actionPlay": {
+    "clicked": true,
+    "isPlaying": true,
+    "current": "song-c",
+    "queueLen": 3,
+    "firstThree": [
+      "48340575992a4a0b1a06",
+      "f6d99f294b9932accaa9",
+      "e99efd776d8aec6aa81f"
+    ]
+  },
+  "actionRename": {
+    "clicked": true,
+    "inputBefore": "t6-验证歌单",
+    "nameAfter": "t6-已重命名",
+    "modalClosed": true,
+    "title": "歌单"
+  },
+  "boundaryMissing": {
+    "afterMissing": {
+      "hookWarnings": [],
+      "errors": [],
+      "rootAlive": true,
+      "rootChildren": 1
+    },
+    "afterAlternating": {
+      "hookWarnings": [],
+      "errors": [],
+      "rootAlive": true,
+      "rootChildren": 1
+    }
+  },
+  "boundaryOtherViews": {
+    "hookWarnings": [],
+    "errors": [],
+    "rootAlive": true,
+    "rootChildren": 1
+  },
+  "actionClearFavorites": {
+    "found": true,
+    "before": [
+      "48340575992a4a0b1a06",
+      "f6d99f294b9932accaa9",
+      "e99efd776d8aec6aa81f"
+    ],
+    "after": [],
+    "cleared": true
+  },
+  "actionDelete": {
+    "found": true,
+    "gone": true,
+    "view": {
+      "type": "all"
+    },
+    "title": "全部歌曲",
+    "rootAlive": true,
+    "console": {
+      "hookWarnings": [],
+      "errors": [],
+      "rootAlive": true,
+      "rootChildren": 1
+    }
+  },
+  "persistedFile": {
+    "storeState": [
+      {
+        "id": "favorites",
+        "name": "收藏",
+        "n": 0,
+        "builtin": true
+      },
+      {
+        "id": "mty1ejmzib44dk7",
+        "name": "夜跑",
+        "n": 2,
+        "builtin": false
+      }
+    ],
+    "disk": {
+      "playlists": [
+        {
+          "id": "favorites",
+          "name": "收藏",
+          "builtin": "favorites",
+          "trackIds": [],
+          "order": 0,
+          "createdAt": 0,
+          "updatedAt": 1789198575230
+        },
+        {
+          "id": "mty1ejmzib44dk7",
+          "name": "夜跑",
+          "trackIds": [
+            "f6d99f294b9932accaa9",
+            "48340575992a4a0b1a06"
+          ],
+          "order": 1,
+          "createdAt": 1789196506091,
+          "updatedAt": 1789196727664
+        }
+      ]
+    }
+  }
+}

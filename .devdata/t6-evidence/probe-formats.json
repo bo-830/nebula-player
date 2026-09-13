@@ -1,0 +1,139 @@
+﻿{
+  "formats": [
+    {
+      "file": "song-a.mp3",
+      "title": "测试歌曲A",
+      "ext": "mp3",
+      "playing": true,
+      "currentTime": 2.4,
+      "duration": 8,
+      "error": null,
+      "element": {
+        "paused": false,
+        "currentTime": 2.533191,
+        "readyState": 4,
+        "error": null,
+        "src": "media://local/Qzpc5Y2aODMwXHZp"
+      },
+      "seek": {
+        "requested": 1,
+        "actual": 2
+      },
+      "volumeAfterSet": 0.35,
+      "mode": "graph",
+      "newConsoleErrors": []
+    },
+    {
+      "file": "song-c.flac",
+      "title": "song-c",
+      "ext": "flac",
+      "playing": true,
+      "currentTime": 2.4,
+      "duration": 5,
+      "error": null,
+      "element": {
+        "paused": false,
+        "currentTime": 2.510658,
+        "readyState": 4,
+        "error": null,
+        "src": "media://local/Qzpc5Y2aODMwXHZp"
+      },
+      "seek": {
+        "requested": 1,
+        "actual": 2
+      },
+      "volumeAfterSet": 0.35,
+      "mode": "graph",
+      "newConsoleErrors": []
+    },
+    {
+      "file": "song-b.wav",
+      "title": "SongB",
+      "ext": "wav",
+      "playing": true,
+      "currentTime": 2.41,
+      "duration": 6,
+      "error": null,
+      "element": {
+        "paused": false,
+        "currentTime": 2.499048,
+        "readyState": 4,
+        "error": null,
+        "src": "media://local/Qzpc5Y2aODMwXHZp"
+      },
+      "seek": {
+        "requested": 1,
+        "actual": 2
+      },
+      "volumeAfterSet": 0.35,
+      "mode": "graph",
+      "newConsoleErrors": []
+    },
+    {
+      "file": "song-d.ogg",
+      "title": "SongD",
+      "ext": "ogg",
+      "playing": true,
+      "currentTime": 2.41,
+      "duration": 4,
+      "error": null,
+      "element": {
+        "paused": false,
+        "currentTime": 2.499048,
+        "readyState": 4,
+        "error": null,
+        "src": "media://local/Qzpc5Y2aODMwXHZp"
+      },
+      "seek": {
+        "requested": 1,
+        "actual": 2
+      },
+      "volumeAfterSet": 0.35,
+      "mode": "graph",
+      "newConsoleErrors": []
+    },
+    {
+      "file": "song-e.m4a",
+      "title": "SongE",
+      "ext": "m4a",
+      "playing": true,
+      "currentTime": 2.41,
+      "duration": 4,
+      "error": null,
+      "element": {
+        "paused": false,
+        "currentTime": 2.499048,
+        "readyState": 4,
+        "error": null,
+        "src": "media://local/Qzpc5Y2aODMwXHZp"
+      },
+      "seek": {
+        "requested": 1,
+        "actual": 2.01
+      },
+      "volumeAfterSet": 0.35,
+      "mode": "graph",
+      "newConsoleErrors": []
+    }
+  ],
+  "chain": {
+    "queueLen": 3,
+    "start": {
+      "index": 0,
+      "title": "song-c"
+    },
+    "afterNext": {
+      "index": 2,
+      "title": "SongD",
+      "playing": true
+    },
+    "afterAuto": {
+      "index": 1,
+      "title": "SongB",
+      "playing": true,
+      "at": 4.5
+    },
+    "mode": "graph"
+  },
+  "consoleErrors": []
+}

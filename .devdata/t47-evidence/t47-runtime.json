@@ -1,0 +1,636 @@
+{
+  "capturedAt": "2026-09-13T12:05:39.863Z",
+  "mockUrl": "http://127.0.0.1:9997/v1",
+  "fingerprintsBefore": {
+    "src/renderer/src/components/MiniPlayer.tsx": "f14e2669911185d13c0dfccce48c3c245f188960",
+    "src/renderer/src/components/MiniSearch.tsx": "9c06cc31288e0a100b647e26b180d9f0d9ed1d67",
+    "src/renderer/src/components/MiniChat.tsx": "5c47602df3ce8b358d3698909bd4e7823e70bae4",
+    "src/main/miniBounds.ts": "eb84fa4a0b04f31fe21b467e38285c30c3c5488f",
+    "src/main/mini.ts": "7963cb9da9be9b1474df42809629e65db3edb225",
+    "src/main/ipc.ts": "8c67f9dec91a6a5f55cbc1da374fb54fc94dc1c8",
+    "src/renderer/src/lib/mainWindowBridge.ts": "1f5ddc067082cf07ed2064359a86f7e80038cf7e",
+    "src/renderer/src/lib/chatProxy.ts": "42a82c4722cea8de8ad302fd75997e654edd10be"
+  },
+  "steps": {
+    "preflight": {
+      "apiModel": {
+        "baseURL": "http://127.0.0.1:9997/v1",
+        "model": "deepseek-v4-flash",
+        "keyMode": "enc",
+        "hasKey": true
+      },
+      "library": {
+        "count": 7,
+        "first": [
+          {
+            "id": "48340575992a4a0b1a06",
+            "title": "song-c"
+          },
+          {
+            "id": "f6d99f294b9932accaa9",
+            "title": "SongB"
+          },
+          {
+            "id": "e99efd776d8aec6aa81f",
+            "title": "SongD"
+          },
+          {
+            "id": "f1da4b02ccf77fda8461",
+            "title": "测试歌曲A"
+          }
+        ]
+      }
+    },
+    "geometry": {
+      "clickExpand": "clicked:展开搜索与 AI 聊天",
+      "g0": {
+        "innerW": 360,
+        "innerH": 128,
+        "screenX": 460,
+        "screenY": 312,
+        "availLeft": 0,
+        "availTop": 0,
+        "availW": 1280,
+        "availH": 752,
+        "dpr": 2,
+        "dataExpanded": "false",
+        "searchZones": 0,
+        "searchInputs": 0,
+        "chatPanes": 0,
+        "chatTextareas": 0,
+        "lyricLines": 1,
+        "transportBtns": 3,
+        "expandBtnTitle": "展开搜索与 AI 聊天",
+        "bodyText": "未在播放 | NEBULA PLAYER | 播放歌曲后显示同步歌词"
+      },
+      "g1": {
+        "innerW": 360,
+        "innerH": 540,
+        "screenX": 460,
+        "screenY": 212,
+        "availLeft": 0,
+        "availTop": 0,
+        "availW": 1280,
+        "availH": 752,
+        "dpr": 2,
+        "dataExpanded": "true",
+        "searchZones": 1,
+        "searchInputs": 1,
+        "chatPanes": 1,
+        "chatTextareas": 1,
+        "lyricLines": 1,
+        "transportBtns": 3,
+        "expandBtnTitle": "收起",
+        "bodyText": "未在播放 | NEBULA PLAYER | 播放歌曲后显示同步歌词 | 让 AI 帮你找歌、控播放 | 根据我的口味推荐几首歌 | 播放一首舒缓的本地歌曲 | 把当前歌曲加入「夜跑」歌单"
+      },
+      "apiSize": {
+        "width": 360,
+        "height": 540
+      },
+      "g1b": {
+        "innerW": 360,
+        "innerH": 540,
+        "screenX": 460,
+        "screenY": 212,
+        "availLeft": 0,
+        "availTop": 0,
+        "availW": 1280,
+        "availH": 752,
+        "dpr": 2,
+        "dataExpanded": "true",
+        "searchZones": 1,
+        "searchInputs": 1,
+        "chatPanes": 1,
+        "chatTextareas": 1,
+        "lyricLines": 1,
+        "transportBtns": 3,
+        "expandBtnTitle": "收起",
+        "bodyText": "未在播放 | NEBULA PLAYER | 播放歌曲后显示同步歌词 | 让 AI 帮你找歌、控播放 | 根据我的口味推荐几首歌 | 播放一首舒缓的本地歌曲 | 把当前歌曲加入「夜跑」歌单"
+      },
+      "clickCollapse": "clicked:收起",
+      "g2": {
+        "innerW": 360,
+        "innerH": 128,
+        "screenX": 947,
+        "screenY": 217,
+        "availLeft": 0,
+        "availTop": 0,
+        "availW": 1280,
+        "availH": 752,
+        "dpr": 2,
+        "dataExpanded": "false",
+        "searchZones": 0,
+        "searchInputs": 0,
+        "chatPanes": 0,
+        "chatTextareas": 0,
+        "lyricLines": 1,
+        "transportBtns": 3,
+        "expandBtnTitle": "展开搜索与 AI 聊天",
+        "bodyText": "未在播放 | NEBULA PLAYER | 播放歌曲后显示同步歌词"
+      },
+      "insideWorkArea": true
+    },
+    "hideReopenReset": {
+      "expand": {
+        "already": false,
+        "clicked": "clicked",
+        "before": {
+          "innerW": 360,
+          "innerH": 128,
+          "screenX": 947,
+          "screenY": 217,
+          "availLeft": 0,
+          "availTop": 0,
+          "availW": 1280,
+          "availH": 752,
+          "dpr": 2,
+          "dataExpanded": "false",
+          "searchZones": 0,
+          "searchInputs": 0,
+          "chatPanes": 0,
+          "chatTextareas": 0,
+          "lyricLines": 1,
+          "transportBtns": 3,
+          "expandBtnTitle": "展开搜索与 AI 聊天",
+          "bodyText": "未在播放 | NEBULA PLAYER | 播放歌曲后显示同步歌词"
+        },
+        "after": {
+          "innerW": 360,
+          "innerH": 540,
+          "screenX": 920,
+          "screenY": 212,
+          "availLeft": 0,
+          "availTop": 0,
+          "availW": 1280,
+          "availH": 752,
+          "dpr": 2,
+          "dataExpanded": "true",
+          "searchZones": 1,
+          "searchInputs": 1,
+          "chatPanes": 1,
+          "chatTextareas": 1,
+          "lyricLines": 1,
+          "transportBtns": 3,
+          "expandBtnTitle": "收起",
+          "bodyText": "未在播放 | NEBULA PLAYER | 播放歌曲后显示同步歌词 | 让 AI 帮你找歌、控播放 | 根据我的口味推荐几首歌 | 播放一首舒缓的本地歌曲 | 把当前歌曲加入「夜跑」歌单"
+        }
+      },
+      "before": {
+        "innerW": 360,
+        "innerH": 540,
+        "screenX": 920,
+        "screenY": 212,
+        "availLeft": 0,
+        "availTop": 0,
+        "availW": 1280,
+        "availH": 752,
+        "dpr": 2,
+        "dataExpanded": "true",
+        "searchZones": 1,
+        "searchInputs": 1,
+        "chatPanes": 1,
+        "chatTextareas": 1,
+        "lyricLines": 1,
+        "transportBtns": 3,
+        "expandBtnTitle": "收起",
+        "bodyText": "未在播放 | NEBULA PLAYER | 播放歌曲后显示同步歌词 | 让 AI 帮你找歌、控播放 | 根据我的口味推荐几首歌 | 播放一首舒缓的本地歌曲 | 把当前歌曲加入「夜跑」歌单"
+      },
+      "hidden": {
+        "miniVisible": true
+      },
+      "after": {
+        "innerW": 360,
+        "innerH": 128,
+        "screenX": 920,
+        "screenY": 212,
+        "availLeft": 0,
+        "availTop": 0,
+        "availW": 1280,
+        "availH": 752,
+        "dpr": 2,
+        "dataExpanded": "false",
+        "searchZones": 0,
+        "searchInputs": 0,
+        "chatPanes": 0,
+        "chatTextareas": 0,
+        "lyricLines": 1,
+        "transportBtns": 3,
+        "expandBtnTitle": "展开搜索与 AI 聊天",
+        "bodyText": "未在播放 | NEBULA PLAYER | 播放歌曲后显示同步歌词"
+      }
+    },
+    "searchThenMainPlays": {
+      "expand": {
+        "already": false,
+        "clicked": "clicked",
+        "before": {
+          "innerW": 360,
+          "innerH": 128,
+          "screenX": 920,
+          "screenY": 212,
+          "availLeft": 0,
+          "availTop": 0,
+          "availW": 1280,
+          "availH": 752,
+          "dpr": 2,
+          "dataExpanded": "false",
+          "searchZones": 0,
+          "searchInputs": 0,
+          "chatPanes": 0,
+          "chatTextareas": 0,
+          "lyricLines": 1,
+          "transportBtns": 3,
+          "expandBtnTitle": "展开搜索与 AI 聊天",
+          "bodyText": "未在播放 | NEBULA PLAYER | 播放歌曲后显示同步歌词"
+        },
+        "after": {
+          "innerW": 360,
+          "innerH": 540,
+          "screenX": 920,
+          "screenY": 212,
+          "availLeft": 0,
+          "availTop": 0,
+          "availW": 1280,
+          "availH": 752,
+          "dpr": 2,
+          "dataExpanded": "true",
+          "searchZones": 1,
+          "searchInputs": 1,
+          "chatPanes": 1,
+          "chatTextareas": 1,
+          "lyricLines": 1,
+          "transportBtns": 3,
+          "expandBtnTitle": "收起",
+          "bodyText": "未在播放 | NEBULA PLAYER | 播放歌曲后显示同步歌词 | 让 AI 帮你找歌、控播放 | 根据我的口味推荐几首歌 | 播放一首舒缓的本地歌曲 | 把当前歌曲加入「夜跑」歌单"
+        }
+      },
+      "query": "so",
+      "typed": "ok",
+      "rows": [
+        {
+          "title": "song-c",
+          "artist": "测试歌手",
+          "empty": false
+        },
+        {
+          "title": "SongB",
+          "artist": "ArtistB",
+          "empty": false
+        },
+        {
+          "title": "SongD",
+          "artist": "未知",
+          "empty": false
+        },
+        {
+          "title": "SongE",
+          "artist": "测试歌手",
+          "empty": false
+        }
+      ],
+      "clickIndex": 1,
+      "clicked": "clicked:SongB/ArtistB/0:06",
+      "mainState": {
+        "currentId": "f6d99f294b9932accaa9",
+        "currentTitle": "SongB",
+        "isPlaying": true,
+        "queueLen": 4,
+        "queueTitles": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "index": 1
+      },
+      "expectedId": "f6d99f294b9932accaa9"
+    },
+    "aiRoundTrip": {
+      "expand": {
+        "already": true,
+        "before": {
+          "innerW": 360,
+          "innerH": 540,
+          "screenX": 920,
+          "screenY": 212,
+          "availLeft": 0,
+          "availTop": 0,
+          "availW": 1280,
+          "availH": 752,
+          "dpr": 2,
+          "dataExpanded": "true",
+          "searchZones": 1,
+          "searchInputs": 1,
+          "chatPanes": 1,
+          "chatTextareas": 1,
+          "lyricLines": 0,
+          "transportBtns": 3,
+          "expandBtnTitle": "收起",
+          "bodyText": "SongB | ArtistB | song-c | 测试歌手 | 0:05 | SongB | ArtistB | 0:06 | SongD | 未知 | 0:04 | SongE | 测试歌手 | 0:04 | 让 AI 帮你找歌、控播放 | 根据我的口味推荐几首歌 | 播放一首舒缓的本地歌曲 | 把当前歌曲加入「夜跑」歌单"
+        }
+      },
+      "inputDiag": {
+        "textarea": true,
+        "placeholder": "Enter 发送 · Shift+Enter 换行",
+        "sendBtn": true
+      },
+      "sent": {
+        "typed": "ok",
+        "sent": "ok"
+      },
+      "miniView": {
+        "msgs": [
+          "chat-msg user::你好，请介绍一下你自己",
+          "chat-msg ai::我是 NEBULA 测试网关的第 1 轮回复。"
+        ],
+        "chatChips": 0,
+        "suggestions": 0
+      },
+      "mainView": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "你好，请介绍一下你自己"
+          },
+          {
+            "role": "assistant",
+            "content": "我是 NEBULA 测试网关的第 1 轮回复。"
+          }
+        ],
+        "busy": false,
+        "domMsgs": [
+          "chat-msg user::你好，请介绍一下你自己",
+          "chat-msg ai::我是 NEBULA 测试网关的第 1 轮回复。"
+        ],
+        "collapsed": false
+      },
+      "gateway": {
+        "requests": [
+          {
+            "n": 1,
+            "stream": true,
+            "model": "deepseek-v4-flash",
+            "tools": [],
+            "emitted": [],
+            "lastUser": "你好，请介绍一下你自己",
+            "messageCount": 3
+          }
+        ],
+        "errors400": []
+      }
+    },
+    "miniPlayControl": {
+      "expand": {
+        "already": true,
+        "before": {
+          "innerW": 360,
+          "innerH": 540,
+          "screenX": 920,
+          "screenY": 212,
+          "availLeft": 0,
+          "availTop": 0,
+          "availW": 1280,
+          "availH": 752,
+          "dpr": 2,
+          "dataExpanded": "true",
+          "searchZones": 1,
+          "searchInputs": 1,
+          "chatPanes": 1,
+          "chatTextareas": 1,
+          "lyricLines": 0,
+          "transportBtns": 3,
+          "expandBtnTitle": "收起",
+          "bodyText": "SongD | 未知 | song-c | 测试歌手 | 0:05 | SongB | ArtistB | 0:06 | SongD | 未知 | 0:04 | SongE | 测试歌手 | 0:04 | 你好，请介绍一下你自己 | 我是 NEBULA 测试网关的第 1 轮回复。"
+        }
+      },
+      "before": {
+        "isPlaying": true,
+        "currentId": "e99efd776d8aec6aa81f",
+        "volume": 0.42,
+        "queueLen": 4
+      },
+      "afterPause": {
+        "isPlaying": false,
+        "currentId": "e99efd776d8aec6aa81f",
+        "chips": [],
+        "lastAi": "好的，已完成。"
+      },
+      "idBeforeNext": "e99efd776d8aec6aa81f",
+      "indexBeforeNext": 2,
+      "afterNext": {
+        "isPlaying": true,
+        "currentId": "f6d99f294b9932accaa9",
+        "index": 1,
+        "chips": []
+      },
+      "volumeBefore": 0.42,
+      "afterVolume": {
+        "volume": 0.5,
+        "chips": [],
+        "miniChipDom": 0
+      },
+      "gateway": {
+        "tools": [
+          "control_player",
+          "control_player",
+          "set_volume"
+        ],
+        "requests": 6,
+        "errors400": []
+      }
+    },
+    "destructiveConfirmInMini": {
+      "expand": {
+        "already": true,
+        "before": {
+          "innerW": 360,
+          "innerH": 540,
+          "screenX": 920,
+          "screenY": 212,
+          "availLeft": 0,
+          "availTop": 0,
+          "availW": 1280,
+          "availH": 752,
+          "dpr": 2,
+          "dataExpanded": "true",
+          "searchZones": 1,
+          "searchInputs": 1,
+          "chatPanes": 1,
+          "chatTextareas": 1,
+          "lyricLines": 0,
+          "transportBtns": 3,
+          "expandBtnTitle": "收起",
+          "bodyText": "song-c | 测试歌手 | song-c | 测试歌手 | 0:05 | SongB | ArtistB | 0:06 | SongD | 未知 | 0:04 | SongE | 测试歌手 | 0:04 | 你好，请介绍一下你自己 | 我是 NEBULA 测试网关的第 1 轮回复。 | 暂停 | 已暂停播放 | 好的，已完成。 | 下一曲 | 已切到下一首 | 好的，已完成。 | 把音量调到 50% | 音量 50% | 好的，已完成。"
+        }
+      },
+      "seeded": {
+        "playlistId": "mty1ejmzib44dk7",
+        "ids": [
+          "48340575992a4a0b1a06",
+          "f6d99f294b9932accaa9"
+        ],
+        "trackIds": [
+          "f6d99f294b9932accaa9",
+          "48340575992a4a0b1a06"
+        ]
+      },
+      "send1": {
+        "typed": "ok",
+        "sent": "ok"
+      },
+      "parked": {
+        "pending": {
+          "name": "remove_from_playlist",
+          "summary": "从歌单「夜跑」移除 1 首歌曲：《song-c》"
+        },
+        "trackIds": [
+          "f6d99f294b9932accaa9",
+          "48340575992a4a0b1a06"
+        ]
+      },
+      "miniBar": {
+        "buttons": [
+          "确认执行",
+          "取消"
+        ],
+        "text": "把夜跑歌单里的 48340575992a4a0b1a06 这首歌删掉 | 需要你确认的破坏性操作 | 从歌单「夜跑」移除 1 首歌曲：《song-c》 | 确认执行 | 取消"
+      },
+      "cancelClick": "clicked",
+      "afterCancel": {
+        "pending": false,
+        "busy": false,
+        "trackIds": [
+          "f6d99f294b9932accaa9",
+          "48340575992a4a0b1a06"
+        ]
+      },
+      "send2": {
+        "typed": "ok",
+        "sent": "ok"
+      },
+      "confirmClick": "clicked",
+      "afterConfirm": {
+        "pending": false,
+        "busy": false,
+        "trackIds": [
+          "f6d99f294b9932accaa9"
+        ]
+      },
+      "gateway": {
+        "tools": [
+          "remove_from_playlist"
+        ],
+        "requests": 2,
+        "errors400": []
+      }
+    },
+    "trayScenario": {
+      "closeSent": 1,
+      "mainVis": {
+        "visibilityState": "hidden",
+        "hidden": true
+      },
+      "expandAgain": {
+        "already": true,
+        "before": {
+          "innerW": 360,
+          "innerH": 540,
+          "screenX": 920,
+          "screenY": 212,
+          "availLeft": 0,
+          "availTop": 0,
+          "availW": 1280,
+          "availH": 752,
+          "dpr": 2,
+          "dataExpanded": "true",
+          "searchZones": 1,
+          "searchInputs": 1,
+          "chatPanes": 1,
+          "chatTextareas": 1,
+          "lyricLines": 0,
+          "transportBtns": 3,
+          "expandBtnTitle": "收起",
+          "bodyText": "SongB | ArtistB | song-c | 测试歌手 | 0:05 | SongB | ArtistB | 0:06 | SongD | 未知 | 0:04 | SongE | 测试歌手 | 0:04 | 把夜跑歌单里的 48340575992a4a0b1a06 这首歌删掉 | 待确认：从歌单「夜跑」移除 1 首歌曲：《song-c》 | ✓ 已移出「夜跑」1 首 | 好的，已完成。"
+        }
+      },
+      "clicked": "clicked",
+      "afterSearch": {
+        "currentId": "48340575992a4a0b1a06",
+        "isPlaying": true
+      },
+      "afterPause": {
+        "isPlaying": false,
+        "lastAi": "好的，已完成。"
+      },
+      "afterChat": {
+        "lastAi": "（无回复）",
+        "busy": false
+      },
+      "gateway": {
+        "requestsBefore": 0,
+        "requestsAfter": 3,
+        "lastUser": "给我讲个关于音乐的笑话",
+        "errors400": []
+      }
+    }
+  },
+  "assertions": {
+    "open = 360x128": true,
+    "collapsed DOM has no search zone / chat pane": true,
+    "expand = 360x540 (height only)": true,
+    "expanded DOM renders search box + chat pane": true,
+    "expanded window stays inside the work area": true,
+    "miniSetExpanded(true) returns the applied size": true,
+    "collapse returns to 360x128": true,
+    "collapsed again: DOM restored (no residue)": true,
+    "hide→reopen comes back collapsed (360x128)": true,
+    "reopen state reset from expanded": true,
+    "mini search shows result rows": true,
+    "clicking a mini result plays it in the MAIN window": true,
+    "queue comes from the result list": false,
+    "mini received the user bubble": true,
+    "mini streamed the AI reply": true,
+    "MAIN window chat holds the same turn (same session)": true,
+    "gateway saw the turn with no 400": true,
+    "mini \"暂停\" paused the MAIN player": true,
+    "mini \"下一曲\" advanced the MAIN player": true,
+    "mini \"音量 50%\" set MAIN volume to 0.5": true,
+    "mini chips show feedback": false,
+    "play-control turns reached the gateway without 400": true,
+    "destructive call parks for confirmation (not executed)": true,
+    "confirmation bar is rendered INSIDE the mini window": true,
+    "mini 「取消」 leaves the MAIN playlist untouched": true,
+    "mini 「确认执行」 really mutates the MAIN playlist": true,
+    "destructive turn completed without gateway 400": true,
+    "main window really went to tray/hidden": true,
+    "mini search→play works with the main window hidden": true,
+    "mini control command works with the main window hidden": true,
+    "mini AI round trip works with the main window hidden": false
+  },
+  "fingerprintsAfter": {
+    "src/renderer/src/components/MiniPlayer.tsx": "f14e2669911185d13c0dfccce48c3c245f188960",
+    "src/renderer/src/components/MiniSearch.tsx": "9c06cc31288e0a100b647e26b180d9f0d9ed1d67",
+    "src/renderer/src/components/MiniChat.tsx": "5c47602df3ce8b358d3698909bd4e7823e70bae4",
+    "src/main/miniBounds.ts": "eb84fa4a0b04f31fe21b467e38285c30c3c5488f",
+    "src/main/mini.ts": "7963cb9da9be9b1474df42809629e65db3edb225",
+    "src/main/ipc.ts": "8c67f9dec91a6a5f55cbc1da374fb54fc94dc1c8",
+    "src/renderer/src/lib/mainWindowBridge.ts": "1f5ddc067082cf07ed2064359a86f7e80038cf7e",
+    "src/renderer/src/lib/chatProxy.ts": "42a82c4722cea8de8ad302fd75997e654edd10be"
+  },
+  "filesUnchanged": true,
+  "liveness": {
+    "cdpUp": true,
+    "browser": "Chrome/142.0.7444.265",
+    "mainTargets": 1,
+    "miniTargets": 1
+  },
+  "summary": {
+    "passed": 28,
+    "total": 31,
+    "failed": [
+      "queue comes from the result list",
+      "mini chips show feedback",
+      "mini AI round trip works with the main window hidden"
+    ]
+  }
+}

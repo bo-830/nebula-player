@@ -1,0 +1,122 @@
+{
+  "capturedAt": "2026-09-12T11:39:06.057Z",
+  "input": ".devdata/transcode-fixtures/tone.aac",
+  "ffmpeg": "C:\\博830\\vibecoding\\nebula-player\\node_modules\\ffmpeg-static\\ffmpeg.exe",
+  "source": "src/main/decodeService.ts",
+  "staticArgLines": [
+    {
+      "n": 94,
+      "line": "? ['-y', '-i', mediaPath, '-c', 'copy', '-movflags', '+faststart', '-f', 'mp4', tmp]"
+    },
+    {
+      "n": 95,
+      "line": ": ['-y', '-i', mediaPath, '-vn', '-c:a', 'pcm_s16le', '-f', 'wav', tmp]"
+    },
+    {
+      "n": 105,
+      "line": "await runFfmpeg(bin, ['-y', '-i', mediaPath, '-vn', '-c:a', 'pcm_s16le', '-f', 'wav', wavTmp])"
+    }
+  ],
+  "results": {
+    "m4aBefore": {
+      "args": "-y -i .devdata/transcode-fixtures/tone.aac -c copy -movflags +faststart .devdata\\t13-r2-evidence\\transcode-branch-tmp\\branch-m4a.m4a.tmp",
+      "exitCode": 4294967274,
+      "bytes": 0,
+      "last": "Error opening output files: Invalid argument\r"
+    },
+    "m4aAfter": {
+      "args": "-y -i .devdata/transcode-fixtures/tone.aac -c copy -movflags +faststart -f mp4 .devdata\\t13-r2-evidence\\transcode-branch-tmp\\branch-m4a.m4a.tmp",
+      "exitCode": 0,
+      "bytes": 50382,
+      "described": {
+        "container": "mov",
+        "inputLine": "Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '.devdata\\t13-r2-evidence\\transcode-branch-tmp\\branch-m4a.m4a.tmp':",
+        "streamLine": "Stream #0:0[0x1](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, mono, fltp, 64 kb/s (default)",
+        "durationLine": "Duration: 00:00:06.04, start: 0.000000, bitrate: 66 kb/s"
+      }
+    },
+    "wavBefore": {
+      "args": "-y -i .devdata/transcode-fixtures/tone.aac -vn -c:a pcm_s16le .devdata\\t13-r2-evidence\\transcode-branch-tmp\\branch-wav.wav.tmp",
+      "exitCode": 4294967274,
+      "bytes": 0,
+      "last": "Error opening output files: Invalid argument\r"
+    },
+    "wavAfter": {
+      "args": "-y -i .devdata/transcode-fixtures/tone.aac -vn -c:a pcm_s16le -f wav .devdata\\t13-r2-evidence\\transcode-branch-tmp\\branch-wav.wav.tmp",
+      "exitCode": 0,
+      "bytes": 532558,
+      "described": {
+        "container": "wav",
+        "inputLine": "Input #0, wav, from '.devdata\\t13-r2-evidence\\transcode-branch-tmp\\branch-wav.wav.tmp':",
+        "streamLine": "Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 44100 Hz, 1 channels, s16, 705 kb/s",
+        "durationLine": "Duration: 00:00:06.04, bitrate: 705 kb/s"
+      }
+    }
+  },
+  "checks": [
+    {
+      "name": "static: >=3 explicit -f flags in decodeService ffmpeg arg vectors",
+      "ok": true,
+      "detail": "found 3 (-f mp4 + -f wav outer + -f wav fallback)"
+    },
+    {
+      "name": "static: m4a branch passes -f mp4",
+      "ok": true,
+      "detail": "literal `-f` `mp4`"
+    },
+    {
+      "name": "static: wav branch passes -f wav (first conversion)",
+      "ok": true,
+      "detail": "2 x -f wav (outer + remux fallback)"
+    },
+    {
+      "name": "static: temporary output name still ends in .tmp (so -f stays mandatory)",
+      "ok": true,
+      "detail": "tmp = out + \".tmp\""
+    },
+    {
+      "name": "static: error surfaces the raw ffmpeg exit code",
+      "ok": true,
+      "detail": "`解码失败 (${code})` — matches the reported 4294967274"
+    },
+    {
+      "name": "behaviour: m4a branch FAILS pre-fix (no -f, .tmp)",
+      "ok": true,
+      "detail": "exit=4294967274 :: Error opening output files: Invalid argument\r"
+    },
+    {
+      "name": "behaviour: m4a branch SUCCEEDS with -f mp4",
+      "ok": true,
+      "detail": "exit=0 bytes=50382"
+    },
+    {
+      "name": "behaviour: wav branch FAILS pre-fix (no -f, .tmp)",
+      "ok": true,
+      "detail": "exit=4294967274 :: Error opening output files: Invalid argument\r"
+    },
+    {
+      "name": "behaviour: wav branch SUCCEEDS with -f wav",
+      "ok": true,
+      "detail": "exit=0 bytes=532558"
+    },
+    {
+      "name": "causality: the reported in-app exit code is reproduced exactly",
+      "ok": true,
+      "detail": "pre-fix ffmpeg exit=4294967274 (in-app error was 4294967274)"
+    },
+    {
+      "name": "artefact: -f mp4 output is a real MP4/M4A container",
+      "ok": true,
+      "detail": "mov | Stream #0:0[0x1](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, mono, fltp, 64 kb/s (default)"
+    },
+    {
+      "name": "artefact: -f wav output is a real WAV container with pcm_s16le",
+      "ok": true,
+      "detail": "wav | Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 44100 Hz, 1 channels, s16, 705 kb/s"
+    }
+  ],
+  "passed": 12,
+  "failed": 0,
+  "allPass": true,
+  "apeNote": "APE end-to-end NOT attempted: this ffmpeg build has no Monkey’s Audio encoder. wav branch proven at branch level (same arg vector as the APE path)."
+}

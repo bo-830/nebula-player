@@ -1,0 +1,43 @@
+{
+  "capturedAt": "2026-09-12T12:24:26.609Z",
+  "method": "faithful replication of lyricsOffset.test.ts:299-339 against copies; src/** untouched",
+  "real": {
+    "pass": true,
+    "failedExpectation": null,
+    "detail": {
+      "heads": [
+        "currentTime + 0.12 + offset",
+        "display + 0.12 + offset",
+        "display + 0.12 + offset"
+      ],
+      "branch": "witnessed"
+    }
+  },
+  "flipped": {
+    "pass": false,
+    "failedExpectation": "expect(inlineArithmetic).toHaveLength(0)",
+    "detail": {
+      "heads": [
+        null,
+        null,
+        null
+      ],
+      "branch": "fallback(no-head)",
+      "inlineArithmeticCount": 2
+    }
+  },
+  "flipChangedText": {
+    "lyrics": true,
+    "mini": true
+  },
+  "copies": [
+    ".devdata/t13-r2-evidence/r4c-copies/LyricsPanel.tsx",
+    ".devdata/t13-r2-evidence/r4c-copies/MiniPlayer.tsx"
+  ],
+  "verdict": {
+    "real panels PASS the F5 guard": true,
+    "sign-flipped copies FAIL the F5 guard": true,
+    "the failure lands on the sign assertion (not silently skipped)": true
+  },
+  "allPass": true
+}

@@ -1,0 +1,73 @@
+{
+  "paths": {
+    "inRootsAudio": "C:\\博830\\vibecoding\\nebula-player\\.devdata\\test-music\\song-a.mp3",
+    "outOfRootsAudio": "C:\\博830\\vibecoding\\nebula-player\\.devdata\\t13-r2-evidence\\lure.mp3",
+    "traversal": "C:\\博830\\vibecoding\\nebula-player\\.devdata\\test-music\\..\\..\\t13-r2-evidence\\lure.mp3",
+    "settingsJson": "C:\\博830\\vibecoding\\nebula-player\\.devdata\\user\\settings.json",
+    "outsidePng": "C:\\博830\\vibecoding\\nebula-player\\resources\\icon.png",
+    "inRootsPng": "C:\\博830\\vibecoding\\nebula-player\\.devdata\\user\\covers\\f1da4b02ccf77fda8461.png"
+  },
+  "resolvedByBrowser": {
+    "inRootsAudio": "media://local/Qzpc5Y2aODMwXHZpYmVj…",
+    "outOfRootsAudio": "media://local/Qzpc5Y2aODMwXHZpYmVj…",
+    "traversal": "media://local/Qzpc5Y2aODMwXHZpYmVj…",
+    "settingsJson": "media://local/Qzpc5Y2aODMwXHZpYmVj…",
+    "outsidePng": "media://local/Qzpc5Y2aODMwXHZpYmVj…",
+    "inRootsPng": "media://local/Qzpc5Y2aODMwXHZpYmVj…"
+  },
+  "inRootsAudio": {
+    "how": "loadeddata",
+    "readyState": 4,
+    "errorCode": null,
+    "duration": 8,
+    "loaded": true
+  },
+  "outOfRootsAudio": {
+    "how": "error",
+    "readyState": 0,
+    "errorCode": 4,
+    "duration": null,
+    "loaded": false
+  },
+  "traversalAudio": {
+    "how": "error",
+    "readyState": 0,
+    "errorCode": 4,
+    "duration": null,
+    "loaded": false
+  },
+  "settingsJson": {
+    "how": "error",
+    "readyState": 0,
+    "errorCode": 4,
+    "duration": null,
+    "loaded": false
+  },
+  "outsidePng": {
+    "how": "error",
+    "complete": true,
+    "naturalWidth": 0,
+    "loaded": false
+  },
+  "inRootsPng": {
+    "how": "load",
+    "complete": true,
+    "naturalWidth": 512,
+    "loaded": true
+  },
+  "assertions": {
+    "in-roots audio loads (positive control)": true,
+    "real mp3 outside roots rejected (ext is servable)": true,
+    "same real mp3 via `..` traversal rejected (no whitelist excuse)": true,
+    "userData/settings.json rejected": true,
+    "real png outside roots rejected": true,
+    "in-roots cover png loads (image positive control)": true
+  },
+  "allPass": true,
+  "liveness": {
+    "cdpUp": true,
+    "browser": "Chrome/142.0.7444.265",
+    "mainTargets": 1
+  },
+  "capturedAt": "2026-09-12T12:36:21.385Z"
+}

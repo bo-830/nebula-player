@@ -1,0 +1,86 @@
+{
+  "capturedAt": "2026-09-12T10:40:37.725Z",
+  "setup": {
+    "id": "aee944d929770f08f757",
+    "title": "长测试曲",
+    "lyricLines": 16
+  },
+  "miniTargets": [
+    "http://localhost:5173/#mini"
+  ],
+  "steps": [
+    {
+      "offset": 0,
+      "mini": {
+        "title": "测试歌曲A",
+        "active": null,
+        "prev": null,
+        "next": null,
+        "lines": 1
+      },
+      "main": {
+        "mainActive": null,
+        "time": 0.53
+      }
+    },
+    {
+      "offset": 2.1,
+      "mini": {
+        "title": "测试歌曲A",
+        "active": null,
+        "prev": null,
+        "next": null,
+        "lines": 1
+      },
+      "main": {
+        "mainActive": null,
+        "time": 0.76
+      }
+    },
+    {
+      "offset": 7,
+      "mini": {
+        "title": "测试歌曲A",
+        "active": null,
+        "prev": null,
+        "next": null,
+        "lines": 1
+      },
+      "main": {
+        "mainActive": null,
+        "time": 1.06
+      }
+    },
+    {
+      "offset": 0,
+      "mini": {
+        "title": "测试歌曲A",
+        "active": null,
+        "prev": null,
+        "next": null,
+        "lines": 1
+      },
+      "main": {
+        "mainActive": null,
+        "time": 0
+      }
+    }
+  ],
+  "highlightChangedWithOffset": false,
+  "resetReturnsToIdle": false,
+  "clickJump": {
+    "error": "target line not found"
+  },
+  "miniBeforeClick": {
+    "title": "SongE",
+    "active": null,
+    "prev": null,
+    "next": null,
+    "lines": 1
+  },
+  "verdict": {
+    "miniHighlightChanges": false,
+    "resetReturnsToIdle": false,
+    "clickJumpAccountsForOffset": false
+  }
+}

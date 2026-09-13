@@ -1,0 +1,544 @@
+{
+  "capturedAt": "2026-09-13T12:29:27.614Z",
+  "mockUrl": "http://127.0.0.1:9997/v1",
+  "fingerprintsBefore": {
+    "src/renderer/src/stores/chatStore.ts": "920fcb05ac5d873f609ac84bb36ca806ffea61b7",
+    "src/renderer/src/lib/mainWindowBridge.ts": "1f5ddc067082cf07ed2064359a86f7e80038cf7e",
+    "src/renderer/src/components/MiniChat.tsx": "5c47602df3ce8b358d3698909bd4e7823e70bae4",
+    "src/renderer/src/components/MiniPlayer.tsx": "f14e2669911185d13c0dfccce48c3c245f188960"
+  },
+  "preflight": {
+    "apiModel": {
+      "baseURL": "http://127.0.0.1:9997/v1",
+      "model": "deepseek-v4-flash",
+      "keyMode": "enc",
+      "hasKey": true
+    },
+    "miniOpen": true,
+    "geo": {
+      "innerW": 360,
+      "innerH": 540,
+      "dataExpanded": "true",
+      "searchZones": 1,
+      "chatPanes": 1,
+      "searchInputs": 1,
+      "hasNebula": "undefined"
+    },
+    "mainVis": {
+      "visibility": "visible"
+    }
+  },
+  "visibleProxy": {
+    "group": "control 1/2 — main window VISIBLE, text-only turn through the mini proxy",
+    "sent": {
+      "typed": "ok",
+      "sent": "ok"
+    },
+    "main": {
+      "lastAssistant": "我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。",
+      "lastUser": "可见对照：请介绍一下你自己",
+      "busy": false,
+      "streamRawLen": 0,
+      "streamShown": 0,
+      "messageCount": 2,
+      "visibility": "hidden"
+    },
+    "miniLastAi": "我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。",
+    "gateway": {
+      "requests": 1,
+      "errors400": [],
+      "lastUser": "可见对照：请介绍一下你自己"
+    },
+    "observerEvents": [
+      {
+        "t": 20138,
+        "busy": false,
+        "rawLen": 0,
+        "msgs": 0
+      },
+      {
+        "t": 20138,
+        "busy": true,
+        "rawLen": 0,
+        "msgs": 0
+      },
+      {
+        "t": 20139,
+        "busy": true,
+        "rawLen": 0,
+        "msgs": 1
+      },
+      {
+        "t": 20167,
+        "busy": true,
+        "rawLen": 23,
+        "msgs": 1
+      },
+      {
+        "t": 20171,
+        "busy": true,
+        "rawLen": 31,
+        "msgs": 1
+      },
+      {
+        "t": 20175,
+        "busy": false,
+        "rawLen": 0,
+        "msgs": 1
+      },
+      {
+        "t": 20175,
+        "busy": false,
+        "rawLen": 0,
+        "msgs": 2
+      }
+    ],
+    "pass": true
+  },
+  "hidden4": {
+    "group": "CORE — main window HIDDEN in tray, text-only turn through the mini proxy, 4 consecutive turns",
+    "hidden": {
+      "visibility": "hidden",
+      "hidden": true
+    },
+    "turns": [
+      {
+        "i": 1,
+        "question": "隐藏第1次：请用一句话回答",
+        "sent": {
+          "typed": "ok",
+          "sent": "ok"
+        },
+        "mainAssistant": "我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。",
+        "miniLastAi": "我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。",
+        "bothAgree": true,
+        "hasSentinel": false,
+        "streamRawLenAtRead": 0,
+        "gateway": {
+          "requests": 1,
+          "errors400": [],
+          "lastUser": "隐藏第1次：请用一句话回答"
+        },
+        "observer": {
+          "events": 7,
+          "afterSettleEvents": 0,
+          "maxRawLenSeen": 31,
+          "lastEvents": [
+            {
+              "t": 30139,
+              "busy": true,
+              "rawLen": 0,
+              "msgs": 0
+            },
+            {
+              "t": 30139,
+              "busy": true,
+              "rawLen": 0,
+              "msgs": 1
+            },
+            {
+              "t": 30146,
+              "busy": true,
+              "rawLen": 23,
+              "msgs": 1
+            },
+            {
+              "t": 30153,
+              "busy": true,
+              "rawLen": 31,
+              "msgs": 1
+            },
+            {
+              "t": 30157,
+              "busy": false,
+              "rawLen": 0,
+              "msgs": 1
+            },
+            {
+              "t": 30157,
+              "busy": false,
+              "rawLen": 0,
+              "msgs": 2
+            }
+          ]
+        }
+      },
+      {
+        "i": 2,
+        "question": "隐藏第2次：请用一句话回答",
+        "sent": {
+          "typed": "ok",
+          "sent": "ok"
+        },
+        "mainAssistant": "我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。",
+        "miniLastAi": "我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。",
+        "bothAgree": true,
+        "hasSentinel": false,
+        "streamRawLenAtRead": 0,
+        "gateway": {
+          "requests": 1,
+          "errors400": [],
+          "lastUser": "隐藏第2次：请用一句话回答"
+        },
+        "observer": {
+          "events": 7,
+          "afterSettleEvents": 0,
+          "maxRawLenSeen": 31,
+          "lastEvents": [
+            {
+              "t": 38202,
+              "busy": true,
+              "rawLen": 0,
+              "msgs": 0
+            },
+            {
+              "t": 38202,
+              "busy": true,
+              "rawLen": 0,
+              "msgs": 1
+            },
+            {
+              "t": 38210,
+              "busy": true,
+              "rawLen": 23,
+              "msgs": 1
+            },
+            {
+              "t": 38220,
+              "busy": true,
+              "rawLen": 31,
+              "msgs": 1
+            },
+            {
+              "t": 38225,
+              "busy": false,
+              "rawLen": 0,
+              "msgs": 1
+            },
+            {
+              "t": 38225,
+              "busy": false,
+              "rawLen": 0,
+              "msgs": 2
+            }
+          ]
+        }
+      },
+      {
+        "i": 3,
+        "question": "隐藏第3次：请用一句话回答",
+        "sent": {
+          "typed": "ok",
+          "sent": "ok"
+        },
+        "mainAssistant": "我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。",
+        "miniLastAi": "我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。",
+        "bothAgree": true,
+        "hasSentinel": false,
+        "streamRawLenAtRead": 0,
+        "gateway": {
+          "requests": 1,
+          "errors400": [],
+          "lastUser": "隐藏第3次：请用一句话回答"
+        },
+        "observer": {
+          "events": 7,
+          "afterSettleEvents": 0,
+          "maxRawLenSeen": 31,
+          "lastEvents": [
+            {
+              "t": 46155,
+              "busy": true,
+              "rawLen": 0,
+              "msgs": 0
+            },
+            {
+              "t": 46155,
+              "busy": true,
+              "rawLen": 0,
+              "msgs": 1
+            },
+            {
+              "t": 46160,
+              "busy": true,
+              "rawLen": 23,
+              "msgs": 1
+            },
+            {
+              "t": 46165,
+              "busy": true,
+              "rawLen": 31,
+              "msgs": 1
+            },
+            {
+              "t": 46168,
+              "busy": false,
+              "rawLen": 0,
+              "msgs": 1
+            },
+            {
+              "t": 46169,
+              "busy": false,
+              "rawLen": 0,
+              "msgs": 2
+            }
+          ]
+        }
+      },
+      {
+        "i": 4,
+        "question": "隐藏第4次：请用一句话回答",
+        "sent": {
+          "typed": "ok",
+          "sent": "ok"
+        },
+        "mainAssistant": "我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。",
+        "miniLastAi": "我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。",
+        "bothAgree": true,
+        "hasSentinel": false,
+        "streamRawLenAtRead": 0,
+        "gateway": {
+          "requests": 1,
+          "errors400": [],
+          "lastUser": "隐藏第4次：请用一句话回答"
+        },
+        "observer": {
+          "events": 7,
+          "afterSettleEvents": 0,
+          "maxRawLenSeen": 31,
+          "lastEvents": [
+            {
+              "t": 54101,
+              "busy": true,
+              "rawLen": 0,
+              "msgs": 0
+            },
+            {
+              "t": 54101,
+              "busy": true,
+              "rawLen": 0,
+              "msgs": 1
+            },
+            {
+              "t": 54105,
+              "busy": true,
+              "rawLen": 23,
+              "msgs": 1
+            },
+            {
+              "t": 54109,
+              "busy": true,
+              "rawLen": 31,
+              "msgs": 1
+            },
+            {
+              "t": 54114,
+              "busy": false,
+              "rawLen": 0,
+              "msgs": 1
+            },
+            {
+              "t": 54114,
+              "busy": false,
+              "rawLen": 0,
+              "msgs": 2
+            }
+          ]
+        }
+      }
+    ],
+    "pass": true,
+    "tally": {
+      "passed": 4,
+      "total": 4
+    }
+  },
+  "hiddenDirect": {
+    "group": "control 2/2 — main window HIDDEN, same question sent directly from the MAIN window",
+    "main": {
+      "lastAssistant": "我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。",
+      "lastUser": "隐藏直发对照：请回答",
+      "busy": false,
+      "streamRawLen": 0,
+      "streamShown": 0,
+      "messageCount": 2,
+      "visibility": "hidden"
+    },
+    "gateway": {
+      "requests": 1,
+      "errors400": [],
+      "lastUser": "隐藏直发对照：请回答"
+    },
+    "pass": true
+  },
+  "tools": {
+    "group": "tool chain (hidden main window): control_player + destructive confirm bar inside the mini",
+    "controlTurn": {
+      "before": {
+        "isPlaying": true
+      },
+      "after": {
+        "isPlaying": false,
+        "lastAssistant": "好的，已完成。",
+        "chips": []
+      },
+      "miniChips": [
+        "已暂停播放"
+      ]
+    },
+    "destructive": {
+      "seeded": {
+        "playlistId": "mty1ejmzib44dk7",
+        "ids": [
+          "48340575992a4a0b1a06",
+          "f6d99f294b9932accaa9"
+        ],
+        "trackIds": [
+          "f6d99f294b9932accaa9"
+        ]
+      },
+      "parked": {
+        "pending": {
+          "name": "remove_from_playlist",
+          "summary": "从歌单「夜跑」移除 1 首歌曲：《song-c》"
+        },
+        "trackIds": [
+          "f6d99f294b9932accaa9",
+          "48340575992a4a0b1a06"
+        ]
+      },
+      "bar": {
+        "buttons": [
+          "确认执行",
+          "取消"
+        ],
+        "text": "把夜跑歌单里的 48340575992a4a0b1a06 这首歌删掉 | 需要你确认的破坏性操作 | 从歌单「夜跑」移除 1 首歌曲：《song-c》 | 确认执行 | 取消"
+      },
+      "cancelClick": "clicked",
+      "afterCancel": {
+        "pending": false,
+        "trackIds": [
+          "f6d99f294b9932accaa9",
+          "48340575992a4a0b1a06"
+        ]
+      },
+      "confirmClick": "clicked",
+      "afterConfirm": {
+        "pending": false,
+        "trackIds": [
+          "f6d99f294b9932accaa9"
+        ]
+      }
+    },
+    "gateway": {
+      "tools": [
+        "remove_from_playlist"
+      ],
+      "requests": 2,
+      "errors400": []
+    },
+    "pass": {
+      "controlPausedMain": true,
+      "controlChipShown": true,
+      "parkedNotExecuted": true,
+      "barInsideMini": true,
+      "cancelKeptData": true,
+      "confirmMutatedData": true
+    },
+    "passAll": true
+  },
+  "spotcheck": {
+    "group": "spot-check of t47 passing items (geometry / search→main play / hide→reopen)",
+    "geometry": {
+      "gStart": {
+        "innerW": 360,
+        "innerH": 540,
+        "dataExpanded": "true",
+        "searchZones": 1,
+        "chatPanes": 1,
+        "searchInputs": 1,
+        "hasNebula": "undefined"
+      },
+      "gExpanded": {
+        "innerW": 360,
+        "innerH": 540,
+        "dataExpanded": "true",
+        "searchZones": 1,
+        "chatPanes": 1,
+        "searchInputs": 1,
+        "hasNebula": "undefined"
+      },
+      "gCollapsed": {
+        "innerW": 360,
+        "innerH": 540,
+        "dataExpanded": "true",
+        "searchZones": 1,
+        "chatPanes": 1,
+        "searchInputs": 1,
+        "hasNebula": "undefined"
+      }
+    },
+    "search": {
+      "query": "so",
+      "typed": "ok",
+      "rows": [
+        {
+          "title": "song-c"
+        },
+        {
+          "title": "SongB"
+        },
+        {
+          "title": "SongD"
+        },
+        {
+          "title": "SongE"
+        }
+      ],
+      "clicked": "clicked",
+      "playState": {
+        "currentId": "48340575992a4a0b1a06",
+        "currentTitle": "song-c",
+        "isPlaying": true,
+        "queueLen": 4,
+        "index": 0
+      },
+      "expectedId": "48340575992a4a0b1a06"
+    },
+    "hideReopen": {
+      "beforeHide": {
+        "innerW": 360,
+        "innerH": 540,
+        "dataExpanded": "true",
+        "searchZones": 1,
+        "chatPanes": 1,
+        "searchInputs": 1,
+        "hasNebula": "undefined"
+      },
+      "afterReopen": {
+        "innerW": 360,
+        "innerH": 128,
+        "dataExpanded": "false",
+        "searchZones": 0,
+        "chatPanes": 0,
+        "searchInputs": 0,
+        "hasNebula": "undefined"
+      }
+    },
+    "pass": {
+      "expanded360x540": true,
+      "collapsed360x128NoResidue": false,
+      "searchPlayedInMain": true,
+      "miniHasNoNebula": true,
+      "reopenCollapsed": true
+    },
+    "passAll": false
+  },
+  "fingerprintsAfter": {
+    "src/renderer/src/stores/chatStore.ts": "920fcb05ac5d873f609ac84bb36ca806ffea61b7",
+    "src/renderer/src/lib/mainWindowBridge.ts": "1f5ddc067082cf07ed2064359a86f7e80038cf7e",
+    "src/renderer/src/components/MiniChat.tsx": "5c47602df3ce8b358d3698909bd4e7823e70bae4",
+    "src/renderer/src/components/MiniPlayer.tsx": "f14e2669911185d13c0dfccce48c3c245f188960"
+  },
+  "filesUnchanged": true
+}

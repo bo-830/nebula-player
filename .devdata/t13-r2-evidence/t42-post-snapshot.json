@@ -1,0 +1,441 @@
+{
+  "label": "t42-post",
+  "capturedAt": "2026-09-12T12:32:02.684Z",
+  "keyFiles": [
+    {
+      "file": "src/main/index.ts",
+      "mtime": "2026-09-12T11:39:56.057Z",
+      "size": 14054,
+      "sha1": "18ef7c49c2eb"
+    },
+    {
+      "file": "src/main/protocol.ts",
+      "mtime": "2026-09-12T11:58:33.122Z",
+      "size": 8257,
+      "sha1": "28a7dc33ad52"
+    },
+    {
+      "file": "src/main/store.ts",
+      "mtime": "2026-09-12T10:51:12.879Z",
+      "size": 4837,
+      "sha1": "7efc2b632049"
+    },
+    {
+      "file": "src/main/settings.ts",
+      "mtime": "2026-09-12T07:25:52.312Z",
+      "size": 3316,
+      "sha1": "55cb49caa965"
+    },
+    {
+      "file": "src/main/window.ts",
+      "mtime": "2026-09-12T09:03:47.195Z",
+      "size": 2702,
+      "sha1": "2806d7ab4233"
+    },
+    {
+      "file": "src/main/mediaFormats.ts",
+      "mtime": "2026-09-12T09:11:58.993Z",
+      "size": 1012,
+      "sha1": "b14e7b9dead4"
+    },
+    {
+      "file": "src/main/decodeService.ts",
+      "mtime": "2026-09-12T10:54:32.494Z",
+      "size": 4869,
+      "sha1": "df1c81800a0d"
+    },
+    {
+      "file": "src/renderer/src/lib/audioEngine.ts",
+      "mtime": "2026-09-12T07:22:39.836Z",
+      "size": 19520,
+      "sha1": "e01f4c0d66d5"
+    },
+    {
+      "file": "src/renderer/src/lib/sleepTimer.ts",
+      "mtime": "2026-09-12T10:47:47.840Z",
+      "size": 5052,
+      "sha1": "ca56b155a0e6"
+    },
+    {
+      "file": "src/renderer/src/lib/tools.ts",
+      "mtime": "2026-09-12T06:46:06.266Z",
+      "size": 22805,
+      "sha1": "a3f6d1d648c7"
+    },
+    {
+      "file": "src/renderer/src/lib/lyricsOffset.ts",
+      "mtime": "2026-09-12T07:08:09.672Z",
+      "size": 4978,
+      "sha1": "a25cfd5642c2"
+    },
+    {
+      "file": "src/renderer/src/stores/playerStore.ts",
+      "mtime": "2026-09-12T10:47:58.754Z",
+      "size": 14367,
+      "sha1": "512e558ed3b2"
+    },
+    {
+      "file": "src/renderer/src/stores/chatStore.ts",
+      "mtime": "2026-09-12T11:45:42.740Z",
+      "size": 18605,
+      "sha1": "962c68d7b436"
+    },
+    {
+      "file": "src/renderer/src/components/LyricsPanel.tsx",
+      "mtime": "2026-09-12T08:54:42.568Z",
+      "size": 6940,
+      "sha1": "32f8656d5f1b"
+    },
+    {
+      "file": "src/renderer/src/components/MiniPlayer.tsx",
+      "mtime": "2026-09-12T12:10:42.068Z",
+      "size": 5912,
+      "sha1": "8a219676275a"
+    },
+    {
+      "file": "src/renderer/src/components/TrackList.tsx",
+      "mtime": "2026-09-12T07:25:52.312Z",
+      "size": 13259,
+      "sha1": "7d5c493be27c"
+    },
+    {
+      "file": "src/renderer/src/components/MainView.tsx",
+      "mtime": "2026-09-12T07:25:52.312Z",
+      "size": 16175,
+      "sha1": "adf640bfc1d1"
+    },
+    {
+      "file": "src/renderer/index.html",
+      "mtime": "2026-09-04T14:29:16.813Z",
+      "size": 448,
+      "sha1": "5e515ae85c5c"
+    },
+    {
+      "file": "package.json",
+      "mtime": "2026-09-12T04:25:19.798Z",
+      "size": 2123,
+      "sha1": "65654a4d1e48"
+    },
+    {
+      "file": "electron-builder.yml",
+      "mtime": "2026-09-12T07:12:31.674Z",
+      "size": 1549,
+      "sha1": "6f2319867dd2"
+    },
+    {
+      "file": "eslint.config.mjs",
+      "mtime": "2026-09-12T07:24:02.524Z",
+      "size": 1387,
+      "sha1": "e5e0d3af318c"
+    }
+  ],
+  "srcFileCount": 76,
+  "srcAggregateSha1": "f3af2602396eb2da5feb3469005f0b1a45da10c2",
+  "newestSrcMtime": "2026-09-12T12:13:26.648Z",
+  "srcFiles": [
+    {
+      "file": "src/main/__tests__/llmClientToolIds.test.ts",
+      "sha1": "7aa8fdae49a7"
+    },
+    {
+      "file": "src/main/__tests__/lrc.test.ts",
+      "sha1": "777b248534c2"
+    },
+    {
+      "file": "src/main/__tests__/mediaFormats.test.ts",
+      "sha1": "22a7f473e9db"
+    },
+    {
+      "file": "src/main/__tests__/mediaRoots.test.ts",
+      "sha1": "eb8b54f4efd1"
+    },
+    {
+      "file": "src/main/__tests__/scanner.test.ts",
+      "sha1": "3d7902a512c3"
+    },
+    {
+      "file": "src/main/decodeService.ts",
+      "sha1": "df1c81800a0d"
+    },
+    {
+      "file": "src/main/index.ts",
+      "sha1": "18ef7c49c2eb"
+    },
+    {
+      "file": "src/main/ipc.ts",
+      "sha1": "58c2b55ce5fb"
+    },
+    {
+      "file": "src/main/libraryStore.ts",
+      "sha1": "32640ce62ea2"
+    },
+    {
+      "file": "src/main/llmClient.ts",
+      "sha1": "29e5010123e3"
+    },
+    {
+      "file": "src/main/logging.ts",
+      "sha1": "ce8f92303de2"
+    },
+    {
+      "file": "src/main/lrc.ts",
+      "sha1": "7e14138505ec"
+    },
+    {
+      "file": "src/main/lyricsService.ts",
+      "sha1": "b20b25b7b340"
+    },
+    {
+      "file": "src/main/mediaFormats.ts",
+      "sha1": "b14e7b9dead4"
+    },
+    {
+      "file": "src/main/mediaRoots.ts",
+      "sha1": "da4fd2c14a4a"
+    },
+    {
+      "file": "src/main/mini.ts",
+      "sha1": "ec39b42b3172"
+    },
+    {
+      "file": "src/main/protocol.ts",
+      "sha1": "28a7dc33ad52"
+    },
+    {
+      "file": "src/main/scanner.ts",
+      "sha1": "749575950cc4"
+    },
+    {
+      "file": "src/main/settings.ts",
+      "sha1": "55cb49caa965"
+    },
+    {
+      "file": "src/main/store.ts",
+      "sha1": "7efc2b632049"
+    },
+    {
+      "file": "src/main/tray.ts",
+      "sha1": "915989d0fec8"
+    },
+    {
+      "file": "src/main/updateService.ts",
+      "sha1": "2e736e7c45c5"
+    },
+    {
+      "file": "src/main/waveformService.ts",
+      "sha1": "5f74b220fbb3"
+    },
+    {
+      "file": "src/main/window.ts",
+      "sha1": "2806d7ab4233"
+    },
+    {
+      "file": "src/preload/index.d.ts",
+      "sha1": "37cea8ed206b"
+    },
+    {
+      "file": "src/preload/index.ts",
+      "sha1": "4a3c166b2ac3"
+    },
+    {
+      "file": "src/renderer/index.html",
+      "sha1": "5e515ae85c5c"
+    },
+    {
+      "file": "src/renderer/src/App.tsx",
+      "sha1": "3bba077cdca3"
+    },
+    {
+      "file": "src/renderer/src/components/ChatPanel.tsx",
+      "sha1": "1565969be8fb"
+    },
+    {
+      "file": "src/renderer/src/components/Cover.tsx",
+      "sha1": "6367d75227b8"
+    },
+    {
+      "file": "src/renderer/src/components/LyricsPanel.tsx",
+      "sha1": "32f8656d5f1b"
+    },
+    {
+      "file": "src/renderer/src/components/MainView.tsx",
+      "sha1": "adf640bfc1d1"
+    },
+    {
+      "file": "src/renderer/src/components/MiniPlayer.tsx",
+      "sha1": "8a219676275a"
+    },
+    {
+      "file": "src/renderer/src/components/NavBar.tsx",
+      "sha1": "b374c2248c99"
+    },
+    {
+      "file": "src/renderer/src/components/NowPlaying.tsx",
+      "sha1": "23d44b894845"
+    },
+    {
+      "file": "src/renderer/src/components/Particles.tsx",
+      "sha1": "70f9e00cc134"
+    },
+    {
+      "file": "src/renderer/src/components/PlayerBar.tsx",
+      "sha1": "82c354fd49c9"
+    },
+    {
+      "file": "src/renderer/src/components/SettingsModal.tsx",
+      "sha1": "80872737cb36"
+    },
+    {
+      "file": "src/renderer/src/components/Sidebar.tsx",
+      "sha1": "82b83c8e18ec"
+    },
+    {
+      "file": "src/renderer/src/components/TitleBar.tsx",
+      "sha1": "c723b1f6e427"
+    },
+    {
+      "file": "src/renderer/src/components/Toasts.tsx",
+      "sha1": "87ab3a65c55f"
+    },
+    {
+      "file": "src/renderer/src/components/TrackList.tsx",
+      "sha1": "7d5c493be27c"
+    },
+    {
+      "file": "src/renderer/src/env.d.ts",
+      "sha1": "e2eac6bcc876"
+    },
+    {
+      "file": "src/renderer/src/lib/__tests__/chatConfirm.test.ts",
+      "sha1": "470b7712daec"
+    },
+    {
+      "file": "src/renderer/src/lib/__tests__/format.test.ts",
+      "sha1": "a67b14e8d95b"
+    },
+    {
+      "file": "src/renderer/src/lib/__tests__/lyricsOffset.test.ts",
+      "sha1": "56ba63fc1767"
+    },
+    {
+      "file": "src/renderer/src/lib/__tests__/miniLyricsDedup.test.ts",
+      "sha1": "a9dd23a9a65e"
+    },
+    {
+      "file": "src/renderer/src/lib/__tests__/playerStoreSleep.test.ts",
+      "sha1": "dafb044bc9c5"
+    },
+    {
+      "file": "src/renderer/src/lib/__tests__/queue.test.ts",
+      "sha1": "9e01b67a6634"
+    },
+    {
+      "file": "src/renderer/src/lib/__tests__/recommend.test.ts",
+      "sha1": "fceff3405d11"
+    },
+    {
+      "file": "src/renderer/src/lib/__tests__/search.test.ts",
+      "sha1": "00dfaba8332d"
+    },
+    {
+      "file": "src/renderer/src/lib/__tests__/sleepTimer.test.ts",
+      "sha1": "a3f5f69d34a1"
+    },
+    {
+      "file": "src/renderer/src/lib/audioEngine.ts",
+      "sha1": "e01f4c0d66d5"
+    },
+    {
+      "file": "src/renderer/src/lib/format.ts",
+      "sha1": "7b4cfd672dfc"
+    },
+    {
+      "file": "src/renderer/src/lib/lyricsOffset.ts",
+      "sha1": "a25cfd5642c2"
+    },
+    {
+      "file": "src/renderer/src/lib/mediaUrl.ts",
+      "sha1": "be0b51e96bfb"
+    },
+    {
+      "file": "src/renderer/src/lib/miniLyricsDedup.ts",
+      "sha1": "ea7a1c62afba"
+    },
+    {
+      "file": "src/renderer/src/lib/playStats.ts",
+      "sha1": "b21718d9f07b"
+    },
+    {
+      "file": "src/renderer/src/lib/queue.ts",
+      "sha1": "c3bb91a66895"
+    },
+    {
+      "file": "src/renderer/src/lib/recommend.ts",
+      "sha1": "f643201d9ded"
+    },
+    {
+      "file": "src/renderer/src/lib/search.ts",
+      "sha1": "cbb19dddf47a"
+    },
+    {
+      "file": "src/renderer/src/lib/sleepTimer.ts",
+      "sha1": "ca56b155a0e6"
+    },
+    {
+      "file": "src/renderer/src/lib/tools.ts",
+      "sha1": "a3f6d1d648c7"
+    },
+    {
+      "file": "src/renderer/src/lib/waveform.ts",
+      "sha1": "d1862030c502"
+    },
+    {
+      "file": "src/renderer/src/main.tsx",
+      "sha1": "62c02593159a"
+    },
+    {
+      "file": "src/renderer/src/stores/chatStore.ts",
+      "sha1": "962c68d7b436"
+    },
+    {
+      "file": "src/renderer/src/stores/libraryStore.ts",
+      "sha1": "e92763c57ef8"
+    },
+    {
+      "file": "src/renderer/src/stores/playerStore.ts",
+      "sha1": "512e558ed3b2"
+    },
+    {
+      "file": "src/renderer/src/stores/playlistStore.ts",
+      "sha1": "7324cd44f3cd"
+    },
+    {
+      "file": "src/renderer/src/stores/settingsStore.ts",
+      "sha1": "4969c8d5fafb"
+    },
+    {
+      "file": "src/renderer/src/stores/uiStore.ts",
+      "sha1": "e3eef3ac940d"
+    },
+    {
+      "file": "src/renderer/src/styles/app.css",
+      "sha1": "5300273396f1"
+    },
+    {
+      "file": "src/renderer/src/styles/global.css",
+      "sha1": "807c2d79fcef"
+    },
+    {
+      "file": "src/renderer/src/styles/theme.css",
+      "sha1": "903643189e3c"
+    },
+    {
+      "file": "src/renderer/src/types.ts",
+      "sha1": "c7bfb473a2ff"
+    },
+    {
+      "file": "src/shared/types.ts",
+      "sha1": "c68f12f2a87d"
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+﻿{
+  "sourceStability": {
+    "ages": [
+      {
+        "file": "src/renderer/src/lib/lyricsOffset.ts",
+        "modifiedAgoMs": 1708188,
+        "size": 4978
+      },
+      {
+        "file": "src/renderer/src/components/LyricsPanel.tsx",
+        "modifiedAgoMs": 1630582,
+        "size": 6866
+      },
+      {
+        "file": "src/renderer/src/components/MiniPlayer.tsx",
+        "modifiedAgoMs": 1569018,
+        "size": 4533
+      }
+    ],
+    "youngestMs": 1569018
+  },
+  "preflight": {
+    "info": {
+      "id": "aee944d929770f08f757",
+      "title": "长测试曲",
+      "current": true,
+      "at": 1.81
+    },
+    "state": {
+      "lineCount": 16,
+      "activeIndex": 2,
+      "activeText": "我在城市的边缘 轻声哼唱",
+      "offset": "0.0s",
+      "hasMinus": true,
+      "hasPlus": true,
+      "hasReset": true,
+      "currentTime": 10.9,
+      "paused": true,
+      "stored": []
+    },
+    "tabs": [
+      {
+        "text": "播放详情",
+        "active": false
+      },
+      {
+        "text": "歌词",
+        "active": true
+      }
+    ],
+    "dom": {
+      "hook": true,
+      "root": 1,
+      "detail": true,
+      "main": true
+    }
+  },
+  "stepAndHighlight": {
+    "offset0": {
+      "park": {
+        "id": "aee944d929770f08f757",
+        "title": "长测试曲",
+        "current": true,
+        "at": 10.9
+      },
+      "lineCount": 16,
+      "activeIndex": 2,
+      "activeText": "我在城市的边缘 轻声哼唱",
+      "offset": "0.0s",
+      "hasMinus": true,
+      "hasPlus": true,
+      "hasReset": true,
+      "currentTime": 10.9,
+      "paused": true,
+      "stored": []
+    },
+    "clickMinus": {
+      "clicked": true,
+      "label": "0.5s",
+      "title": "歌词提前 0.5s"
+    },
+    "afterMinus05": {
+      "park": {
+        "id": "aee944d929770f08f757",
+        "title": "长测试曲",
+        "current": true,
+        "at": 10.9
+      },
+      "lineCount": 16,
+      "activeIndex": 1,
+      "activeText": "远处传来 熟悉的旋律",
+      "offset": "-0.5s",
+      "hasMinus": true,
+      "hasPlus": true,
+      "hasReset": true,
+      "currentTime": 10.9,
+      "paused": true,
+      "stored": [
+        [
+          "nebula.lyricsoffset",
+          "{\"aee944d929770f08f757\":-0.5}"
+        ]
+      ]
+    },
+    "clickMinus2": {
+      "clicked": true,
+      "label": "0.5s",
+      "title": "歌词提前 0.5s"
+    },
+    "afterMinus10": {
+      "park": {
+        "id": "aee944d929770f08f757",
+        "title": "长测试曲",
+        "current": true,
+        "at": 10.9
+      },
+      "lineCount": 16,
+      "activeIndex": 1,
+      "activeText": "远处传来 熟悉的旋律",
+      "offset": "-1.0s",
+      "hasMinus": true,
+      "hasPlus": true,
+      "hasReset": true,
+      "currentTime": 10.9,
+      "paused": true,
+      "stored": [
+        [
+          "nebula.lyricsoffset",
+          "{\"aee944d929770f08f757\":-1}"
+        ]
+      ]
+    },
+    "clickPlus3": {
+      "clicked": true,
+      "label": "0.5s",
+      "title": "歌词延后 0.5s"
+    },
+    "afterPlus05": {
+      "park": {
+        "id": "aee944d929770f08f757",
+        "title": "长测试曲",
+        "current": true,
+        "at": 10.9
+      },
+      "lineCount": 16,
+      "activeIndex": 2,
+      "activeText": "我在城市的边缘 轻声哼唱",
+      "offset": "+0.5s",
+      "hasMinus": true,
+      "hasPlus": true,
+      "hasReset": true,
+      "currentTime": 10.9,
+      "paused": true,
+      "stored": [
+        [
+          "nebula.lyricsoffset",
+          "{\"aee944d929770f08f757\":0.5}"
+        ]
+      ]
+    },
+    "clickReset": {
+      "clicked": true,
+      "label": "重置",
+      "title": "重置本曲歌词偏移"
+    },
+    "backToZero": {
+      "park": {
+        "id": "aee944d929770f08f757",
+        "title": "长测试曲",
+        "current": true,
+        "at": 10.9
+      },
+      "lineCount": 16,
+      "activeIndex": 2,
+      "activeText": "我在城市的边缘 轻声哼唱",
+      "offset": "0.0s",
+      "hasMinus": true,
+      "hasPlus": true,
+      "hasReset": true,
+      "currentTime": 10.9,
+      "paused": true,
+      "stored": []
+    }
+  },
+  "perTrackMemory": {
+    "park": {
+      "id": "aee944d929770f08f757",
+      "title": "长测试曲",
+      "current": true,
+      "at": 10.9
+    },
+    "longTrackId": "aee944d929770f08f757",
+    "otherId": "48340575992a4a0b1a06",
+    "otherTitle": "song-c",
+    "longOffset": "+1.0s",
+    "stored": [
+      [
+        "nebula.lyricsoffset",
+        "{\"aee944d929770f08f757\":1}"
+      ]
+    ],
+    "otherOffset": null,
+    "backOffset": "+1.0s",
+    "backId": "aee944d929770f08f757",
+    "panel": {
+      "lineCount": 16,
+      "activeIndex": 0,
+      "activeText": "夜幕低垂 星光闪烁",
+      "offset": "+1.0s",
+      "hasMinus": true,
+      "hasPlus": true,
+      "hasReset": true,
+      "currentTime": 3.21,
+      "paused": false,
+      "stored": [
+        [
+          "nebula.lyricsoffset",
+          "{\"aee944d929770f08f757\":1}"
+        ]
+      ]
+    }
+  },
+  "miniSync": {
+    "mainBefore": {
+      "lineCount": 16,
+      "activeIndex": 2,
+      "activeText": "我在城市的边缘 轻声哼唱",
+      "offset": "+1.0s",
+      "hasMinus": true,
+      "hasPlus": true,
+      "hasReset": true,
+      "currentTime": 10.9,
+      "paused": true,
+      "stored": [
+        [
+          "nebula.lyricsoffset",
+          "{\"aee944d929770f08f757\":1}"
+        ]
+      ]
+    },
+    "miniBefore": {
+      "title": "长测试曲",
+      "active": "我在城市的边缘 轻声哼唱",
+      "prev": "远处传来 熟悉的旋律",
+      "lines": 3
+    },
+    "mainAfter": {
+      "lineCount": 16,
+      "activeIndex": 2,
+      "activeText": "我在城市的边缘 轻声哼唱",
+      "offset": "+2.0s",
+      "hasMinus": true,
+      "hasPlus": true,
+      "hasReset": true,
+      "currentTime": 10.9,
+      "paused": true,
+      "stored": [
+        [
+          "nebula.lyricsoffset",
+          "{\"aee944d929770f08f757\":2}"
+        ]
+      ]
+    },
+    "miniAfterPlus": {
+      "title": "长测试曲",
+      "active": "我在城市的边缘 轻声哼唱",
+      "prev": "远处传来 熟悉的旋律",
+      "lines": 3
+    },
+    "miniAfter": {
+      "title": "长测试曲",
+      "active": "我在城市的边缘 轻声哼唱",
+      "prev": "远处传来 熟悉的旋律",
+      "lines": 3
+    }
+  }
+}

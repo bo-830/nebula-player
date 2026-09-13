@@ -1,0 +1,96 @@
+{
+  "capturedAt": "2026-09-13T12:59:23.915Z",
+  "steps": [
+    {
+      "at": "2026-09-13T12:59:27.524Z",
+      "name": "clean-collapsed",
+      "miniTarget": true,
+      "w": 360,
+      "h": 128,
+      "flag": "false",
+      "searchZone": false,
+      "searchInput": false,
+      "chatPane": false,
+      "chatInput": false,
+      "lyric": true,
+      "controls": true,
+      "head": true
+    },
+    {
+      "at": "2026-09-13T12:59:27.866Z",
+      "name": "click-expand",
+      "before": "false",
+      "title": "展开搜索与 AI 聊天",
+      "after": "true"
+    },
+    {
+      "at": "2026-09-13T12:59:29.097Z",
+      "name": "expanded",
+      "miniTarget": true,
+      "w": 360,
+      "h": 540,
+      "flag": "true",
+      "searchZone": true,
+      "searchInput": true,
+      "chatPane": true,
+      "chatInput": true,
+      "lyric": true,
+      "controls": true,
+      "head": true
+    },
+    {
+      "at": "2026-09-13T12:59:29.429Z",
+      "name": "click-collapse",
+      "before": "true",
+      "title": "收起",
+      "after": "false"
+    },
+    {
+      "at": "2026-09-13T12:59:30.663Z",
+      "name": "collapsed",
+      "miniTarget": true,
+      "w": 360,
+      "h": 128,
+      "flag": "false",
+      "searchZone": false,
+      "searchInput": false,
+      "chatPane": false,
+      "chatInput": false,
+      "lyric": true,
+      "controls": true,
+      "head": true
+    },
+    {
+      "at": "2026-09-13T12:59:34.516Z",
+      "name": "reopened",
+      "miniTarget": true,
+      "w": 360,
+      "h": 128,
+      "flag": "false",
+      "searchZone": false,
+      "searchInput": false,
+      "chatPane": false,
+      "chatInput": false,
+      "lyric": true,
+      "controls": true,
+      "head": true
+    }
+  ],
+  "mainUrl": "file:///C:/Users/34872/AppData/Local/Programs/nebula-player/resources/app.asar/out/renderer/index.html",
+  "mainLoadedFromAsar": true,
+  "assertions": {
+    "packaged main loads from asar": true,
+    "clean start collapsed 360x128 + flag false": true,
+    "BUTTON expand → window 360x540": true,
+    "BUTTON expand → search zone rendered": true,
+    "BUTTON expand → chat pane rendered": true,
+    "BUTTON expand → flag true": true,
+    "BUTTON expand → head/lyric/controls kept": true,
+    "BUTTON collapse → window 360x128": true,
+    "BUTTON collapse → panes gone": true,
+    "BUTTON collapse → flag false": true,
+    "hide+reopen → collapsed 360x128 + flag false": true
+  },
+  "allPass": true,
+  "doneAt": "2026-09-13T12:59:34.517Z"
+}

@@ -1,0 +1,434 @@
+{
+  "generatedAt": "2026-09-12T12:14:23.869Z",
+  "root": "C:\\博830\\vibecoding\\nebula-player",
+  "anchorNote": "Values are the LIVE tree at generatedAt. Rows tagged r2:\"r2\" still match the r2 frozen anchor; rows tagged r2:\"DIVERGED (r2 <sha1>)\" were rewritten by r3 and must not be cited as r2 values.",
+  "r2Diverged": [
+    {
+      "path": "src/renderer/src/stores/chatStore.ts",
+      "live": "962c68d7b436",
+      "r2": "DIVERGED (r2 4dc3949252f9) — r3 (t34) editing"
+    },
+    {
+      "path": "src/main/protocol.ts",
+      "live": "28a7dc33ad52",
+      "r2": "DIVERGED (r2 1b076de5cacc) — r3 (t33/t40) allowedRoots latch → cached Promise"
+    },
+    {
+      "path": "src/main/index.ts",
+      "live": "18ef7c49c2eb",
+      "r2": "DIVERGED (r2 dabd3b68d59e) — r3 (t16 R3) will-redirect guard"
+    }
+  ],
+  "changed": [
+    {
+      "path": "src/renderer/src/stores/playerStore.ts",
+      "mtime": "2026-09-12T10:47:58.754Z",
+      "size": 14367,
+      "sha1": "512e558ed3b2",
+      "owner": "t13 (audio-engine)",
+      "r2": "r2",
+      "exists": true
+    },
+    {
+      "path": "src/renderer/src/stores/chatStore.ts",
+      "mtime": "2026-09-12T11:45:42.740Z",
+      "size": 18605,
+      "sha1": "962c68d7b436",
+      "owner": "t13 (audio-engine)",
+      "r2": "DIVERGED (r2 4dc3949252f9) — r3 (t34) editing",
+      "exists": true
+    },
+    {
+      "path": "src/main/protocol.ts",
+      "mtime": "2026-09-12T11:58:33.122Z",
+      "size": 8257,
+      "sha1": "28a7dc33ad52",
+      "owner": "t13 (audio-engine)",
+      "r2": "DIVERGED (r2 1b076de5cacc) — r3 (t33/t40) allowedRoots latch → cached Promise",
+      "exists": true
+    },
+    {
+      "path": "src/renderer/src/components/LyricsPanel.tsx",
+      "mtime": "2026-09-12T08:54:42.568Z",
+      "size": 6940,
+      "sha1": "32f8656d5f1b",
+      "owner": "t13 (audio-engine)",
+      "r2": null,
+      "exists": true
+    },
+    {
+      "path": "src/renderer/src/lib/sleepTimer.ts",
+      "mtime": "2026-09-12T10:47:47.840Z",
+      "size": 5052,
+      "sha1": "ca56b155a0e6",
+      "owner": "t13 (audio-engine)",
+      "r2": null,
+      "exists": true
+    },
+    {
+      "path": "src/renderer/src/lib/__tests__/playerStoreSleep.test.ts",
+      "mtime": "2026-09-12T11:40:46.265Z",
+      "size": 12157,
+      "sha1": "dafb044bc9c5",
+      "owner": "t13 → r3 t36 (ui-features) — live value is t36’s",
+      "r2": "DIVERGED (r2 5e195164da5a) — r3 (t36) discriminative case",
+      "exists": true
+    },
+    {
+      "path": "src/renderer/src/lib/__tests__/sleepTimer.test.ts",
+      "mtime": "2026-09-12T10:48:19.192Z",
+      "size": 7224,
+      "sha1": "a3f5f69d34a1",
+      "owner": "t13 (audio-engine)",
+      "r2": null,
+      "exists": true
+    },
+    {
+      "path": "src/renderer/src/lib/__tests__/chatConfirm.test.ts",
+      "mtime": "2026-09-12T11:46:17.749Z",
+      "size": 18905,
+      "sha1": "470b7712daec",
+      "owner": "t13 → r3 t34 (ai-tools) [R4(d)] — live value is t34’s",
+      "r2": "DIVERGED (r2 cd6b3c09ef23) — r3 (t34) R4(d) cleanup",
+      "exists": true
+    },
+    {
+      "path": "src/renderer/src/lib/__tests__/lyricsOffset.test.ts",
+      "mtime": "2026-09-12T12:00:45.824Z",
+      "size": 13412,
+      "sha1": "56ba63fc1767",
+      "owner": "t13 → r3 t37 (audio-engine) — live value is t37’s",
+      "r2": "DIVERGED (r2 0883b2034898) — r3 (t37) this case",
+      "exists": true
+    },
+    {
+      "path": "src/main/decodeService.ts",
+      "mtime": "2026-09-12T10:54:32.494Z",
+      "size": 4869,
+      "sha1": "df1c81800a0d",
+      "owner": "t13 (audio-engine)",
+      "r2": null,
+      "exists": true
+    },
+    {
+      "path": ".devdata/t6-evidence/T6-REPORT.md",
+      "mtime": "2026-09-12T08:51:24.501Z",
+      "size": 12964,
+      "sha1": "986a318e4d71",
+      "owner": "verifier (t6) — NOT t13",
+      "r2": null,
+      "exists": true
+    },
+    {
+      "path": "src/renderer/src/lib/__tests__/chatConfirm.test.ts",
+      "mtime": "2026-09-12T11:46:17.749Z",
+      "size": 18905,
+      "sha1": "470b7712daec",
+      "owner": "t13 → r3 t34 (ai-tools) [R4(d)] — live value is t34’s",
+      "r2": "DIVERGED (r2 cd6b3c09ef23) — r3 (t34) R4(d) cleanup",
+      "exists": true
+    },
+    {
+      "path": "scripts/probe-media-roots.mjs",
+      "mtime": "2026-09-12T09:29:54.156Z",
+      "size": 5450,
+      "sha1": "d2cb00206eef",
+      "owner": "t13 (audio-engine)",
+      "r2": null,
+      "exists": true
+    },
+    {
+      "path": "scripts/probe-media-accept.mjs",
+      "mtime": "2026-09-12T10:42:18.614Z",
+      "size": 8480,
+      "sha1": "2ec46ba929c5",
+      "owner": "t13 (audio-engine)",
+      "r2": null,
+      "exists": true
+    },
+    {
+      "path": "scripts/diag-graph.mjs",
+      "mtime": "2026-09-12T09:28:48.947Z",
+      "size": 8500,
+      "sha1": "4cfdef2b8ec5",
+      "owner": "t13 (audio-engine)",
+      "r2": null,
+      "exists": true
+    },
+    {
+      "path": ".devdata/t6-evidence/T10-ADDENDUM.md",
+      "mtime": "2026-09-12T11:59:22.614Z",
+      "size": 8369,
+      "sha1": "940f6a2ae896",
+      "owner": "verifier (t6) — NOT t13",
+      "r2": null,
+      "exists": true
+    },
+    {
+      "path": ".devdata/t13-evidence/T13-ERRATA.md",
+      "mtime": "2026-09-12T08:53:37.421Z",
+      "size": 2560,
+      "sha1": "7b0d9d675f41",
+      "owner": "t13 (audio-engine)",
+      "r2": null,
+      "exists": true
+    },
+    {
+      "path": ".devdata/t13-evidence/T13-EVIDENCE.md",
+      "mtime": "2026-09-12T09:20:51.909Z",
+      "size": 4406,
+      "sha1": "c99232e508fe",
+      "owner": "t13 (audio-engine)",
+      "r2": null,
+      "exists": true
+    },
+    {
+      "path": ".devdata/t13-evidence/T13-FINGERPRINT.txt",
+      "mtime": "(self)",
+      "size": "(self)",
+      "sha1": "(self — this file)",
+      "owner": "t13 (audio-engine)",
+      "r2": "n/a (self)",
+      "exists": true,
+      "note": "self-referential: this row describes the file being written; not a value to cite"
+    },
+    {
+      "path": ".devdata/t13-evidence/t13-typecheck.log",
+      "mtime": "2026-09-12T09:19:14.815Z",
+      "size": 270,
+      "sha1": "2414a47c9a15",
+      "owner": "t13 (audio-engine)",
+      "r2": null,
+      "exists": true
+    },
+    {
+      "path": ".devdata/t13-evidence/t13-lint.log",
+      "mtime": "2026-09-12T09:19:31.924Z",
+      "size": 1010,
+      "sha1": "bebbd70addf8",
+      "owner": "t13 (audio-engine)",
+      "r2": null,
+      "exists": true
+    },
+    {
+      "path": ".devdata/t13-evidence/t13-test.log",
+      "mtime": "2026-09-12T09:19:21.086Z",
+      "size": 1159,
+      "sha1": "17395fd36c41",
+      "owner": "t13 (audio-engine)",
+      "r2": null,
+      "exists": true
+    },
+    {
+      "path": ".devdata/t13-evidence/t13-eslint-nocache.json",
+      "mtime": "2026-09-12T09:05:10.184Z",
+      "size": 32247,
+      "sha1": "e48254f7ce37",
+      "owner": "t13 (audio-engine)",
+      "r2": null,
+      "exists": true
+    },
+    {
+      "path": ".devdata/t13-evidence/t13-verify-lint-tests.json",
+      "mtime": "2026-09-12T09:19:59.008Z",
+      "size": 1289,
+      "sha1": "30de027bb65d",
+      "owner": "t13 (audio-engine)",
+      "r2": null,
+      "exists": true
+    },
+    {
+      "path": ".devdata/t13-evidence/t13-media-roots.json",
+      "mtime": "2026-09-12T11:10:02.353Z",
+      "size": 684,
+      "sha1": "0a6b21a7a1ca",
+      "owner": "t13 (audio-engine)",
+      "r2": null,
+      "exists": true
+    },
+    {
+      "path": ".devdata/t13-evidence/t13-accept-matrix.txt",
+      "mtime": "2026-09-12T11:10:41.805Z",
+      "size": 2868,
+      "sha1": "8d6eb8884b79",
+      "owner": "t13 (audio-engine)",
+      "r2": null,
+      "exists": true
+    },
+    {
+      "path": ".devdata/t13-evidence/t13-transcode.txt",
+      "mtime": "2026-09-12T11:10:45.981Z",
+      "size": 644,
+      "sha1": "14832ab56a17",
+      "owner": "t13 (audio-engine)",
+      "r2": null,
+      "exists": true
+    },
+    {
+      "path": ".devdata/t13-evidence/t13-ai-confirm.txt",
+      "mtime": "2026-09-12T11:11:23.862Z",
+      "size": 2704,
+      "sha1": "421d3585653a",
+      "owner": "t13 (audio-engine)",
+      "r2": null,
+      "exists": true
+    },
+    {
+      "path": ".devdata/t13-evidence/t13-f1-wrap.txt",
+      "mtime": "2026-09-12T11:12:05.206Z",
+      "size": 367,
+      "sha1": "dea1a2b87f6b",
+      "owner": "t13 (audio-engine)",
+      "r2": null,
+      "exists": true
+    },
+    {
+      "path": ".devdata/t13-evidence/t13-diag-e2e.json",
+      "mtime": "2026-09-12T11:10:11.575Z",
+      "size": 2449,
+      "sha1": "33bbbef20a7f",
+      "owner": "t13 (audio-engine)",
+      "r2": null,
+      "exists": true
+    }
+  ],
+  "referenced": [
+    {
+      "path": "src/renderer/src/lib/audioEngine.ts",
+      "mtime": "2026-09-12T07:22:39.836Z",
+      "size": 19520,
+      "sha1": "e01f4c0d66d5",
+      "owner": "t2 (audio-engine)",
+      "r2": "r2",
+      "exists": true
+    },
+    {
+      "path": "src/renderer/src/stores/playerStore.ts",
+      "mtime": "2026-09-12T10:47:58.754Z",
+      "size": 14367,
+      "sha1": "512e558ed3b2",
+      "owner": "t13 (audio-engine)",
+      "r2": "r2",
+      "exists": true
+    },
+    {
+      "path": "src/renderer/src/stores/chatStore.ts",
+      "mtime": "2026-09-12T11:45:42.740Z",
+      "size": 18605,
+      "sha1": "962c68d7b436",
+      "owner": "t13 (audio-engine)",
+      "r2": "DIVERGED (r2 4dc3949252f9) — r3 (t34) editing",
+      "exists": true
+    },
+    {
+      "path": "src/main/protocol.ts",
+      "mtime": "2026-09-12T11:58:33.122Z",
+      "size": 8257,
+      "sha1": "28a7dc33ad52",
+      "owner": "t13 (audio-engine)",
+      "r2": "DIVERGED (r2 1b076de5cacc) — r3 (t33/t40) allowedRoots latch → cached Promise",
+      "exists": true
+    },
+    {
+      "path": "src/main/index.ts",
+      "mtime": "2026-09-12T11:39:56.057Z",
+      "size": 14054,
+      "sha1": "18ef7c49c2eb",
+      "owner": "t16+t18+t21+t23",
+      "r2": "DIVERGED (r2 dabd3b68d59e) — r3 (t16 R3) will-redirect guard",
+      "exists": true
+    },
+    {
+      "path": "src/main/store.ts",
+      "mtime": "2026-09-12T10:51:12.879Z",
+      "size": 4837,
+      "sha1": "7efc2b632049",
+      "owner": "t22 (quality)",
+      "r2": "r2",
+      "exists": true
+    },
+    {
+      "path": "src/main/window.ts",
+      "mtime": "2026-09-12T09:03:47.195Z",
+      "size": 2702,
+      "sha1": "2806d7ab4233",
+      "owner": "t18 (quality)",
+      "r2": "r2",
+      "exists": true
+    },
+    {
+      "path": "src/main/llmClient.ts",
+      "mtime": "2026-09-12T12:03:12.618Z",
+      "size": 10746,
+      "sha1": "29e5010123e3",
+      "owner": "t12 (quality)",
+      "r2": null,
+      "exists": true
+    },
+    {
+      "path": "scripts/probe-transcode.mjs",
+      "mtime": "2026-09-12T10:53:40.446Z",
+      "size": 4885,
+      "sha1": "d2dd8235a3c6",
+      "owner": "t13 (audio-engine)",
+      "r2": null,
+      "exists": true
+    },
+    {
+      "path": ".devdata/transcode-fixtures/tone.aac",
+      "mtime": "2026-09-12T10:53:25.671Z",
+      "size": 50346,
+      "sha1": "a9438c1560a3",
+      "owner": "t13 (audio-engine)",
+      "r2": null,
+      "exists": true
+    }
+  ],
+  "foreignInOwnEvidenceDir": [
+    {
+      "path": ".devdata/t13-evidence/t27-probe-attempt-by-ai-tools.txt",
+      "mtime": "2026-09-12T11:32:26.912Z",
+      "size": 852,
+      "sha1": "66399fa7784b",
+      "owner": "ai-tools (t27)",
+      "r2": null,
+      "exists": true
+    },
+    {
+      "path": ".devdata/t13-evidence/t27-ai-tools-readonly-checks.txt",
+      "mtime": "2026-09-12T11:32:57.867Z",
+      "size": 1825,
+      "sha1": "f8cc91c9f358",
+      "owner": "ai-tools (t27)",
+      "r2": null,
+      "exists": true
+    },
+    {
+      "path": ".devdata/t13-evidence/t29-readmerge-probe-live.txt",
+      "mtime": "2026-09-12T11:37:41.874Z",
+      "size": 509,
+      "sha1": "649974d53f70",
+      "owner": "ai-tools (t29/t31)",
+      "r2": null,
+      "exists": true
+    },
+    {
+      "path": ".devdata/t13-evidence/T29-READMERGE-LIVE.md",
+      "mtime": "2026-09-12T11:39:03.225Z",
+      "size": 8561,
+      "sha1": "be4f61c5719c",
+      "owner": "ai-tools (t29/t31)",
+      "r2": null,
+      "exists": true
+    },
+    {
+      "path": ".devdata/t13-evidence/t31-settings-backup-before-fixture.json",
+      "mtime": "2026-09-12T11:26:26.256Z",
+      "size": 394,
+      "sha1": "c92586a029b6",
+      "owner": "ai-tools (t31)",
+      "r2": null,
+      "exists": true
+    }
+  ]
+}

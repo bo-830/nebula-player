@@ -1,0 +1,71 @@
+﻿{
+  "setup": {
+    "title": "song-c",
+    "playing": true,
+    "tab": true
+  },
+  "canvasSamples": [
+    {
+      "diag": {
+        "mode": "graph",
+        "signalPeak": 234,
+        "ctxState": "running",
+        "setSinkIdPhase": "applied",
+        "ctxSinkId": "default"
+      },
+      "canvas": {
+        "canvas": true,
+        "w": 490,
+        "h": 192,
+        "litPixels": 0,
+        "maxLum": 0
+      },
+      "playing": true
+    },
+    {
+      "diag": {
+        "mode": "graph",
+        "signalPeak": 231,
+        "ctxState": "running",
+        "setSinkIdPhase": "applied",
+        "ctxSinkId": "default"
+      },
+      "canvas": {
+        "canvas": true,
+        "w": 490,
+        "h": 192,
+        "litPixels": 0,
+        "maxLum": 0
+      },
+      "playing": true
+    },
+    {
+      "diag": {
+        "mode": "graph",
+        "signalPeak": 218,
+        "ctxState": "running",
+        "setSinkIdPhase": "applied",
+        "ctxSinkId": "default"
+      },
+      "canvas": {
+        "canvas": true,
+        "w": 490,
+        "h": 192,
+        "litPixels": 0,
+        "maxLum": 0
+      },
+      "playing": true
+    }
+  ],
+  "visibility": {
+    "hidden": true,
+    "visibilityState": "hidden",
+    "bodyHasFocus": false
+  },
+  "fallbackWiring": {
+    "audioDirectFlag": false,
+    "engineMode": "graph",
+    "fallbackTried": false,
+    "hasSwitchToDirect": true
+  }
+}

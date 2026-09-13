@@ -1,0 +1,93 @@
+{
+  "capturedAt": "2026-09-13T12:37:45.491Z",
+  "macrotaskVisible": {
+    "samples": [
+      0,
+      0,
+      0,
+      0,
+      0.1,
+      0.2,
+      94.7
+    ],
+    "median": 0,
+    "max": 94.7
+  },
+  "visibility": {
+    "visibility": "hidden",
+    "hidden": true
+  },
+  "macrotaskHidden": {
+    "samples": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0.1,
+      47496
+    ],
+    "median": 0,
+    "max": 47496
+  },
+  "mixedHidden": {
+    "typed": "ok",
+    "sent": "ok",
+    "mainAssistants": [
+      "第一段：第二段：结束。"
+    ],
+    "mainLastAssistant": "第一段：第二段：结束。",
+    "miniLastAi": "第一段：第二段：结束。",
+    "bothAgree": true,
+    "seedKept": true,
+    "streamRawLenAtRead": 0,
+    "gateway": {
+      "requests": [
+        {
+          "n": 1,
+          "emitted": [
+            "get_player_state"
+          ],
+          "emittedText": "第一段："
+        },
+        {
+          "n": 2,
+          "emitted": [],
+          "emittedText": "第二段：结束。"
+        }
+      ],
+      "errors400": []
+    },
+    "timing": {
+      "mirrors": [
+        {
+          "t": 142011.7,
+          "busy": true,
+          "rawLen": 4,
+          "msgs": 1
+        },
+        {
+          "t": 142022.9,
+          "busy": true,
+          "rawLen": 11,
+          "msgs": 1
+        }
+      ],
+      "lastMirrorToSettleMs": 5.8
+    },
+    "pass": true
+  },
+  "reachability": {
+    "yieldSlackHiddenMs": 0,
+    "yieldSlackVisibleMs": 0,
+    "observedChunkLagMs": 5.8,
+    "marginFactor": null,
+    "verdict": "theoretical/backlog — no code path emits chat:chunk after the handler returns",
+    "why": [
+      "the app's own client resolves only after the SSE stream ends, so every chunk is written by the gateway before the main handler returns",
+      "the renderer-side queue lag is what the yield covers, and the measured lag is far below the yield slack",
+      "inducing a strictly-later chunk would require the MAIN process to emit chat:chunk after returning from the invoke handler — no such path exists in the tree"
+    ],
+    "hardeningSuggestion": "the invoke reply already carries the final text from the main process; preferring that value (or waiting until the event queue drains) would remove the ordering dependence entirely"
+  }
+}

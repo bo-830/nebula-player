@@ -1,0 +1,5 @@
+before: {"hidden":true,"cls":"chat collapsed "}
+bringToFront: {"id":2,"result":{}}
+after bringToFront: {"hidden":true,"vis":"hidden","cls":"chat collapsed ","empty":false}
+emulation focus: {"id":4,"result":{}}
+after focus emulation: {"hidden":false,"cls":"chat collapsed ","empty":false}

@@ -1,0 +1,118 @@
+{
+  "perFormat": [
+    {
+      "ext": "flac",
+      "file": "song-c.flac",
+      "mode": "graph",
+      "signalPeak": 224,
+      "ctxState": "running",
+      "playing": true,
+      "time": 2.4,
+      "playerError": null,
+      "elementErrorCode": null,
+      "endedEarly": false,
+      "afterSeek": 2.1,
+      "advanced": true
+    },
+    {
+      "ext": "wav",
+      "file": "song-b.wav",
+      "mode": "graph",
+      "signalPeak": 220,
+      "ctxState": "running",
+      "playing": true,
+      "time": 2.38,
+      "playerError": null,
+      "elementErrorCode": null,
+      "endedEarly": false,
+      "afterSeek": 2.11,
+      "advanced": true
+    },
+    {
+      "ext": "ogg",
+      "file": "song-d.ogg",
+      "mode": "graph",
+      "signalPeak": 223,
+      "ctxState": "running",
+      "playing": true,
+      "time": 2.4,
+      "playerError": null,
+      "elementErrorCode": null,
+      "endedEarly": false,
+      "afterSeek": 2.1,
+      "advanced": true
+    },
+    {
+      "ext": "mp3",
+      "file": "song-a.mp3",
+      "mode": "graph",
+      "signalPeak": 223,
+      "ctxState": "running",
+      "playing": true,
+      "time": 2.38,
+      "playerError": null,
+      "elementErrorCode": null,
+      "endedEarly": false,
+      "afterSeek": 2.11,
+      "advanced": true
+    },
+    {
+      "ext": "m4a",
+      "file": "song-e.m4a",
+      "mode": "graph",
+      "signalPeak": 223,
+      "ctxState": "running",
+      "playing": true,
+      "time": 2.4,
+      "playerError": null,
+      "elementErrorCode": null,
+      "endedEarly": false,
+      "afterSeek": 2.1,
+      "advanced": true
+    }
+  ],
+  "covers": {
+    "uiCount": 4,
+    "ui": [
+      {
+        "complete": true,
+        "w": 512,
+        "cls": "tl-cover"
+      },
+      {
+        "complete": true,
+        "w": 512,
+        "cls": "tl-cover"
+      },
+      {
+        "complete": true,
+        "w": 512,
+        "cls": "detail-cover"
+      },
+      {
+        "complete": true,
+        "w": 512,
+        "cls": "pb-cover"
+      }
+    ]
+  },
+  "unauthorized": {
+    "settingsJson": "refused",
+    "outsideRootsPng": "refused",
+    "traversal": "refused"
+  }
+}
+
+--- evidence summary ---
+formats tested      : flac, wav, ogg, mp3, m4a
+all graph           : true
+all peak > 0        : true
+all no decode error : true
+all really played   : true
+all seek applied    : true
+ui covers           : 4 [{"complete":true,"w":512,"cls":"tl-cover"},{"complete":true,"w":512,"cls":"tl-cover"},{"complete":true,"w":512,"cls":"detail-cover"},{"complete":true,"w":512,"cls":"pb-cover"}]
+unauthorized        : {"settingsJson":"refused","outsideRootsPng":"refused","traversal":"refused"}
+CORS-zeroes warnings: 0 | entries seen: 15
+mini cover          : {"cover":{"complete":true,"w":512,"plain":true},"title":"SongE"}
+mini zeroes warnings: 0
+Assertion failed: !(handle->flags & UV_HANDLE_CLOSING), file src\win\async.c, line 94

@@ -1,0 +1,64 @@
+{
+  "label": "t13-observe2",
+  "stamp": "2026-09-12T08:36:38.071Z",
+  "method": "direct execFile of npm.cmd/npx.cmd shims",
+  "lint": {
+    "command": "npm.cmd run lint",
+    "exitCode": 0,
+    "logFile": ".devdata/t6-evidence/lint-t13-observe2.log",
+    "ms": 11338,
+    "tail": "\n> nebula-player@1.0.3 lint\n> eslint --cache .\n\n\nC:\\博830\\vibecoding\\nebula-player\\src\\renderer\\src\\components\\LyricsPanel.tsx\n  158:11  warning  Replace `·style={tunerStyle}·title=\"歌词整体偏移校准：正数=歌词提前生效，负数=歌词延后生效（每步·0.5s，按曲目记忆）\"` with `⏎········style={tunerStyle}⏎········title=\"歌词整体偏移校准：正数=歌词提前生效，负数=歌词延后生效（每步·0.5s，按曲目记忆）\"⏎······`  prettier/prettier\n\nC:\\博830\\vibecoding\\nebula-player\\src\\renderer\\src\\components\\TrackList.tsx\n  42:23  warning  Compilation Skipped: Use of incompatible library\n\nThis API returns functions which cannot be memoized without leading to stale UI. To prevent this, by default React Compiler will skip memoizing this component/hook. However, you may see issues if values from this API are passed to other components/hooks that are memoized.\n\nC:\\博830\\vibecoding\\nebula-player\\src\\renderer\\src\\components\\TrackList.tsx:42:23\n  40 |   const [anchorIndex, setAnchorIndex] = useState<number | null>(null)\n  41 |\n> 42 |   const virtualizer = useVirtualizer({\n     |                       ^^^^^^^^^^^^^^ TanStack Virtual's `useVirtualizer()` API returns functions that cannot be memoized safely\n  43 |     count: tracks.length,\n  44 |     getScrollElement: () => parentRef.current,\n  45 |     estimateSize: () => 44,  react-hooks/incompatible-library\n\n✖ 2 problems (0 errors, 2 warnings)\n  0 errors and 1 warning potentially fixable with the `--fix` option.\n\n",
+    "spawnError": null
+  },
+  "lintJson": {
+    "command": "npx.cmd eslint . --no-cache --format json",
+    "exitCode": 0,
+    "parsed": true,
+    "totalErrors": 0,
+    "totalWarnings": 2,
+    "filesWithErrors": [],
+    "rulesSummary": {
+      "warning:prettier/prettier": 1,
+      "warning:react-hooks/incompatible-library": 1
+    }
+  },
+  "typecheck": {
+    "node": {
+      "command": "npm.cmd run typecheck:node",
+      "exitCode": 0,
+      "logFile": ".devdata/t6-evidence/typecheck-node-t13-observe2.log",
+      "tail": "\n> nebula-player@1.0.3 typecheck:node\n> tsc --noEmit -p tsconfig.node.json --composite false\n\n"
+    },
+    "web": {
+      "command": "npm.cmd run typecheck:web",
+      "exitCode": 2,
+      "logFile": ".devdata/t6-evidence/typecheck-web-t13-observe2.log",
+      "tail": "\n> nebula-player@1.0.3 typecheck:web\n> tsc --noEmit -p tsconfig.web.json --composite false\n\nsrc/renderer/src/stores/playerStore.ts(401,9): error TS2304: Cannot find name 'sleepFiresOnEnded'.\r\n"
+    }
+  },
+  "tests": {
+    "command": "npm.cmd test -- --reporter=verbose",
+    "exitCode": 1,
+    "logFile": ".devdata/t6-evidence/tests-t13-observe2.log",
+    "testsLine": "Tests  3 failed | 103 passed (106)",
+    "filesLine": "Test Files  1 failed | 10 passed (11)",
+    "passedTestCount": 0,
+    "failedTestCount": 3,
+    "passedTestNames": [],
+    "failedTestNames": [],
+    "testFilesSeen": [
+      "src/renderer/src/lib/__tests__/sleepTimer.test.ts",
+      "src/renderer/src/lib/__tests__/format.test.ts",
+      "src/renderer/src/lib/__tests__/queue.test.ts",
+      "src/renderer/src/lib/__tests__/lyricsOffset.test.ts",
+      "src/main/__tests__/scanner.test.ts",
+      "src/main/__tests__/lrc.test.ts",
+      "src/main/__tests__/mediaFormats.test.ts",
+      "src/renderer/src/lib/__tests__/search.test.ts",
+      "src/renderer/src/lib/__tests__/recommend.test.ts",
+      "src/renderer/src/lib/__tests__/playerStoreSleep.test.ts",
+      "src/renderer/src/lib/__tests__/chatConfirm.test.ts"
+    ],
+    "tail": "turns null for natively playable containers\n ✓ src/main/__tests__/mediaFormats.test.ts > needsConvert > routes ape to wav and aac to m4a\n ✓ src/main/__tests__/mediaFormats.test.ts > needsConvert > returns null for unknown or missing extensions\n ✓ src/main/__tests__/mediaFormats.test.ts > needsConvert > is case-insensitive\n ✓ src/main/__tests__/mediaFormats.test.ts > needsConvert > uses only the final extension\n ✓ src/main/__tests__/mediaFormats.test.ts > needsConvert > exposes the underlying tables\n ✓ src/main/__tests__/scanner.test.ts > mapLimit > never runs more than `limit` tasks at once\n ✓ src/main/__tests__/scanner.test.ts > mapLimit > handles empty input and a limit larger than the item count\n ✓ src/main/__tests__/scanner.test.ts > mapLimit > receives the index alongside each item\n ✓ src/renderer/src/lib/__tests__/search.test.ts > searchTracks > matches title substrings with relevance ranking\n ✓ src/renderer/src/lib/__tests__/search.test.ts > searchTracks > matches chinese titles\n ✓ src/renderer/src/lib/__tests__/search.test.ts > searchTracks > filters by artist and album exactly\n ✓ src/renderer/src/lib/__tests__/search.test.ts > searchTracks > matches genre keywords\n ✓ src/renderer/src/lib/__tests__/search.test.ts > searchTracks > is case-insensitive\n ✓ src/renderer/src/lib/__tests__/search.test.ts > searchTracks > handles empty queries\n ✓ src/renderer/src/lib/__tests__/search.test.ts > groupers > groups artists by count\n ✓ src/renderer/src/lib/__tests__/search.test.ts > groupers > groups albums by artist+album key\n ✓ src/renderer/src/lib/__tests__/search.test.ts > groupers > groups folders by scan root\n ✓ src/renderer/src/lib/__tests__/recommend.test.ts > buildTasteProfile > aggregates artist and genre plays\n ✓ src/renderer/src/lib/__tests__/recommend.test.ts > buildTasteProfile > handles an empty history\n ✓ src/renderer/src/lib/__tests__/recommend.test.ts > recommendTracks > prefers favourite genres/artists and explains why\n ✓ src/renderer/src/lib/__tests__/recommend.test.ts > recommendTracks > penalises the most recently played tracks\n ✓ src/renderer/src/lib/__tests__/recommend.test.ts > recommendTracks > falls back to newest imports without any history\n ✓ src/renderer/src/lib/__tests__/recommend.test.ts > recommendTracks > skips missing files\n ✓ src/main/__tests__/scanner.test.ts > collectAudioFiles > collects supported audio recursively and skips hidden/tool dirs\n ✓ src/main/__tests__/scanner.test.ts > collectAudioFiles > does not descend into .hidden, node_modules or .git\n ✓ src/main/__tests__/scanner.test.ts > collectAudioFiles > imports a single supported file directly\n ✓ src/main/__tests__/scanner.test.ts > collectAudioFiles > returns nothing for an unsupported single file or a missing path\n ✓ src/main/__tests__/scanner.test.ts > collectAudioFiles > stops immediately when the signal is already cancelled\n ✓ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > arms a countdown, ticks the badge and pauses when it runs out\n ✓ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > cancel clears the timer and stops the clock\n ✓ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > arms both ended-driven modes without a deadline\n ✓ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > a manual skip drops an ended-driven timer but keeps a countdown\n × src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > pauses on the natural end of the current track (no repeat, no advance)\n   → sleepFiresOnEnded is not defined\n × src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > keeps playing through the queue and only stops once the queue ends\n   → sleepFiresOnEnded is not defined\n × src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > stops a single-track queue instead of looping forever\n   → sleepFiresOnEnded is not defined\n ✓ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > never persists the timer — a restart starts with sleep off\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > destructive tool guard (tools.ts) > knows which tools are destructive\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > destructive tool guard (tools.ts) > summarises the pending operation for the confirmation bar\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > destructive tool guard (tools.ts) > does NOT execute remove_from_playlist without user approval\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > destructive tool guard (tools.ts) > cannot be self-approved: a token only authorises its own run + call\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > destructive tool guard (tools.ts) > leaves non-destructive tools untouched (no confirmation, executed at once)\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > chat confirmation flow (chatStore.ts) > pauses the turn on a destructive call and continues as soon as the user confirms\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > chat confirmation flow (chatStore.ts) > tells the model the user cancelled and keeps the sequence intact (no duplicate tool message)\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > chat confirmation flow (chatStore.ts) > runs non-destructive calls inline without any confirmation\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > chat confirmation flow (chatStore.ts) > blocks new messages while a confirmation is pending\n\n Test Files  1 failed | 10 passed (11)\n      Tests  3 failed | 103 passed (106)\n   Start at  16:37:12\n   Duration  1.18s (transform 1.15s, setup 0ms, collect 2.33s, tests 318ms, environment 4ms, prepare 2.99s)\n\n\n--- stderr ---\n\u001b[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.\u001b[39m\n⎯⎯⎯⎯⎯⎯⎯ Failed Tests 3 ⎯⎯⎯⎯⎯⎯⎯\n\n FAIL  src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > pauses on the natural end of the current track (no repeat, no advance)\nReferenceError: sleepFiresOnEnded is not defined\n ❯ Object.handleEnded src/renderer/src/stores/playerStore.ts:400:7\n    398|       // fires in 'one' mode, so an unattributed queue timer reports a…\n    399|       const mode = s.sleep?.mode === 'track' ? 'track' : 'queue'\n    400|       applySleepStop(\n       |       ^\n    401|         sleepFiresOnEnded(s.sleep, s.index, s.queue.length) ? mode : s…\n    402|       )\n ❯ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts:139:10\n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/3]⎯\n\n FAIL  src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > keeps playing through the queue and only stops once the queue ends\nReferenceError: sleepFiresOnEnded is not defined\n ❯ Object.handleEnded src/renderer/src/stores/playerStore.ts:400:7\n    398|       // fires in 'one' mode, so an unattributed queue timer reports a…\n    399|       const mode = s.sleep?.mode === 'track' ? 'track' : 'queue'\n    400|       applySleepStop(\n       |       ^\n    401|         sleepFiresOnEnded(s.sleep, s.index, s.queue.length) ? mode : s…\n    402|       )\n ❯ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts:156:10\n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/3]⎯\n\n FAIL  src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > stops a single-track queue instead of looping forever\nReferenceError: sleepFiresOnEnded is not defined\n ❯ Object.handleEnded src/renderer/src/stores/playerStore.ts:400:7\n    398|       // fires in 'one' mode, so an unattributed queue timer reports a…\n    399|       const mode = s.sleep?.mode === 'track' ? 'track' : 'queue'\n    400|       applySleepStop(\n       |       ^\n    401|         sleepFiresOnEnded(s.sleep, s.index, s.queue.length) ? mode : s…\n    402|       )\n ❯ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts:168:10\n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/3]⎯\n\n"
+  }
+}

@@ -1,0 +1,107 @@
+--- mainEmptyState OK
+--- expandMiniAndReadDom OK
+--- miniSuggestionClick OK
+--- miniConfirmBar OK
+{
+  "mainEmptyState": {
+    "dom": {
+      "chatTitle": "薇拉 Vela",
+      "chatHint": null,
+      "emptyText": null,
+      "suggestions": [],
+      "textareaPlaceholder": "输入指令或问题…（点击展开查看回复）",
+      "bubbles": 0
+    },
+    "suggestionClick": {
+      "click": "missing",
+      "before": {
+        "messages": 0,
+        "busy": false
+      },
+      "after": {
+        "messages": 0,
+        "draft": "",
+        "textarea": "",
+        "busy": false
+      },
+      "autoSent": false
+    }
+  },
+  "expandMiniAndReadDom": {
+    "expandedSize": {
+      "width": 360,
+      "height": 540
+    },
+    "miniWindowFound": true,
+    "miniChatReady": false,
+    "dom": {
+      "miniChatMounted": false,
+      "title": null,
+      "emptyText": null,
+      "suggestions": [],
+      "textareaPlaceholder": null,
+      "titleEmoji": [],
+      "bodyHead": "未在播放\nNEBULA PLAYER\n播放歌曲后显示同步歌词",
+      "suggestionsEmoji": []
+    }
+  },
+  "miniSuggestionClick": {
+    "click": "missing",
+    "mainBefore": {
+      "messages": 0,
+      "draft": ""
+    },
+    "mainAfter": {
+      "messages": 0,
+      "draft": "",
+      "busy": false
+    },
+    "miniTextareaValue": null,
+    "autoSent": false
+  },
+  "miniConfirmBar": {
+    "victim": "f6d99f294b9932accaa9",
+    "before": [
+      "f6d99f294b9932accaa9",
+      "48340575992a4a0b1a06"
+    ],
+    "parked": null,
+    "mainBar": {
+      "text": null,
+      "summary": null,
+      "buttons": []
+    },
+    "miniBar": {
+      "text": null,
+      "summary": null,
+      "buttons": []
+    },
+    "mainBarSummaryEmoji": [],
+    "miniBarSummaryEmoji": [],
+    "summariesIdentical": false,
+    "miniSummary": {
+      "pendingText": ""
+    },
+    "cancelClickedInMini": "no-bar",
+    "after": {
+      "pending": null,
+      "trackIds": [
+        "f6d99f294b9932accaa9",
+        "48340575992a4a0b1a06"
+      ],
+      "lastMessage": null,
+      "busy": false
+    },
+    "miniBarGoneAfterCancel": true,
+    "dataUnchanged": true
+  },
+  "wireSummary": {
+    "requests": 7,
+    "emitted": [
+      "control_player",
+      "remove_from_playlist",
+      "remove_from_playlist"
+    ],
+    "errors400": []
+  }
+}

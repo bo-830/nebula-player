@@ -1,0 +1,37 @@
+{
+  "capturedAt": "2026-09-12T11:38:16.976Z",
+  "userData": "C:\\Users\\34872\\AppData\\Roaming\\nebula-player",
+  "decodeCache": "C:\\Users\\34872\\AppData\\Roaming\\nebula-player\\decode-cache",
+  "covers": "C:\\Users\\34872\\AppData\\Roaming\\nebula-player\\covers",
+  "registeredRootsFromSource": [
+    "C:\\Users\\34872\\AppData\\Roaming\\nebula-player\\covers",
+    "C:\\Users\\34872\\AppData\\Roaming\\nebula-player\\decode-cache"
+  ],
+  "checks": {
+    "decodeCacheInRoots": true,
+    "coversInRoots": true,
+    "cacheFileInsideCache": true,
+    "explicitContainerFlags": true,
+    "cachePathFromStore": true,
+    "aacConvertsToM4a": true,
+    "apeConvertsToWav": true,
+    "lowercaseTolerant": true,
+    "directFormatsUntouched": true,
+    "unknownReturnsNull": true
+  },
+  "formatDecisions": {
+    "a.mp3": null,
+    "a.wav": null,
+    "a.flac": null,
+    "a.ogg": null,
+    "a.opus": null,
+    "a.m4a": null,
+    "a.aac": "m4a",
+    "a.ape": "wav",
+    "a.AAC": "m4a",
+    "a.APE": "wav",
+    "a.xyz": null,
+    "noext": null
+  },
+  "allPass": true
+}

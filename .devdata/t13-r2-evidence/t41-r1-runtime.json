@@ -1,0 +1,62 @@
+{
+  "newFile": "C:\\博830\\vibecoding\\nebula-player\\.devdata\\t13-r2-evidence\\r1-newdir\\r1-fresh.mp3",
+  "covers": [
+    "C:\\博830\\vibecoding\\nebula-player\\.devdata\\user\\covers\\3c905b8832325df27346.png",
+    "C:\\博830\\vibecoding\\nebula-player\\.devdata\\user\\covers\\d9c1ea5d5237b765fbff.jpg",
+    "C:\\博830\\vibecoding\\nebula-player\\.devdata\\user\\covers\\f1da4b02ccf77fda8461.png"
+  ],
+  "concurrentCovers": [
+    {
+      "how": "load",
+      "loaded": true,
+      "w": 512
+    },
+    {
+      "how": "load",
+      "loaded": true,
+      "w": 512
+    },
+    {
+      "how": "load",
+      "loaded": true,
+      "w": 512
+    },
+    {
+      "how": "load",
+      "loaded": true,
+      "w": 512
+    }
+  ],
+  "concurrentCoversAllLoaded": true,
+  "beforeScan": {
+    "how": "error",
+    "loaded": false,
+    "code": 4
+  },
+  "scan": {
+    "added": 1,
+    "updated": 0,
+    "skipped": 0,
+    "missing": 0,
+    "cancelled": false
+  },
+  "libraryCountAfter": 8,
+  "scannedTrackId": "fbc18146dbe46a85d80e",
+  "afterScan": {
+    "how": "error",
+    "loaded": false,
+    "code": 4
+  },
+  "removed": 1,
+  "libraryCountRestored": 7,
+  "assertions": {
+    "注入后首批请求即并发封面，且全部加载": true,
+    "扫描前：新目录内文件被拒（旧闩锁行为）": true,
+    "扫描后：同一 URL 可加载（refresh 生效）": false,
+    "refresh 后确实可播（拿到时长）": false,
+    "新目录曲目已入库（证明走的是真实扫描路径）": true,
+    "曲库已恢复原状": true
+  },
+  "allPass": false,
+  "capturedAt": "2026-09-12T12:19:03.678Z"
+}

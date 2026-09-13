@@ -1,0 +1,59 @@
+node_modules
+dist
+out
+.DS_Store
+.eslintcache
+*.log*
+npm-debug.log
+dev-app-update.yml
+
+# ---------------------------------------------------------------------------
+# .devdata —— 只忽略"运行时数据"与"大体积产物"，保留 QA 证据语料
+#   （证据语料是本次交付的审计链：发布报告、独立验证与审查、探针与判据）
+# ---------------------------------------------------------------------------
+.devdata/*
+!.devdata/t13-evidence/
+!.devdata/t13-r2-evidence/
+!.devdata/t6-evidence/
+!.devdata/t7-review/
+!.devdata/t47-evidence/
+!.devdata/t50-evidence/
+!.devdata/t51-evidence/
+!.devdata/t54-evidence/
+!.devdata/t55-evidence/
+!.devdata/t57-evidence/
+!.devdata/t58-evidence/
+!.devdata/t59-evidence/
+!.devdata/release-evidence/
+
+# 运行时数据 / 大体积夹具（显式排除）
+.devdata/user/
+.devdata/update-feed/
+.devdata/test-music/
+.devdata/transcode-fixtures/
+.devdata/t33-control/
+.devdata/t33-newdir/
+
+# 任何位置的大体积二进制（安装包、asar 解包件、音频素材、构建产物）
+*.exe
+*.blockmap
+*.asar
+*.mp3
+*.m4a
+*.aac
+*.wav
+*.flac
+*.ape
+*.ogg
+*.opus
+*.dmg
+*.zip
+
+# 临时与备份（.devdata 内的备份属证据链，保留）
+*.tmp
+*.bak
+*.orig
+*.rej
+*~
+!.devdata/**/*.orig
+!.devdata/**/*.bak

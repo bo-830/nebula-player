@@ -1,0 +1,149 @@
+--- collapseForensics OK
+--- mainEmptyState OK
+--- miniExpandViaOwnButton OK
+--- miniSuggestionClick OK
+--- destructiveBothWindows OK
+{
+  "collapseForensics": {
+    "immediate": {
+      "collapsed": false
+    },
+    "idle": {
+      "collapsed": false,
+      "log": [
+        {
+          "v": "patched",
+          "at": "2026-09-13T13:41:39.743Z",
+          "stack": []
+        }
+      ]
+    },
+    "afterSet": {
+      "a": false,
+      "later": false,
+      "log": [
+        {
+          "v": "patched",
+          "at": "2026-09-13T13:41:39.743Z",
+          "stack": []
+        },
+        {
+          "v": false,
+          "at": "2026-09-13T13:41:41.261Z",
+          "stack": [
+            "    at st.setCollapsed (<anonymous>:6:101)",
+            "    at <anonymous>:2:37",
+            "    at <anonymous>:6:5"
+          ]
+        }
+      ]
+    }
+  },
+  "mainEmptyState": {
+    "expandAttempts": -1,
+    "dom": {
+      "collapsed": false,
+      "chatClassName": "chat collapsed ",
+      "chatTitle": "薇拉 Vela",
+      "chatHint": null,
+      "emptyText": null,
+      "suggestions": [],
+      "textareaPlaceholder": "请先确认或取消上面的操作…"
+    },
+    "suggestionsEmoji": [],
+    "suggestionClick": {
+      "click": "missing",
+      "before": {
+        "messages": 0,
+        "busy": false
+      },
+      "after": {
+        "messages": 0,
+        "draft": "",
+        "textarea": "",
+        "busy": false
+      },
+      "autoSent": false
+    }
+  },
+  "miniExpandViaOwnButton": {
+    "beforeAttr": {
+      "expandedAttr": "false",
+      "hasChat": false
+    },
+    "click": "clicked",
+    "miniChatMounted": true,
+    "dom": {
+      "expandedAttr": "true",
+      "miniChatMounted": true,
+      "title": "薇拉 Vela",
+      "emptyText": "我是薇拉 Vela —— 找歌、控播放，说一句就行\n放点适合雨天的歌\n把这首歌加进夜跑歌单\n这张专辑是什么风格？\n暂停，然后告诉我下一首是什么",
+      "suggestions": [
+        "放点适合雨天的歌",
+        "把这首歌加进夜跑歌单",
+        "这张专辑是什么风格？",
+        "暂停，然后告诉我下一首是什么"
+      ],
+      "textareaPlaceholder": "Enter 发送 · Shift+Enter 换行"
+    },
+    "titleEmoji": [],
+    "suggestionsEmoji": []
+  },
+  "miniSuggestionClick": {
+    "click": "clicked",
+    "mainBefore": {
+      "messages": 0,
+      "draft": ""
+    },
+    "mainAfter": {
+      "messages": 0,
+      "draft": "",
+      "busy": false
+    },
+    "miniTextareaValue": "放点适合雨天的歌",
+    "autoSent": false
+  },
+  "destructiveBothWindows": {
+    "victim": "f6d99f294b9932accaa9",
+    "before": [
+      "f6d99f294b9932accaa9",
+      "48340575992a4a0b1a06"
+    ],
+    "parked": null,
+    "mainBar": {
+      "text": null,
+      "summary": null,
+      "buttons": []
+    },
+    "miniBar": {
+      "text": null,
+      "summary": null,
+      "buttons": []
+    },
+    "mainEmoji": [],
+    "miniEmoji": [],
+    "summariesIdenticalInBothWindows": false,
+    "cancelClickedInMini": "no-bar",
+    "after": {
+      "pending": null,
+      "trackIds": [
+        "f6d99f294b9932accaa9",
+        "48340575992a4a0b1a06"
+      ],
+      "lastMessage": null,
+      "messages": 0,
+      "busy": false
+    },
+    "miniBarGoneAfterCancel": true,
+    "dataUnchanged": true
+  },
+  "wireSummary": {
+    "requests": 7,
+    "emitted": [
+      "control_player",
+      "remove_from_playlist",
+      "remove_from_playlist"
+    ],
+    "errors400": []
+  }
+}

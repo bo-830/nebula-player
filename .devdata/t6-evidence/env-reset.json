@@ -1,0 +1,120 @@
+{
+  "capturedAt": "2026-09-12T11:18:25.677Z",
+  "targets": [
+    "http://localhost:5173/"
+  ],
+  "mainFound": true,
+  "mainUrl": "http://localhost:5173/",
+  "miniCount": 0,
+  "state": {
+    "booted": true,
+    "hook": true,
+    "sidebar": true,
+    "rows": 6,
+    "detailTabs": 2,
+    "detailTabsText": [
+      "播放详情",
+      "歌词"
+    ],
+    "playerBar": true,
+    "placeholderOnly": false,
+    "rootChildren": 1,
+    "tracksInStore": 6,
+    "tracksOnScreen": [
+      "6 首 · 2 分钟"
+    ],
+    "engineFields": [
+      "mode",
+      "ctxState",
+      "ctxSampleRate",
+      "ctxOutputLatency",
+      "ctxBaseLatency",
+      "gainValue",
+      "gainVolume",
+      "muted",
+      "signalPeak",
+      "audioVolume",
+      "audioPaused",
+      "audioSrc",
+      "fallbackTried",
+      "lastGraphError",
+      "graphCreated",
+      "setSinkIdPhase",
+      "setSinkIdSupported",
+      "setSinkIdRequested",
+      "setSinkIdApplied",
+      "setSinkIdError",
+      "setSinkIdPending",
+      "ctxSinkId",
+      "requestedSinkId",
+      "ctxGeneration",
+      "lastSinkEvent"
+    ]
+  },
+  "checks": [
+    {
+      "name": "window.__nebula hook present",
+      "pass": true
+    },
+    {
+      "name": ".sb sidebar present",
+      "pass": true
+    },
+    {
+      "name": "#root mounted (not blank)",
+      "pass": true
+    },
+    {
+      "name": ".detail-tab present (播放详情/歌词)",
+      "pass": true
+    },
+    {
+      "name": "player bar controls present",
+      "pass": true
+    },
+    {
+      "name": "DOM rows === store tracks (6)",
+      "pass": true
+    },
+    {
+      "name": "t2 sink state-machine fields exposed",
+      "pass": true
+    }
+  ],
+  "mismatch": false,
+  "engineDiagnose": {
+    "keys": [
+      "mode",
+      "ctxState",
+      "ctxSampleRate",
+      "ctxOutputLatency",
+      "ctxBaseLatency",
+      "gainValue",
+      "gainVolume",
+      "muted",
+      "signalPeak",
+      "audioVolume",
+      "audioPaused",
+      "audioSrc",
+      "fallbackTried",
+      "lastGraphError",
+      "graphCreated",
+      "setSinkIdPhase",
+      "setSinkIdSupported",
+      "setSinkIdRequested",
+      "setSinkIdApplied",
+      "setSinkIdError",
+      "setSinkIdPending",
+      "ctxSinkId",
+      "requestedSinkId",
+      "ctxGeneration",
+      "lastSinkEvent"
+    ],
+    "phase": "idle",
+    "generation": 0,
+    "lastSinkEvent": "",
+    "pending": false,
+    "requested": null
+  },
+  "verdict": "PASS: environment clean"
+}

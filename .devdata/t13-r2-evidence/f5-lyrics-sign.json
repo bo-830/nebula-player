@@ -1,0 +1,95 @@
+{
+  "lineTimes": [
+    {
+      "t": 2,
+      "text": "夜幕低垂 星光闪烁"
+    },
+    {
+      "t": 6.5,
+      "text": "远处传来 熟悉的旋律"
+    },
+    {
+      "t": 11,
+      "text": "我在城市的边缘 轻声哼唱"
+    },
+    {
+      "t": 15.5,
+      "text": "风把思念 吹向远方"
+    },
+    {
+      "t": 20,
+      "text": "歌声穿过 喧嚣的街"
+    }
+  ],
+  "cases": {
+    "t10_9_off0": {
+      "currentTime": 10.9,
+      "offset": 0,
+      "index": 2,
+      "text": "我在城市的边缘 轻声哼唱"
+    },
+    "t10_9_offPlus05": {
+      "currentTime": 10.9,
+      "offset": 0.5,
+      "index": 2,
+      "text": "我在城市的边缘 轻声哼唱"
+    },
+    "t10_9_offMinus05": {
+      "currentTime": 10.9,
+      "offset": -0.5,
+      "index": 1,
+      "text": "远处传来 熟悉的旋律"
+    },
+    "t15_0_off0": {
+      "currentTime": 15,
+      "offset": 0,
+      "index": 2,
+      "text": "我在城市的边缘 轻声哼唱"
+    },
+    "t15_0_offPlus05": {
+      "currentTime": 15,
+      "offset": 0.5,
+      "index": 3,
+      "text": "风把思念 吹向远方"
+    },
+    "t15_4_off0": {
+      "currentTime": 15.4,
+      "offset": 0,
+      "index": 3,
+      "text": "风把思念 吹向远方"
+    },
+    "t15_4_offMinus05": {
+      "currentTime": 15.4,
+      "offset": -0.5,
+      "index": 2,
+      "text": "我在城市的边缘 轻声哼唱"
+    }
+  },
+  "positiveOffsetCrossesForward": true,
+  "negativeOffsetCrossesBackward": true,
+  "clickSemantics": {
+    "lineIndex3T": 15.5,
+    "seekAtOffset0": 15.5,
+    "seekAtOffsetPlus05": 15,
+    "positiveOffsetSeeksEarlier": true
+  },
+  "formatShown": {
+    "plus": "+0.5s",
+    "minus": "-0.5s",
+    "zero": "0.0s"
+  },
+  "uiCopy": {
+    "hasQianYi": true,
+    "hasYanHou": true,
+    "minusHandlerIsNegative": true,
+    "plusHandlerIsPositive": true,
+    "readoutUsesFormatOffset": true
+  },
+  "formulas": {
+    "panelActive": true,
+    "miniActive": true,
+    "clickSeek": true,
+    "offsetModuleDoc": []
+  },
+  "allPass": true
+}

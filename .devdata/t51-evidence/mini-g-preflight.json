@@ -1,0 +1,32 @@
+{
+  "group": "preflight: main booted, mini opened + expanded, API pointed at the mock",
+  "tree": {
+    "srcAggregateSha1": "ee2adc707e2c27e863d761979195e25a3f0149ba",
+    "note": "t50 tree (chatStore.ts changed)"
+  },
+  "apiModel": {
+    "baseURL": "http://127.0.0.1:9997/v1",
+    "model": "deepseek-v4-flash",
+    "keyMode": "enc",
+    "hasKey": true
+  },
+  "miniOpen": true,
+  "geo": {
+    "innerW": 360,
+    "innerH": 540,
+    "dataExpanded": "true",
+    "searchZones": 1,
+    "chatPanes": 1,
+    "searchInputs": 1,
+    "hasNebula": "undefined"
+  },
+  "mainVis": {
+    "visibility": "visible"
+  },
+  "fingerprints": {
+    "src/renderer/src/stores/chatStore.ts": "920fcb05ac5d873f609ac84bb36ca806ffea61b7",
+    "src/renderer/src/lib/mainWindowBridge.ts": "1f5ddc067082cf07ed2064359a86f7e80038cf7e",
+    "src/renderer/src/components/MiniChat.tsx": "5c47602df3ce8b358d3698909bd4e7823e70bae4",
+    "src/renderer/src/components/MiniPlayer.tsx": "f14e2669911185d13c0dfccce48c3c245f188960"
+  }
+}

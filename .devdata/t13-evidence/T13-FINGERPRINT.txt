@@ -1,0 +1,68 @@
+t13 fingerprint manifest — r2 evidence anchor
+generated_at: 2026-09-12T12:14:23.869Z
+root: C:\博830\vibecoding\nebula-player
+
+anchor scope: the values below are the LIVE tree at generated_at, not a replay of
+the r2 frozen tree. Rows whose sha1 matches the r2 anchor are tagged `r2: r2`;
+rows rewritten by r3 are tagged `r2: DIVERGED (r2 <old sha1>) — <task>`, and an
+unknown cause would read `— CAUSE UNKNOWN` (none should appear).
+
+how to read this vs the r2 verdicts: t15/t25/t26/t28 judged the r2 HASHES, so
+their verdicts stay valid; the r3 divergence below does not retract them. But the
+live column must never be cited as an r2 value — re-run before citing.
+owning the value: the owner column names the author of the value shown. Where r3
+rewrote a file t13 originally wrote, the owner says so explicitly.
+
+== t13's declared file set (30) — live values; owner names the current author ==
+path | mtime | size | sha1(12) | owner
+src/renderer/src/stores/playerStore.ts | 2026-09-12T10:47:58.754Z | 14367 | 512e558ed3b2 | t13 (audio-engine) | r2: r2
+src/renderer/src/stores/chatStore.ts | 2026-09-12T11:45:42.740Z | 18605 | 962c68d7b436 | t13 (audio-engine) | r2: DIVERGED (r2 4dc3949252f9) — r3 (t34) editing
+src/main/protocol.ts | 2026-09-12T11:58:33.122Z | 8257 | 28a7dc33ad52 | t13 (audio-engine) | r2: DIVERGED (r2 1b076de5cacc) — r3 (t33/t40) allowedRoots latch → cached Promise
+src/renderer/src/components/LyricsPanel.tsx | 2026-09-12T08:54:42.568Z | 6940 | 32f8656d5f1b | t13 (audio-engine)
+src/renderer/src/lib/sleepTimer.ts | 2026-09-12T10:47:47.840Z | 5052 | ca56b155a0e6 | t13 (audio-engine)
+src/renderer/src/lib/__tests__/playerStoreSleep.test.ts | 2026-09-12T11:40:46.265Z | 12157 | dafb044bc9c5 | t13 → r3 t36 (ui-features) — live value is t36’s | r2: DIVERGED (r2 5e195164da5a) — r3 (t36) discriminative case
+src/renderer/src/lib/__tests__/sleepTimer.test.ts | 2026-09-12T10:48:19.192Z | 7224 | a3f5f69d34a1 | t13 (audio-engine)
+src/renderer/src/lib/__tests__/chatConfirm.test.ts | 2026-09-12T11:46:17.749Z | 18905 | 470b7712daec | t13 → r3 t34 (ai-tools) [R4(d)] — live value is t34’s | r2: DIVERGED (r2 cd6b3c09ef23) — r3 (t34) R4(d) cleanup
+src/renderer/src/lib/__tests__/lyricsOffset.test.ts | 2026-09-12T12:00:45.824Z | 13412 | 56ba63fc1767 | t13 → r3 t37 (audio-engine) — live value is t37’s | r2: DIVERGED (r2 0883b2034898) — r3 (t37) this case
+src/main/decodeService.ts | 2026-09-12T10:54:32.494Z | 4869 | df1c81800a0d | t13 (audio-engine)
+.devdata/t6-evidence/T6-REPORT.md | 2026-09-12T08:51:24.501Z | 12964 | 986a318e4d71 | verifier (t6) — NOT t13
+src/renderer/src/lib/__tests__/chatConfirm.test.ts | 2026-09-12T11:46:17.749Z | 18905 | 470b7712daec | t13 → r3 t34 (ai-tools) [R4(d)] — live value is t34’s | r2: DIVERGED (r2 cd6b3c09ef23) — r3 (t34) R4(d) cleanup
+scripts/probe-media-roots.mjs | 2026-09-12T09:29:54.156Z | 5450 | d2cb00206eef | t13 (audio-engine)
+scripts/probe-media-accept.mjs | 2026-09-12T10:42:18.614Z | 8480 | 2ec46ba929c5 | t13 (audio-engine)
+scripts/diag-graph.mjs | 2026-09-12T09:28:48.947Z | 8500 | 4cfdef2b8ec5 | t13 (audio-engine)
+.devdata/t6-evidence/T10-ADDENDUM.md | 2026-09-12T11:59:22.614Z | 8369 | 940f6a2ae896 | verifier (t6) — NOT t13
+.devdata/t13-evidence/T13-ERRATA.md | 2026-09-12T08:53:37.421Z | 2560 | 7b0d9d675f41 | t13 (audio-engine)
+.devdata/t13-evidence/T13-EVIDENCE.md | 2026-09-12T09:20:51.909Z | 4406 | c99232e508fe | t13 (audio-engine)
+.devdata/t13-evidence/T13-FINGERPRINT.txt | (self) | (self) | (self — this file) | t13 (audio-engine) | r2: n/a (self)
+.devdata/t13-evidence/t13-typecheck.log | 2026-09-12T09:19:14.815Z | 270 | 2414a47c9a15 | t13 (audio-engine)
+.devdata/t13-evidence/t13-lint.log | 2026-09-12T09:19:31.924Z | 1010 | bebbd70addf8 | t13 (audio-engine)
+.devdata/t13-evidence/t13-test.log | 2026-09-12T09:19:21.086Z | 1159 | 17395fd36c41 | t13 (audio-engine)
+.devdata/t13-evidence/t13-eslint-nocache.json | 2026-09-12T09:05:10.184Z | 32247 | e48254f7ce37 | t13 (audio-engine)
+.devdata/t13-evidence/t13-verify-lint-tests.json | 2026-09-12T09:19:59.008Z | 1289 | 30de027bb65d | t13 (audio-engine)
+.devdata/t13-evidence/t13-media-roots.json | 2026-09-12T11:10:02.353Z | 684 | 0a6b21a7a1ca | t13 (audio-engine)
+.devdata/t13-evidence/t13-accept-matrix.txt | 2026-09-12T11:10:41.805Z | 2868 | 8d6eb8884b79 | t13 (audio-engine)
+.devdata/t13-evidence/t13-transcode.txt | 2026-09-12T11:10:45.981Z | 644 | 14832ab56a17 | t13 (audio-engine)
+.devdata/t13-evidence/t13-ai-confirm.txt | 2026-09-12T11:11:23.862Z | 2704 | 421d3585653a | t13 (audio-engine)
+.devdata/t13-evidence/t13-f1-wrap.txt | 2026-09-12T11:12:05.206Z | 367 | dea1a2b87f6b | t13 (audio-engine)
+.devdata/t13-evidence/t13-diag-e2e.json | 2026-09-12T11:10:11.575Z | 2449 | 33bbbef20a7f | t13 (audio-engine)
+
+== referenced by t15 / t9 evidence (10) — owner column names the real author ==
+path | mtime | size | sha1(12) | owner
+src/renderer/src/lib/audioEngine.ts | 2026-09-12T07:22:39.836Z | 19520 | e01f4c0d66d5 | t2 (audio-engine) | r2: r2
+src/renderer/src/stores/playerStore.ts | 2026-09-12T10:47:58.754Z | 14367 | 512e558ed3b2 | t13 (audio-engine) | r2: r2
+src/renderer/src/stores/chatStore.ts | 2026-09-12T11:45:42.740Z | 18605 | 962c68d7b436 | t13 (audio-engine) | r2: DIVERGED (r2 4dc3949252f9) — r3 (t34) editing
+src/main/protocol.ts | 2026-09-12T11:58:33.122Z | 8257 | 28a7dc33ad52 | t13 (audio-engine) | r2: DIVERGED (r2 1b076de5cacc) — r3 (t33/t40) allowedRoots latch → cached Promise
+src/main/index.ts | 2026-09-12T11:39:56.057Z | 14054 | 18ef7c49c2eb | t16+t18+t21+t23 | r2: DIVERGED (r2 dabd3b68d59e) — r3 (t16 R3) will-redirect guard
+src/main/store.ts | 2026-09-12T10:51:12.879Z | 4837 | 7efc2b632049 | t22 (quality) | r2: r2
+src/main/window.ts | 2026-09-12T09:03:47.195Z | 2702 | 2806d7ab4233 | t18 (quality) | r2: r2
+src/main/llmClient.ts | 2026-09-12T12:03:12.618Z | 10746 | 29e5010123e3 | t12 (quality)
+scripts/probe-transcode.mjs | 2026-09-12T10:53:40.446Z | 4885 | d2dd8235a3c6 | t13 (audio-engine)
+.devdata/transcode-fixtures/tone.aac | 2026-09-12T10:53:25.671Z | 50346 | a9438c1560a3 | t13 (audio-engine)
+
+== other members' artifacts inside .devdata/t13-evidence (5) — annotated in place, never moved ==
+path | mtime | size | sha1(12) | owner
+.devdata/t13-evidence/t27-probe-attempt-by-ai-tools.txt | 2026-09-12T11:32:26.912Z | 852 | 66399fa7784b | ai-tools (t27)
+.devdata/t13-evidence/t27-ai-tools-readonly-checks.txt | 2026-09-12T11:32:57.867Z | 1825 | f8cc91c9f358 | ai-tools (t27)
+.devdata/t13-evidence/t29-readmerge-probe-live.txt | 2026-09-12T11:37:41.874Z | 509 | 649974d53f70 | ai-tools (t29/t31)
+.devdata/t13-evidence/T29-READMERGE-LIVE.md | 2026-09-12T11:39:03.225Z | 8561 | be4f61c5719c | ai-tools (t29/t31)
+.devdata/t13-evidence/t31-settings-backup-before-fixture.json | 2026-09-12T11:26:26.256Z | 394 | c92586a029b6 | ai-tools (t31)

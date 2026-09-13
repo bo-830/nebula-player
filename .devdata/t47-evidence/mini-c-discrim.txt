@@ -1,0 +1,60 @@
+t47 — discriminative experiments (copies + independent vitest configs; src/** untouched)
+tree: 459c1da2fd33727c8f64b5ce3c7bdccbf197fb4b (83 files)
+
+{
+  "miniBounds": {
+    "shaPristine": "EB84FA4A0B04F31FE21B467E38285C30C3C5488F",
+    "control": {
+      "exitCode": 0,
+      "summary": "Test Files  1 passed (1) || Tests  8 passed (8)"
+    },
+    "shaMutated": "1E4BA7FAE69904281C52AF8987D16A541C38EF28",
+    "mutated": {
+      "exitCode": 1,
+      "summary": "❯ .devdata/t47-evidence/discrim/minibounds/miniBounds.test.ts (8 tests | 5 failed) 17ms || ⎯⎯⎯⎯⎯⎯⎯ Failed Tests 5 ⎯⎯⎯⎯⎯⎯⎯ || Test Files  1 failed (1) || Tests  5 failed | 3 passed (8)"
+    },
+    "shaRestored": "EB84FA4A0B04F31FE21B467E38285C30C3C5488F",
+    "restoredIdentical": true,
+    "restored": {
+      "exitCode": 0,
+      "summary": "Test Files  1 passed (1) || Tests  8 passed (8)"
+    }
+  },
+  "chatProxy": {
+    "shaPristine": "CC1DAA4CF01AAFDCC4C6D1EAE1D88E92C937F70A",
+    "control": {
+      "exitCode": 0,
+      "summary": "Test Files  1 passed (1) || Tests  16 passed (16)"
+    },
+    "mutationApplied": true,
+    "shaMutated": "8A61F91E3AC697EFCB4E6DD8B044DFB8049895A6",
+    "mutated": {
+      "exitCode": 1,
+      "summary": "❯ .devdata/t47-evidence/discrim/chatproxy/chatProxy.test.ts (16 tests | 3 failed) 24ms || ⎯⎯⎯⎯⎯⎯⎯ Failed Tests 3 ⎯⎯⎯⎯⎯⎯⎯ || Test Files  1 failed (1) || Tests  3 failed | 13 passed (16)"
+    },
+    "shaRestored": "CC1DAA4CF01AAFDCC4C6D1EAE1D88E92C937F70A",
+    "restoredIdentical": true,
+    "restored": {
+      "exitCode": 0,
+      "summary": "Test Files  1 passed (1) || Tests  16 passed (16)"
+    }
+  },
+  "srcKeyFiles": {
+    "miniBounds": "EB84FA4A0B04F31FE21B467E38285C30C3C5488F",
+    "chatProxy": "42A82C4722CEA8DE8AD302FD75997E654EDD10BE"
+  }
+}
+
+src files after the experiments (must be unchanged):
+  src/main/miniBounds.ts                  = EB84FA4A0B04F31FE21B467E38285C30C3C5488F
+  src/renderer/src/lib/chatProxy.ts       = 42A82C4722CEA8DE8AD302FD75997E654EDD10BE
+
+Verbose case names collected from the copy run (miniBounds, 8 passed):
+  computeMiniBounds — sizes > expanding and collapsing return the two declared sizes
+  computeMiniBounds — sizes > keeps the width constant at 360 in both states and at every position
+  computeMiniBounds — clamping > a bottom-anchored window grows upwards to stay inside the work area
+  computeMiniBounds — clamping > a window hanging off the right edge is pulled back inside
+  computeMiniBounds — clamping > clips the height when the work area is shorter than the expanded window
+  computeMiniBounds — clamping > clips the width too when the work area is narrower than the window
+  computeMiniBounds — no-op cases > leaves x/y untouched when the window already fits
+  computeMiniBounds — no-op cases > respects a work area that does not start at the origin (secondary display)

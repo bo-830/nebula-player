@@ -1,0 +1,6 @@
+hidden=false
+t+500: cls=chat collapsed 
+t+1500: cls=chat collapsed 
+t+3000: cls=chat collapsed 
+t+6000: cls=chat collapsed 
+empty={"empty":false,"sug":[]}

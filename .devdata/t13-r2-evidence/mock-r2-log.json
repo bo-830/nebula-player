@@ -1,0 +1,106 @@
+{
+  "requests": [
+    {
+      "n": 1,
+      "messages": [
+        {
+          "role": "system",
+          "content": "你是「NEBULA Player」的 AI 音乐助手，运行在用户的本地音乐播放器中。\n当前状态：正在播放《长测试曲》- 测试歌手（第 14s / 120s）；音量 42%（正常）；播放模式 随机播放；\n本地曲库：共 7 首歌曲、3 位歌手、5 张专辑；共 2 个歌单。\n用户听歌口味：累计播放 385 次；常听歌手：测试歌手(285次)、未知(52次)、ArtistB(48次)；偏好曲风：摇滚(67次)。\n\n规则：\n1. 用户的播放/曲库操作（播放、暂停、切歌、音量、模式、歌单、收藏、搜索）必须通过工具完成，不要虚构结果；执行后在回复开头用一行简要说明结果，再补充说明。\n2. 播放具体歌曲：先 search_music 找到 id，再 play_tracks，不要猜测歌曲存在。\n3. 个性化推荐：先调用 recommend_music（必要时先 get_listening_profile 了"
+        },
+        {
+          "role": "user",
+          "content": "随便放首歌来听"
+        },
+        {
+          "role": "user",
+          "content": "随便放首歌来听"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "messages": [
+        {
+          "role": "system",
+          "content": "你是「NEBULA Player」的 AI 音乐助手，运行在用户的本地音乐播放器中。\n当前状态：正在播放《长测试曲》- 测试歌手（第 14s / 120s）；音量 42%（正常）；播放模式 随机播放；\n本地曲库：共 7 首歌曲、3 位歌手、5 张专辑；共 2 个歌单。\n用户听歌口味：累计播放 385 次；常听歌手：测试歌手(285次)、未知(52次)、ArtistB(48次)；偏好曲风：摇滚(67次)。\n\n规则：\n1. 用户的播放/曲库操作（播放、暂停、切歌、音量、模式、歌单、收藏、搜索）必须通过工具完成，不要虚构结果；执行后在回复开头用一行简要说明结果，再补充说明。\n2. 播放具体歌曲：先 search_music 找到 id，再 play_tracks，不要猜测歌曲存在。\n3. 个性化推荐：先调用 recommend_music（必要时先 get_listening_profile 了"
+        },
+        {
+          "role": "user",
+          "content": "随便放首歌来听"
+        },
+        {
+          "role": "user",
+          "content": "随便放首歌来听"
+        },
+        {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "call_search_1",
+              "name": "search_music",
+              "args": "{\"query\":\"歌\",\"limit\":3}"
+            }
+          ]
+        },
+        {
+          "role": "tool",
+          "content": "{\"count\":3,\"tracks\":[{\"id\":\"f1da4b02ccf77fda8461\",\"title\":\"测试歌曲A\",\"artist\":\"测试歌手\",\"album\":\"测试专辑\",\"duration\":8},{\"id\":\"3c905b8832325df27346\",\"title\":\"测试歌曲A\",\"artist\":\"测试歌手\",\"album\":\"测试专辑\",\"duration\":8},{\"id\":\"aee944d929770f08f757\",\"title\":\"长测试曲\",\"artist\":\"测试歌手\",\"album\":\"测试专辑二\",\"duration\":120}]}",
+          "tool_call_id": "call_search_1"
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "messages": [
+        {
+          "role": "system",
+          "content": "你是「NEBULA Player」的 AI 音乐助手，运行在用户的本地音乐播放器中。\n当前状态：正在播放《测试歌曲A》- 测试歌手（第 0s / 8s）；音量 42%（正常）；播放模式 随机播放；\n本地曲库：共 7 首歌曲、3 位歌手、5 张专辑；共 2 个歌单。\n用户听歌口味：累计播放 386 次；常听歌手：测试歌手(286次)、未知(52次)、ArtistB(48次)；偏好曲风：摇滚(68次)。\n\n规则：\n1. 用户的播放/曲库操作（播放、暂停、切歌、音量、模式、歌单、收藏、搜索）必须通过工具完成，不要虚构结果；执行后在回复开头用一行简要说明结果，再补充说明。\n2. 播放具体歌曲：先 search_music 找到 id，再 play_tracks，不要猜测歌曲存在。\n3. 个性化推荐：先调用 recommend_music（必要时先 get_listening_profile 了解口"
+        },
+        {
+          "role": "user",
+          "content": "随便放首歌来听"
+        },
+        {
+          "role": "user",
+          "content": "随便放首歌来听"
+        },
+        {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "call_search_1",
+              "name": "search_music",
+              "args": "{\"query\":\"歌\",\"limit\":3}"
+            }
+          ]
+        },
+        {
+          "role": "tool",
+          "content": "{\"count\":3,\"tracks\":[{\"id\":\"f1da4b02ccf77fda8461\",\"title\":\"测试歌曲A\",\"artist\":\"测试歌手\",\"album\":\"测试专辑\",\"duration\":8},{\"id\":\"3c905b8832325df27346\",\"title\":\"测试歌曲A\",\"artist\":\"测试歌手\",\"album\":\"测试专辑\",\"duration\":8},{\"id\":\"aee944d929770f08f757\",\"title\":\"长测试曲\",\"artist\":\"测试歌手\",\"album\":\"测试专辑二\",\"duration\":120}]}",
+          "tool_call_id": "call_search_1"
+        },
+        {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "call_play_2",
+              "name": "play_tracks",
+              "args": "{\"ids\":[\"f1da4b02ccf77fda8461\"],\"start_index\":0}"
+            }
+          ]
+        },
+        {
+          "role": "tool",
+          "content": "已开始播放（队列 7 首），当前：测试歌曲A - 测试歌手",
+          "tool_call_id": "call_play_2"
+        }
+      ]
+    }
+  ],
+  "errors400": [],
+  "transcript": [],
+  "seq": 3
+}

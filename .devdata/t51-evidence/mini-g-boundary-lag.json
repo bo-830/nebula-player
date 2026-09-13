@@ -1,0 +1,31 @@
+{
+  "test": "B — text-only control + measured chunk-vs-read margin (for the reachability argument)",
+  "mainLastAssistant": "我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。",
+  "miniLastAi": "我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。",
+  "bothAgree": true,
+  "timing": {
+    "mirrors": [
+      {
+        "t": 60792.6,
+        "busy": true,
+        "rawLen": 23,
+        "msgs": 1
+      },
+      {
+        "t": 60797.5,
+        "busy": true,
+        "rawLen": 31,
+        "msgs": 1
+      }
+    ],
+    "settleEvent": {
+      "t": 60799.5,
+      "busy": false,
+      "rawLen": 0,
+      "msgs": 1
+    },
+    "lastMirrorToSettleMs": 2,
+    "firstMirrorToSettleMs": 6.9
+  },
+  "pass": true
+}

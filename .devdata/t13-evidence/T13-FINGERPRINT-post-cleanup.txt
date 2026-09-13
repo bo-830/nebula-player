@@ -1,0 +1,8 @@
+t13/t22 fingerprint snapshot (post-cleanup)
+generated: 2026-09-12T11:30:41.097Z
+
+src/renderer/src/stores/playerStore.ts | 2026-09-12T10:47:58.754Z | 14367 | 512e558ed3b2
+src/renderer/src/lib/sleepTimer.ts | 2026-09-12T10:47:47.840Z | 5052 | ca56b155a0e6
+src/renderer/src/lib/__tests__/sleepTimer.test.ts | 2026-09-12T10:48:19.192Z | 7224 | a3f5f69d34a1
+src/main/store.ts | 2026-09-12T10:51:12.879Z | 4837 | 7efc2b632049
+src/main/decodeService.ts | 2026-09-12T10:54:32.494Z | 4869 | df1c81800a0d

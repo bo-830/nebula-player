@@ -1,0 +1,28 @@
+﻿{
+  "track": {
+    "id": "f1da4b02ccf77fda8461",
+    "title": "测试歌曲A",
+    "coverPath": "C:\\博830\\vibecoding\\nebula-player\\.devdata\\user\\covers\\f1da4b02ccf77fda8461.png"
+  },
+  "imgDecode": {
+    "sameUrl": "WRhNGIwMmNjZjc3ZmRhODQ2MS5wbmc",
+    "loaded": true,
+    "natural": 512,
+    "complete": true
+  },
+  "fetchAttempt": {
+    "refused": true,
+    "note": "TypeError: Failed to fetch"
+  },
+  "mediaSession": {
+    "hasMetadata": true,
+    "title": "长测试曲",
+    "artwork": []
+  },
+  "mini": {
+    "expectedTitle": "测试歌曲A",
+    "title": "长测试曲",
+    "imgCount": 0,
+    "covers": []
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "gapMs": 1000,
+  "typed": "ok",
+  "sent": "ok",
+  "mainLastAssistant": "第一段滴注内容。第二段滴注内容。第三段滴注内容。",
+  "miniLastAi": "第一段滴注内容。第二段滴注内容。第三段滴注内容。",
+  "persistedLastAssistant": "第一段滴注内容。第二段滴注内容。第三段滴注内容。",
+  "textExact": true,
+  "segmentsPresent": [
+    "第一段滴注内容。",
+    "第二段滴注内容。",
+    "第三段滴注内容。"
+  ],
+  "segmentsMissing": [],
+  "isPrefixOfExpected": true,
+  "truncated": false,
+  "bothWindowsAgree": true,
+  "mirrorEvents": [
+    {
+      "t": 155960.8,
+      "rawLen": 8,
+      "shown": 0
+    },
+    {
+      "t": 156808.5,
+      "rawLen": 8,
+      "shown": 5
+    },
+    {
+      "t": 156965.1,
+      "rawLen": 16,
+      "shown": 5
+    },
+    {
+      "t": 157808.7,
+      "rawLen": 16,
+      "shown": 10
+    },
+    {
+      "t": 157980.8,
+      "rawLen": 24,
+      "shown": 10
+    }
+  ],
+  "cursorCatchUps": [],
+  "gateway": {
+    "writtenAtMs": [
+      1,
+      1008,
+      2023
+    ],
+    "expectedText": "第一段滴注内容。第二段滴注内容。第三段滴注内容。",
+    "errors400": []
+  },
+  "observerEvents": [
+    {
+      "t": 155952.4,
+      "busy": false,
+      "rawLen": 0,
+      "shown": 0,
+      "msgs": 0
+    },
+    {
+      "t": 155952.4,
+      "busy": true,
+      "rawLen": 0,
+      "shown": 0,
+      "msgs": 0
+    },
+    {
+      "t": 155952.5,
+      "busy": true,
+      "rawLen": 0,
+      "shown": 0,
+      "msgs": 1
+    },
+    {
+      "t": 155960.8,
+      "busy": true,
+      "rawLen": 8,
+      "shown": 0,
+      "msgs": 1
+    },
+    {
+      "t": 156808.5,
+      "busy": true,
+      "rawLen": 8,
+      "shown": 5,
+      "msgs": 1
+    },
+    {
+      "t": 156965.1,
+      "busy": true,
+      "rawLen": 16,
+      "shown": 5,
+      "msgs": 1
+    },
+    {
+      "t": 157808.7,
+      "busy": true,
+      "rawLen": 16,
+      "shown": 10,
+      "msgs": 1
+    },
+    {
+      "t": 157980.8,
+      "busy": true,
+      "rawLen": 24,
+      "shown": 10,
+      "msgs": 1
+    },
+    {
+      "t": 157985.6,
+      "busy": false,
+      "rawLen": 0,
+      "shown": 24,
+      "msgs": 1
+    },
+    {
+      "t": 157985.7,
+      "busy": false,
+      "rawLen": 0,
+      "shown": 0,
+      "msgs": 2
+    }
+  ]
+}

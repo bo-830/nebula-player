@@ -1,0 +1,3 @@
+T0 (mini window is currently SHOWN, main untouched): {"hidden":false,"vis":"visible","cls":"chat  ","storeCollapsed":false}
+T1 after miniToggle (mini HIDDEN): {"hidden":false,"vis":"visible","cls":"chat  ","storeCollapsed":false}
+T2 after miniToggle again (mini SHOWN): {"hidden":false,"vis":"visible","cls":"chat  ","storeCollapsed":false}

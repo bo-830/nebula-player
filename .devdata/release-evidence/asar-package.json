@@ -1,0 +1,18 @@
+{
+  "name": "nebula-player",
+  "version": "1.0.5",
+  "description": "NEBULA Player — 深空黑科技风 AI 本地音乐播放器",
+  "main": "./out/main/index.js",
+  "author": "nebula",
+  "homepage": "https://electron-vite.org",
+  "dependencies": {
+    "@electron-toolkit/preload": "^3.0.2",
+    "@electron-toolkit/utils": "^4.0.0",
+    "@tanstack/react-virtual": "^3.10.8",
+    "electron-updater": "^6.8.9",
+    "ffmpeg-static": "^5.2.0",
+    "lucide-react": "^0.454.0",
+    "music-metadata": "^11.0.3",
+    "zustand": "^5.0.2"
+  }
+}

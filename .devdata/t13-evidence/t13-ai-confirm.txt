@@ -1,0 +1,116 @@
+{
+  "preflight": {
+    "seeded": {
+      "playlistId": "mty1ejmzib44dk7",
+      "seededIds": [
+        "48340575992a4a0b1a06",
+        "f6d99f294b9932accaa9"
+      ],
+      "trackIds": [
+        "f6d99f294b9932accaa9",
+        "48340575992a4a0b1a06"
+      ],
+      "names": [
+        "song-c",
+        "SongB"
+      ]
+    },
+    "cfg": {
+      "model": "deepseek-v4-flash",
+      "baseURL": "http://127.0.0.1:9998/v1"
+    }
+  },
+  "confirmPath": {
+    "parked": {
+      "pending": {
+        "toolCallId": "call_rm_1",
+        "name": "remove_from_playlist",
+        "summary": "从歌单「夜跑」移除 1 首歌曲：《song-c》"
+      },
+      "busy": false,
+      "trackIds": [
+        "f6d99f294b9932accaa9",
+        "48340575992a4a0b1a06"
+      ],
+      "confirmBarText": "需要你确认的破坏性操作 | 从歌单「夜跑」移除 1 首歌曲：《song-c》 | 确认执行 | 取消",
+      "buttons": [
+        "确认执行",
+        "取消"
+      ],
+      "chips": [
+        "待确认：从歌单「夜跑」移除 1 首歌曲：《song-c》"
+      ]
+    },
+    "after": {
+      "trackIds": [
+        "f6d99f294b9932accaa9"
+      ],
+      "pending": false,
+      "busy": false,
+      "lastMessage": "好的，操作已完成。",
+      "chips": []
+    },
+    "gateway": {
+      "requests": 2,
+      "errors400": [],
+      "transcript": [
+        [
+          "system",
+          "user",
+          "user"
+        ],
+        [
+          "system",
+          "user",
+          "user",
+          "assistant.tool_calls(remove_from_playlist#call_rm_1)",
+          "tool(call_rm_1):从 夜跑 移除了 1 首"
+        ]
+      ]
+    }
+  },
+  "cancelPath": {
+    "parked": {
+      "pending": true,
+      "trackIds": [
+        "f6d99f294b9932accaa9",
+        "48340575992a4a0b1a06"
+      ]
+    },
+    "after": {
+      "trackIds": [
+        "f6d99f294b9932accaa9",
+        "48340575992a4a0b1a06"
+      ],
+      "pending": false,
+      "busy": false,
+      "lastMessage": "好的，已取消，没有改动任何歌单。",
+      "chips": []
+    },
+    "gateway": {
+      "requests": 2,
+      "errors400": [],
+      "lastToolContent": "用户已取消该操作：从歌单「夜跑」移除 1 首歌曲：《song-c》。请勿重复执行，改为询问用户还需要什么。"
+    }
+  },
+  "nonDestructiveChain": {
+    "after": {
+      "pending": false,
+      "busy": false,
+      "playing": true,
+      "current": "测试歌曲A",
+      "queueLen": 6,
+      "lastMessage": "好的，操作已完成。",
+      "chips": []
+    },
+    "gateway": {
+      "requests": 3,
+      "errors400": [],
+      "tools": [
+        "search_music",
+        "search_music",
+        "play_tracks"
+      ]
+    }
+  }
+}

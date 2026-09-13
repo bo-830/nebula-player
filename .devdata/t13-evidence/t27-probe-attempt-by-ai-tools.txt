@@ -1,0 +1,25 @@
+﻿t27 verification attempt by ai-tools (independent second path)
+timestamp (local): 2026-09-12 19:32:26
+instance state at attempt: 5173 FREE / 5174 FREE / 9222 FREE / electron 0
+probe exit code: 1 (ECONNREFUSED 127.0.0.1:9222)
+reason: the fixture probe needs a running dev app; t27 contract forbids starting one ("启动 dev 实例" 禁止).
+note: the probe's captured OUTPUT already exists as t22-readmerge-proof.txt (values per contract ④).
+
+--- raw output below ---
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+[TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:9222
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1706:16) {
+    errno: -4078,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 9222
+  }
+}
+
+Node.js v24.18.0
+

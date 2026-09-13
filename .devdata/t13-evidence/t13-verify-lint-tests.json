@@ -1,0 +1,42 @@
+{
+  "label": "t13",
+  "method": "direct execFile of npm.cmd/npx.cmd shims",
+  "lint": {
+    "command": "npm.cmd run lint",
+    "exitCode": 0,
+    "log": ".devdata/t6-evidence/lint-t13.log",
+    "errors": 0,
+    "warnings": 1,
+    "parsed": true,
+    "rules": {
+      "warning:react-hooks/incompatible-library": 1
+    }
+  },
+  "lintErrorFiles": [],
+  "typecheck": {
+    "node": 0,
+    "web": 0
+  },
+  "tests": {
+    "command": "npm.cmd test -- --reporter=verbose",
+    "exitCode": 0,
+    "log": ".devdata/t6-evidence/tests-t13.log",
+    "filesLine": "Test Files  11 passed (11)",
+    "testsLine": "Tests  118 passed (118)",
+    "passed": 118,
+    "failed": 0,
+    "testFiles": [
+      "src/renderer/src/lib/__tests__/queue.test.ts",
+      "src/renderer/src/lib/__tests__/format.test.ts",
+      "src/renderer/src/lib/__tests__/sleepTimer.test.ts",
+      "src/renderer/src/lib/__tests__/lyricsOffset.test.ts",
+      "src/main/__tests__/lrc.test.ts",
+      "src/main/__tests__/mediaFormats.test.ts",
+      "src/main/__tests__/scanner.test.ts",
+      "src/renderer/src/lib/__tests__/search.test.ts",
+      "src/renderer/src/lib/__tests__/recommend.test.ts",
+      "src/renderer/src/lib/__tests__/playerStoreSleep.test.ts",
+      "src/renderer/src/lib/__tests__/chatConfirm.test.ts"
+    ]
+  }
+}

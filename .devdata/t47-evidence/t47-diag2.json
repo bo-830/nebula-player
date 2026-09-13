@@ -1,0 +1,72 @@
+{
+  "capturedAt": "2026-09-13T12:09:25.082Z",
+  "before": {
+    "visibilityState": "hidden",
+    "busy": false,
+    "streamRawLen": 0,
+    "streamShown": 0,
+    "chips": [],
+    "tail": [
+      {
+        "role": "user",
+        "content": "今天天气怎么样"
+      },
+      {
+        "role": "assistant",
+        "content": "（无回复）"
+      }
+    ]
+  },
+  "send": {
+    "busy": true
+  },
+  "during": {
+    "visibilityState": "hidden",
+    "busy": false,
+    "streamRawLen": 0,
+    "streamShown": 0,
+    "chips": [],
+    "tail": [
+      {
+        "role": "user",
+        "content": "主窗口直发：请问支持哪些格式"
+      },
+      {
+        "role": "assistant",
+        "content": "我是 NEBULA 测试网关的第 1 轮回复。"
+      }
+    ]
+  },
+  "after": {
+    "visibilityState": "hidden",
+    "busy": false,
+    "streamRawLen": 0,
+    "streamShown": 0,
+    "chips": [],
+    "tail": [
+      {
+        "role": "user",
+        "content": "主窗口直发：请问支持哪些格式"
+      },
+      {
+        "role": "assistant",
+        "content": "我是 NEBULA 测试网关的第 1 轮回复。"
+      }
+    ]
+  },
+  "gateway": {
+    "requests": [
+      {
+        "n": 1,
+        "stream": true,
+        "model": "deepseek-v4-flash",
+        "tools": [],
+        "emitted": [],
+        "lastUser": "主窗口直发：请问支持哪些格式",
+        "messageCount": 13
+      }
+    ],
+    "errors400": [],
+    "tools": []
+  }
+}

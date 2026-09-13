@@ -1,0 +1,122 @@
+{
+  "timeline": [
+    {
+      "t": 0.52,
+      "mode": "graph",
+      "ctxState": "running",
+      "peak": 195,
+      "playing": true
+    },
+    {
+      "t": 1.32,
+      "mode": "graph",
+      "ctxState": "running",
+      "peak": 223,
+      "playing": true
+    },
+    {
+      "t": 2.11,
+      "mode": "graph",
+      "ctxState": "running",
+      "peak": 229,
+      "playing": true
+    },
+    {
+      "t": 2.64,
+      "mode": "graph",
+      "ctxState": "running",
+      "peak": 237,
+      "playing": true
+    },
+    {
+      "t": 3.44,
+      "mode": "graph",
+      "ctxState": "running",
+      "peak": 239,
+      "playing": true
+    },
+    {
+      "t": 4.23,
+      "mode": "graph",
+      "ctxState": "running",
+      "peak": 242,
+      "playing": true
+    },
+    {
+      "t": 4.76,
+      "mode": "graph",
+      "ctxState": "running",
+      "peak": 244,
+      "playing": true
+    },
+    {
+      "t": 0.53,
+      "mode": "graph",
+      "ctxState": "running",
+      "peak": 238,
+      "playing": true
+    },
+    {
+      "t": 1.09,
+      "mode": "graph",
+      "ctxState": "running",
+      "peak": 226,
+      "playing": true
+    },
+    {
+      "t": 1.88,
+      "mode": "graph",
+      "ctxState": "running",
+      "peak": 227,
+      "playing": true
+    },
+    {
+      "t": 2.67,
+      "mode": "graph",
+      "ctxState": "running",
+      "peak": 235,
+      "playing": true
+    },
+    {
+      "t": 3.21,
+      "mode": "graph",
+      "ctxState": "running",
+      "peak": 237,
+      "playing": true
+    }
+  ],
+  "modeBeforePlay": "graph",
+  "afterPlay": {
+    "mode": "graph",
+    "ctxState": "running",
+    "ctxSampleRate": 48000,
+    "ctxOutputLatency": 0,
+    "ctxBaseLatency": 0.01,
+    "gainValue": 0.41999998688697815,
+    "gainVolume": 0.42,
+    "muted": false,
+    "signalPeak": 106,
+    "audioVolume": 1,
+    "audioPaused": false,
+    "audioSrc": "media://local/Qzpc5Y2aODMwXHZpYmVjb2RpbmdcbmVi",
+    "fallbackTried": false,
+    "lastGraphError": null,
+    "graphCreated": true,
+    "setSinkIdPhase": "applied",
+    "setSinkIdSupported": true,
+    "setSinkIdRequested": "default",
+    "setSinkIdApplied": true,
+    "setSinkIdError": null,
+    "setSinkIdPending": false,
+    "ctxSinkId": "default",
+    "requestedSinkId": "default",
+    "ctxGeneration": 1,
+    "lastSinkEvent": "#1 applied"
+  },
+  "analyserWhileGraph": true,
+  "modeAfterWindow": "graph",
+  "fallbackFlag": false,
+  "analyserInDirect": true,
+  "isPlaying": true,
+  "playerTime": 3.21
+}

@@ -1,0 +1,197 @@
+{
+  "sourceAttempt": "t47 attempt 1 runtime evidence, reused in attempt 2 under the same-tree rule",
+  "capturedAt": "2026-09-13T12:05:39.863Z",
+  "tree": {
+    "srcAggregateSha1": "459c1da2fd33727c8f64b5ce3c7bdccbf197fb4b",
+    "srcFileCount": 83,
+    "newestSrcMtime": "2026-09-13T11:49:24.039Z",
+    "reusedBecause": "attempt-2 re-read of the aggregate + 8 key files was byte-identical to sampling time"
+  },
+  "keyFilesSha1": {
+    "src/renderer/src/components/MiniPlayer.tsx": "f14e2669911185d13c0dfccce48c3c245f188960",
+    "src/renderer/src/components/MiniSearch.tsx": "9c06cc31288e0a100b647e26b180d9f0d9ed1d67",
+    "src/renderer/src/components/MiniChat.tsx": "5c47602df3ce8b358d3698909bd4e7823e70bae4",
+    "src/main/miniBounds.ts": "eb84fa4a0b04f31fe21b467e38285c30c3c5488f",
+    "src/main/mini.ts": "7963cb9da9be9b1474df42809629e65db3edb225",
+    "src/main/ipc.ts": "8c67f9dec91a6a5f55cbc1da374fb54fc94dc1c8",
+    "src/renderer/src/lib/mainWindowBridge.ts": "1f5ddc067082cf07ed2064359a86f7e80038cf7e",
+    "src/renderer/src/lib/chatProxy.ts": "42a82c4722cea8de8ad302fd75997e654edd10be"
+  },
+  "filesUnchangedDuringRun": true,
+  "group": "AI round trip (same session) + destructive confirmation bar inside the mini",
+  "assertions": {
+    "mini received the user bubble": true,
+    "mini streamed the AI reply": true,
+    "MAIN window chat holds the same turn (same session)": true,
+    "gateway saw the turn with no 400": true,
+    "destructive call parks for confirmation (not executed)": true,
+    "confirmation bar is rendered INSIDE the mini window": true,
+    "mini 「取消」 leaves the MAIN playlist untouched": true,
+    "mini 「确认执行」 really mutates the MAIN playlist": true,
+    "destructive turn completed without gateway 400": true
+  },
+  "aiRoundTrip": {
+    "expand": {
+      "already": true,
+      "before": {
+        "innerW": 360,
+        "innerH": 540,
+        "screenX": 920,
+        "screenY": 212,
+        "availLeft": 0,
+        "availTop": 0,
+        "availW": 1280,
+        "availH": 752,
+        "dpr": 2,
+        "dataExpanded": "true",
+        "searchZones": 1,
+        "searchInputs": 1,
+        "chatPanes": 1,
+        "chatTextareas": 1,
+        "lyricLines": 0,
+        "transportBtns": 3,
+        "expandBtnTitle": "收起",
+        "bodyText": "SongB | ArtistB | song-c | 测试歌手 | 0:05 | SongB | ArtistB | 0:06 | SongD | 未知 | 0:04 | SongE | 测试歌手 | 0:04 | 让 AI 帮你找歌、控播放 | 根据我的口味推荐几首歌 | 播放一首舒缓的本地歌曲 | 把当前歌曲加入「夜跑」歌单"
+      }
+    },
+    "inputDiag": {
+      "textarea": true,
+      "placeholder": "Enter 发送 · Shift+Enter 换行",
+      "sendBtn": true
+    },
+    "sent": {
+      "typed": "ok",
+      "sent": "ok"
+    },
+    "miniView": {
+      "msgs": [
+        "chat-msg user::你好，请介绍一下你自己",
+        "chat-msg ai::我是 NEBULA 测试网关的第 1 轮回复。"
+      ],
+      "chatChips": 0,
+      "suggestions": 0
+    },
+    "mainView": {
+      "messages": [
+        {
+          "role": "user",
+          "content": "你好，请介绍一下你自己"
+        },
+        {
+          "role": "assistant",
+          "content": "我是 NEBULA 测试网关的第 1 轮回复。"
+        }
+      ],
+      "busy": false,
+      "domMsgs": [
+        "chat-msg user::你好，请介绍一下你自己",
+        "chat-msg ai::我是 NEBULA 测试网关的第 1 轮回复。"
+      ],
+      "collapsed": false
+    },
+    "gateway": {
+      "requests": [
+        {
+          "n": 1,
+          "stream": true,
+          "model": "deepseek-v4-flash",
+          "tools": [],
+          "emitted": [],
+          "lastUser": "你好，请介绍一下你自己",
+          "messageCount": 3
+        }
+      ],
+      "errors400": []
+    }
+  },
+  "destructiveConfirmInMini": {
+    "expand": {
+      "already": true,
+      "before": {
+        "innerW": 360,
+        "innerH": 540,
+        "screenX": 920,
+        "screenY": 212,
+        "availLeft": 0,
+        "availTop": 0,
+        "availW": 1280,
+        "availH": 752,
+        "dpr": 2,
+        "dataExpanded": "true",
+        "searchZones": 1,
+        "searchInputs": 1,
+        "chatPanes": 1,
+        "chatTextareas": 1,
+        "lyricLines": 0,
+        "transportBtns": 3,
+        "expandBtnTitle": "收起",
+        "bodyText": "song-c | 测试歌手 | song-c | 测试歌手 | 0:05 | SongB | ArtistB | 0:06 | SongD | 未知 | 0:04 | SongE | 测试歌手 | 0:04 | 你好，请介绍一下你自己 | 我是 NEBULA 测试网关的第 1 轮回复。 | 暂停 | 已暂停播放 | 好的，已完成。 | 下一曲 | 已切到下一首 | 好的，已完成。 | 把音量调到 50% | 音量 50% | 好的，已完成。"
+      }
+    },
+    "seeded": {
+      "playlistId": "mty1ejmzib44dk7",
+      "ids": [
+        "48340575992a4a0b1a06",
+        "f6d99f294b9932accaa9"
+      ],
+      "trackIds": [
+        "f6d99f294b9932accaa9",
+        "48340575992a4a0b1a06"
+      ]
+    },
+    "send1": {
+      "typed": "ok",
+      "sent": "ok"
+    },
+    "parked": {
+      "pending": {
+        "name": "remove_from_playlist",
+        "summary": "从歌单「夜跑」移除 1 首歌曲：《song-c》"
+      },
+      "trackIds": [
+        "f6d99f294b9932accaa9",
+        "48340575992a4a0b1a06"
+      ]
+    },
+    "miniBar": {
+      "buttons": [
+        "确认执行",
+        "取消"
+      ],
+      "text": "把夜跑歌单里的 48340575992a4a0b1a06 这首歌删掉 | 需要你确认的破坏性操作 | 从歌单「夜跑」移除 1 首歌曲：《song-c》 | 确认执行 | 取消"
+    },
+    "cancelClick": "clicked",
+    "afterCancel": {
+      "pending": false,
+      "busy": false,
+      "trackIds": [
+        "f6d99f294b9932accaa9",
+        "48340575992a4a0b1a06"
+      ]
+    },
+    "send2": {
+      "typed": "ok",
+      "sent": "ok"
+    },
+    "confirmClick": "clicked",
+    "afterConfirm": {
+      "pending": false,
+      "busy": false,
+      "trackIds": [
+        "f6d99f294b9932accaa9"
+      ]
+    },
+    "gateway": {
+      "tools": [
+        "remove_from_playlist"
+      ],
+      "requests": 2,
+      "errors400": []
+    }
+  },
+  "miniChips": [
+    "待确认：从歌单「夜跑」移除 1 首歌曲：《song-c》",
+    "✓ 已移出「夜跑」1 首",
+    "已暂停播放"
+  ]
+}

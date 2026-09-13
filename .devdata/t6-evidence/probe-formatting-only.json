@@ -1,0 +1,144 @@
+[
+  {
+    "file": "src/renderer/src/styles/app.css",
+    "sameBytes": false,
+    "tokenIdentical": false,
+    "originalLen": 32602,
+    "formattedLen": 32794,
+    "crlfInOriginal": false,
+    "crlfInFormatted": false,
+    "diffSamples": [
+      {
+        "at": 1348,
+        "original": "\" background var(--dur), \"",
+        "formatted": "\"\\n    background var(--du\""
+      },
+      {
+        "at": 1390,
+        "original": "\"}\\n.tb-btn:hover {\\n  back\"",
+        "formatted": "\"--dur);\\n}\\n.tb-btn:hover \""
+      },
+      {
+        "at": 1392,
+        "original": "\".tb-btn:hover {\\n  backgr\"",
+        "formatted": "\"dur);\\n}\\n.tb-btn:hover {\\n\""
+      },
+      {
+        "at": 1408,
+        "original": "\"  background: var(--bg-h\"",
+        "formatted": "\"hover {\\n  background: va\""
+      },
+      {
+        "at": 1439,
+        "original": "\"  color: var(--text);\\n  \"",
+        "formatted": "\"hover);\\n  color: var(--t\""
+      },
+      {
+        "at": 1461,
+        "original": "\"  box-shadow: var(--glow\"",
+        "formatted": "\"-text);\\n  box-shadow: va\""
+      },
+      {
+        "at": 1488,
+        "original": "\"}\\n.tb-btn.close:hover {\\n\"",
+        "formatted": "\"-glow);\\n}\\n.tb-btn.close:\""
+      },
+      {
+        "at": 1490,
+        "original": "\".tb-btn.close:hover {\\n  \"",
+        "formatted": "\"low);\\n}\\n.tb-btn.close:ho\""
+      },
+      {
+        "at": 1512,
+        "original": "\"  background: rgba(255, \"",
+        "formatted": "\"hover {\\n  background: rg\""
+      },
+      {
+        "at": 1552,
+        "original": "\" color: #ff8095;\\n}\\n\\n/* =\"",
+        "formatted": "\"0.18);\\n  color: #ff8095;\""
+      },
+      {
+        "at": 1569,
+        "original": "\"}\\n\\n/* ==================\"",
+        "formatted": "\"ff8095;\\n}\\n\\n/* ==========\""
+      },
+      {
+        "at": 1571,
+        "original": "\"\\n/* =================== \"",
+        "formatted": "\"8095;\\n}\\n\\n/* ============\""
+      }
+    ]
+  },
+  {
+    "file": "src/renderer/src/styles/theme.css",
+    "sameBytes": false,
+    "tokenIdentical": true,
+    "originalLen": 1151,
+    "formattedLen": 1167,
+    "crlfInOriginal": false,
+    "crlfInFormatted": false,
+    "diffSamples": [
+      {
+        "at": 520,
+        "original": "\"135deg, rgba(56, 189, 24\"",
+        "formatted": "\"\\n    135deg,\\n    rgba(56\""
+      },
+      {
+        "at": 581,
+        "original": "\"\\n  /* text */\\n  --text: \"",
+        "formatted": "\"247, 0.35)\\n  );\\n\\n  /* te\""
+      },
+      {
+        "at": 582,
+        "original": "\"  /* text */\\n  --text: #\"",
+        "formatted": "\"47, 0.35)\\n  );\\n\\n  /* tex\""
+      },
+      {
+        "at": 595,
+        "original": "\"  --text: #e8edf7;\\n  --t\"",
+        "formatted": "\";\\n\\n  /* text */\\n  --text\""
+      },
+      {
+        "at": 614,
+        "original": "\"  --text-dim: #9aa5bd;\\n \"",
+        "formatted": "\"-text: #e8edf7;\\n  --text\""
+      },
+      {
+        "at": 637,
+        "original": "\"  --text-faint: #626d85;\"",
+        "formatted": "\"t-dim: #9aa5bd;\\n  --text\""
+      },
+      {
+        "at": 662,
+        "original": "\"\\n  /* lines & glow */\\n  \"",
+        "formatted": "\"faint: #626d85;\\n\\n  /* li\""
+      },
+      {
+        "at": 663,
+        "original": "\"  /* lines & glow */\\n  -\"",
+        "formatted": "\"aint: #626d85;\\n\\n  /* lin\""
+      },
+      {
+        "at": 684,
+        "original": "\"  --border: rgba(125, 17\"",
+        "formatted": "\"lines & glow */\\n  --bord\""
+      },
+      {
+        "at": 723,
+        "original": "\"  --border-strong: rgba(\"",
+        "formatted": "\"75, 255, 0.12);\\n  --bord\""
+      },
+      {
+        "at": 769,
+        "original": "\"  --glow: 0 0 14px rgba(\"",
+        "formatted": "\"75, 255, 0.22);\\n  --glow\""
+      },
+      {
+        "at": 814,
+        "original": "\"  --glow-strong: 0 0 22p\"",
+        "formatted": "\"89, 248, 0.35);\\n  --glow\""
+      }
+    ]
+  }
+]

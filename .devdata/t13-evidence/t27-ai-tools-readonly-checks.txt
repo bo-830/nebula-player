@@ -1,0 +1,40 @@
+t27 independent verification — ai-tools read-only checks (no product file touched)
+timestamp (UTC): 2026-09-12T11:32:57.509Z
+
+[1] in-scope t22 artifacts present in .devdata/t13-evidence/
+    t22-readmerge-proof.txt  509 bytes  2026-09-12T11:26:11.140Z
+    t22-verify-settings-backup.json  394 bytes  2026-09-12T11:11:07.443Z
+
+[2] probe script: scripts/probe-settings-readmerge.mjs  2998 bytes  exists=true
+
+[3] live .devdata/user/settings.json (restored state)
+    first byte            : 123 (123 = '{' expected)
+    BOM                   : absent (good)
+    JSON                  : valid
+    general.updateURL     : "http://127.0.0.1:8888/"  typeof=string
+    hasOwnProperty(updateURL): true
+
+[4] stored probe output (t22-readmerge-proof.txt) — values the contract requires
+    hasUpdateURLKey : true
+    updateURLValue  : "\"\""
+    typeofUpdateURL : "string"
+    trimSafe        : true
+
+[5] signature command attempt (circumstances)
+    ﻿t27 verification attempt by ai-tools (independent second path)
+    timestamp (local): 2026-09-12 19:32:26
+    instance state at attempt: 5173 FREE / 5174 FREE / 9222 FREE / electron 0
+    probe exit code: 1 (ECONNREFUSED 127.0.0.1:9222)
+    reason: the fixture probe needs a running dev app; t27 contract forbids starting one ("启动 dev 实例" 禁止).
+    note: the probe's captured OUTPUT already exists as t22-readmerge-proof.txt (values per contract ④).
+
+[6] instance state at completion
+    5173 -> FREE
+    5174 -> FREE
+    9222 -> FREE
+    electron: INFO: No tasks are running which match the specified criteria.
+
+[7] product files untouched by ai-tools (mtimes)
+    src/main/settings.ts  3316 bytes  mtime 2026-09-12T07:25:52.313Z
+    src/main/store.ts  4837 bytes  mtime 2026-09-12T10:51:12.880Z
+    src/main/index.ts  13562 bytes  mtime 2026-09-12T10:43:10.156Z

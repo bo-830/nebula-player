@@ -1,0 +1,105 @@
+﻿npx.cmd : [33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs
+-node-api-deprecated for more details.[39m
+所在位置 行:1 字符: 178
++ ... la-player"; npx.cmd vitest run --config ".devdata/t13-r2-evidence/dis ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([33mThe CJS bu...e details.[39m:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+ RUN  v2.1.9 C:/博830/vibecoding/nebula-player/.devdata/t13-r2-evidence/discrim-a2
+
+ ❯ miniLyricsDedup.reverted.test.ts (8 tests | 3 failed) 13ms
+   × miniLyricsDedup (A2 rule) > issues one lyricsGet for a sustained stream of the same track 8ms
+     → expected [ 'track-a', 'track-a', …(10) ] to deeply equal [ 'track-a' ]
+   × miniLyricsDedup (A2 rule) > issues one fetch per distinct track when the track changes 1ms
+     → expected [ 'track-a', 'track-a', …(4) ] to deeply equal [ 'track-a', 'track-b', 'track-c' ]
+   × miniLyricsDedup (A2 rule) > claimLyricsRequest is a no-op for a repeated id but true for a new one 1ms
+     → expected true to be false // Object.is equality
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 3 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  miniLyricsDedup.reverted.test.ts > miniLyricsDedup (A2 rule) > issues one lyricsGet for a sustained stream of th
+e same track
+AssertionError: expected [ 'track-a', 'track-a', …(10) ] to deeply equal [ 'track-a' ]
+
+- Expected
++ Received
+
+  Array [
+    "track-a",
++   "track-a",
++   "track-a",
++   "track-a",
++   "track-a",
++   "track-a",
++   "track-a",
++   "track-a",
++   "track-a",
++   "track-a",
++   "track-a",
++   "track-a",
+  ]
+
+ ❯ miniLyricsDedup.reverted.test.ts:64:23
+     62|     const w = newWindow()
+     63|     for (let i = 0; i < 12; i++) w.push('track-a') // 12 pushes ≈ 3s a…
+     64|     expect(w.fetches).toEqual(['track-a']) // pre-fix behaviour: 12 fe…
+       |                       ^
+     65|     expect(w.apply('track-a')).toBe(true)
+     66|     expect(w.painted).toEqual(['track-a'])
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/3]⎯
+
+ FAIL  miniLyricsDedup.reverted.test.ts > miniLyricsDedup (A2 rule) > issues one fetch per distinct track when the trac
+k changes
+AssertionError: expected [ 'track-a', 'track-a', …(4) ] to deeply equal [ 'track-a', 'track-b', 'track-c' ]
+
+- Expected
++ Received
+
+  Array [
+    "track-a",
++   "track-a",
++   "track-b",
++   "track-b",
+    "track-b",
+    "track-c",
+  ]
+
+ ❯ miniLyricsDedup.reverted.test.ts:72:23
+     70|     const w = newWindow()
+     71|     for (const id of ['track-a', 'track-a', 'track-b', 'track-b', 'tra…
+     72|     expect(w.fetches).toEqual(['track-a', 'track-b', 'track-c'])
+       |                       ^
+     73|   })
+     74| 
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/3]⎯
+
+ FAIL  miniLyricsDedup.reverted.test.ts > miniLyricsDedup (A2 rule) > claimLyricsRequest is a no-op for a repeated id b
+ut true for a new one
+AssertionError: expected true to be false // Object.is equality
+
+- Expected
++ Received
+
+- false
++ true
+
+ ❯ miniLyricsDedup.reverted.test.ts:108:46
+    106|     const claimed: LyricIdHolder = { current: null }
+    107|     expect(claimLyricsRequest(claimed, 'a')).toBe(true)
+    108|     expect(claimLyricsRequest(claimed, 'a')).toBe(false)
+       |                                              ^
+    109|     expect(claimLyricsRequest(claimed, 'a')).toBe(false)
+    110|     expect(claimLyricsRequest(claimed, 'b')).toBe(true)
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/3]⎯
+
+ Test Files  1 failed (1)
+      Tests  3 failed | 5 passed (8)
+   Start at  20:56:55
+   Duration  481ms (transform 43ms, setup 0ms, collect 44ms, tests 13ms, environment 0ms, prepare 153ms)
+
+

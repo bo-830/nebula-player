@@ -1,0 +1,63 @@
+{
+  "newFile": "C:\\博830\\vibecoding\\nebula-player\\.devdata\\t13-r2-evidence\\r1-newdir2\\r1-fresh.mp3",
+  "series": [
+    {
+      "nonce": "pre-1",
+      "how": "error",
+      "loaded": false,
+      "code": 4
+    },
+    {
+      "nonce": "post-imm",
+      "how": "loadeddata",
+      "loaded": true,
+      "duration": 8
+    },
+    {
+      "nonce": "post-500",
+      "how": "loadeddata",
+      "loaded": true,
+      "duration": 8
+    },
+    {
+      "nonce": "post-2000",
+      "how": "loadeddata",
+      "loaded": true,
+      "duration": 8
+    },
+    {
+      "nonce": "post-5000",
+      "how": "loadeddata",
+      "loaded": true,
+      "duration": 8
+    },
+    {
+      "nonce": "post-rescan",
+      "how": "loadeddata",
+      "loaded": true,
+      "duration": 8
+    }
+  ],
+  "libraryBefore": 7,
+  "inLibraryBefore": false,
+  "scan": {
+    "added": 1,
+    "updated": 0,
+    "skipped": 0,
+    "missing": 0,
+    "cancelled": false
+  },
+  "libraryAfterScan": 8,
+  "removed": 1,
+  "libraryRestored": 7,
+  "verdict": {
+    "pre-scan rejected (baseline)": true,
+    "post-scan IMMEDIATE load (cache-busted)": true,
+    "post-scan +500ms": true,
+    "post-scan +2000ms": true,
+    "post-scan +5000ms": true,
+    "post-rescan": true
+  },
+  "anyPostScanLoaded": true,
+  "capturedAt": "2026-09-12T12:20:19.165Z"
+}

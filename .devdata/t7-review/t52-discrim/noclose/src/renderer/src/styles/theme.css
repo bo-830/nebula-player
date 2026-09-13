@@ -1,0 +1,45 @@
+/* ================= NEBULA theme ================= */
+:root {
+  /* surfaces */
+  --bg-root: #050508;
+  --bg-panel: rgba(14, 17, 28, 0.78);
+  --bg-panel-strong: rgba(16, 20, 34, 0.92);
+  --bg-hover: rgba(90, 160, 255, 0.08);
+  --bg-active: rgba(56, 189, 248, 0.14);
+  --bg-input: rgba(10, 13, 24, 0.85);
+
+  /* accents */
+  --accent: #38bdf8;
+  --accent-2: #22d3ee;
+  --accent-purple: #a78bfa;
+  --accent-gradient: linear-gradient(135deg, #38bdf8 0%, #6366f1 55%, #a855f7 100%);
+  --accent-gradient-soft: linear-gradient(135deg, rgba(56, 189, 248, 0.35), rgba(168, 85, 247, 0.35));
+
+  /* text */
+  --text: #e8edf7;
+  --text-dim: #9aa5bd;
+  --text-faint: #626d85;
+
+  /* lines & glow */
+  --border: rgba(125, 175, 255, 0.12);
+  --border-strong: rgba(125, 175, 255, 0.22);
+  --glow: 0 0 14px rgba(56, 189, 248, 0.35);
+  --glow-strong: 0 0 22px rgba(56, 189, 248, 0.5);
+
+  /* radius */
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 14px;
+
+  /* motion */
+  --ease: cubic-bezier(0.22, 0.68, 0.32, 1);
+  --dur: 0.22s;
+
+  /* layout */
+  --titlebar-h: 34px;
+  --navbar-h: 46px;
+  --sidebar-w: 224px;
+  --bottombar-h: 128px;
+  --detail-w: 300px;
+  --chat-w: 400px;
+}

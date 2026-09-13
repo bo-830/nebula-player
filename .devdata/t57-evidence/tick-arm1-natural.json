@@ -1,0 +1,27 @@
+{
+  "capturedAt": "2026-09-13T13:01:04.864Z",
+  "tick": {
+    "stamps": [
+      24,
+      45,
+      67,
+      88,
+      111,
+      133
+    ],
+    "deltas": [
+      24,
+      21,
+      22,
+      21,
+      23,
+      22
+    ],
+    "ticks": 6,
+    "cappedAt8s": false,
+    "nominal": 22
+  },
+  "installed": {
+    "error": "\"out/renderer/assets/index-scMuNDEJ.js\" was not found in this archive"
+  }
+}

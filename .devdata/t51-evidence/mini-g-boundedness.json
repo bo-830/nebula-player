@@ -1,0 +1,193 @@
+{
+  "capturedAt": "2026-09-13T12:42:21.953Z",
+  "runsRequested": 6,
+  "apiFrozen": {
+    "frozen": true,
+    "extensible": false,
+    "writable": false,
+    "configurable": false,
+    "hasSetter": false,
+    "typeofFn": "function"
+  },
+  "visibility": {
+    "visibility": "hidden",
+    "hidden": true
+  },
+  "turns": [
+    {
+      "i": 1,
+      "typed": "ok",
+      "sent": "ok",
+      "mainLastAssistant": "我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。",
+      "miniLastAi": "我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。",
+      "bothAgree": true,
+      "textComplete": true,
+      "tailDeltaPresent": true,
+      "mirrorCount": 2,
+      "mirrorTimestamps": [
+        38827.4,
+        38827.4
+      ],
+      "settleAt": 38827.8,
+      "marginMirrorToSettleMs": 0.4,
+      "deltasAfterSettle": 0,
+      "gateway": {
+        "requests": 1,
+        "errors400": [],
+        "emittedText": [
+          "我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。"
+        ]
+      }
+    },
+    {
+      "i": 2,
+      "typed": "ok",
+      "sent": "ok",
+      "mainLastAssistant": "我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。",
+      "miniLastAi": "我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。",
+      "bothAgree": true,
+      "textComplete": true,
+      "tailDeltaPresent": true,
+      "mirrorCount": 2,
+      "mirrorTimestamps": [
+        46262.4,
+        46262.6
+      ],
+      "settleAt": 46262.7,
+      "marginMirrorToSettleMs": 0.1,
+      "deltasAfterSettle": 0,
+      "gateway": {
+        "requests": 1,
+        "errors400": [],
+        "emittedText": [
+          "我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。"
+        ]
+      }
+    },
+    {
+      "i": 3,
+      "typed": "ok",
+      "sent": "ok",
+      "mainLastAssistant": "我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。",
+      "miniLastAi": "我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。",
+      "bothAgree": true,
+      "textComplete": true,
+      "tailDeltaPresent": true,
+      "mirrorCount": 2,
+      "mirrorTimestamps": [
+        53704.8,
+        53704.8
+      ],
+      "settleAt": 53705.1,
+      "marginMirrorToSettleMs": 0.3,
+      "deltasAfterSettle": 0,
+      "gateway": {
+        "requests": 1,
+        "errors400": [],
+        "emittedText": [
+          "我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。"
+        ]
+      }
+    },
+    {
+      "i": 4,
+      "typed": "ok",
+      "sent": "ok",
+      "mainLastAssistant": "我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。",
+      "miniLastAi": "我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。",
+      "bothAgree": true,
+      "textComplete": true,
+      "tailDeltaPresent": true,
+      "mirrorCount": 2,
+      "mirrorTimestamps": [
+        61140.6,
+        61140.7
+      ],
+      "settleAt": 61140.8,
+      "marginMirrorToSettleMs": 0.1,
+      "deltasAfterSettle": 0,
+      "gateway": {
+        "requests": 1,
+        "errors400": [],
+        "emittedText": [
+          "我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。"
+        ]
+      }
+    },
+    {
+      "i": 5,
+      "typed": "ok",
+      "sent": "ok",
+      "mainLastAssistant": "我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。",
+      "miniLastAi": "我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。",
+      "bothAgree": true,
+      "textComplete": true,
+      "tailDeltaPresent": true,
+      "mirrorCount": 2,
+      "mirrorTimestamps": [
+        68575.5,
+        68575.5
+      ],
+      "settleAt": 68575.8,
+      "marginMirrorToSettleMs": 0.3,
+      "deltasAfterSettle": 0,
+      "gateway": {
+        "requests": 1,
+        "errors400": [],
+        "emittedText": [
+          "我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。"
+        ]
+      }
+    },
+    {
+      "i": 6,
+      "typed": "ok",
+      "sent": "ok",
+      "mainLastAssistant": "我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。",
+      "miniLastAi": "我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。",
+      "bothAgree": true,
+      "textComplete": true,
+      "tailDeltaPresent": true,
+      "mirrorCount": 2,
+      "mirrorTimestamps": [
+        76002.3,
+        76002.4
+      ],
+      "settleAt": 76002.5,
+      "marginMirrorToSettleMs": 0.1,
+      "deltasAfterSettle": 0,
+      "gateway": {
+        "requests": 1,
+        "errors400": [],
+        "emittedText": [
+          "我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。"
+        ]
+      }
+    }
+  ],
+  "stats": {
+    "runs": 6,
+    "allTextsComplete": true,
+    "allBothAgree": true,
+    "tailDeltaAlwaysPresent": true,
+    "totalDeltasAfterSettle": 0,
+    "marginMirrorToSettleMs": {
+      "min": 0.1,
+      "median": 0.3,
+      "max": 0.4,
+      "samples": [
+        0.4,
+        0.1,
+        0.3,
+        0.1,
+        0.3,
+        0.1
+      ]
+    },
+    "interpretation": "every delta listener fired BEFORE the settle transition (margin positive in all runs) and the full two-piece answer (tail delta included) is present in both windows ⇒ the skew is a few ms, far below tens/hundreds of ms, and one settle yield closes the race"
+  },
+  "fingerprints": {
+    "src/renderer/src/stores/chatStore.ts": "920fcb05ac5d873f609ac84bb36ca806ffea61b7",
+    "src/main/ipc.ts": "8c67f9dec91a6a5f55cbc1da374fb54fc94dc1c8"
+  }
+}

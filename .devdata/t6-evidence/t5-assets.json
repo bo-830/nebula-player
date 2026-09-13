@@ -1,0 +1,200 @@
+{
+  "capturedAt": "2026-09-12T10:53:39.216Z",
+  "idempotency": {
+    "command": "npx.cmd eslint --fix src/main/index.ts src/main/protocol.ts src/main/ipc.ts src/renderer/src/components/MainView.tsx src/renderer/src/stores/playerStore.ts",
+    "exitCode": 0,
+    "files": [
+      {
+        "file": "src/main/index.ts",
+        "sha1Before": "dabd3b68d59e",
+        "sha1After": "dabd3b68d59e",
+        "unchanged": true
+      },
+      {
+        "file": "src/main/protocol.ts",
+        "sha1Before": "1b076de5cacc",
+        "sha1After": "1b076de5cacc",
+        "unchanged": true
+      },
+      {
+        "file": "src/main/ipc.ts",
+        "sha1Before": "329a7355b30e",
+        "sha1After": "329a7355b30e",
+        "unchanged": true
+      },
+      {
+        "file": "src/renderer/src/components/MainView.tsx",
+        "sha1Before": "adf640bfc1d1",
+        "sha1After": "adf640bfc1d1",
+        "unchanged": true
+      },
+      {
+        "file": "src/renderer/src/stores/playerStore.ts",
+        "sha1Before": "512e558ed3b2",
+        "sha1After": "512e558ed3b2",
+        "unchanged": true
+      }
+    ],
+    "allUnchanged": true,
+    "eslintFixOutputTail": "",
+    "prettierCheck": {
+      "command": "npx.cmd prettier --check src/main/index.ts src/main/protocol.ts src/main/ipc.ts src/renderer/src/components/MainView.tsx src/renderer/src/stores/playerStore.ts",
+      "exitCode": 0,
+      "output": "Checking formatting...\nAll matched files use Prettier code style!"
+    }
+  },
+  "testAssets": {
+    "command": "npx.cmd vitest run --reporter=json",
+    "exitCode": 0,
+    "assets": [
+      {
+        "file": "src/main/__tests__/lrc.test.ts",
+        "declared": 9,
+        "exists": true,
+        "size": 2215,
+        "mtime": "2026-09-12T07:23:03.646Z",
+        "declaredTotal": 9,
+        "actualTests": 9,
+        "matchesDeclaration": true
+      },
+      {
+        "file": "src/main/__tests__/mediaFormats.test.ts",
+        "declared": 6,
+        "exists": true,
+        "size": 5433,
+        "mtime": "2026-09-12T09:16:09.894Z",
+        "declaredTotal": 6,
+        "actualTests": 11,
+        "matchesDeclaration": false
+      },
+      {
+        "file": "src/main/__tests__/scanner.test.ts",
+        "declared": 12,
+        "exists": true,
+        "size": 4552,
+        "mtime": "2026-09-12T07:23:40.873Z",
+        "declaredTotal": 12,
+        "actualTests": 12,
+        "matchesDeclaration": true
+      },
+      {
+        "file": "src/renderer/src/lib/__tests__/queue.test.ts",
+        "declared": 9,
+        "exists": true,
+        "size": 3440,
+        "mtime": "2026-09-12T07:25:52.312Z",
+        "declaredTotal": 9,
+        "actualTests": 9,
+        "matchesDeclaration": true
+      },
+      {
+        "file": "src/renderer/src/lib/__tests__/chatConfirm.test.ts",
+        "declared": 9,
+        "exists": true,
+        "size": 16706,
+        "mtime": "2026-09-12T08:54:42.720Z",
+        "declaredTotal": 9,
+        "actualTests": 11,
+        "matchesDeclaration": false
+      },
+      {
+        "file": "src/renderer/src/lib/__tests__/sleepTimer.test.ts",
+        "declared": 20,
+        "exists": true,
+        "size": 7224,
+        "mtime": "2026-09-12T10:48:19.192Z",
+        "declaredTotal": 20,
+        "actualTests": 20,
+        "matchesDeclaration": true
+      },
+      {
+        "file": "src/renderer/src/lib/__tests__/playerStoreSleep.test.ts",
+        "declared": 8,
+        "exists": true,
+        "size": 9980,
+        "mtime": "2026-09-12T08:54:42.656Z",
+        "declaredTotal": 8,
+        "actualTests": 13,
+        "matchesDeclaration": false
+      }
+    ],
+    "declaredSum": 73,
+    "allExist": true,
+    "allMatchDeclaration": false,
+    "runnerTotals": {
+      "numTotalTests": 118,
+      "numPassedTests": 118,
+      "numFailedTests": 0,
+      "numTotalTestSuites": 35
+    },
+    "runnerFiles": [
+      {
+        "file": "C:/博830/vibecoding/nebula-player/src/main/__tests__/lrc.test.ts",
+        "tests": 9
+      },
+      {
+        "file": "C:/博830/vibecoding/nebula-player/src/main/__tests__/mediaFormats.test.ts",
+        "tests": 11
+      },
+      {
+        "file": "C:/博830/vibecoding/nebula-player/src/main/__tests__/scanner.test.ts",
+        "tests": 12
+      },
+      {
+        "file": "C:/博830/vibecoding/nebula-player/src/renderer/src/lib/__tests__/chatConfirm.test.ts",
+        "tests": 11
+      },
+      {
+        "file": "C:/博830/vibecoding/nebula-player/src/renderer/src/lib/__tests__/format.test.ts",
+        "tests": 4
+      },
+      {
+        "file": "C:/博830/vibecoding/nebula-player/src/renderer/src/lib/__tests__/lyricsOffset.test.ts",
+        "tests": 14
+      },
+      {
+        "file": "C:/博830/vibecoding/nebula-player/src/renderer/src/lib/__tests__/playerStoreSleep.test.ts",
+        "tests": 13
+      },
+      {
+        "file": "C:/博830/vibecoding/nebula-player/src/renderer/src/lib/__tests__/queue.test.ts",
+        "tests": 9
+      },
+      {
+        "file": "C:/博830/vibecoding/nebula-player/src/renderer/src/lib/__tests__/recommend.test.ts",
+        "tests": 6
+      },
+      {
+        "file": "C:/博830/vibecoding/nebula-player/src/renderer/src/lib/__tests__/search.test.ts",
+        "tests": 9
+      },
+      {
+        "file": "C:/博830/vibecoding/nebula-player/src/renderer/src/lib/__tests__/sleepTimer.test.ts",
+        "tests": 20
+      }
+    ]
+  },
+  "protocolLine90": {
+    "line": "* so `CORP: same-origin` would block every cover. Do not add it. The exposure"
+  },
+  "protocolNeighbours": [
+    "87: * Covers are rendered as `<img src=\"media://…\">` WITHOUT `crossOrigin`, i.e. a",
+    "88: * no-cors request, and CORP is enforced for no-cors requests. The page origin",
+    "89: * (`file://` / `localhost:5173`) differs from the resource origin (`media://`),",
+    "90: * so `CORP: same-origin` would block every cover. Do not add it. The exposure",
+    "91: * is bounded by the path/extension validation below plus the navigation guards",
+    "92: * in index.ts instead.",
+    "93: */",
+    "94: const CORS_HEADERS: Record<string, string> = {"
+  ],
+  "lint": {
+    "exitCode": 0,
+    "errors": 0,
+    "warnings": 1,
+    "filesWithErrors": [],
+    "warningRules": [
+      "react-hooks/incompatible-library"
+    ],
+    "protocolErrors": []
+  }
+}

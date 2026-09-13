@@ -1,0 +1,76 @@
+{
+  "group": "tool chain (hidden main window): control_player + destructive confirm bar inside the mini",
+  "controlTurn": {
+    "before": {
+      "isPlaying": true
+    },
+    "after": {
+      "isPlaying": false,
+      "lastAssistant": "好的，已完成。",
+      "chips": []
+    },
+    "miniChips": [
+      "已暂停播放"
+    ]
+  },
+  "destructive": {
+    "seeded": {
+      "playlistId": "mty1ejmzib44dk7",
+      "ids": [
+        "48340575992a4a0b1a06",
+        "f6d99f294b9932accaa9"
+      ],
+      "trackIds": [
+        "f6d99f294b9932accaa9"
+      ]
+    },
+    "parked": {
+      "pending": {
+        "name": "remove_from_playlist",
+        "summary": "从歌单「夜跑」移除 1 首歌曲：《song-c》"
+      },
+      "trackIds": [
+        "f6d99f294b9932accaa9",
+        "48340575992a4a0b1a06"
+      ]
+    },
+    "bar": {
+      "buttons": [
+        "确认执行",
+        "取消"
+      ],
+      "text": "把夜跑歌单里的 48340575992a4a0b1a06 这首歌删掉 | 需要你确认的破坏性操作 | 从歌单「夜跑」移除 1 首歌曲：《song-c》 | 确认执行 | 取消"
+    },
+    "cancelClick": "clicked",
+    "afterCancel": {
+      "pending": false,
+      "trackIds": [
+        "f6d99f294b9932accaa9",
+        "48340575992a4a0b1a06"
+      ]
+    },
+    "confirmClick": "clicked",
+    "afterConfirm": {
+      "pending": false,
+      "trackIds": [
+        "f6d99f294b9932accaa9"
+      ]
+    }
+  },
+  "gateway": {
+    "tools": [
+      "remove_from_playlist"
+    ],
+    "requests": 2,
+    "errors400": []
+  },
+  "pass": {
+    "controlPausedMain": true,
+    "controlChipShown": true,
+    "parkedNotExecuted": true,
+    "barInsideMini": true,
+    "cancelKeptData": true,
+    "confirmMutatedData": true
+  },
+  "passAll": true
+}

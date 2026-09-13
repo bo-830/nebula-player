@@ -1,0 +1,358 @@
+targets: ["http://localhost:5173/"]
+--- preflight OK
+--- execTier OK
+--- chatTier OK
+--- overCapProbe OK
+--- destructiveTier OK
+--- titlesMain OK
+--- titlesMini OK
+--- failureTier OK
+--- wireSystemPrompt OK
+{
+  "preflight": {
+    "cfg": {
+      "before": {
+        "api": {
+          "baseURL": "http://127.0.0.1:9997/v1",
+          "model": "deepseek-v4-flash",
+          "keyMode": "enc",
+          "hasKey": true
+        },
+        "general": {
+          "closeToTray": true,
+          "alwaysOnTop": false,
+          "resumeOnLaunch": true,
+          "mediaKeys": false,
+          "scanFolders": [],
+          "updateURL": "http://127.0.0.1:8888/"
+        }
+      }
+    },
+    "applied": {
+      "after": {
+        "baseURL": "http://127.0.0.1:9997/v1",
+        "model": "deepseek-v4-flash",
+        "keyMode": "enc",
+        "hasKey": true
+      }
+    },
+    "seeded": {
+      "libraryTracks": 7,
+      "seededIds": [
+        "48340575992a4a0b1a06",
+        "f6d99f294b9932accaa9"
+      ],
+      "seededNames": [
+        "song-c",
+        "SongB"
+      ],
+      "playlistId": "mty1ejmzib44dk7",
+      "trackIds": [
+        "f6d99f294b9932accaa9",
+        "48340575992a4a0b1a06"
+      ]
+    }
+  },
+  "execTier": {
+    "sent": "ok/ok",
+    "snapshot": {
+      "pending": null,
+      "busy": false,
+      "chips": [],
+      "bubbles": [
+        {
+          "role": "user",
+          "content": "暂停",
+          "chips": []
+        },
+        {
+          "role": "assistant",
+          "content": "已暂停。",
+          "chips": [
+            "已暂停播放"
+          ]
+        }
+      ],
+      "lastMessage": "已暂停。",
+      "messages": 2,
+      "aiBubbles": [
+        "已暂停。"
+      ],
+      "confirmBarText": null,
+      "confirmBarButtons": [],
+      "chatChips": [
+        "已暂停播放"
+      ],
+      "playing": false,
+      "current": "SongB",
+      "playlistTrackIds": [
+        "f6d99f294b9932accaa9",
+        "48340575992a4a0b1a06"
+      ],
+      "extra": {}
+    },
+    "gateway": {
+      "requests": 2,
+      "emitted": [
+        "control_player"
+      ],
+      "lastUser": "暂停",
+      "toolResults": [
+        "执行了 pause"
+      ]
+    },
+    "bubbleEmoji": [],
+    "chipEmoji": []
+  },
+  "chatTier": {
+    "sent": "ok/ok",
+    "snapshot": {
+      "pending": null,
+      "busy": false,
+      "chips": [],
+      "bubbles": [
+        {
+          "role": "user",
+          "content": "推荐几首适合雨天的歌",
+          "chips": []
+        },
+        {
+          "role": "assistant",
+          "content": "雨天适合听慢一点的，鼓点轻、留白多，像窗上那层水汽。先试试《雨夜行》，嫌闷我再换清亮的 🌧️🎧",
+          "chips": []
+        }
+      ],
+      "lastMessage": "雨天适合听慢一点的，鼓点轻、留白多，像窗上那层水汽。先试试《雨夜行》，嫌闷我再换清亮的 🌧️🎧",
+      "messages": 2,
+      "aiBubbles": [
+        "雨天适合听慢一点的，鼓点轻、留白多，像窗上那层水汽。先试试《雨夜行》，嫌闷我再换清亮的 🌧️🎧"
+      ],
+      "confirmBarText": null,
+      "confirmBarButtons": [],
+      "chatChips": [],
+      "playing": false,
+      "current": "SongB",
+      "playlistTrackIds": [
+        "f6d99f294b9932accaa9",
+        "48340575992a4a0b1a06"
+      ],
+      "extra": {}
+    },
+    "gatewayText": "（网关脚本产生，非模型输出）",
+    "bubbleEmoji": [
+      "🌧",
+      "🎧"
+    ],
+    "emojiCount": 2,
+    "nonEmptyLines": 1
+  },
+  "overCapProbe": {
+    "sent": "ok/ok",
+    "snapshot": {
+      "pending": null,
+      "busy": false,
+      "chips": [],
+      "bubbles": [
+        {
+          "role": "user",
+          "content": "OVERCAP 这条用来测量应用侧是否有 emoji 上限",
+          "chips": []
+        },
+        {
+          "role": "assistant",
+          "content": "当然可以呀～这种天气最适合窝着听歌了！我一放音乐整个人都软下来 ✨🌈🎶💫🌙",
+          "chips": []
+        }
+      ],
+      "lastMessage": "当然可以呀～这种天气最适合窝着听歌了！我一放音乐整个人都软下来 ✨🌈🎶💫🌙",
+      "messages": 2,
+      "aiBubbles": [
+        "当然可以呀～这种天气最适合窝着听歌了！我一放音乐整个人都软下来 ✨🌈🎶💫🌙"
+      ],
+      "confirmBarText": null,
+      "confirmBarButtons": [],
+      "chatChips": [],
+      "playing": false,
+      "current": "SongB",
+      "playlistTrackIds": [
+        "f6d99f294b9932accaa9",
+        "48340575992a4a0b1a06"
+      ],
+      "extra": {}
+    },
+    "bubbleEmoji": [
+      "✨",
+      "🌈",
+      "🎶",
+      "💫",
+      "🌙"
+    ],
+    "emojiCount": 5,
+    "note": "网关故意回了 5 个 emoji：若应用侧有「单条 ≤2」的实现，这里应被裁剪或拦截；实测未被裁剪 ⇒ 上限只存在于提示词中（应用不保证）"
+  },
+  "destructiveTier": {
+    "sent": "ok/ok",
+    "victim": "f6d99f294b9932accaa9",
+    "before": {
+      "trackIds": [
+        "f6d99f294b9932accaa9",
+        "48340575992a4a0b1a06"
+      ],
+      "names": [
+        "SongB",
+        "song-c"
+      ]
+    },
+    "parked": {
+      "busy": false,
+      "pending": "call_rm_5"
+    },
+    "parkedSnapshot": {
+      "pending": {
+        "toolCallId": "call_rm_5",
+        "name": "remove_from_playlist",
+        "summary": "从歌单《夜跑》移除 1 首：《SongB》"
+      },
+      "busy": false,
+      "chips": [
+        "待确认：从歌单《夜跑》移除 1 首：《SongB》"
+      ],
+      "bubbles": [
+        {
+          "role": "user",
+          "content": "把夜跑歌单里的 f6d99f294b9932accaa9 这首歌删掉",
+          "chips": []
+        }
+      ],
+      "lastMessage": "把夜跑歌单里的 f6d99f294b9932accaa9 这首歌删掉",
+      "messages": 1,
+      "aiBubbles": [
+        "需要你确认的破坏性操作\n从歌单《夜跑》移除 1 首：《SongB》\n确认执行\n取消"
+      ],
+      "confirmBarText": "需要你确认的破坏性操作 | 从歌单《夜跑》移除 1 首：《SongB》 | 确认执行 | 取消",
+      "confirmBarButtons": [
+        "确认执行",
+        "取消"
+      ],
+      "chatChips": [
+        "该操作尚未执行"
+      ],
+      "playing": false,
+      "current": "SongB",
+      "playlistTrackIds": [
+        "f6d99f294b9932accaa9",
+        "48340575992a4a0b1a06"
+      ],
+      "extra": {}
+    },
+    "summaryChecks": {
+      "summary": "从歌单《夜跑》移除 1 首：《SongB》",
+      "containsPlaylist": true,
+      "containsCount": true,
+      "emoji": [],
+      "emojiCount": 0,
+      "cutesyWords": []
+    },
+    "cancelClick": "clicked",
+    "after": {
+      "playlistTrackIds": [
+        "f6d99f294b9932accaa9",
+        "48340575992a4a0b1a06"
+      ],
+      "pending": null,
+      "lastMessage": "已取消，歌单没有改动。",
+      "messages": 2
+    },
+    "dataUnchanged": true,
+    "gatewayCancelToolResult": [
+      "用户已取消该操作：从歌单《夜跑》移除 1 首：《SongB》。请勿重复执行，改为询问用户还需要什么。"
+    ]
+  },
+  "titlesMain": {
+    "dom": {
+      "chatTitle": "薇拉 Vela",
+      "chatHint": "Enter 发送 · Shift+Enter 换行 · 薇拉 Vela 的指令会直接操控播放器",
+      "emptyText": null,
+      "suggestions": [],
+      "textareaPlaceholder": "输入指令或问题，Enter 发送…"
+    },
+    "suggestionClick": {
+      "click": "missing",
+      "before": {
+        "messages": 2
+      },
+      "after": {
+        "messages": 2,
+        "draft": "",
+        "textarea": "",
+        "busy": false
+      }
+    }
+  },
+  "titlesMini": {
+    "miniWindowFound": true,
+    "dom": {
+      "title": null,
+      "empty": null,
+      "suggestions": [],
+      "textareaPlaceholder": null,
+      "hasMiniChat": false
+    }
+  },
+  "failureTier": {
+    "sent": "ok/ok",
+    "settingsBeforeFailure": {
+      "baseURL": "http://127.0.0.1:9996/v1"
+    },
+    "text": "⚠️ 无法获取 AI 回复：网络连接失败，请检查网络或接口地址\n\n请检查「设置 → AI 配置」中的接口地址、API Key 与网络连接。",
+    "nonEmptyLines": 2,
+    "emoji": [
+      "⚠"
+    ],
+    "emojiCount": 1,
+    "leadingPictograph": "⚠(U+26A0)",
+    "containsPointer": true,
+    "containsKeyHint": true,
+    "selfPity": [],
+    "impossiblePromise": [],
+    "domBubble": "⚠️ 无法获取 AI 回复：网络连接失败，请检查网络或接口地址\n\n请检查「设置 → AI 配置」中的接口地址、API Key 与网络连接。",
+    "settingsRestoredTo": "http://127.0.0.1:9997/v1"
+  },
+  "wireSystemPrompt": {
+    "requests": 6,
+    "requestsWithSystem": 6,
+    "distinctSystemPrompts": 1,
+    "promptSha1": "77cf6444e8a99c16f1fba20ecc33cf33000078bc",
+    "promptBytes": 2644,
+    "promptChars": 1076,
+    "promptEmoji": [],
+    "rules": {
+      "name": true,
+      "execTier": true,
+      "execExample": true,
+      "chatTier": true,
+      "destructiveTier": true,
+      "failTier": true,
+      "failPointer": true,
+      "noPromise": true,
+      "selfRef": true
+    },
+    "forbiddenAppellationOccurrences": {
+      "主人": [
+        "称用户「你」，全篇简体中文；不要用「主人」「亲爱的」这类"
+      ],
+      "亲爱的": [
+        "你」，全篇简体中文；不要用「主人」「亲爱的」这类称呼。\n-"
+      ]
+    },
+    "errors400": [],
+    "perRequestSystemSha1": [
+      "77cf6444e8a9",
+      "77cf6444e8a9",
+      "77cf6444e8a9",
+      "77cf6444e8a9",
+      "77cf6444e8a9",
+      "77cf6444e8a9"
+    ]
+  }
+}

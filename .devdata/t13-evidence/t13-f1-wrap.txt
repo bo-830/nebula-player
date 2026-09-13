@@ -1,0 +1,29 @@
+{
+  "A": {
+    "index": 0,
+    "pauses": 0,
+    "loads": 1,
+    "pass": true
+  },
+  "B": {
+    "index": 0,
+    "pauses": 0,
+    "pass": true
+  },
+  "C": {
+    "index": 1,
+    "pass": true
+  },
+  "D": {
+    "index": 2,
+    "pauses": 1,
+    "sleepCleared": true,
+    "pass": true
+  },
+  "E": {
+    "index": 0,
+    "pauses": 0,
+    "pass": true
+  },
+  "allPass": true
+}

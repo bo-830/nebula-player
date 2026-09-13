@@ -1,0 +1,403 @@
+{
+  "sourceAttempt": "t47 attempt 1 runtime evidence, reused in attempt 2 under the same-tree rule",
+  "capturedAt": "2026-09-13T12:05:39.863Z",
+  "tree": {
+    "srcAggregateSha1": "459c1da2fd33727c8f64b5ce3c7bdccbf197fb4b",
+    "srcFileCount": 83,
+    "newestSrcMtime": "2026-09-13T11:49:24.039Z",
+    "reusedBecause": "attempt-2 re-read of the aggregate + 8 key files was byte-identical to sampling time"
+  },
+  "keyFilesSha1": {
+    "src/renderer/src/components/MiniPlayer.tsx": "f14e2669911185d13c0dfccce48c3c245f188960",
+    "src/renderer/src/components/MiniSearch.tsx": "9c06cc31288e0a100b647e26b180d9f0d9ed1d67",
+    "src/renderer/src/components/MiniChat.tsx": "5c47602df3ce8b358d3698909bd4e7823e70bae4",
+    "src/main/miniBounds.ts": "eb84fa4a0b04f31fe21b467e38285c30c3c5488f",
+    "src/main/mini.ts": "7963cb9da9be9b1474df42809629e65db3edb225",
+    "src/main/ipc.ts": "8c67f9dec91a6a5f55cbc1da374fb54fc94dc1c8",
+    "src/renderer/src/lib/mainWindowBridge.ts": "1f5ddc067082cf07ed2064359a86f7e80038cf7e",
+    "src/renderer/src/lib/chatProxy.ts": "42a82c4722cea8de8ad302fd75997e654edd10be"
+  },
+  "filesUnchangedDuringRun": true,
+  "group": "main window hidden in tray — search/play ✔, control ✔, text-only AI turn ✘",
+  "assertions": {
+    "main window really went to tray/hidden": true,
+    "mini search→play works with the main window hidden": true,
+    "mini control command works with the main window hidden": true,
+    "mini AI round trip works with the main window hidden": false
+  },
+  "defect": {
+    "id": "T47-F1",
+    "severity": "high",
+    "summary": "with the main window hidden, a TEXT-ONLY turn started from the mini lands as '（无回复）' in both windows (4 reproductions); the gateway answered each time (errors400=[]) but the store's streamRaw stayed length 0",
+    "attribution": {
+      "mini + hidden + text-only": "FAIL x4 (trayScenario joke + t47-diag 3 turns)",
+      "mini + hidden + tool turn": "PASS (好的，已完成。)",
+      "main + hidden + text-only": "PASS (t47-diag2)",
+      "mini + visible + text-only": "PASS (aiRoundTrip)"
+    },
+    "codePointers": [
+      "src/renderer/src/stores/chatStore.ts:295 (content || （无回复）)",
+      "src/renderer/src/stores/chatStore.ts:353-376 (setInterval typewriter; :376 clears streamRaw)",
+      "src/renderer/src/stores/chatStore.ts:550 (resume.accumulated = getState().streamRaw)",
+      "src/renderer/src/lib/mainWindowBridge.ts (mini chat:proxy:cmd → setDraft + send, 120ms throttle)"
+    ],
+    "mechanism": "UNPROVEN — hypothesis only: ordering between the :376 clear and the :550 read under hidden-window timer throttling",
+    "impact": "'（无回复）' is persisted into messages, visible in both windows; the AI text path is effectively unusable while hidden"
+  },
+  "trayScenario": {
+    "closeSent": 1,
+    "mainVis": {
+      "visibilityState": "hidden",
+      "hidden": true
+    },
+    "expandAgain": {
+      "already": true,
+      "before": {
+        "innerW": 360,
+        "innerH": 540,
+        "screenX": 920,
+        "screenY": 212,
+        "availLeft": 0,
+        "availTop": 0,
+        "availW": 1280,
+        "availH": 752,
+        "dpr": 2,
+        "dataExpanded": "true",
+        "searchZones": 1,
+        "searchInputs": 1,
+        "chatPanes": 1,
+        "chatTextareas": 1,
+        "lyricLines": 0,
+        "transportBtns": 3,
+        "expandBtnTitle": "收起",
+        "bodyText": "SongB | ArtistB | song-c | 测试歌手 | 0:05 | SongB | ArtistB | 0:06 | SongD | 未知 | 0:04 | SongE | 测试歌手 | 0:04 | 把夜跑歌单里的 48340575992a4a0b1a06 这首歌删掉 | 待确认：从歌单「夜跑」移除 1 首歌曲：《song-c》 | ✓ 已移出「夜跑」1 首 | 好的，已完成。"
+      }
+    },
+    "clicked": "clicked",
+    "afterSearch": {
+      "currentId": "48340575992a4a0b1a06",
+      "isPlaying": true
+    },
+    "afterPause": {
+      "isPlaying": false,
+      "lastAi": "好的，已完成。"
+    },
+    "afterChat": {
+      "lastAi": "（无回复）",
+      "busy": false
+    },
+    "gateway": {
+      "requestsBefore": 0,
+      "requestsAfter": 3,
+      "lastUser": "给我讲个关于音乐的笑话",
+      "errors400": []
+    }
+  },
+  "hiddenTextOnlyReproductions": {
+    "capturedAt": "2026-09-13T12:08:41.226Z",
+    "steps": {},
+    "geo": {
+      "expanded": "true",
+      "height": 540
+    },
+    "geoAfter": {
+      "expanded": "true",
+      "height": 540
+    },
+    "queueShape": {
+      "isArray": true,
+      "len": 4,
+      "sample": [
+        "48340575992a4a0b1a06",
+        "f6d99f294b9932accaa9",
+        "e99efd776d8aec6aa81f",
+        "d9c1ea5d5237b765fbff"
+      ],
+      "typeofFirst": "string",
+      "currentId": "48340575992a4a0b1a06"
+    },
+    "beforeVisibility": {
+      "visibilityState": "hidden",
+      "hidden": true
+    },
+    "chatBefore": {
+      "busy": false,
+      "streamRawLen": 0,
+      "streamShown": 0,
+      "streamRawHead": "",
+      "chips": [],
+      "tail": [
+        {
+          "role": "assistant",
+          "content": "好的，已完成。",
+          "chips": [
+            "已暂停播放"
+          ]
+        },
+        {
+          "role": "user",
+          "content": "给我讲个关于音乐的笑话",
+          "chips": []
+        },
+        {
+          "role": "assistant",
+          "content": "（无回复）",
+          "chips": []
+        }
+      ],
+      "bubbleChips": [
+        {
+          "role": "assistant",
+          "chips": [
+            "已暂停播放"
+          ]
+        },
+        {
+          "role": "user",
+          "chips": []
+        },
+        {
+          "role": "assistant",
+          "chips": []
+        }
+      ]
+    },
+    "send1": "ok",
+    "during1": {
+      "busy": false,
+      "streamRawLen": 0,
+      "streamShown": 0,
+      "streamRawHead": "",
+      "chips": [],
+      "tail": [
+        {
+          "role": "assistant",
+          "content": "（无回复）",
+          "chips": []
+        },
+        {
+          "role": "user",
+          "content": "请问播放器支持哪些音频格式",
+          "chips": []
+        },
+        {
+          "role": "assistant",
+          "content": "（无回复）",
+          "chips": []
+        }
+      ],
+      "bubbleChips": [
+        {
+          "role": "assistant",
+          "chips": []
+        },
+        {
+          "role": "user",
+          "chips": []
+        },
+        {
+          "role": "assistant",
+          "chips": []
+        }
+      ]
+    },
+    "after1": {
+      "busy": false,
+      "streamRawLen": 0,
+      "streamShown": 0,
+      "streamRawHead": "",
+      "chips": [],
+      "tail": [
+        {
+          "role": "assistant",
+          "content": "（无回复）",
+          "chips": []
+        },
+        {
+          "role": "user",
+          "content": "请问播放器支持哪些音频格式",
+          "chips": []
+        },
+        {
+          "role": "assistant",
+          "content": "（无回复）",
+          "chips": []
+        }
+      ],
+      "bubbleChips": [
+        {
+          "role": "assistant",
+          "chips": []
+        },
+        {
+          "role": "user",
+          "chips": []
+        },
+        {
+          "role": "assistant",
+          "chips": []
+        }
+      ]
+    },
+    "gateway1": {
+      "requests": [
+        {
+          "n": 1,
+          "stream": true,
+          "model": "deepseek-v4-flash",
+          "tools": [],
+          "emitted": [],
+          "lastUser": "请问播放器支持哪些音频格式",
+          "messageCount": 9
+        }
+      ],
+      "errors400": [],
+      "tools": []
+    },
+    "send2": "ok",
+    "after2": {
+      "busy": false,
+      "streamRawLen": 0,
+      "streamShown": 0,
+      "streamRawHead": "",
+      "chips": [],
+      "tail": [
+        {
+          "role": "assistant",
+          "content": "（无回复）",
+          "chips": []
+        },
+        {
+          "role": "user",
+          "content": "今天天气怎么样",
+          "chips": []
+        },
+        {
+          "role": "assistant",
+          "content": "（无回复）",
+          "chips": []
+        }
+      ],
+      "bubbleChips": [
+        {
+          "role": "assistant",
+          "chips": []
+        },
+        {
+          "role": "user",
+          "chips": []
+        },
+        {
+          "role": "assistant",
+          "chips": []
+        }
+      ]
+    },
+    "gateway2": {
+      "requests": [
+        {
+          "n": 1,
+          "stream": true,
+          "model": "deepseek-v4-flash",
+          "tools": [],
+          "emitted": [],
+          "lastUser": "今天天气怎么样",
+          "messageCount": 11
+        }
+      ],
+      "errors400": [],
+      "tools": []
+    },
+    "miniChatDom": {
+      "msgs": [
+        "chat-msg user::把夜跑歌单里的 48340575992a4a0b1a06 这首歌删掉",
+        "chat-msg ai::好的，已完成。",
+        "chat-msg user::暂停",
+        "chat-msg ai::好的，已完成。",
+        "chat-msg user::给我讲个关于音乐的笑话",
+        "chat-msg ai::（无回复）",
+        "chat-msg user::请问播放器支持哪些音频格式",
+        "chat-msg ai::（无回复）",
+        "chat-msg user::今天天气怎么样",
+        "chat-msg ai::（无回复）"
+      ],
+      "chips": [
+        "待确认：从歌单「夜跑」移除 1 首歌曲：《song-c》",
+        "✓ 已移出「夜跑」1 首",
+        "已暂停播放"
+      ]
+    }
+  },
+  "mainWindowControl": {
+    "capturedAt": "2026-09-13T12:09:25.082Z",
+    "before": {
+      "visibilityState": "hidden",
+      "busy": false,
+      "streamRawLen": 0,
+      "streamShown": 0,
+      "chips": [],
+      "tail": [
+        {
+          "role": "user",
+          "content": "今天天气怎么样"
+        },
+        {
+          "role": "assistant",
+          "content": "（无回复）"
+        }
+      ]
+    },
+    "send": {
+      "busy": true
+    },
+    "during": {
+      "visibilityState": "hidden",
+      "busy": false,
+      "streamRawLen": 0,
+      "streamShown": 0,
+      "chips": [],
+      "tail": [
+        {
+          "role": "user",
+          "content": "主窗口直发：请问支持哪些格式"
+        },
+        {
+          "role": "assistant",
+          "content": "我是 NEBULA 测试网关的第 1 轮回复。"
+        }
+      ]
+    },
+    "after": {
+      "visibilityState": "hidden",
+      "busy": false,
+      "streamRawLen": 0,
+      "streamShown": 0,
+      "chips": [],
+      "tail": [
+        {
+          "role": "user",
+          "content": "主窗口直发：请问支持哪些格式"
+        },
+        {
+          "role": "assistant",
+          "content": "我是 NEBULA 测试网关的第 1 轮回复。"
+        }
+      ]
+    },
+    "gateway": {
+      "requests": [
+        {
+          "n": 1,
+          "stream": true,
+          "model": "deepseek-v4-flash",
+          "tools": [],
+          "emitted": [],
+          "lastUser": "主窗口直发：请问支持哪些格式",
+          "messageCount": 13
+        }
+      ],
+      "errors400": [],
+      "tools": []
+    }
+  }
+}

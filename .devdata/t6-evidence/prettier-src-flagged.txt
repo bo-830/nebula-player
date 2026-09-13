@@ -1,0 +1,3 @@
+﻿src/renderer/src/styles/app.css
+src/renderer/src/styles/global.css
+src/renderer/src/styles/theme.css

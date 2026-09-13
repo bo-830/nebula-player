@@ -1,0 +1,145 @@
+{
+  "capturedAt": "2026-09-13T13:01:05.694Z",
+  "hypothesis": "H1 — chunk guard uses streamConvId which closeStream() clears on typewriter catch-up ⇒ post-catch-up deltas dropped ⇒ truncated answer",
+  "expectedText": "第一段滴注内容。第二段滴注内容。第三段滴注内容。",
+  "segments": [
+    "第一段滴注内容。",
+    "第二段滴注内容。",
+    "第三段滴注内容。"
+  ],
+  "gapsRequested": [
+    2000
+  ],
+  "tree": {
+    "chatStoreTs": "3c4edd11171b4d0f517b05fbaab1be43dce5c5c8",
+    "MiniChat": "1e2d62e5b60d3ce160d843ed97ce655f2d8848c2"
+  },
+  "runs": [
+    {
+      "gapMs": 2000,
+      "typed": "ok",
+      "sent": "ok",
+      "mainLastAssistant": "第一段滴注内容。",
+      "miniLastAi": "第一段滴注内容。",
+      "persistedLastAssistant": "第一段滴注内容。",
+      "textExact": false,
+      "segmentsPresent": [
+        "第一段滴注内容。"
+      ],
+      "segmentsMissing": [
+        "第二段滴注内容。",
+        "第三段滴注内容。"
+      ],
+      "isPrefixOfExpected": true,
+      "truncated": true,
+      "bothWindowsAgree": true,
+      "mirrorEvents": [
+        {
+          "t": 46798.4,
+          "rawLen": 8,
+          "shown": 0
+        },
+        {
+          "t": 46821.5,
+          "rawLen": 8,
+          "shown": 5
+        },
+        {
+          "t": 46842.7,
+          "rawLen": 8,
+          "shown": 8
+        }
+      ],
+      "cursorCatchUps": [
+        46842.7
+      ],
+      "gateway": {
+        "writtenAtMs": [
+          0,
+          2008,
+          4020
+        ],
+        "expectedText": "第一段滴注内容。第二段滴注内容。第三段滴注内容。",
+        "errors400": []
+      },
+      "observerEvents": [
+        {
+          "t": 46775.5,
+          "busy": false,
+          "rawLen": 0,
+          "shown": 0,
+          "msgs": 0
+        },
+        {
+          "t": 46775.6,
+          "busy": true,
+          "rawLen": 0,
+          "shown": 0,
+          "msgs": 0
+        },
+        {
+          "t": 46775.7,
+          "busy": true,
+          "rawLen": 0,
+          "shown": 0,
+          "msgs": 1
+        },
+        {
+          "t": 46798.4,
+          "busy": true,
+          "rawLen": 8,
+          "shown": 0,
+          "msgs": 1
+        },
+        {
+          "t": 46821.5,
+          "busy": true,
+          "rawLen": 8,
+          "shown": 5,
+          "msgs": 1
+        },
+        {
+          "t": 46842.7,
+          "busy": true,
+          "rawLen": 8,
+          "shown": 8,
+          "msgs": 1
+        },
+        {
+          "t": 50813.5,
+          "busy": false,
+          "rawLen": 0,
+          "shown": 8,
+          "msgs": 1
+        },
+        {
+          "t": 50813.7,
+          "busy": false,
+          "rawLen": 0,
+          "shown": 0,
+          "msgs": 2
+        }
+      ]
+    }
+  ],
+  "visibility": {
+    "visibility": "visible"
+  },
+  "summary": {
+    "gaps": [
+      {
+        "gapMs": 2000,
+        "truncated": true,
+        "exact": false,
+        "segmentsPresent": 1
+      }
+    ],
+    "anyTruncated": true,
+    "verdictIfTruncated": "H1 is reachable at runtime ⇒ answer truncated and persisted as a prefix of the real reply",
+    "verdictIfClean": "no truncation observed at any tested gap ⇒ H1 not reachable with this harness",
+    "tree": {
+      "chatStoreTs": "3c4edd11171b4d0f517b05fbaab1be43dce5c5c8",
+      "MiniChat": "1e2d62e5b60d3ce160d843ed97ce655f2d8848c2"
+    }
+  }
+}

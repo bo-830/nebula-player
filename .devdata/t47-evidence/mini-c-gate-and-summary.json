@@ -1,0 +1,65 @@
+{
+  "sourceAttempt": "t47 attempt 1 runtime evidence, reused in attempt 2 under the same-tree rule",
+  "capturedAt": "2026-09-13T12:05:39.863Z",
+  "tree": {
+    "srcAggregateSha1": "459c1da2fd33727c8f64b5ce3c7bdccbf197fb4b",
+    "srcFileCount": 83,
+    "newestSrcMtime": "2026-09-13T11:49:24.039Z",
+    "reusedBecause": "attempt-2 re-read of the aggregate + 8 key files was byte-identical to sampling time"
+  },
+  "keyFilesSha1": {
+    "src/renderer/src/components/MiniPlayer.tsx": "f14e2669911185d13c0dfccce48c3c245f188960",
+    "src/renderer/src/components/MiniSearch.tsx": "9c06cc31288e0a100b647e26b180d9f0d9ed1d67",
+    "src/renderer/src/components/MiniChat.tsx": "5c47602df3ce8b358d3698909bd4e7823e70bae4",
+    "src/main/miniBounds.ts": "eb84fa4a0b04f31fe21b467e38285c30c3c5488f",
+    "src/main/mini.ts": "7963cb9da9be9b1474df42809629e65db3edb225",
+    "src/main/ipc.ts": "8c67f9dec91a6a5f55cbc1da374fb54fc94dc1c8",
+    "src/renderer/src/lib/mainWindowBridge.ts": "1f5ddc067082cf07ed2064359a86f7e80038cf7e",
+    "src/renderer/src/lib/chatProxy.ts": "42a82c4722cea8de8ad302fd75997e654edd10be"
+  },
+  "filesUnchangedDuringRun": true,
+  "group": "quality gate (per-item values) + group roll-up",
+  "gate_attempt1": {
+    "label": "t47",
+    "stamp": "2026-09-13T11:51:29.584Z"
+  },
+  "gate_attempt2_rerun": {
+    "label": "t47-a2",
+    "stamp": "2026-09-13T12:14:22.799Z",
+    "lint_exitCode": 0,
+    "totalErrors": 0,
+    "totalWarnings": 1,
+    "filesWithErrors": [],
+    "typecheck_node": 0,
+    "typecheck_web": 0,
+    "tests_exitCode": 0,
+    "passed": 165,
+    "failed": 0,
+    "files": 16,
+    "baseline": "141 passed / 14 files before t45+t46; +8 (miniBounds) +16 (chatProxy) = 165 / 16"
+  },
+  "rollUp": {
+    "passed": 26,
+    "failedReal": 1,
+    "probeDefects": 2,
+    "discriminated": 2,
+    "note": "raw runner tally was 28/31; after reclassifying 2 probe defects (queue title-vs-id, chips sampling moment) 10 of 11 contract criteria pass and exactly 1 product defect (T47-F1) remains"
+  },
+  "finalState": {
+    "instances": [
+      "npm PID 15308 (closed)",
+      "npm PID 30844 (closed)"
+    ],
+    "electron": 0,
+    "node": 0,
+    "portsFree": [
+      5173,
+      5174,
+      9222,
+      9223,
+      9997
+    ],
+    "srcTouched": false,
+    "settingsJsonRestored": "C92586A029B6C85356B9840D3B284A9544626CD2"
+  }
+}

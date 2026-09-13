@@ -1,0 +1,17 @@
+[
+ {
+  "url": "http://localhost:5173/#mini",
+  "type": "page"
+ },
+ {
+  "url": "http://localhost:5173/",
+  "type": "page"
+ }
+]
+visibility={"hidden":true,"vis":"hidden","chats":1,"cls":"chat collapsed "}
+after set, storeCollapsed=false
+t+300ms cls=chat collapsed 
+t+1200ms cls=chat collapsed 
+t+2500ms cls=chat collapsed 
+t+4000ms cls=chat collapsed 
+empty={"emptyText":null,"suggestions":[]}

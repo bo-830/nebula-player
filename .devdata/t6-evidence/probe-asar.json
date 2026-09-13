@@ -1,0 +1,29 @@
+﻿{
+  "file": "dist/win-unpacked/resources/app.asar",
+  "headerSize": 4,
+  "totalEntries": 4096,
+  "topLevel": [
+    {
+      "name": "node_modules",
+      "count": 4089
+    },
+    {
+      "name": "out",
+      "count": 5
+    },
+    {
+      "name": "package.json",
+      "count": 1
+    },
+    {
+      "name": "resources",
+      "count": 1
+    }
+  ],
+  "scriptsEntries": 0,
+  "devdataEntries": 0,
+  "srcEntries": 0,
+  "testFiles": 0,
+  "scriptSamples": [],
+  "devdataSamples": []
+}

@@ -1,0 +1,117 @@
+﻿{
+  "setup": {
+    "title": "长测试曲",
+    "playing": true
+  },
+  "engineSeries": [
+    {
+      "mode": "graph",
+      "phase": "applied",
+      "peak": 237,
+      "fallbackTried": false,
+      "ctxState": "running",
+      "audioDirect": false,
+      "playing": true,
+      "spectrumTitle": "LIVE SPECTRUM 0:02",
+      "mediaTime": 2.8
+    },
+    {
+      "mode": "graph",
+      "phase": "applied",
+      "peak": 243,
+      "fallbackTried": false,
+      "ctxState": "running",
+      "audioDirect": false,
+      "playing": true,
+      "spectrumTitle": "LIVE SPECTRUM 0:04",
+      "mediaTime": 4.3
+    },
+    {
+      "mode": "graph",
+      "phase": "applied",
+      "peak": 246,
+      "fallbackTried": false,
+      "ctxState": "running",
+      "audioDirect": false,
+      "playing": true,
+      "spectrumTitle": "LIVE SPECTRUM 0:05",
+      "mediaTime": 5.8
+    },
+    {
+      "mode": "graph",
+      "phase": "applied",
+      "peak": 245,
+      "fallbackTried": false,
+      "ctxState": "running",
+      "audioDirect": false,
+      "playing": true,
+      "spectrumTitle": "LIVE SPECTRUM 0:07",
+      "mediaTime": 7.3
+    },
+    {
+      "mode": "graph",
+      "phase": "applied",
+      "peak": 240,
+      "fallbackTried": false,
+      "ctxState": "running",
+      "audioDirect": false,
+      "playing": true,
+      "spectrumTitle": "LIVE SPECTRUM 0:08",
+      "mediaTime": 8.8
+    },
+    {
+      "mode": "graph",
+      "phase": "applied",
+      "peak": 232,
+      "fallbackTried": false,
+      "ctxState": "running",
+      "audioDirect": false,
+      "playing": true,
+      "spectrumTitle": "LIVE SPECTRUM 0:10",
+      "mediaTime": 10.4
+    }
+  ],
+  "stayedGraph": true,
+  "labels": [
+    "LIVE SPECTRUM 0:02",
+    "LIVE SPECTRUM 0:04",
+    "LIVE SPECTRUM 0:05",
+    "LIVE SPECTRUM 0:07",
+    "LIVE SPECTRUM 0:08",
+    "LIVE SPECTRUM 0:10"
+  ],
+  "canvas": {
+    "canvas": true,
+    "w": 490,
+    "h": 192,
+    "asIsLit": 7523,
+    "syntheticLit": null,
+    "hidden": false
+  },
+  "covers": {
+    "totalImg": 2,
+    "coverCount": 2,
+    "covers": [
+      {
+        "src": "media://local/Qzpc5Y2aODMwXHZpYmVjb2RpbmdcbmVidWxhLXBsYXllcl",
+        "natural": 512,
+        "complete": true,
+        "cls": ""
+      },
+      {
+        "src": "media://local/Qzpc5Y2aODMwXHZpYmVjb2RpbmdcbmVidWxhLXBsYXllcl",
+        "natural": 512,
+        "complete": true,
+        "cls": ""
+      }
+    ]
+  },
+  "miniCovers": {
+    "title": "长测试曲",
+    "imgCount": 0,
+    "covers": []
+  },
+  "consoleLog": [],
+  "mediaImageWarnings": [],
+  "mediaElementErrors": []
+}

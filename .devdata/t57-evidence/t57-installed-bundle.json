@@ -1,0 +1,46 @@
+{
+  "asarPath": "C:\\Users\\34872\\AppData\\Local\\Programs\\nebula-player\\resources\\app.asar",
+  "headerSize": 4,
+  "jsonLength": 1064469,
+  "totalEntries": 4096,
+  "bundleCount": 1,
+  "target": {
+    "path": "out/renderer/assets/index-Cdfx1hqQ.js",
+    "offset": 24382343,
+    "size": 820748
+  },
+  "contentStartCandidates": [
+    {
+      "candidate": 12,
+      "firstByte": "a",
+      "looksLikeJson": false
+    },
+    {
+      "candidate": 1064485,
+      "firstByte": "l",
+      "looksLikeJson": false
+    },
+    {
+      "candidate": 1064488,
+      "firstByte": "{",
+      "looksLikeJson": true
+    }
+  ],
+  "contentStart": 1064488,
+  "bundle": {
+    "path": "out/renderer/assets/index-Cdfx1hqQ.js",
+    "bytes": 814053,
+    "head": "function getDefaultExportFromCjs(x) {\n  return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, \"default\") ?",
+    "hits": {
+      "sentinelNoReply": 1,
+      "streamConvId": 5,
+      "closeStream": 6,
+      "streamRaw": 23,
+      "streamShown": 16,
+      "setInterval": 5,
+      "clearInterval": 5
+    },
+    "intervalSnippet": "cyBinCount);\n    this.analyser.getByteFrequencyData(buf);\n    let peak = 0;\n    for (let i = 0; i < buf.length; i++) peak = Math.max(peak, buf[i]);\n    return peak;\n  }\n  startDetection() {\n    if (this.detectTimer || this.mode !== \"graph\") return;\n    this.silentSamples = 0;\n    this.detectTimer = setInterval(() => {\n      const a = this.audio;\n      if (!a || a.paused || this.mode !== \"graph\") {\n        this.stopDetection();\n        return;\n      }\n      if (!this.ctx) return;\n      if (this.readPeak() > 0) {\n        this.silentSamples = 0;\n        return;\n      }\n      this.silentSamples++;\n      if (this.silentSamples >= 3) this.switchToDirect();\n    }, 1200);\n  }\n  stopDetection() {\n    if (this.detectTime",
+    "sentinelSnippet": "tch (err) {\n      handleRunError(set, get, err, resume.accumulated, resume.chips);\n      finishRun(set, get);\n    }\n  }\n}));\nfunction finalize(set, get, content, chips, isError) {\n  const asst = {\n    id: uid(),\n    role: \"assistant\",\n    content: content || \"（无回复）\",\n    chips,\n    ts: Date.now()\n  };\n  const messages = [...get().messages, asst];\n  set({\n    messages,\n    bubbles: messages.map((m)"
+  }
+}

@@ -1,0 +1,111 @@
+﻿{
+  "library": [
+    {
+      "title": "song-c",
+      "ext": "flac",
+      "hasCover": false,
+      "cover": null
+    },
+    {
+      "title": "SongB",
+      "ext": "wav",
+      "hasCover": false,
+      "cover": null
+    },
+    {
+      "title": "SongD",
+      "ext": "ogg",
+      "hasCover": false,
+      "cover": null
+    },
+    {
+      "title": "测试歌曲A",
+      "ext": "mp3",
+      "hasCover": true,
+      "cover": "ers\\f1da4b02ccf77fda8461.png"
+    },
+    {
+      "title": "SongE",
+      "ext": "m4a",
+      "hasCover": true,
+      "cover": "ers\\d9c1ea5d5237b765fbff.jpg"
+    },
+    {
+      "title": "长测试曲",
+      "ext": "mp3",
+      "hasCover": false,
+      "cover": null
+    }
+  ],
+  "withCover": [
+    "测试歌曲A",
+    "SongE"
+  ],
+  "setup": {
+    "id": "f1da4b02ccf77fda8461",
+    "title": "测试歌曲A",
+    "coverPath": "overs\\f1da4b02ccf77fda8461.png",
+    "playing": true
+  },
+  "listCovers": {
+    "allImg": 4,
+    "covers": [
+      {
+        "tail": "1xmMWRhNGIwMmNjZjc3ZmRhODQ2MS5wbmc",
+        "natural": 512,
+        "complete": true
+      },
+      {
+        "tail": "1xkOWMxZWE1ZDUyMzdiNzY1ZmJmZi5qcGc",
+        "natural": 512,
+        "complete": true
+      },
+      {
+        "tail": "1xmMWRhNGIwMmNjZjc3ZmRhODQ2MS5wbmc",
+        "natural": 512,
+        "complete": true
+      },
+      {
+        "tail": "1xmMWRhNGIwMmNjZjc3ZmRhODQ2MS5wbmc",
+        "natural": 512,
+        "complete": true
+      }
+    ]
+  },
+  "detailCovers": {
+    "allImg": 4,
+    "covers": [
+      {
+        "tail": "1xmMWRhNGIwMmNjZjc3ZmRhODQ2MS5wbmc",
+        "natural": 512,
+        "complete": true
+      },
+      {
+        "tail": "1xkOWMxZWE1ZDUyMzdiNzY1ZmJmZi5qcGc",
+        "natural": 512,
+        "complete": true
+      },
+      {
+        "tail": "1xmMWRhNGIwMmNjZjc3ZmRhODQ2MS5wbmc",
+        "natural": 512,
+        "complete": true
+      },
+      {
+        "tail": "1xmMWRhNGIwMmNjZjc3ZmRhODQ2MS5wbmc",
+        "natural": 512,
+        "complete": true
+      }
+    ]
+  },
+  "coverFetch": {
+    "url": "1xmMWRhNGIwMmNjZjc3ZmRhODQ2MS5wbmc",
+    "error": "TypeError: Failed to fetch"
+  },
+  "mini": {
+    "title": "song-c",
+    "imgCount": 0,
+    "covers": []
+  },
+  "consoleLog": [],
+  "mediaImageWarnings": []
+}

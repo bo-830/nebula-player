@@ -1,0 +1,235 @@
+{
+  "capturedAt": "2026-09-13T12:08:41.226Z",
+  "steps": {},
+  "geo": {
+    "expanded": "true",
+    "height": 540
+  },
+  "geoAfter": {
+    "expanded": "true",
+    "height": 540
+  },
+  "queueShape": {
+    "isArray": true,
+    "len": 4,
+    "sample": [
+      "48340575992a4a0b1a06",
+      "f6d99f294b9932accaa9",
+      "e99efd776d8aec6aa81f",
+      "d9c1ea5d5237b765fbff"
+    ],
+    "typeofFirst": "string",
+    "currentId": "48340575992a4a0b1a06"
+  },
+  "beforeVisibility": {
+    "visibilityState": "hidden",
+    "hidden": true
+  },
+  "chatBefore": {
+    "busy": false,
+    "streamRawLen": 0,
+    "streamShown": 0,
+    "streamRawHead": "",
+    "chips": [],
+    "tail": [
+      {
+        "role": "assistant",
+        "content": "好的，已完成。",
+        "chips": [
+          "已暂停播放"
+        ]
+      },
+      {
+        "role": "user",
+        "content": "给我讲个关于音乐的笑话",
+        "chips": []
+      },
+      {
+        "role": "assistant",
+        "content": "（无回复）",
+        "chips": []
+      }
+    ],
+    "bubbleChips": [
+      {
+        "role": "assistant",
+        "chips": [
+          "已暂停播放"
+        ]
+      },
+      {
+        "role": "user",
+        "chips": []
+      },
+      {
+        "role": "assistant",
+        "chips": []
+      }
+    ]
+  },
+  "send1": "ok",
+  "during1": {
+    "busy": false,
+    "streamRawLen": 0,
+    "streamShown": 0,
+    "streamRawHead": "",
+    "chips": [],
+    "tail": [
+      {
+        "role": "assistant",
+        "content": "（无回复）",
+        "chips": []
+      },
+      {
+        "role": "user",
+        "content": "请问播放器支持哪些音频格式",
+        "chips": []
+      },
+      {
+        "role": "assistant",
+        "content": "（无回复）",
+        "chips": []
+      }
+    ],
+    "bubbleChips": [
+      {
+        "role": "assistant",
+        "chips": []
+      },
+      {
+        "role": "user",
+        "chips": []
+      },
+      {
+        "role": "assistant",
+        "chips": []
+      }
+    ]
+  },
+  "after1": {
+    "busy": false,
+    "streamRawLen": 0,
+    "streamShown": 0,
+    "streamRawHead": "",
+    "chips": [],
+    "tail": [
+      {
+        "role": "assistant",
+        "content": "（无回复）",
+        "chips": []
+      },
+      {
+        "role": "user",
+        "content": "请问播放器支持哪些音频格式",
+        "chips": []
+      },
+      {
+        "role": "assistant",
+        "content": "（无回复）",
+        "chips": []
+      }
+    ],
+    "bubbleChips": [
+      {
+        "role": "assistant",
+        "chips": []
+      },
+      {
+        "role": "user",
+        "chips": []
+      },
+      {
+        "role": "assistant",
+        "chips": []
+      }
+    ]
+  },
+  "gateway1": {
+    "requests": [
+      {
+        "n": 1,
+        "stream": true,
+        "model": "deepseek-v4-flash",
+        "tools": [],
+        "emitted": [],
+        "lastUser": "请问播放器支持哪些音频格式",
+        "messageCount": 9
+      }
+    ],
+    "errors400": [],
+    "tools": []
+  },
+  "send2": "ok",
+  "after2": {
+    "busy": false,
+    "streamRawLen": 0,
+    "streamShown": 0,
+    "streamRawHead": "",
+    "chips": [],
+    "tail": [
+      {
+        "role": "assistant",
+        "content": "（无回复）",
+        "chips": []
+      },
+      {
+        "role": "user",
+        "content": "今天天气怎么样",
+        "chips": []
+      },
+      {
+        "role": "assistant",
+        "content": "（无回复）",
+        "chips": []
+      }
+    ],
+    "bubbleChips": [
+      {
+        "role": "assistant",
+        "chips": []
+      },
+      {
+        "role": "user",
+        "chips": []
+      },
+      {
+        "role": "assistant",
+        "chips": []
+      }
+    ]
+  },
+  "gateway2": {
+    "requests": [
+      {
+        "n": 1,
+        "stream": true,
+        "model": "deepseek-v4-flash",
+        "tools": [],
+        "emitted": [],
+        "lastUser": "今天天气怎么样",
+        "messageCount": 11
+      }
+    ],
+    "errors400": [],
+    "tools": []
+  },
+  "miniChatDom": {
+    "msgs": [
+      "chat-msg user::把夜跑歌单里的 48340575992a4a0b1a06 这首歌删掉",
+      "chat-msg ai::好的，已完成。",
+      "chat-msg user::暂停",
+      "chat-msg ai::好的，已完成。",
+      "chat-msg user::给我讲个关于音乐的笑话",
+      "chat-msg ai::（无回复）",
+      "chat-msg user::请问播放器支持哪些音频格式",
+      "chat-msg ai::（无回复）",
+      "chat-msg user::今天天气怎么样",
+      "chat-msg ai::（无回复）"
+    ],
+    "chips": [
+      "待确认：从歌单「夜跑」移除 1 首歌曲：《song-c》",
+      "✓ 已移出「夜跑」1 首",
+      "已暂停播放"
+    ]
+  }
+}

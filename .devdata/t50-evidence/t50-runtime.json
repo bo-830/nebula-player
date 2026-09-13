@@ -1,0 +1,101 @@
+{
+  "capturedAt": "2026-09-13T12:23:20.595Z",
+  "mockUrl": "http://127.0.0.1:9997/v1",
+  "attempts": [
+    {
+      "n": 1,
+      "text": "给我讲个关于音乐的笑话",
+      "typed": "ok",
+      "sent": "ok",
+      "mainAi": "我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。",
+      "miniBubble": "ai::我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。",
+      "busy": false,
+      "gatewayRequests": 1,
+      "errors400": 0
+    },
+    {
+      "n": 2,
+      "text": "请问播放器支持哪些音频格式",
+      "typed": "ok",
+      "sent": "ok",
+      "mainAi": "我是 NEBULA 测试网关的第 2 轮回复。已收到你的问题。",
+      "miniBubble": "ai::我是 NEBULA 测试网关的第 2 轮回复。已收到你的问题。",
+      "busy": false,
+      "gatewayRequests": 1,
+      "errors400": 0
+    },
+    {
+      "n": 3,
+      "text": "音乐家为什么喜欢坐着工作",
+      "typed": "ok",
+      "sent": "ok",
+      "mainAi": "我是 NEBULA 测试网关的第 3 轮回复。已收到你的问题。",
+      "miniBubble": "ai::我是 NEBULA 测试网关的第 3 轮回复。已收到你的问题。",
+      "busy": false,
+      "gatewayRequests": 1,
+      "errors400": 0
+    },
+    {
+      "n": 4,
+      "text": "给我讲个关于音乐的笑话",
+      "typed": "ok",
+      "sent": "ok",
+      "mainAi": "我是 NEBULA 测试网关的第 4 轮回复。已收到你的问题。",
+      "miniBubble": "ai::我是 NEBULA 测试网关的第 4 轮回复。已收到你的问题。",
+      "busy": false,
+      "gatewayRequests": 1,
+      "errors400": 0
+    }
+  ],
+  "assertions": {
+    "main window really hidden (tray)": true,
+    "attempt 1: hidden + mini proxy returns real text in BOTH windows": true,
+    "attempt 2: hidden + mini proxy returns real text in BOTH windows": true,
+    "attempt 3: hidden + mini proxy returns real text in BOTH windows": true,
+    "attempt 4: hidden + mini proxy returns real text in BOTH windows": true,
+    "tool chain (control_player) works while hidden": true,
+    "destructive confirm bar usable inside the mini window while hidden": true
+  },
+  "setup": {
+    "opened": "true",
+    "miniVisible": true,
+    "expand": "false",
+    "expandedNow": {
+      "msgs": [],
+      "chips": [
+        "根据我的口味推荐几首歌",
+        "播放一首舒缓的本地歌曲",
+        "把当前歌曲加入「夜跑」歌单"
+      ],
+      "hasConfirmBar": false,
+      "expanded": "true"
+    },
+    "mainVisibility": "hidden"
+  },
+  "toolChain": {
+    "isPlayingBefore": false,
+    "isPlayingAfter": false,
+    "lastAi": "好的，已完成。",
+    "gatewayRequests": 2,
+    "errors400": 0,
+    "miniChipPaused": true
+  },
+  "confirmChain": {
+    "target": "f6d99f294b9932accaa9",
+    "parkedSummary": "从歌单「夜跑」移除 1 首歌曲：《SongB》",
+    "hasConfirmBar": true,
+    "trackIdsUnchanged": true,
+    "cancelClicked": "clicked",
+    "afterCancelPending": null,
+    "afterCancelTrackIds": [
+      "f6d99f294b9932accaa9"
+    ]
+  },
+  "liveness": {
+    "cdpUp": true,
+    "targetsAfter": [
+      "http://localhost:5173/#mini",
+      "http://localhost:5173/"
+    ]
+  }
+}

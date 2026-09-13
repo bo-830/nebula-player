@@ -1,0 +1,124 @@
+{
+  "mainEmptyStateDom": {
+    "hiddenAtStart": "false",
+    "expand": {
+      "action": "clicked",
+      "state": {
+        "hidden": false,
+        "cls": "chat collapsed ",
+        "btn": [
+          "展开聊天"
+        ]
+      },
+      "after": {
+        "cls": "chat  ",
+        "empty": true
+      }
+    },
+    "dom": {
+      "hidden": false,
+      "collapsed": false,
+      "chatClassName": "chat  ",
+      "chatTitle": "薇拉 Vela",
+      "chatHint": "Enter 发送 · Shift+Enter 换行 · 薇拉 Vela 的指令会直接操控播放器",
+      "emptyText": "我是薇拉 Vela，你的音乐领航员 —— 用一句话指挥播放器，或随便聊聊音乐。\n试试：\n放点适合雨天的歌\n把这首歌加进夜跑歌单\n这张专辑是什么风格？\n暂停，然后告诉我下一首是什么",
+      "suggestions": [
+        "放点适合雨天的歌",
+        "把这首歌加进夜跑歌单",
+        "这张专辑是什么风格？",
+        "暂停，然后告诉我下一首是什么"
+      ],
+      "textareaPlaceholder": "输入指令或问题，Enter 发送…"
+    },
+    "domValid": true,
+    "suggestionsEmoji": [],
+    "suggestionClick": {
+      "click": "clicked",
+      "before": {
+        "messages": 0,
+        "hidden": false
+      },
+      "after": {
+        "messages": 0,
+        "draft": "放点适合雨天的歌",
+        "textarea": "放点适合雨天的歌",
+        "busy": false,
+        "hidden": false
+      },
+      "autoSent": false
+    }
+  },
+  "destructiveBarDom": {
+    "victim": "f6d99f294b9932accaa9",
+    "before": [
+      "f6d99f294b9932accaa9",
+      "48340575992a4a0b1a06"
+    ],
+    "names": [
+      "SongB",
+      "song-c"
+    ],
+    "domBar": {
+      "hidden": false,
+      "found": true,
+      "text": "需要你确认的破坏性操作 | 从歌单《夜跑》移除 1 首：《SongB》 | 确认执行 | 取消",
+      "summary": "从歌单《夜跑》移除 1 首：《SongB》",
+      "buttons": [
+        "确认执行",
+        "取消"
+      ],
+      "chips": [
+        "该操作尚未执行"
+      ],
+      "storePending": "call_rm_8"
+    },
+    "domValid": true,
+    "summaryChecks": {
+      "summary": "从歌单《夜跑》移除 1 首：《SongB》",
+      "hasPlaylist": true,
+      "hasCount": true,
+      "emoji": [],
+      "cutesy": []
+    },
+    "cancelClick": "clicked",
+    "after": {
+      "hidden": false,
+      "pending": null,
+      "trackIds": [
+        "f6d99f294b9932accaa9",
+        "48340575992a4a0b1a06"
+      ],
+      "lastMessage": "已取消，歌单没有改动。",
+      "messages": 2,
+      "barStillInDom": false,
+      "aiBubbles": [
+        "已取消，歌单没有改动。"
+      ]
+    },
+    "dataUnchanged": true
+  },
+  "miniWindowDom": {
+    "miniWindowFound": true,
+    "expandClick": "clicked",
+    "miniChatMounted": true,
+    "dom": {
+      "hidden": false,
+      "expandedAttr": "true",
+      "title": "薇拉 Vela",
+      "emptyText": "我是薇拉 Vela —— 找歌、控播放，说一句就行\n放点适合雨天的歌\n把这首歌加进夜跑歌单\n这张专辑是什么风格？\n暂停，然后告诉我下一首是什么",
+      "suggestions": [
+        "放点适合雨天的歌",
+        "把这首歌加进夜跑歌单",
+        "这张专辑是什么风格？",
+        "暂停，然后告诉我下一首是什么"
+      ],
+      "textareaPlaceholder": "Enter 发送 · Shift+Enter 换行"
+    },
+    "domValid": true,
+    "titleEmoji": [],
+    "suggestionsEmoji": [],
+    "miniBarAtRest": {
+      "hasBar": false
+    }
+  }
+}

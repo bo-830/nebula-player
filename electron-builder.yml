@@ -1,0 +1,48 @@
+appId: com.nebula.player
+productName: NEBULA Player
+directories:
+  buildResources: build
+files:
+  - '!**/.vscode/*'
+  - '!src/*'
+  - '!electron.vite.config.{js,ts,mjs,cjs}'
+  - '!{.eslintcache,eslint.config.mjs,.prettierignore,.prettierrc.yaml,dev-app-update.yml,CHANGELOG.md,README.md,vitest.config.ts}'
+  - '!{.env,.env.*,.npmrc,pnpm-lock.yaml}'
+  - '!{tsconfig.json,tsconfig.node.json,tsconfig.web.json}'
+  # Braces with a single item are NOT expanded by brace-expansion, so a
+  # '{.devdata/**}' pattern silently matches nothing — that is why dev
+  # screenshots and test music used to end up inside app.asar. Keep this
+  # pattern brace-free.
+  - '!.devdata/**'
+  # Dev-only tooling: diagnostic/E2E scripts and the mock LLM/update servers
+  # have no runtime role in the packaged app.
+  - '!scripts/**'
+asarUnpack:
+  - resources/**
+  - node_modules/ffmpeg-static/**
+win:
+  executableName: nebula-player
+  icon: build/icon.ico
+  target:
+    - nsis
+nsis:
+  artifactName: ${name}-${version}-setup.${ext}
+  shortcutName: NEBULA Player
+  uninstallDisplayName: NEBULA Player
+  createDesktopShortcut: always
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+mac:
+  icon: build/icon.icns
+  category: public.app-category.music
+  entitlementsInherit: build/entitlements.mac.plist
+  notarize: false
+  target:
+    - dmg
+dmg:
+  artifactName: ${name}-${version}.${ext}
+npmRebuild: false
+# generic HTTP update feed — runtime URL is overridable in 设置 → 关于
+publish:
+  provider: generic
+  url: https://updates.example.com/nebula-player/

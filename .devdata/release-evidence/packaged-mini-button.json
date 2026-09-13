@@ -1,0 +1,67 @@
+{
+  "capturedAt": "2026-09-13T12:58:49.328Z",
+  "samples": [],
+  "mainUrl": "file:///C:/Users/34872/AppData/Local/Programs/nebula-player/resources/app.asar/out/renderer/index.html",
+  "mainLoadedFromAsar": true,
+  "before": {
+    "miniTarget": true,
+    "w": 360,
+    "h": 128,
+    "flag": "false",
+    "searchZone": false,
+    "chatPane": false,
+    "lyric": true
+  },
+  "apiPath": {
+    "miniTarget": true,
+    "w": 360,
+    "h": 540,
+    "flag": "false",
+    "searchZone": false,
+    "chatPane": false,
+    "lyric": true
+  },
+  "resetViaButton": "clicked",
+  "afterReset": {
+    "miniTarget": true,
+    "w": 360,
+    "h": 540,
+    "flag": "true",
+    "searchZone": true,
+    "chatPane": true,
+    "lyric": true
+  },
+  "clickExpand": "收起",
+  "buttonPath": {
+    "miniTarget": true,
+    "w": 360,
+    "h": 128,
+    "flag": "false",
+    "searchZone": false,
+    "chatPane": false,
+    "lyric": true
+  },
+  "clickCollapse": "展开搜索与 AI 聊天",
+  "afterButtonCollapse": {
+    "miniTarget": true,
+    "w": 360,
+    "h": 540,
+    "flag": "true",
+    "searchZone": true,
+    "chatPane": true,
+    "lyric": true
+  },
+  "assertions": {
+    "packaged main loads from asar": true,
+    "starts collapsed 360x128": true,
+    "BUTTON expand: window becomes 360x540": false,
+    "BUTTON expand: UI renders search zone": false,
+    "BUTTON expand: UI renders chat pane": false,
+    "BUTTON expand: flag flipped to true": false,
+    "BUTTON collapse: window back to 360x128": false,
+    "BUTTON collapse: UI panes gone": false,
+    "API path resize without UI sync is documented": true
+  },
+  "allPass": false,
+  "doneAt": "2026-09-13T12:58:58.622Z"
+}

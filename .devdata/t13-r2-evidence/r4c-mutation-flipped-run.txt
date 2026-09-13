@@ -1,0 +1,43 @@
+﻿node : [33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-no
+de-api-deprecated for more details.[39m
+所在位置 行:1 字符: 218
++ ... ipped ==="; node "node_modules\vitest\vitest.mjs" run "src/renderer/s ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([33mThe CJS bu...e details.[39m:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+ RUN  v2.1.9 C:/博830/vibecoding/nebula-player
+
+ ❯ src/renderer/src/lib/__tests__/lyricsOffset.test.ts (17 tests | 1 failed) 14ms
+   × lyricsOffset — sign convention (positive offset = highlight moves forward) > the real panel call sites carry the + offset sign (witnessed in their source) 7ms
+     → expected [ …(2) ] to have a length of +0 but got 2
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/renderer/src/lib/__tests__/lyricsOffset.test.ts > lyricsOffset — sign convention (positive offset = highligh
+t moves forward) > the real panel call sites carry the + offset sign (witnessed in their source)
+AssertionError: expected [ …(2) ] to have a length of +0 but got 2
+
+- Expected
++ Received
+
+- 0
++ 2
+
+ ❯ src/renderer/src/lib/__tests__/lyricsOffset.test.ts:325:32
+    323|         (f) => f.includes('offset') && f.includes('0.12')
+    324|       )
+    325|       expect(inlineArithmetic).toHaveLength(0)
+       |                                ^
+    326|       console.warn(
+    327|         '[lyricsOffset.test] panels no longer inline the offset arithm…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 16 passed (17)
+   Start at  21:03:41
+   Duration  523ms (transform 50ms, setup 0ms, collect 57ms, tests 14ms, environment 0ms, prepare 111ms)
+
+

@@ -1,0 +1,94 @@
+{
+  "fullRuns": [
+    {
+      "run": 1,
+      "exitCode": 0,
+      "ms": 2860,
+      "logFile": ".devdata/t6-evidence/test-full-run1.log",
+      "filesLine": "Test Files  11 passed (11)",
+      "testsLine": "Tests  118 passed (118)",
+      "durationLine": "Duration > summarizes durations",
+      "failed": [],
+      "passedCount": 118,
+      "failedCount": 0,
+      "errorLines": []
+    },
+    {
+      "run": 2,
+      "exitCode": 0,
+      "ms": 2611,
+      "logFile": ".devdata/t6-evidence/test-full-run2.log",
+      "filesLine": "Test Files  11 passed (11)",
+      "testsLine": "Tests  118 passed (118)",
+      "durationLine": "Duration > summarizes durations",
+      "failed": [],
+      "passedCount": 118,
+      "failedCount": 0,
+      "errorLines": []
+    },
+    {
+      "run": 3,
+      "exitCode": 0,
+      "ms": 2647,
+      "logFile": ".devdata/t6-evidence/test-full-run3.log",
+      "filesLine": "Test Files  11 passed (11)",
+      "testsLine": "Tests  118 passed (118)",
+      "durationLine": "Duration > summarizes durations",
+      "failed": [],
+      "passedCount": 118,
+      "failedCount": 0,
+      "errorLines": []
+    }
+  ],
+  "stressRuns": [
+    {
+      "run": 1,
+      "exitCode": 0,
+      "ms": 2481,
+      "filesLine": "Test Files  1 passed (1)",
+      "testsLine": "Tests  13 passed (13)",
+      "durationLine": "Duration  620ms (transform 124ms, setup 0ms, collect 176ms, tests 28ms, environment 0ms, prepare 147ms)",
+      "failed": [],
+      "passedCount": 13,
+      "failedCount": 0,
+      "errorLines": []
+    },
+    {
+      "run": 2,
+      "exitCode": 0,
+      "ms": 2483,
+      "filesLine": "Test Files  1 passed (1)",
+      "testsLine": "Tests  13 passed (13)",
+      "durationLine": "Duration  601ms (transform 111ms, setup 0ms, collect 163ms, tests 25ms, environment 0ms, prepare 131ms)",
+      "failed": [],
+      "passedCount": 13,
+      "failedCount": 0,
+      "errorLines": []
+    },
+    {
+      "run": 3,
+      "exitCode": 0,
+      "ms": 2429,
+      "filesLine": "Test Files  1 passed (1)",
+      "testsLine": "Tests  13 passed (13)",
+      "durationLine": "Duration  632ms (transform 121ms, setup 0ms, collect 173ms, tests 29ms, environment 0ms, prepare 168ms)",
+      "failed": [],
+      "passedCount": 13,
+      "failedCount": 0,
+      "errorLines": []
+    }
+  ],
+  "startedAt": "2026-09-12T10:53:20.597Z",
+  "chatConfirm": {
+    "exitCode": 0,
+    "filesLine": "Test Files  1 passed (1)",
+    "testsLine": "Tests  11 passed (11)",
+    "durationLine": "Duration  730ms (transform 172ms, setup 0ms, collect 248ms, tests 13ms, environment 0ms, prepare 145ms)",
+    "failed": [],
+    "passedCount": 11,
+    "failedCount": 0,
+    "errorLines": [],
+    "testNames": [],
+    "logFile": ".devdata/t6-evidence/test-chatConfirm.log"
+  }
+}

@@ -1,0 +1,65 @@
+﻿=== diag-cors: media:// Web Audio spectrum probe ===
+music: song-a.mp3, song-c.flac, song-b.wav, song-d.ogg, song-e.m4a   engine.getMode()=graph   directFallback=false
+
+file	variant	peak	timeDomainDev	paused	t	verdict
+song-a.mp3	unset	0	0	false	7.09	silent-zeroes
+song-a.mp3	anonymous	246	16	false	1.36	signal
+song-c.flac	unset	0	0	false	1.37	silent-zeroes
+song-c.flac	anonymous	248	16	false	1.36	signal
+song-b.wav	unset	0	0	false	1.36	silent-zeroes
+song-b.wav	anonymous	245	16	false	1.37	signal
+song-d.ogg	unset	0	0	false	1.36	silent-zeroes
+song-d.ogg	anonymous	249	17	false	1.36	signal
+song-e.m4a	unset	0	0	false	1.36	silent-zeroes
+song-e.m4a	anonymous	249	17	false	1.36	signal
+
+song-a.mp3 [unset] logs:
+  security/info: MediaElementAudioSource outputs zeroes due to CORS access restrictions for media://local/Qzpc5Y2aODMwXHZpYmVjb2RpbmdcbmVidWxhLXBsYXllclwuZGV2ZGF0YVx0ZXN0LW11c2ljXHNvbmctYS5tcDM
+song-c.flac [unset] logs:
+  security/info: MediaElementAudioSource outputs zeroes due to CORS access restrictions for media://local/Qzpc5Y2aODMwXHZpYmVjb2RpbmdcbmVidWxhLXBsYXllclwuZGV2ZGF0YVx0ZXN0LW11c2ljXHNvbmctYy5mbGFj
+song-b.wav [unset] logs:
+  security/info: MediaElementAudioSource outputs zeroes due to CORS access restrictions for media://local/Qzpc5Y2aODMwXHZpYmVjb2RpbmdcbmVidWxhLXBsYXllclwuZGV2ZGF0YVx0ZXN0LW11c2ljXHNvbmctYi53YXY
+song-d.ogg [unset] logs:
+  security/info: MediaElementAudioSource outputs zeroes due to CORS access restrictions for media://local/Qzpc5Y2aODMwXHZpYmVjb2RpbmdcbmVidWxhLXBsYXllclwuZGV2ZGF0YVx0ZXN0LW11c2ljXHNvbmctZC5vZ2c
+song-e.m4a [unset] logs:
+  security/info: MediaElementAudioSource outputs zeroes due to CORS access restrictions for media://local/Qzpc5Y2aODMwXHZpYmVjb2RpbmdcbmVidWxhLXBsYXllclwuZGV2ZGF0YVx0ZXN0LW11c2ljXHNvbmctZS5tNGE
+
+CORS-related Chromium logs:
+  security/info: MediaElementAudioSource outputs zeroes due to CORS access restrictions for media://local/Qzpc5Y2aODMwXHZpYmVjb2RpbmdcbmVidWxhLXBsYXllclwuZGV2ZGF0YVx0ZXN0LW11c2ljXHNvbmctYS5tcDM
+  security/info: MediaElementAudioSource outputs zeroes due to CORS access restrictions for media://local/Qzpc5Y2aODMwXHZpYmVjb2RpbmdcbmVidWxhLXBsYXllclwuZGV2ZGF0YVx0ZXN0LW11c2ljXHNvbmctYy5mbGFj
+  security/info: MediaElementAudioSource outputs zeroes due to CORS access restrictions for media://local/Qzpc5Y2aODMwXHZpYmVjb2RpbmdcbmVidWxhLXBsYXllclwuZGV2ZGF0YVx0ZXN0LW11c2ljXHNvbmctYi53YXY
+  security/info: MediaElementAudioSource outputs zeroes due to CORS access restrictions for media://local/Qzpc5Y2aODMwXHZpYmVjb2RpbmdcbmVidWxhLXBsYXllclwuZGV2ZGF0YVx0ZXN0LW11c2ljXHNvbmctZC5vZ2c
+  security/info: MediaElementAudioSource outputs zeroes due to CORS access restrictions for media://local/Qzpc5Y2aODMwXHZpYmVjb2RpbmdcbmVidWxhLXBsYXllclwuZGV2ZGF0YVx0ZXN0LW11c2ljXHNvbmctZS5tNGE
+
+engine.diagnose() = {"mode":"graph","ctxState":"no-ctx","ctxSampleRate":null,"ctxOutputLatency":null,"ctxBaseLatency":null,"gainValue":null,"gainVolume":0.42,"muted":false,"signalPeak":0,"audioVolume":0.42,"audioPaused":true,"audioSrc":"media://local/Qzpc5Y2aODMwXHZpYmVjb2RpbmdcbmVi","fallbackTried":false,"lastGraphError":null,"graphCreated":false,"setSinkIdPhase":"idle","setSinkIdSupported":true,"setSinkIdRequested":null,"setSinkIdApplied":false,"setSinkIdError":null,"setSinkIdPending":false,"ctxSinkId":null,"requestedSinkId":null,"ctxGeneration":0,"lastSinkEvent":""}
+
+=== media:// protocol + live engine ===
+  (header set built by src/main/protocol.ts CORS_HEADERS — both branches spread it)
+  status200  Access-Control-Allow-Origin=*  expose=Content-Length, Content-Range, Accept-Ranges
+  status206  Access-Control-Allow-Origin=*  expose=Content-Length, Content-Range, Accept-Ranges
+  status416  Access-Control-Allow-Origin=*
+  live <audio> crossOrigin=false engineMode=graph directFallback=false
+
+=== cover art / mediaSession ===
+  library tracks=7 trackWithCover=f1da4b02ccf77fda8461.png
+  cover plain <img>            = loaded 512x512
+  cover <img crossorigin=anon> = loaded 512x512   (MediaSession artwork requires this)
+  mounted UI cover             = {"complete":true,"natural":"512x512"}
+  mediaSession supported=true metadata="none"
+
+=== sustained live-engine check (--sustained, 12 s) ===
+  track=测试歌曲A analyserAvailable=true modeAtStart=graph modeEnd=graph
+  t+ 1s mode=graph peak=211 maxDev= 16 playing=true pos=1.56/1.08s fallbackTried=false
+  t+ 2s mode=graph peak=227 maxDev= 16 playing=true pos=2.62/1.07s fallbackTried=false
+  t+ 3s mode=graph peak=235 maxDev= 16 playing=true pos=3.7/1.08s fallbackTried=false
+  t+ 4s mode=graph peak=237 maxDev= 16 playing=true pos=4.49/0.79s fallbackTried=false
+  t+ 5s mode=graph peak=240 maxDev= 16 playing=true pos=5.55/1.06s fallbackTried=false
+  t+ 6s mode=graph peak=242 maxDev= 16 playing=true pos=6.6/1.05s fallbackTried=false
+  t+ 7s mode=graph peak=244 maxDev= 16 playing=true pos=7.67/1.07s fallbackTried=false
+  t+ 8s mode=graph peak=244 maxDev= 16 playing=true pos=0.53/-7.14s fallbackTried=false
+  t+ 9s mode=graph peak=245 maxDev= 16 playing=true pos=1.6/1.07s fallbackTried=false
+  t+10s mode=graph peak=245 maxDev= 16 playing=true pos=2.66/1.06s fallbackTried=false
+  t+11s mode=graph peak=246 maxDev= 16 playing=true pos=3.45/0.79s fallbackTried=false
+  t+12s mode=graph peak=246 maxDev= 16 playing=true pos=4.53/1.08s fallbackTried=false
+  VERDICT: all 12 samples peak>0 && maxDev>0 = true; mode stayed graph = true
+

@@ -1,0 +1,164 @@
+﻿{
+  "hookReady": true,
+  "start": {
+    "title": "song-c",
+    "isPlaying": true,
+    "at": 2.353923,
+    "queueLen": 6
+  },
+  "samples": [
+    {
+      "diag": {
+        "mode": "graph",
+        "ctxState": "running",
+        "ctxSampleRate": 48000,
+        "ctxOutputLatency": 0.041,
+        "ctxBaseLatency": 0.01,
+        "gainValue": 0.800000011920929,
+        "gainVolume": 0.8,
+        "muted": false,
+        "signalPeak": 230,
+        "audioVolume": 1,
+        "audioPaused": false,
+        "audioSrc": "media://local/Qzpc5Y2aODMwXHZpYmVjb2RpbmdcbmVi",
+        "fallbackTried": false,
+        "lastGraphError": null,
+        "graphCreated": true,
+        "setSinkIdPhase": "applied",
+        "setSinkIdSupported": true,
+        "setSinkIdRequested": "default",
+        "setSinkIdApplied": true,
+        "setSinkIdError": null,
+        "setSinkIdPending": false,
+        "ctxSinkId": "default",
+        "requestedSinkId": "default",
+        "ctxGeneration": 1,
+        "lastSinkEvent": "#1 applied"
+      },
+      "canvas": {
+        "canvas": false
+      },
+      "player": {
+        "playing": true,
+        "at": 2.4,
+        "direct": false
+      }
+    },
+    {
+      "diag": {
+        "mode": "graph",
+        "ctxState": "running",
+        "ctxSampleRate": 48000,
+        "ctxOutputLatency": 0.041,
+        "ctxBaseLatency": 0.01,
+        "gainValue": 0.800000011920929,
+        "gainVolume": 0.8,
+        "muted": false,
+        "signalPeak": 237,
+        "audioVolume": 1,
+        "audioPaused": false,
+        "audioSrc": "media://local/Qzpc5Y2aODMwXHZpYmVjb2RpbmdcbmVi",
+        "fallbackTried": false,
+        "lastGraphError": null,
+        "graphCreated": true,
+        "setSinkIdPhase": "applied",
+        "setSinkIdSupported": true,
+        "setSinkIdRequested": "default",
+        "setSinkIdApplied": true,
+        "setSinkIdError": null,
+        "setSinkIdPending": false,
+        "ctxSinkId": "default",
+        "requestedSinkId": "default",
+        "ctxGeneration": 1,
+        "lastSinkEvent": "#1 applied"
+      },
+      "canvas": {
+        "canvas": false
+      },
+      "player": {
+        "playing": true,
+        "at": 3.4,
+        "direct": false
+      }
+    },
+    {
+      "diag": {
+        "mode": "graph",
+        "ctxState": "running",
+        "ctxSampleRate": 48000,
+        "ctxOutputLatency": 0.041,
+        "ctxBaseLatency": 0.01,
+        "gainValue": 0.800000011920929,
+        "gainVolume": 0.8,
+        "muted": false,
+        "signalPeak": 241,
+        "audioVolume": 1,
+        "audioPaused": false,
+        "audioSrc": "media://local/Qzpc5Y2aODMwXHZpYmVjb2RpbmdcbmVi",
+        "fallbackTried": false,
+        "lastGraphError": null,
+        "graphCreated": true,
+        "setSinkIdPhase": "applied",
+        "setSinkIdSupported": true,
+        "setSinkIdRequested": "default",
+        "setSinkIdApplied": true,
+        "setSinkIdError": null,
+        "setSinkIdPending": false,
+        "ctxSinkId": "default",
+        "requestedSinkId": "default",
+        "ctxGeneration": 1,
+        "lastSinkEvent": "#1 applied"
+      },
+      "canvas": {
+        "canvas": false
+      },
+      "player": {
+        "playing": true,
+        "at": 4.8,
+        "direct": false
+      }
+    },
+    {
+      "diag": {
+        "mode": "graph",
+        "ctxState": "running",
+        "ctxSampleRate": 48000,
+        "ctxOutputLatency": 0.042,
+        "ctxBaseLatency": 0.01,
+        "gainValue": 0.800000011920929,
+        "gainVolume": 0.8,
+        "muted": false,
+        "signalPeak": 235,
+        "audioVolume": 1,
+        "audioPaused": false,
+        "audioSrc": "media://local/Qzpc5Y2aODMwXHZpYmVjb2RpbmdcbmVi",
+        "fallbackTried": false,
+        "lastGraphError": null,
+        "graphCreated": true,
+        "setSinkIdPhase": "applied",
+        "setSinkIdSupported": true,
+        "setSinkIdRequested": "default",
+        "setSinkIdApplied": true,
+        "setSinkIdError": null,
+        "setSinkIdPending": false,
+        "ctxSinkId": "default",
+        "requestedSinkId": "default",
+        "ctxGeneration": 1,
+        "lastSinkEvent": "#1 applied"
+      },
+      "canvas": {
+        "canvas": false
+      },
+      "player": {
+        "playing": true,
+        "at": 0.8,
+        "direct": false
+      }
+    }
+  ],
+  "fallbackState": {
+    "audioDirect": false,
+    "engineMode": "graph",
+    "fallbackTried": false
+  }
+}

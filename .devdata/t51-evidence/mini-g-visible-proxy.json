@@ -1,0 +1,67 @@
+{
+  "group": "control 1/2 — main window VISIBLE, text-only turn through the mini proxy",
+  "sent": {
+    "typed": "ok",
+    "sent": "ok"
+  },
+  "main": {
+    "lastAssistant": "我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。",
+    "lastUser": "可见对照：请介绍一下你自己",
+    "busy": false,
+    "streamRawLen": 0,
+    "streamShown": 0,
+    "messageCount": 2,
+    "visibility": "hidden"
+  },
+  "miniLastAi": "我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。",
+  "gateway": {
+    "requests": 1,
+    "errors400": [],
+    "lastUser": "可见对照：请介绍一下你自己"
+  },
+  "observerEvents": [
+    {
+      "t": 20138,
+      "busy": false,
+      "rawLen": 0,
+      "msgs": 0
+    },
+    {
+      "t": 20138,
+      "busy": true,
+      "rawLen": 0,
+      "msgs": 0
+    },
+    {
+      "t": 20139,
+      "busy": true,
+      "rawLen": 0,
+      "msgs": 1
+    },
+    {
+      "t": 20167,
+      "busy": true,
+      "rawLen": 23,
+      "msgs": 1
+    },
+    {
+      "t": 20171,
+      "busy": true,
+      "rawLen": 31,
+      "msgs": 1
+    },
+    {
+      "t": 20175,
+      "busy": false,
+      "rawLen": 0,
+      "msgs": 1
+    },
+    {
+      "t": 20175,
+      "busy": false,
+      "rawLen": 0,
+      "msgs": 2
+    }
+  ],
+  "pass": true
+}

@@ -1,0 +1,119 @@
+{
+  "samples": [
+    {
+      "mode": "graph",
+      "peak": 234,
+      "fallbackTried": false,
+      "audioDirect": false,
+      "playing": true,
+      "t": 2.5,
+      "crossOrigin": "anonymous",
+      "elError": null
+    },
+    {
+      "mode": "graph",
+      "peak": 237,
+      "fallbackTried": false,
+      "audioDirect": false,
+      "playing": true,
+      "t": 4,
+      "crossOrigin": "anonymous",
+      "elError": null
+    },
+    {
+      "mode": "graph",
+      "peak": 240,
+      "fallbackTried": false,
+      "audioDirect": false,
+      "playing": true,
+      "t": 5.5,
+      "crossOrigin": "anonymous",
+      "elError": null
+    },
+    {
+      "mode": "graph",
+      "peak": 242,
+      "fallbackTried": false,
+      "audioDirect": false,
+      "playing": true,
+      "t": 7.1,
+      "crossOrigin": "anonymous",
+      "elError": null
+    },
+    {
+      "mode": "graph",
+      "peak": 242,
+      "fallbackTried": false,
+      "audioDirect": false,
+      "playing": true,
+      "t": 8.6,
+      "crossOrigin": "anonymous",
+      "elError": null
+    },
+    {
+      "mode": "graph",
+      "peak": 240,
+      "fallbackTried": false,
+      "audioDirect": false,
+      "playing": true,
+      "t": 10.1,
+      "crossOrigin": "anonymous",
+      "elError": null
+    },
+    {
+      "mode": "graph",
+      "peak": 235,
+      "fallbackTried": false,
+      "audioDirect": false,
+      "playing": true,
+      "t": 11.6,
+      "crossOrigin": "anonymous",
+      "elError": null
+    },
+    {
+      "mode": "graph",
+      "peak": 231,
+      "fallbackTried": false,
+      "audioDirect": false,
+      "playing": true,
+      "t": 13.1,
+      "crossOrigin": "anonymous",
+      "elError": null
+    },
+    {
+      "mode": "graph",
+      "peak": 232,
+      "fallbackTried": false,
+      "audioDirect": false,
+      "playing": true,
+      "t": 14.6,
+      "crossOrigin": "anonymous",
+      "elError": null
+    },
+    {
+      "mode": "graph",
+      "peak": 236,
+      "fallbackTried": false,
+      "audioDirect": false,
+      "playing": true,
+      "t": 16.1,
+      "crossOrigin": "anonymous",
+      "elError": null
+    }
+  ],
+  "start": {
+    "title": "长测试曲",
+    "playing": true,
+    "duration": 120
+  },
+  "allGraph": true,
+  "noFallback": true,
+  "peakRange": [
+    231,
+    242
+  ],
+  "span": [
+    2.5,
+    16.1
+  ]
+}

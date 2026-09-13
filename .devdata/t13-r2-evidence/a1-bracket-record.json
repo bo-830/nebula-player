@@ -1,0 +1,20 @@
+{
+    "run":  "A1 bracketed (captain robust protocol)",
+    "capturedAt":  "2026-09-12T13:11:37.534Z",
+    "instancePid":  13284,
+    "t0_beforeInstance":  {
+                              "LyricsPanel":  "32f8656d5f1b",
+                              "MiniPlayer":  "8a219676275a"
+                          },
+    "t1_afterSampling":  {
+                             "LyricsPanel":  "32f8656d5f1b",
+                             "MiniPlayer":  "8a219676275a"
+                         },
+    "t2_afterClose":  {
+                          "LyricsPanel":  "32f8656d5f1b",
+                          "MiniPlayer":  "8a219676275a"
+                      },
+    "hmrLinesInWindow":  0,
+    "allPass":  true,
+    "note":  "sha1 三次一致且窗口内 0 HMR ⇒ 取样有效性自证"
+}

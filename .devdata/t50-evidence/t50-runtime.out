@@ -1,0 +1,78 @@
+{
+  "assertions": {
+    "main window really hidden (tray)": true,
+    "attempt 1: hidden + mini proxy returns real text in BOTH windows": true,
+    "attempt 2: hidden + mini proxy returns real text in BOTH windows": true,
+    "attempt 3: hidden + mini proxy returns real text in BOTH windows": true,
+    "attempt 4: hidden + mini proxy returns real text in BOTH windows": true,
+    "tool chain (control_player) works while hidden": true,
+    "destructive confirm bar usable inside the mini window while hidden": true
+  },
+  "attempts": [
+    {
+      "n": 1,
+      "text": "给我讲个关于音乐的笑话",
+      "typed": "ok",
+      "sent": "ok",
+      "mainAi": "我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。",
+      "miniBubble": "ai::我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。",
+      "busy": false,
+      "gatewayRequests": 1,
+      "errors400": 0
+    },
+    {
+      "n": 2,
+      "text": "请问播放器支持哪些音频格式",
+      "typed": "ok",
+      "sent": "ok",
+      "mainAi": "我是 NEBULA 测试网关的第 2 轮回复。已收到你的问题。",
+      "miniBubble": "ai::我是 NEBULA 测试网关的第 2 轮回复。已收到你的问题。",
+      "busy": false,
+      "gatewayRequests": 1,
+      "errors400": 0
+    },
+    {
+      "n": 3,
+      "text": "音乐家为什么喜欢坐着工作",
+      "typed": "ok",
+      "sent": "ok",
+      "mainAi": "我是 NEBULA 测试网关的第 3 轮回复。已收到你的问题。",
+      "miniBubble": "ai::我是 NEBULA 测试网关的第 3 轮回复。已收到你的问题。",
+      "busy": false,
+      "gatewayRequests": 1,
+      "errors400": 0
+    },
+    {
+      "n": 4,
+      "text": "给我讲个关于音乐的笑话",
+      "typed": "ok",
+      "sent": "ok",
+      "mainAi": "我是 NEBULA 测试网关的第 4 轮回复。已收到你的问题。",
+      "miniBubble": "ai::我是 NEBULA 测试网关的第 4 轮回复。已收到你的问题。",
+      "busy": false,
+      "gatewayRequests": 1,
+      "errors400": 0
+    }
+  ],
+  "toolChain": {
+    "isPlayingBefore": false,
+    "isPlayingAfter": false,
+    "lastAi": "好的，已完成。",
+    "gatewayRequests": 2,
+    "errors400": 0,
+    "miniChipPaused": true
+  },
+  "confirmChain": {
+    "target": "f6d99f294b9932accaa9",
+    "parkedSummary": "从歌单「夜跑」移除 1 首歌曲：《SongB》",
+    "hasConfirmBar": true,
+    "trackIdsUnchanged": true,
+    "cancelClicked": "clicked",
+    "afterCancelPending": null,
+    "afterCancelTrackIds": [
+      "f6d99f294b9932accaa9"
+    ]
+  },
+  "errors": []
+}
+ALL ASSERTIONS PASS: true

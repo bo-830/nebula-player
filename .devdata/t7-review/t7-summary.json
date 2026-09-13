@@ -1,0 +1,26 @@
+[
+  {
+    "cmd": "npm.cmd run lint",
+    "exit": 0,
+    "log": "C:\\博830\\vibecoding\\nebula-player\\.devdata\\t7-review\\t7-npm_cmd_run_lint.log",
+    "tail": "\n> nebula-player@1.0.3 lint\n> eslint --cache .\n\n\nC:\\博830\\vibecoding\\nebula-player\\src\\renderer\\src\\components\\TrackList.tsx\n  42:23  warning  Compilation Skipped: Use of incompatible library\n\nThis API returns functions which cannot be memoized without leading to stale UI. To prevent this, by default React Compiler will skip memoizing this component/hook. However, you may see issues if values from this API are passed to other components/hooks that are memoized.\n\nC:\\博830\\vibecoding\\nebula-player\\src\\renderer\\src\\components\\TrackList.tsx:42:23\n  40 |   const [anchorIndex, setAnchorIndex] = useState<number | null>(null)\n  41 |\n> 42 |   const virtualizer = useVirtualizer({\n     |                       ^^^^^^^^^^^^^^ TanStack Virtual's `useVirtualizer()` API returns functions that cannot be memoized safely\n  43 |     count: tracks.length,\n  44 |     getScrollElement: () => parentRef.current,\n  45 |     estimateSize: () => 44,  react-hooks/incompatible-library\n\n✖ 1 problem (0 errors, 1 warning)\n\n"
+  },
+  {
+    "cmd": "npm.cmd run typecheck:node",
+    "exit": 0,
+    "log": "C:\\博830\\vibecoding\\nebula-player\\.devdata\\t7-review\\t7-npm_cmd_run_typecheck_node.log",
+    "tail": "\n> nebula-player@1.0.3 typecheck:node\n> tsc --noEmit -p tsconfig.node.json --composite false\n\n"
+  },
+  {
+    "cmd": "npm.cmd run typecheck:web",
+    "exit": 0,
+    "log": "C:\\博830\\vibecoding\\nebula-player\\.devdata\\t7-review\\t7-npm_cmd_run_typecheck_web.log",
+    "tail": "\n> nebula-player@1.0.3 typecheck:web\n> tsc --noEmit -p tsconfig.web.json --composite false\n\n"
+  },
+  {
+    "cmd": "npm.cmd test -- --reporter=dot",
+    "exit": 0,
+    "log": "C:\\博830\\vibecoding\\nebula-player\\.devdata\\t7-review\\t7-npm_cmd_test_reporter_dot.log",
+    "tail": "\n> nebula-player@1.0.3 test\n> vitest run --reporter=dot\n\n\u001b[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.\u001b[39m\n\n RUN  v2.1.9 C:/博830/vibecoding/nebula-player\n\n ✓ src/renderer/src/lib/__tests__/lyricsOffset.test.ts (14 tests) 13ms\n ✓ src/renderer/src/lib/__tests__/queue.test.ts (9 tests) 10ms\n ✓ src/renderer/src/lib/__tests__/sleepTimer.test.ts (20 tests) 12ms\n ✓ src/main/__tests__/lrc.test.ts (9 tests) 9ms\n ✓ src/renderer/src/lib/__tests__/format.test.ts (4 tests) 6ms\n ✓ src/main/__tests__/mediaFormats.test.ts (6 tests) 7ms\n ✓ src/renderer/src/lib/__tests__/search.test.ts (9 tests) 24ms\n ✓ src/renderer/src/lib/__tests__/recommend.test.ts (6 tests) 29ms\n ✓ src/main/__tests__/scanner.test.ts (12 tests) 106ms\n ✓ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts (8 tests) 49ms\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts (9 tests) 22ms\n\n Test Files  11 passed (11)\n      Tests  106 passed (106)\n   Start at  15:50:20\n   Duration  1.12s (transform 1.14s, setup 0ms, collect 2.33s, tests 285ms, environment 3ms, prepare 2.47s)\n\n"
+  }
+]

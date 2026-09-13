@@ -1,0 +1,18 @@
+{
+  "group": "control 2/2 — main window HIDDEN, same question sent directly from the MAIN window",
+  "main": {
+    "lastAssistant": "我是 NEBULA 测试网关的第 1 轮回复。已收到你的问题。",
+    "lastUser": "隐藏直发对照：请回答",
+    "busy": false,
+    "streamRawLen": 0,
+    "streamShown": 0,
+    "messageCount": 2,
+    "visibility": "hidden"
+  },
+  "gateway": {
+    "requests": 1,
+    "errors400": [],
+    "lastUser": "隐藏直发对照：请回答"
+  },
+  "pass": true
+}

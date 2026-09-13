@@ -1,0 +1,1883 @@
+{
+  "label": "baseline-r1",
+  "stamp": "2026-09-12T07:12:30.683Z",
+  "method": "direct execFile of npm.cmd/npx.cmd shims",
+  "lint": {
+    "command": "npm.cmd run lint",
+    "exitCode": 1,
+    "logFile": ".devdata/t6-evidence/lint-baseline-r1.log",
+    "ms": 14027,
+    "tail": "                                                                            prettier/prettier\n  316:15  warning  Replace `.getState().toast(`播放模式:·${m·===·'list'·?·'列表循环'·:·m·===·'one'·?·'单曲循环'·:·'随机播放'}`,·'info'` with `⏎······.getState()⏎······.toast(⏎········`播放模式:·${m·===·'list'·?·'列表循环'·:·m·===·'one'·?·'单曲循环'·:·'随机播放'}`,⏎········'info'⏎······`  prettier/prettier\n  380:9   warning  Insert `⏎······`                                                                                                                                                                                                                              prettier/prettier\n  381:1   warning  Insert `··`                                                                                                                                                                                                                                   prettier/prettier\n  382:7   warning  Insert `··`                                                                                                                                                                                                                                   prettier/prettier\n  383:1   warning  Replace `······` with `········`                                                                                                                                                                                                              prettier/prettier\n  384:1   warning  Insert `··`                                                                                                                                                                                                                                   prettier/prettier\n  385:7   warning  Insert `··`                                                                                                                                                                                                                                   prettier/prettier\n  386:1   warning  Replace `····})` with `······})⏎····`                                                                                                                                                                                                         prettier/prettier\n  412:8   warning  Replace `·index,·current:·track,·isLoading:·true,·error:·null,·currentTime:·0,·duration:·track.duration` with `⏎····index,⏎····current:·track,⏎····isLoading:·true,⏎····error:·null,⏎····currentTime:·0,⏎····duration:·track.duration⏎·`      prettier/prettier\n  451:1   warning  Delete `⏎`                                                                                                                                                                                                                                    prettier/prettier\n\nC:\\博830\\vibecoding\\nebula-player\\src\\renderer\\src\\stores\\playlistStore.ts\n   73:34  warning  Replace `·?·{·...p,·name:·name.trim().slice(0,·60)·||·p.name,·updatedAt:·Date.now()·}` with `⏎··········?·{·...p,·name:·name.trim().slice(0,·60)·||·p.name,·updatedAt:·Date.now()·}⏎·········`              prettier/prettier\n   93:28  warning  Replace `·?·{·...p,·trackIds:·[...p.trackIds,·...fresh],·updatedAt:·Date.now()·}` with `⏎··········?·{·...p,·trackIds:·[...p.trackIds,·...fresh],·updatedAt:·Date.now()·}⏎·········`                        prettier/prettier\n  104:20  warning  Replace `·?·{·...p,·trackIds:·p.trackIds.filter((t)·=>·!rm.has(t)),·updatedAt:·Date.now()·}` with `⏎··········?·{·...p,·trackIds:·p.trackIds.filter((t)·=>·!rm.has(t)),·updatedAt:·Date.now()·}⏎·········`  prettier/prettier\n  116:44  warning  Replace `·(p.id·===·FAVORITES_ID·?·{·...p,·trackIds:·next,·updatedAt:·Date.now()·}·:·p)` with `⏎········p.id·===·FAVORITES_ID·?·{·...p,·trackIds:·next,·updatedAt:·Date.now()·}·:·p⏎······`                 prettier/prettier\n\n✖ 383 problems (106 errors, 277 warnings)\n  2 errors and 276 warnings potentially fixable with the `--fix` option.\n\n",
+    "spawnError": null
+  },
+  "lintJson": {
+    "command": "npx.cmd eslint . --no-cache --format json",
+    "exitCode": 1,
+    "parsed": true,
+    "totalErrors": 106,
+    "totalWarnings": 277,
+    "filesWithErrors": [
+      {
+        "file": ".devdata/zz-check-live.mjs",
+        "errors": 1,
+        "warnings": 2,
+        "messages": [
+          {
+            "line": 3,
+            "column": 24,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `(t)·=>·t.type·===·'page'·&&·t.url.includes('localhost:5173')·&&·!t.url.includes('#mini')` with `⏎··(t)·=>·t.type·===·'page'·&&·t.url.includes('localhost:5173')·&&·!t.url.includes('#mini')⏎`"
+          },
+          {
+            "line": 19,
+            "column": 19,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 23,
+            "column": 13,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `JSON.stringify({·id:·i,·method:·'Runtime.evaluate',·params:·{·expression:·expr,·awaitPromise:·true,·returnByValue:·true·}·})` with `⏎······JSON.stringify({⏎········id:·i,⏎········method:·'Runtime.evaluate',⏎········params:·{·expression:·expr,·awaitPromise:·true,·returnByValue:·true·}⏎······})⏎····`"
+          }
+        ]
+      },
+      {
+        "file": "scripts/diag-ai-queue.mjs",
+        "errors": 2,
+        "warnings": 2,
+        "messages": [
+          {
+            "line": 8,
+            "column": 24,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `(t)·=>·t.type·===·'page'·&&·t.url.includes('localhost:5173')·&&·!t.url.includes('#mini')` with `⏎··(t)·=>·t.type·===·'page'·&&·t.url.includes('localhost:5173')·&&·!t.url.includes('#mini')⏎`"
+          },
+          {
+            "line": 25,
+            "column": 35,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 31,
+            "column": 25,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 32,
+            "column": 44,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·expression:·expr,·awaitPromise:·true,·returnByValue:·true` with `⏎····expression:·expr,⏎····awaitPromise:·true,⏎····returnByValue:·true⏎·`"
+          }
+        ]
+      },
+      {
+        "file": "scripts/diag-artist-badge.mjs",
+        "errors": 2,
+        "warnings": 1,
+        "messages": [
+          {
+            "line": 27,
+            "column": 35,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 33,
+            "column": 25,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 34,
+            "column": 44,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·expression:·expr,·awaitPromise:·true,·returnByValue:·true` with `⏎····expression:·expr,⏎····awaitPromise:·true,⏎····returnByValue:·true⏎·`"
+          }
+        ]
+      },
+      {
+        "file": "scripts/diag-attach.mjs",
+        "errors": 1,
+        "warnings": 0,
+        "messages": [
+          {
+            "line": 26,
+            "column": 19,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          }
+        ]
+      },
+      {
+        "file": "scripts/diag-audio.mjs",
+        "errors": 2,
+        "warnings": 1,
+        "messages": [
+          {
+            "line": 7,
+            "column": 1,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 27,
+            "column": 54,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 39,
+            "column": 30,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Insert `⏎·······`"
+          }
+        ]
+      },
+      {
+        "file": "scripts/diag-autonext.mjs",
+        "errors": 2,
+        "warnings": 2,
+        "messages": [
+          {
+            "line": 8,
+            "column": 24,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `(t)·=>·t.type·===·'page'·&&·t.url.includes('localhost:5173')·&&·!t.url.includes('#mini')` with `⏎··(t)·=>·t.type·===·'page'·&&·t.url.includes('localhost:5173')·&&·!t.url.includes('#mini')⏎`"
+          },
+          {
+            "line": 25,
+            "column": 35,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 31,
+            "column": 25,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 32,
+            "column": 44,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·expression:·expr,·awaitPromise:·true,·returnByValue:·true` with `⏎····expression:·expr,⏎····awaitPromise:·true,⏎····returnByValue:·true⏎·`"
+          }
+        ]
+      },
+      {
+        "file": "scripts/diag-chain.mjs",
+        "errors": 2,
+        "warnings": 2,
+        "messages": [
+          {
+            "line": 8,
+            "column": 24,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `(t)·=>·t.type·===·'page'·&&·t.url.includes('localhost:5173')·&&·!t.url.includes('#mini')` with `⏎··(t)·=>·t.type·===·'page'·&&·t.url.includes('localhost:5173')·&&·!t.url.includes('#mini')⏎`"
+          },
+          {
+            "line": 25,
+            "column": 35,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 31,
+            "column": 25,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 32,
+            "column": 44,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·expression:·expr,·awaitPromise:·true,·returnByValue:·true` with `⏎····expression:·expr,⏎····awaitPromise:·true,⏎····returnByValue:·true⏎·`"
+          }
+        ]
+      },
+      {
+        "file": "scripts/diag-cors.mjs",
+        "errors": 7,
+        "warnings": 11,
+        "messages": [
+          {
+            "line": 35,
+            "column": 39,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 49,
+            "column": 1,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 55,
+            "column": 13,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·throw·new·Error('dev·page·not·found·(is·`npm·run·dev`·running?):·'·+·JSON.stringify(list.map((t)·=>·t.url))` with `⏎····throw·new·Error(⏎······'dev·page·not·found·(is·`npm·run·dev`·running?):·'·+·JSON.stringify(list.map((t)·=>·t.url))⏎····`"
+          },
+          {
+            "line": 66,
+            "column": 23,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 85,
+            "column": 38,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 95,
+            "column": 58,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 98,
+            "column": 30,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·setTimeout(()·=>·rej(new·Error(`evaluate·timed·out·after·${timeoutMs}ms`)),·timeoutMs)` with `⏎········setTimeout(()·=>·rej(new·Error(`evaluate·timed·out·after·${timeoutMs}ms`)),·timeoutMs)⏎······`"
+          },
+          {
+            "line": 101,
+            "column": 23,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `'page·exception:·'·+·(r.exceptionDetails.exception?.description·??·JSON.stringify(r.exceptionDetails))` with `⏎········'page·exception:·'·+⏎··········(r.exceptionDetails.exception?.description·??·JSON.stringify(r.exceptionDetails))⏎······`"
+          },
+          {
+            "line": 130,
+            "column": 1,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 241,
+            "column": 1,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 264,
+            "column": 57,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `await·evaluate(probeExpression(file,·variant))` with `⏎········await·evaluate(probeExpression(file,·variant))⏎······`"
+          },
+          {
+            "line": 266,
+            "column": 47,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·file,·variant:·variant·?·'anonymous'·:·'unset',·probeErr:·String(e)` with `⏎········file,⏎········variant:·variant·?·'anonymous'·:·'unset',⏎········probeErr:·String(e)⏎·····`"
+          },
+          {
+            "line": 283,
+            "column": 28,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `.filter((l)·=>·CORS_RE.test(l.text))` with `⏎··.filter((l)·=>·CORS_RE.test(l.text))⏎··`"
+          },
+          {
+            "line": 322,
+            "column": 15,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace ``music:·${FILES.join(',·')}···engine.getMode()=${payload.engineMode}···directFallback=${payload.audioDirectFallback}`` with `⏎····`music:·${FILES.join(',·')}···engine.getMode()=${payload.engineMode}···directFallback=${payload.audioDirectFallback}`⏎··`"
+          },
+          {
+            "line": 344,
+            "column": 38,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Insert `⏎·····`"
+          },
+          {
+            "line": 345,
+            "column": 42,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Insert `⏎·····`"
+          },
+          {
+            "line": 349,
+            "column": 31,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Insert `⏎···`"
+          },
+          {
+            "line": 375,
+            "column": 38,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·['unset',·'anonymous'].some((v)·=>·(r[v]?.mediaPeak·??·0)·>·0)` with `⏎··['unset',·'anonymous'].some((v)·=>·(r[v]?.mediaPeak·??·0)·>·0)⏎`"
+          }
+        ]
+      },
+      {
+        "file": "scripts/diag-device.mjs",
+        "errors": 1,
+        "warnings": 0,
+        "messages": [
+          {
+            "line": 25,
+            "column": 19,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          }
+        ]
+      },
+      {
+        "file": "scripts/diag-dnd.mjs",
+        "errors": 1,
+        "warnings": 0,
+        "messages": [
+          {
+            "line": 25,
+            "column": 19,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          }
+        ]
+      },
+      {
+        "file": "scripts/diag-engine.mjs",
+        "errors": 1,
+        "warnings": 0,
+        "messages": [
+          {
+            "line": 27,
+            "column": 19,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          }
+        ]
+      },
+      {
+        "file": "scripts/diag-features.mjs",
+        "errors": 1,
+        "warnings": 0,
+        "messages": [
+          {
+            "line": 26,
+            "column": 19,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          }
+        ]
+      },
+      {
+        "file": "scripts/diag-features2.mjs",
+        "errors": 2,
+        "warnings": 1,
+        "messages": [
+          {
+            "line": 27,
+            "column": 35,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 33,
+            "column": 25,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 34,
+            "column": 44,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·expression:·expr,·awaitPromise:·true,·returnByValue:·true` with `⏎····expression:·expr,⏎····awaitPromise:·true,⏎····returnByValue:·true⏎·`"
+          }
+        ]
+      },
+      {
+        "file": "scripts/diag-graph.mjs",
+        "errors": 1,
+        "warnings": 0,
+        "messages": [
+          {
+            "line": 37,
+            "column": 19,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          }
+        ]
+      },
+      {
+        "file": "scripts/diag-media-internals.mjs",
+        "errors": 2,
+        "warnings": 1,
+        "messages": [
+          {
+            "line": 23,
+            "column": 36,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 31,
+            "column": 52,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·url:·'chrome://media-internals/',·newWindow:·true·` with `⏎··url:·'chrome://media-internals/',⏎··newWindow:·true⏎`"
+          },
+          {
+            "line": 42,
+            "column": 23,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          }
+        ]
+      },
+      {
+        "file": "scripts/diag-mi.mjs",
+        "errors": 1,
+        "warnings": 0,
+        "messages": [
+          {
+            "line": 25,
+            "column": 19,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          }
+        ]
+      },
+      {
+        "file": "scripts/diag-mini-lyric.mjs",
+        "errors": 4,
+        "warnings": 3,
+        "messages": [
+          {
+            "line": 5,
+            "column": 24,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `(t)·=>·t.type·===·'page'·&&·t.url.includes('localhost:5173')·&&·!t.url.includes('#mini')` with `⏎··(t)·=>·t.type·===·'page'·&&·t.url.includes('localhost:5173')·&&·!t.url.includes('#mini')⏎`"
+          },
+          {
+            "line": 22,
+            "column": 35,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 28,
+            "column": 25,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 29,
+            "column": 44,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·expression:·expr,·awaitPromise:·true,·returnByValue:·true` with `⏎····expression:·expr,⏎····awaitPromise:·true,⏎····returnByValue:·true⏎·`"
+          },
+          {
+            "line": 61,
+            "column": 36,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 67,
+            "column": 26,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 68,
+            "column": 45,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·expression:·expr,·awaitPromise:·true,·returnByValue:·true` with `⏎····expression:·expr,⏎····awaitPromise:·true,⏎····returnByValue:·true⏎·`"
+          }
+        ]
+      },
+      {
+        "file": "scripts/diag-model-suggest.mjs",
+        "errors": 2,
+        "warnings": 1,
+        "messages": [
+          {
+            "line": 26,
+            "column": 35,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 32,
+            "column": 25,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 33,
+            "column": 44,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·expression:·expr,·awaitPromise:·true,·returnByValue:·true` with `⏎····expression:·expr,⏎····awaitPromise:·true,⏎····returnByValue:·true⏎·`"
+          }
+        ]
+      },
+      {
+        "file": "scripts/diag-modes.mjs",
+        "errors": 6,
+        "warnings": 2,
+        "messages": [
+          {
+            "line": 7,
+            "column": 24,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `(t)·=>·t.type·===·'page'·&&·t.url.includes('localhost:5173')·&&·!t.url.includes('#mini')` with `⏎··(t)·=>·t.type·===·'page'·&&·t.url.includes('localhost:5173')·&&·!t.url.includes('#mini')⏎`"
+          },
+          {
+            "line": 24,
+            "column": 35,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 30,
+            "column": 25,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 31,
+            "column": 44,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·expression:·expr,·awaitPromise:·true,·returnByValue:·true` with `⏎····expression:·expr,⏎····awaitPromise:·true,⏎····returnByValue:·true⏎·`"
+          },
+          {
+            "line": 35,
+            "column": 20,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 37,
+            "column": 1,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 47,
+            "column": 1,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 55,
+            "column": 26,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          }
+        ]
+      },
+      {
+        "file": "scripts/diag-offline.mjs",
+        "errors": 1,
+        "warnings": 0,
+        "messages": [
+          {
+            "line": 27,
+            "column": 19,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          }
+        ]
+      },
+      {
+        "file": "scripts/diag-packaged-wave.mjs",
+        "errors": 1,
+        "warnings": 0,
+        "messages": [
+          {
+            "line": 26,
+            "column": 19,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          }
+        ]
+      },
+      {
+        "file": "scripts/diag-playlist.mjs",
+        "errors": 1,
+        "warnings": 0,
+        "messages": [
+          {
+            "line": 26,
+            "column": 19,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          }
+        ]
+      },
+      {
+        "file": "scripts/diag-poke.mjs",
+        "errors": 1,
+        "warnings": 0,
+        "messages": [
+          {
+            "line": 25,
+            "column": 19,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          }
+        ]
+      },
+      {
+        "file": "scripts/diag-queue-ctx.mjs",
+        "errors": 3,
+        "warnings": 2,
+        "messages": [
+          {
+            "line": 8,
+            "column": 24,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `(t)·=>·t.type·===·'page'·&&·t.url.includes('localhost:5173')·&&·!t.url.includes('#mini')` with `⏎··(t)·=>·t.type·===·'page'·&&·t.url.includes('localhost:5173')·&&·!t.url.includes('#mini')⏎`"
+          },
+          {
+            "line": 25,
+            "column": 35,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 31,
+            "column": 25,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 32,
+            "column": 44,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·expression:·expr,·awaitPromise:·true,·returnByValue:·true` with `⏎····expression:·expr,⏎····awaitPromise:·true,⏎····returnByValue:·true⏎·`"
+          },
+          {
+            "line": 36,
+            "column": 20,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          }
+        ]
+      },
+      {
+        "file": "scripts/diag-recommend.mjs",
+        "errors": 2,
+        "warnings": 2,
+        "messages": [
+          {
+            "line": 7,
+            "column": 24,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `(t)·=>·t.type·===·'page'·&&·t.url.includes('localhost:5173')·&&·!t.url.includes('#mini')` with `⏎··(t)·=>·t.type·===·'page'·&&·t.url.includes('localhost:5173')·&&·!t.url.includes('#mini')⏎`"
+          },
+          {
+            "line": 24,
+            "column": 35,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 30,
+            "column": 25,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 31,
+            "column": 44,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·expression:·expr,·awaitPromise:·true,·returnByValue:·true` with `⏎····expression:·expr,⏎····awaitPromise:·true,⏎····returnByValue:·true⏎·`"
+          }
+        ]
+      },
+      {
+        "file": "scripts/diag-shots.mjs",
+        "errors": 2,
+        "warnings": 0,
+        "messages": [
+          {
+            "line": 28,
+            "column": 36,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 34,
+            "column": 19,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          }
+        ]
+      },
+      {
+        "file": "scripts/diag-update.mjs",
+        "errors": 2,
+        "warnings": 5,
+        "messages": [
+          {
+            "line": 25,
+            "column": 35,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 31,
+            "column": 25,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 32,
+            "column": 44,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·expression:·expr,·awaitPromise:·true,·returnByValue:·true` with `⏎····expression:·expr,⏎····awaitPromise:·true,⏎····returnByValue:·true⏎·`"
+          },
+          {
+            "line": 37,
+            "column": 28,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `await·ev(`(async·()·=>·JSON.stringify(await·window.api.updateCheck()))()`)` with `⏎··await·ev(`(async·()·=>·JSON.stringify(await·window.api.updateCheck()))()`)⏎`"
+          },
+          {
+            "line": 45,
+            "column": 32,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `await·ev(`(async·()·=>·JSON.stringify(await·window.api.updateCheck()))()`)` with `⏎··await·ev(`(async·()·=>·JSON.stringify(await·window.api.updateCheck()))()`)⏎`"
+          },
+          {
+            "line": 49,
+            "column": 23,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Insert `⏎··`"
+          },
+          {
+            "line": 52,
+            "column": 7,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Insert `⏎`"
+          }
+        ]
+      },
+      {
+        "file": "scripts/diag-update2.mjs",
+        "errors": 1,
+        "warnings": 0,
+        "messages": [
+          {
+            "line": 21,
+            "column": 35,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          }
+        ]
+      },
+      {
+        "file": "scripts/diag-update3.mjs",
+        "errors": 3,
+        "warnings": 5,
+        "messages": [
+          {
+            "line": 25,
+            "column": 35,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 31,
+            "column": 25,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 32,
+            "column": 44,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·expression:·expr,·awaitPromise:·true,·returnByValue:·true` with `⏎····expression:·expr,⏎····awaitPromise:·true,⏎····returnByValue:·true⏎·`"
+          },
+          {
+            "line": 35,
+            "column": 27,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 47,
+            "column": 13,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `'2)·updateCheck(no·feed):',·await·safe(`(async·()·=>·JSON.stringify(await·window.api.updateCheck()))()`)` with `⏎··'2)·updateCheck(no·feed):',⏎··await·safe(`(async·()·=>·JSON.stringify(await·window.api.updateCheck()))()`)⏎`"
+          },
+          {
+            "line": 48,
+            "column": 13,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `'3)·save·feed·url:',·await·safe(`(async·()·=>·{·await·window.api.settingsUpdateGeneral({·updateURL:·'http://127.0.0.1:8888/'·});·return·'saved'·})()`)` with `⏎··'3)·save·feed·url:',⏎··await·safe(⏎····`(async·()·=>·{·await·window.api.settingsUpdateGeneral({·updateURL:·'http://127.0.0.1:8888/'·});·return·'saved'·})()`⏎··)⏎`"
+          },
+          {
+            "line": 49,
+            "column": 13,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `'4)·updateCheck(with·feed):',` with `⏎··'4)·updateCheck(with·feed):',⏎·`"
+          },
+          {
+            "line": 55,
+            "column": 7,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Insert `⏎`"
+          }
+        ]
+      },
+      {
+        "file": "scripts/diag-update4.mjs",
+        "errors": 3,
+        "warnings": 5,
+        "messages": [
+          {
+            "line": 25,
+            "column": 35,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 31,
+            "column": 25,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 32,
+            "column": 44,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·expression:·expr,·awaitPromise:·true,·returnByValue:·true` with `⏎····expression:·expr,⏎····awaitPromise:·true,⏎····returnByValue:·true⏎·`"
+          },
+          {
+            "line": 35,
+            "column": 39,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 37,
+            "column": 32,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `ev(expr),·new·Promise((r)·=>·setTimeout(()·=>·r('<<TIMEOUT>>'),·ms))` with `⏎······ev(expr),⏎······new·Promise((r)·=>·setTimeout(()·=>·r('<<TIMEOUT>>'),·ms))⏎····`"
+          },
+          {
+            "line": 46,
+            "column": 14,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Insert `⏎····`"
+          },
+          {
+            "line": 52,
+            "column": 9,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·60000` with `⏎····60000⏎··`"
+          },
+          {
+            "line": 54,
+            "column": 13,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `'after·states:',·await·safe(`(async·()·=>·JSON.stringify(await·window.api.updateCheck()))()`)` with `⏎··'after·states:',⏎··await·safe(`(async·()·=>·JSON.stringify(await·window.api.updateCheck()))()`)⏎`"
+          }
+        ]
+      },
+      {
+        "file": "scripts/diag-v3.mjs",
+        "errors": 5,
+        "warnings": 7,
+        "messages": [
+          {
+            "line": 9,
+            "column": 24,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `(t)·=>·t.type·===·'page'·&&·t.url.includes('localhost:5173')·&&·!t.url.includes('#mini')` with `⏎··(t)·=>·t.type·===·'page'·&&·t.url.includes('localhost:5173')·&&·!t.url.includes('#mini')⏎`"
+          },
+          {
+            "line": 26,
+            "column": 35,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 32,
+            "column": 25,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 33,
+            "column": 44,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·expression:·expr,·awaitPromise:·true,·returnByValue:·true` with `⏎····expression:·expr,⏎····awaitPromise:·true,⏎····returnByValue:·true⏎·`"
+          },
+          {
+            "line": 36,
+            "column": 20,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 107,
+            "column": 38,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 113,
+            "column": 28,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 114,
+            "column": 47,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·expression:·expr,·awaitPromise:·true,·returnByValue:·true` with `⏎······expression:·expr,⏎······awaitPromise:·true,⏎······returnByValue:·true⏎···`"
+          },
+          {
+            "line": 117,
+            "column": 15,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `'mini·text:',` with `⏎····'mini·text:',⏎···`"
+          },
+          {
+            "line": 121,
+            "column": 7,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Insert `⏎··`"
+          },
+          {
+            "line": 128,
+            "column": 29,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Insert `⏎··`"
+          },
+          {
+            "line": 131,
+            "column": 7,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Insert `⏎`"
+          }
+        ]
+      },
+      {
+        "file": "scripts/diag-zoom.mjs",
+        "errors": 2,
+        "warnings": 1,
+        "messages": [
+          {
+            "line": 27,
+            "column": 35,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 33,
+            "column": 25,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 34,
+            "column": 44,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·expression:·expr,·awaitPromise:·true,·returnByValue:·true` with `⏎····expression:·expr,⏎····awaitPromise:·true,⏎····returnByValue:·true⏎·`"
+          }
+        ]
+      },
+      {
+        "file": "scripts/e2e.mjs",
+        "errors": 5,
+        "warnings": 2,
+        "messages": [
+          {
+            "line": 5,
+            "column": 10,
+            "rule": "@typescript-eslint/no-unused-vars",
+            "severity": 2,
+            "message": "'readFile' is defined but never used."
+          },
+          {
+            "line": 11,
+            "column": 1,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 16,
+            "column": 1,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 19,
+            "column": 13,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·throw·new·Error('dev·page·not·found:·'·+·JSON.stringify(list.map((t)·=>·({·url:·t.url,·type:·t.type·})))` with `⏎····throw·new·Error(⏎······'dev·page·not·found:·'·+·JSON.stringify(list.map((t)·=>·({·url:·t.url,·type:·t.type·})))⏎····`"
+          },
+          {
+            "line": 39,
+            "column": 54,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 52,
+            "column": 25,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `'page·exception:·'·+·JSON.stringify(r.exceptionDetails.exception?.description·??·r.exceptionDetails)` with `⏎··········'page·exception:·'·+⏎············JSON.stringify(r.exceptionDetails.exception?.description·??·r.exceptionDetails)⏎········`"
+          },
+          {
+            "line": 57,
+            "column": 22,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          }
+        ]
+      },
+      {
+        "file": "scripts/mock-llm-confirm.mjs",
+        "errors": 5,
+        "warnings": 9,
+        "messages": [
+          {
+            "line": 25,
+            "column": 32,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 34,
+            "column": 1,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 45,
+            "column": 40,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Insert `⏎·······`"
+          },
+          {
+            "line": 48,
+            "column": 70,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Insert `⏎·······`"
+          },
+          {
+            "line": 54,
+            "column": 27,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 65,
+            "column": 23,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 67,
+            "column": 36,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 71,
+            "column": 22,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `{·index:·0,·id,·type:·'function',·function:·{·name,·arguments:·JSON.stringify(args)·}·}` with `⏎··········{·index:·0,·id,·type:·'function',·function:·{·name,·arguments:·JSON.stringify(args)·}·}⏎········`"
+          },
+          {
+            "line": 108,
+            "column": 17,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `res,·`The·supported·API·model·names·are·${SUPPORTED.join(',·')},·but·you·passed·${model}.`` with `⏎··········res,⏎··········`The·supported·API·model·names·are·${SUPPORTED.join(',·')},·but·you·passed·${model}.`⏎········`"
+          },
+          {
+            "line": 117,
+            "column": 51,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·id:·tc.id,·name:·tc.function?.name,·args:·tc.function?.arguments` with `⏎············id:·tc.id,⏎············name:·tc.function?.name,⏎············args:·tc.function?.arguments⏎·········`"
+          },
+          {
+            "line": 135,
+            "column": 21,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `callChunk(`call_play_${state.seq}`,·'play_tracks',·{·ids:·[id],·start_index:·0·}),·callDone` with `⏎············callChunk(`call_play_${state.seq}`,·'play_tracks',·{·ids:·[id],·start_index:·0·}),⏎············callDone⏎··········`"
+          },
+          {
+            "line": 153,
+            "column": 70,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·playlist:·'夜跑',·ids:·ids.slice(0,·2)` with `⏎············playlist:·'夜跑',⏎············ids:·ids.slice(0,·2)⏎·········`"
+          },
+          {
+            "line": 163,
+            "column": 17,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `callChunk(`call_search_${state.seq}`,·'search_music',·{·query:·'歌',·limit:·3·}),·callDone` with `⏎········callChunk(`call_search_${state.seq}`,·'search_music',·{·query:·'歌',·limit:·3·}),⏎········callDone⏎······`"
+          },
+          {
+            "line": 170,
+            "column": 15,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace ``confirm-mock·LLM·listening·on·http://127.0.0.1:${port}/v1·(log·${logFile·||·'in-memory'})`` with `⏎····`confirm-mock·LLM·listening·on·http://127.0.0.1:${port}/v1·(log·${logFile·||·'in-memory'})`⏎··`"
+          }
+        ]
+      },
+      {
+        "file": "scripts/mock-llm.mjs",
+        "errors": 2,
+        "warnings": 2,
+        "messages": [
+          {
+            "line": 12,
+            "column": 27,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 44,
+            "column": 23,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 91,
+            "column": 25,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·message:·`Messages·with·role·'tool'·must·be·a·response·to·a·preceding·message·with·'tool_calls'`` with `⏎··················message:·`Messages·with·role·'tool'·must·be·a·response·to·a·preceding·message·with·'tool_calls'`⏎···············`"
+          },
+          {
+            "line": 122,
+            "column": 36,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·name:·'play_tracks',·arguments:·JSON.stringify({·ids:·[id],·start_index:·0·})` with `⏎··························name:·'play_tracks',⏎··························arguments:·JSON.stringify({·ids:·[id],·start_index:·0·})⏎·······················`"
+          }
+        ]
+      },
+      {
+        "file": "scripts/tmp-verify-t4.mjs",
+        "errors": 1,
+        "warnings": 7,
+        "messages": [
+          {
+            "line": 26,
+            "column": 19,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 147,
+            "column": 15,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `'lines:',·parsed.initial.lineCount,·'|·controls:',` with `⏎····'lines:',⏎····parsed.initial.lineCount,⏎····'|·controls:',⏎···`"
+          },
+          {
+            "line": 148,
+            "column": 1,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `····minus:·parsed.initial.hasMinus,·plus:·parsed.initial.hasPlus,` with `······minus:·parsed.initial.hasMinus,⏎······plus:·parsed.initial.hasPlus,⏎·····`"
+          },
+          {
+            "line": 149,
+            "column": 3,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `})` with `··})⏎··`"
+          },
+          {
+            "line": 150,
+            "column": 15,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `'offset·chip:',·parsed.initial.offsetChip,·'→',·parsed.afterPlus05.offsetChip,·'→',·parsed.afterPlus10.offsetChip,·'→·reset',·parsed.afterReset.offsetChip` with `⏎····'offset·chip:',⏎····parsed.initial.offsetChip,⏎····'→',⏎····parsed.afterPlus05.offsetChip,⏎····'→',⏎····parsed.afterPlus10.offsetChip,⏎····'→·reset',⏎····parsed.afterReset.offsetChip⏎··`"
+          },
+          {
+            "line": 151,
+            "column": 15,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `'active·line·@2s:·offset0·=',·parsed.at2s_offset0.activeIndex,·'('·+·parsed.at2s_offset0.activeText·+·')'` with `⏎····'active·line·@2s:·offset0·=',⏎····parsed.at2s_offset0.activeIndex,⏎····'('·+·parsed.at2s_offset0.activeText·+·')'⏎··`"
+          },
+          {
+            "line": 152,
+            "column": 15,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `'··············offset1·=',·parsed.at2s_offset1.activeIndex,·'('·+·parsed.at2s_offset1.activeText·+·')'` with `⏎····'··············offset1·=',⏎····parsed.at2s_offset1.activeIndex,⏎····'('·+·parsed.at2s_offset1.activeText·+·')'⏎··`"
+          },
+          {
+            "line": 153,
+            "column": 15,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `'track2·offset·chip:',·parsed.track2.offsetChip,·'|·track1·again:',·parsed.track1Again.offsetChip` with `⏎····'track2·offset·chip:',⏎····parsed.track2.offsetChip,⏎····'|·track1·again:',⏎····parsed.track1Again.offsetChip⏎··`"
+          }
+        ]
+      },
+      {
+        "file": "scripts/verify-ai-confirm.mjs",
+        "errors": 5,
+        "warnings": 4,
+        "messages": [
+          {
+            "line": 26,
+            "column": 27,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 26,
+            "column": 29,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·(await·fetch(`http://127.0.0.1:9998${path}`,·{·method:·path·===·'/__log'·?·'GET'·:·'POST'·})` with `⏎··(⏎····await·fetch(`http://127.0.0.1:9998${path}`,·{·method:·path·===·'/__log'·?·'GET'·:·'POST'·})⏎··`"
+          },
+          {
+            "line": 29,
+            "column": 1,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 41,
+            "column": 31,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 51,
+            "column": 1,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 57,
+            "column": 1,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 175,
+            "column": 42,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·r.messages.map((m)·=>·(m.tool_calls·?·`assistant.tool_calls(${m.tool_calls.map((t)·=>·t.name·+·'#'·+·t.id).join(',')})`·:·m.role·===·'tool'·?·`tool(${m.tool_call_id}):${String(m.content).slice(0,·40)}`·:·m.role)).flat()` with `⏎········r.messages⏎··········.map((m)·=>⏎············m.tool_calls⏎··············?·`assistant.tool_calls(${m.tool_calls.map((t)·=>·t.name·+·'#'·+·t.id).join(',')})`⏎··············:·m.role·===·'tool'⏎················?·`tool(${m.tool_call_id}):${String(m.content).slice(0,·40)}`⏎················:·m.role⏎··········)⏎··········.flat()⏎······`"
+          },
+          {
+            "line": 234,
+            "column": 23,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·log.requests.flatMap((r)·=>·r.messages.filter((m)·=>·m.role·===·'tool')).slice(-1)[0]` with `⏎········log.requests.flatMap((r)·=>·r.messages.filter((m)·=>·m.role·===·'tool')).slice(-1)[0]⏎··········`"
+          },
+          {
+            "line": 270,
+            "column": 26,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `.flatMap((r)·=>·r.messages)` with `⏎········.flatMap((r)·=>·r.messages)⏎········`"
+          }
+        ]
+      },
+      {
+        "file": "scripts/verify-components.mjs",
+        "errors": 2,
+        "warnings": 1,
+        "messages": [
+          {
+            "line": 40,
+            "column": 31,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 49,
+            "column": 24,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 179,
+            "column": 3,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Delete `··`"
+          }
+        ]
+      },
+      {
+        "file": "scripts/verify-lib.mjs",
+        "errors": 8,
+        "warnings": 2,
+        "messages": [
+          {
+            "line": 15,
+            "column": 8,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 21,
+            "column": 8,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 22,
+            "column": 23,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `(x)·=>·x.type·===·'page'·&&·x.url.includes('localhost:5173')·&&·!x.url.includes('#mini')` with `⏎····(x)·=>·x.type·===·'page'·&&·x.url.includes('localhost:5173')·&&·!x.url.includes('#mini')⏎··`"
+          },
+          {
+            "line": 27,
+            "column": 8,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 34,
+            "column": 8,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 49,
+            "column": 37,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 95,
+            "column": 29,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 98,
+            "column": 8,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 100,
+            "column": 15,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace ``${ok·?·'PASS'·:·'FAIL'}··${label}${expected·===·undefined·?·''·:·`··(got·${JSON.stringify(actual)},·want·${JSON.stringify(expected)})`}`` with `⏎····`${ok·?·'PASS'·:·'FAIL'}··${label}${expected·===·undefined·?·''·:·`··(got·${JSON.stringify(actual)},·want·${JSON.stringify(expected)})`}`⏎··`"
+          },
+          {
+            "line": 106,
+            "column": 22,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          }
+        ]
+      },
+      {
+        "file": "scripts/verify-lint-tests.mjs",
+        "errors": 2,
+        "warnings": 11,
+        "messages": [
+          {
+            "line": 24,
+            "column": 47,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·?·process.argv[process.argv.indexOf('--label')·+·1]` with `⏎··?·process.argv[process.argv.indexOf('--label')·+·1]⏎·`"
+          },
+          {
+            "line": 28,
+            "column": 20,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 35,
+            "column": 1,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 38,
+            "column": 18,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `/\\s/.test(file)·?·`\"${file}\"`·:·file,·...args.map((a)·=>·(/\\s/.test(a)·?·`\"${a}\"`·:·a))` with `⏎····/\\s/.test(file)·?·`\"${file}\"`·:·file,⏎····...args.map((a)·=>·(/\\s/.test(a)·?·`\"${a}\"`·:·a))⏎··`"
+          },
+          {
+            "line": 66,
+            "column": 19,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·label,·stamp:·new·Date().toISOString(),·method:·'direct·execFile·of·npm.cmd/npx.cmd·shims',·lint:·null,·lintJson:·null,·typecheck:·null,·tests:·null·` with `⏎··label,⏎··stamp:·new·Date().toISOString(),⏎··method:·'direct·execFile·of·npm.cmd/npx.cmd·shims',⏎··lint:·null,⏎··lintJson:·null,⏎··typecheck:·null,⏎··tests:·null⏎`"
+          },
+          {
+            "line": 77,
+            "column": 20,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·command:·r.command,·exitCode:·r.exitCode,·logFile:·r.logFile,·ms:·r.ms,·tail:·r.log.slice(-4000),·spawnError:·r.spawnError` with `⏎····command:·r.command,⏎····exitCode:·r.exitCode,⏎····logFile:·r.logFile,⏎····ms:·r.ms,⏎····tail:·r.log.slice(-4000),⏎····spawnError:·r.spawnError⏎·`"
+          },
+          {
+            "line": 83,
+            "column": 30,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `'npx.cmd',·['eslint',·'.',·'--no-cache',·'--format',·'json'],·`eslint-json-${label}.log`` with `⏎····'npx.cmd',⏎····['eslint',·'.',·'--no-cache',·'--format',·'json'],⏎····`eslint-json-${label}.log`⏎··`"
+          },
+          {
+            "line": 98,
+            "column": 41,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·line:·m.line,·column:·m.column,·rule:·m.ruleId,·severity:·m.severity,·message:·m.message` with `⏎········line:·m.line,⏎········column:·m.column,⏎········rule:·m.ruleId,⏎········severity:·m.severity,⏎········message:·m.message⏎·····`"
+          },
+          {
+            "line": 122,
+            "column": 12,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·command:·node.command,·exitCode:·node.exitCode,·logFile:·node.logFile,·tail:·node.log.slice(-2500)` with `⏎······command:·node.command,⏎······exitCode:·node.exitCode,⏎······logFile:·node.logFile,⏎······tail:·node.log.slice(-2500)⏎···`"
+          },
+          {
+            "line": 123,
+            "column": 11,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·command:·web.command,·exitCode:·web.exitCode,·logFile:·web.logFile,·tail:·web.log.slice(-2500)` with `⏎······command:·web.command,⏎······exitCode:·web.exitCode,⏎······logFile:·web.logFile,⏎······tail:·web.log.slice(-2500)⏎···`"
+          },
+          {
+            "line": 159,
+            "column": 14,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·command:·evidence.lint.command,·exitCode:·evidence.lint.exitCode,·log:·evidence.lint.logFile,·errors:·evidence.lintJson.totalErrors,·warnings:·evidence.lintJson.totalWarnings,·parsed:·evidence.lintJson.parsed,·rules:·evidence.lintJson.rulesSummary` with `⏎········command:·evidence.lint.command,⏎········exitCode:·evidence.lint.exitCode,⏎········log:·evidence.lint.logFile,⏎········errors:·evidence.lintJson.totalErrors,⏎········warnings:·evidence.lintJson.totalWarnings,⏎········parsed:·evidence.lintJson.parsed,⏎········rules:·evidence.lintJson.rulesSummary⏎·····`"
+          },
+          {
+            "line": 160,
+            "column": 61,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `(f)·=>·`${f.file}·e=${f.errors}·w=${f.warnings}`` with `⏎········(f)·=>·`${f.file}·e=${f.errors}·w=${f.warnings}`⏎······`"
+          },
+          {
+            "line": 162,
+            "column": 15,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·command:·evidence.tests.command,·exitCode:·evidence.tests.exitCode,·log:·evidence.tests.logFile,·filesLine:·evidence.tests.filesLine,·testsLine:·evidence.tests.testsLine,·passed:·evidence.tests.passedTestCount,·failed:·evidence.tests.failedTestCount,·testFiles:·evidence.tests.testFilesSeen` with `⏎········command:·evidence.tests.command,⏎········exitCode:·evidence.tests.exitCode,⏎········log:·evidence.tests.logFile,⏎········filesLine:·evidence.tests.filesLine,⏎········testsLine:·evidence.tests.testsLine,⏎········passed:·evidence.tests.passedTestCount,⏎········failed:·evidence.tests.failedTestCount,⏎········testFiles:·evidence.tests.testFilesSeen⏎·····`"
+          }
+        ]
+      },
+      {
+        "file": "scripts/verify-lyrics-offset.mjs",
+        "errors": 5,
+        "warnings": 7,
+        "messages": [
+          {
+            "line": 22,
+            "column": 31,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 50,
+            "column": 29,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `...ages.filter((a)·=>·a.modifiedAgoMs·!==·undefined).map((a)·=>·a.modifiedAgoMs)` with `⏎····...ages.filter((a)·=>·a.modifiedAgoMs·!==·undefined).map((a)·=>·a.modifiedAgoMs)⏎··`"
+          },
+          {
+            "line": 53,
+            "column": 19,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace ``ABORT:·t4·sources·modified·${youngest}ms·ago·—·the·feature·is·still·being·written.`` with `⏎······`ABORT:·t4·sources·modified·${youngest}ms·ago·—·the·feature·is·still·being·written.`⏎····`"
+          },
+          {
+            "line": 69,
+            "column": 23,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 88,
+            "column": 26,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 97,
+            "column": 1,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 121,
+            "column": 35,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace ``JSON.stringify(Object.entries(localStorage).filter(([k])·=>·k.toLowerCase().includes('lyric')))`` with `⏎····`JSON.stringify(Object.entries(localStorage).filter(([k])·=>·k.toLowerCase().includes('lyric')))`⏎··`"
+          },
+          {
+            "line": 122,
+            "column": 32,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace ``JSON.stringify(Array.from(document.querySelectorAll('.detail-tab')).map((t)·=>·({·text:·t.innerText.trim(),·active:·t.className.includes('active')·})))`` with `⏎····`JSON.stringify(Array.from(document.querySelectorAll('.detail-tab')).map((t)·=>·({·text:·t.innerText.trim(),·active:·t.className.includes('active')·})))`⏎··`"
+          },
+          {
+            "line": 150,
+            "column": 44,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace ``JSON.stringify(Object.entries(localStorage).filter(([k])·=>·k.toLowerCase().includes('lyric')))`` with `⏎····`JSON.stringify(Object.entries(localStorage).filter(([k])·=>·k.toLowerCase().includes('lyric')))`⏎··`"
+          },
+          {
+            "line": 209,
+            "column": 23,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 234,
+            "column": 13,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `.ev(` with `⏎····.ev(⏎······`"
+          },
+          {
+            "line": 237,
+            "column": 8,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `)` with `⏎····)⏎····`"
+          }
+        ]
+      },
+      {
+        "file": "scripts/verify-sleep-timer.mjs",
+        "errors": 1,
+        "warnings": 2,
+        "messages": [
+          {
+            "line": 20,
+            "column": 31,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 234,
+            "column": 17,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace ``(async·()·=>·{·window.__nebula.player.getState().setSleepMinutes(15);·return·1·})()`` with `⏎····`(async·()·=>·{·window.__nebula.player.getState().setSleepMinutes(15);·return·1·})()`⏎··`"
+          },
+          {
+            "line": 235,
+            "column": 40,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace ``JSON.stringify({·sleep:·window.__nebula.player.getState().sleep?.mode·??·null·})`` with `⏎····`JSON.stringify({·sleep:·window.__nebula.player.getState().sleep?.mode·??·null·})`⏎··`"
+          }
+        ]
+      },
+      {
+        "file": "src/main/llmClient.ts",
+        "errors": 1,
+        "warnings": 7,
+        "messages": [
+          {
+            "line": 4,
+            "column": 7,
+            "rule": "prefer-const",
+            "severity": 2,
+            "message": "'base' is never reassigned. Use 'const' instead."
+          },
+          {
+            "line": 63,
+            "column": 9,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `e.cause?.code·===·'ECONNREFUSED'·||·e.cause?.code·===·'ENOTFOUND'·||·e.cause?.code·===·'EAI_AGAIN'` with `⏎······e.cause?.code·===·'ECONNREFUSED'·||⏎······e.cause?.code·===·'ENOTFOUND'·||⏎······e.cause?.code·===·'EAI_AGAIN'⏎····`"
+          },
+          {
+            "line": 76,
+            "column": 39,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·?·json.error` with `⏎··········?·json.error⏎·········`"
+          },
+          {
+            "line": 165,
+            "column": 23,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `tcs?:·Array<{·id?:·string;·function?:·{·name?:·string;·arguments?:·string·}·}>` with `⏎··tcs?:·Array<{·id?:·string;·function?:·{·name?:·string;·arguments?:·string·}·}>⏎`"
+          },
+          {
+            "line": 190,
+            "column": 16,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·content?:·string;·tool_calls?:·Array<{·id?:·string;·function?:·{·name?:·string;·arguments?:·string·}·}>` with `⏎······content?:·string⏎······tool_calls?:·Array<{·id?:·string;·function?:·{·name?:·string;·arguments?:·string·}·}>⏎···`"
+          },
+          {
+            "line": 196,
+            "column": 31,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `config:·ApiConfig` with `⏎··config:·ApiConfig⏎`"
+          },
+          {
+            "line": 229,
+            "column": 29,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·model:·config.model,·messages:·[{·role:·'user',·content:·'hi'·}],·max_tokens:·1` with `⏎········model:·config.model,⏎········messages:·[{·role:·'user',·content:·'hi'·}],⏎········max_tokens:·1⏎·····`"
+          },
+          {
+            "line": 260,
+            "column": 12,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·/supported\\s+API\\s+model\\s+names?\\s+are\\s+(.+)/i.exec(msg)·??` with `⏎····/supported\\s+API\\s+model\\s+names?\\s+are\\s+(.+)/i.exec(msg)·??⏎···`"
+          }
+        ]
+      },
+      {
+        "file": "src/main/protocol.ts",
+        "errors": 1,
+        "warnings": 0,
+        "messages": [
+          {
+            "line": 90,
+            "column": 11,
+            "rule": "prefer-const",
+            "severity": 2,
+            "message": "'start' is never reassigned. Use 'const' instead."
+          }
+        ]
+      }
+    ],
+    "rulesSummary": {
+      "warning:prettier/prettier": 276,
+      "error:@typescript-eslint/explicit-function-return-type": 103,
+      "error:@typescript-eslint/no-unused-vars": 1,
+      "error:prefer-const": 2,
+      "warning:react-hooks/incompatible-library": 1
+    }
+  },
+  "typecheck": {
+    "node": {
+      "command": "npm.cmd run typecheck:node",
+      "exitCode": 0,
+      "logFile": ".devdata/t6-evidence/typecheck-node-baseline-r1.log",
+      "tail": "\n> nebula-player@1.0.3 typecheck:node\n> tsc --noEmit -p tsconfig.node.json --composite false\n\n"
+    },
+    "web": {
+      "command": "npm.cmd run typecheck:web",
+      "exitCode": 0,
+      "logFile": ".devdata/t6-evidence/typecheck-web-baseline-r1.log",
+      "tail": "\n> nebula-player@1.0.3 typecheck:web\n> tsc --noEmit -p tsconfig.web.json --composite false\n\n"
+    }
+  },
+  "tests": {
+    "command": "npm.cmd test -- --reporter=verbose",
+    "exitCode": 0,
+    "logFile": ".devdata/t6-evidence/tests-baseline-r1.log",
+    "testsLine": "Tests  56 passed (56)",
+    "filesLine": "Test Files  6 passed (6)",
+    "passedTestCount": 56,
+    "failedTestCount": 0,
+    "passedTestNames": [],
+    "failedTestNames": [],
+    "testFilesSeen": [
+      "src/renderer/src/lib/__tests__/format.test.ts",
+      "src/renderer/src/lib/__tests__/sleepTimer.test.ts",
+      "src/renderer/src/lib/__tests__/search.test.ts",
+      "src/renderer/src/lib/__tests__/recommend.test.ts",
+      "src/renderer/src/lib/__tests__/chatConfirm.test.ts",
+      "src/renderer/src/lib/__tests__/playerStoreSleep.test.ts"
+    ],
+    "tail": "\n> nebula-player@1.0.3 test\n> vitest run --reporter=verbose\n\n\n RUN  v2.1.9 C:/博830/vibecoding/nebula-player\n\n ✓ src/renderer/src/lib/__tests__/format.test.ts > formatTime > formats minutes and seconds\n ✓ src/renderer/src/lib/__tests__/format.test.ts > formatTime > formats hours\n ✓ src/renderer/src/lib/__tests__/format.test.ts > formatTime > handles invalid input\n ✓ src/renderer/src/lib/__tests__/format.test.ts > formatDuration > summarizes durations\n ✓ src/renderer/src/lib/__tests__/sleepTimer.test.ts > sleep timer arming > exposes the three offered durations\n ✓ src/renderer/src/lib/__tests__/sleepTimer.test.ts > sleep timer arming > arms a countdown deadline in the future\n ✓ src/renderer/src/lib/__tests__/sleepTimer.test.ts > sleep timer arming > floors fractional minutes and clamps junk to a 0-minute countdown\n ✓ src/renderer/src/lib/__tests__/sleepTimer.test.ts > sleep timer arming > arms the two ended-driven modes without a deadline\n ✓ src/renderer/src/lib/__tests__/sleepTimer.test.ts > remaining time helpers > reports null for a missing timer or a non-countdown mode\n ✓ src/renderer/src/lib/__tests__/sleepTimer.test.ts > remaining time helpers > never goes below zero\n ✓ src/renderer/src/lib/__tests__/sleepTimer.test.ts > remaining time helpers > rounds seconds up so the badge starts at the full duration\n ✓ src/renderer/src/lib/__tests__/sleepTimer.test.ts > remaining time helpers > formats remaining seconds for the badge\n ✓ src/renderer/src/lib/__tests__/sleepTimer.test.ts > remaining time helpers > labels each mode and the off state\n ✓ src/renderer/src/lib/__tests__/sleepTimer.test.ts > countdown ticking > keeps counting until the deadline, then reports the expiry\n ✓ src/renderer/src/lib/__tests__/sleepTimer.test.ts > countdown ticking > passes through timers without a countdown and the off state\n ✓ src/renderer/src/lib/__tests__/sleepTimer.test.ts > shouldStopOnEnded > plays on normally when the timer is off\n ✓ src/renderer/src/lib/__tests__/sleepTimer.test.ts > shouldStopOnEnded > countdown mode never stops on a track ending\n ✓ src/renderer/src/lib/__tests__/sleepTimer.test.ts > shouldStopOnEnded > track mode stops the very first natural end, including single-track repeat\n ✓ src/renderer/src/lib/__tests__/sleepTimer.test.ts > shouldStopOnEnded > queue mode advances through the middle of the queue\n ✓ src/renderer/src/lib/__tests__/sleepTimer.test.ts > shouldStopOnEnded > queue mode stops at the last track — no wrap-around\n ✓ src/renderer/src/lib/__tests__/sleepTimer.test.ts > shouldStopOnEnded > queue mode stops on the single-track queue (no endless loop)\n ✓ src/renderer/src/lib/__tests__/sleepTimer.test.ts > shouldStopOnEnded > an explicit user skip wins over ended-driven modes\n ✓ src/renderer/src/lib/__tests__/sleepTimer.test.ts > sleepFiresOnEnded > ignores the off state and countdown mode\n ✓ src/renderer/src/lib/__tests__/sleepTimer.test.ts > sleepFiresOnEnded > fires for track mode at any index and for queue mode only at the end\n ✓ src/renderer/src/lib/__tests__/search.test.ts > searchTracks > matches title substrings with relevance ranking\n ✓ src/renderer/src/lib/__tests__/search.test.ts > searchTracks > matches chinese titles\n ✓ src/renderer/src/lib/__tests__/search.test.ts > searchTracks > filters by artist and album exactly\n ✓ src/renderer/src/lib/__tests__/search.test.ts > searchTracks > matches genre keywords\n ✓ src/renderer/src/lib/__tests__/search.test.ts > searchTracks > is case-insensitive\n ✓ src/renderer/src/lib/__tests__/search.test.ts > searchTracks > handles empty queries\n ✓ src/renderer/src/lib/__tests__/search.test.ts > groupers > groups artists by count\n ✓ src/renderer/src/lib/__tests__/search.test.ts > groupers > groups albums by artist+album key\n ✓ src/renderer/src/lib/__tests__/search.test.ts > groupers > groups folders by scan root\n ✓ src/renderer/src/lib/__tests__/recommend.test.ts > buildTasteProfile > aggregates artist and genre plays\n ✓ src/renderer/src/lib/__tests__/recommend.test.ts > buildTasteProfile > handles an empty history\n ✓ src/renderer/src/lib/__tests__/recommend.test.ts > recommendTracks > prefers favourite genres/artists and explains why\n ✓ src/renderer/src/lib/__tests__/recommend.test.ts > recommendTracks > penalises the most recently played tracks\n ✓ src/renderer/src/lib/__tests__/recommend.test.ts > recommendTracks > falls back to newest imports without any history\n ✓ src/renderer/src/lib/__tests__/recommend.test.ts > recommendTracks > skips missing files\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > destructive tool guard (tools.ts) > knows which tools are destructive\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > destructive tool guard (tools.ts) > summarises the pending operation for the confirmation bar\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > destructive tool guard (tools.ts) > does NOT execute remove_from_playlist without user approval\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > destructive tool guard (tools.ts) > cannot be self-approved: a token only authorises its own run + call\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > destructive tool guard (tools.ts) > leaves non-destructive tools untouched (no confirmation, executed at once)\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > chat confirmation flow (chatStore.ts) > pauses the turn on a destructive call and continues as soon as the user confirms\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > chat confirmation flow (chatStore.ts) > tells the model the user cancelled and keeps the sequence intact (no duplicate tool message)\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > chat confirmation flow (chatStore.ts) > runs non-destructive calls inline without any confirmation\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > chat confirmation flow (chatStore.ts) > blocks new messages while a confirmation is pending\n ✓ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > arms a countdown, ticks the badge and pauses when it runs out\n ✓ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > cancel clears the timer and stops the clock\n ✓ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > arms both ended-driven modes without a deadline\n ✓ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > a manual skip drops an ended-driven timer but keeps a countdown\n ✓ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > pauses on the natural end of the current track (no repeat, no advance)\n ✓ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > keeps playing through the queue and only stops once the queue ends\n ✓ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > stops a single-track queue instead of looping forever\n ✓ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > never persists the timer — a restart starts with sleep off\n\n Test Files  6 passed (6)\n      Tests  56 passed (56)\n   Start at  15:13:07\n   Duration  963ms (transform 460ms, setup 0ms, collect 1.06s, tests 117ms, environment 2ms, prepare 1.39s)\n\n\n--- stderr ---\n\u001b[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.\u001b[39m\n"
+  }
+}

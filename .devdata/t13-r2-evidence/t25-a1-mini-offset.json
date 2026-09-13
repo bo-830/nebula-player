@@ -1,0 +1,95 @@
+{
+  "capturedAt": "2026-09-12T13:11:37.534Z",
+  "runs": [
+    {
+      "label": "single pin @ seek 14.7",
+      "seconds": 14.7,
+      "miniClockBase": {
+        "title": "长测试曲",
+        "active": "我在城市的边缘 轻声哼唱",
+        "lines": 3,
+        "lsOffset": "{\"d9c1ea5d5237b765fbff\":2.5}"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "label": "pin 14.7 (offset-only flips)",
+      "offset": 0,
+      "seconds": 14.7,
+      "main": {
+        "active": "我在城市的边缘 轻声哼唱",
+        "time": 14.96,
+        "lsOffset": "{\"d9c1ea5d5237b765fbff\":2.5}"
+      },
+      "mini": {
+        "title": "长测试曲",
+        "active": "我在城市的边缘 轻声哼唱",
+        "lines": 3,
+        "lsOffset": "{\"d9c1ea5d5237b765fbff\":2.5}"
+      }
+    },
+    {
+      "label": "pin 14.7 (offset-only flips)",
+      "offset": 0.5,
+      "seconds": 14.7,
+      "main": {
+        "active": "风把思念 吹向远方",
+        "time": 14.96,
+        "lsOffset": "{\"d9c1ea5d5237b765fbff\":2.5,\"aee944d929770f08f757\":0.5}"
+      },
+      "mini": {
+        "title": "长测试曲",
+        "active": "风把思念 吹向远方",
+        "lines": 3,
+        "lsOffset": "{\"d9c1ea5d5237b765fbff\":2.5,\"aee944d929770f08f757\":0.5}"
+      }
+    },
+    {
+      "label": "pin 14.7 (offset-only flips)",
+      "offset": 0,
+      "seconds": 14.7,
+      "main": {
+        "active": "我在城市的边缘 轻声哼唱",
+        "time": 14.96,
+        "lsOffset": "{\"d9c1ea5d5237b765fbff\":2.5}"
+      },
+      "mini": {
+        "title": "长测试曲",
+        "active": "我在城市的边缘 轻声哼唱",
+        "lines": 3,
+        "lsOffset": "{\"d9c1ea5d5237b765fbff\":2.5}"
+      }
+    }
+  ],
+  "setup": {
+    "id": "aee944d929770f08f757",
+    "title": "长测试曲",
+    "mainLines": 16
+  },
+  "miniTargets": [
+    "http://localhost:5173/#mini"
+  ],
+  "miniReady": {
+    "title": "长测试曲",
+    "active": "夜幕低垂 星光闪烁",
+    "lines": 2,
+    "lsOffset": "{\"d9c1ea5d5237b765fbff\":2.5}"
+  },
+  "assertions": {
+    "main highlight crosses the 15.50 line when offset goes 0 → +0.5": true,
+    "main highlight returns to the 11.00 line when offset goes +0.5 → 0": true,
+    "mini highlight crosses the 15.50 line when offset goes 0 → +0.5": true,
+    "mini highlight returns to the 11.00 line when offset goes +0.5 → 0": true,
+    "mini highlight equals main highlight at every step": true,
+    "mini window's localStorage carries the written offset (shared-origin read)": true,
+    "mini window rendered lyric lines": true
+  },
+  "allPass": true,
+  "liveness": {
+    "cdpUp": true,
+    "browser": "Chrome/142.0.7444.265",
+    "mainTargets": 1,
+    "miniTargets": 1
+  }
+}

@@ -1,0 +1,43 @@
+{
+    "miniBounds":  {
+                       "shaPristine":  "EB84FA4A0B04F31FE21B467E38285C30C3C5488F",
+                       "control":  {
+                                       "exitCode":  0,
+                                       "summary":  "Test Files  1 passed (1) || Tests  8 passed (8)"
+                                   },
+                       "shaMutated":  "1E4BA7FAE69904281C52AF8987D16A541C38EF28",
+                       "mutated":  {
+                                       "exitCode":  1,
+                                       "summary":  "❯ .devdata/t47-evidence/discrim/minibounds/miniBounds.test.ts (8 tests | 5 failed) 17ms || ⎯⎯⎯⎯⎯⎯⎯ Failed Tests 5 ⎯⎯⎯⎯⎯⎯⎯ || Test Files  1 failed (1) || Tests  5 failed | 3 passed (8)"
+                                   },
+                       "shaRestored":  "EB84FA4A0B04F31FE21B467E38285C30C3C5488F",
+                       "restoredIdentical":  true,
+                       "restored":  {
+                                        "exitCode":  0,
+                                        "summary":  "Test Files  1 passed (1) || Tests  8 passed (8)"
+                                    }
+                   },
+    "chatProxy":  {
+                      "shaPristine":  "CC1DAA4CF01AAFDCC4C6D1EAE1D88E92C937F70A",
+                      "control":  {
+                                      "exitCode":  0,
+                                      "summary":  "Test Files  1 passed (1) || Tests  16 passed (16)"
+                                  },
+                      "mutationApplied":  true,
+                      "shaMutated":  "8A61F91E3AC697EFCB4E6DD8B044DFB8049895A6",
+                      "mutated":  {
+                                      "exitCode":  1,
+                                      "summary":  "❯ .devdata/t47-evidence/discrim/chatproxy/chatProxy.test.ts (16 tests | 3 failed) 24ms || ⎯⎯⎯⎯⎯⎯⎯ Failed Tests 3 ⎯⎯⎯⎯⎯⎯⎯ || Test Files  1 failed (1) || Tests  3 failed | 13 passed (16)"
+                                  },
+                      "shaRestored":  "CC1DAA4CF01AAFDCC4C6D1EAE1D88E92C937F70A",
+                      "restoredIdentical":  true,
+                      "restored":  {
+                                       "exitCode":  0,
+                                       "summary":  "Test Files  1 passed (1) || Tests  16 passed (16)"
+                                   }
+                  },
+    "srcKeyFiles":  {
+                        "miniBounds":  "EB84FA4A0B04F31FE21B467E38285C30C3C5488F",
+                        "chatProxy":  "42A82C4722CEA8DE8AD302FD75997E654EDD10BE"
+                    }
+}

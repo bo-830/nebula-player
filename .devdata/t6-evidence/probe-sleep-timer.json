@@ -1,0 +1,113 @@
+﻿{
+  "preflight": {
+    "tracks": 6,
+    "haveLongTrack": true,
+    "api": true,
+    "sleepFns": [
+      "setSleepMinutes",
+      "setSleepTrackEnd",
+      "setSleepQueueEnd",
+      "clearSleep"
+    ]
+  },
+  "uiEntry": {
+    "button": true,
+    "classes": "pb-btn sleep-btn  ",
+    "title": "睡眠定时器：未启用",
+    "menuOpen": true,
+    "items": [
+      "15 分钟后暂停",
+      "30 分钟后暂停",
+      "60 分钟后暂停",
+      "播完当前歌曲后暂停",
+      "播完当前队列后暂停"
+    ]
+  },
+  "minuteMode": {
+    "startedPlaying": true,
+    "armed": {
+      "sleep": {
+        "mode": "minute",
+        "deadline": 1789199404906,
+        "minutes": 15,
+        "startMode": "shuffle"
+      },
+      "remaining": 900
+    },
+    "uiArmed": {
+      "cls": true,
+      "title": "睡眠定时器：15 分钟后暂停（剩余 15:00）",
+      "badge": "15:00",
+      "menuOpenAfterArm": true
+    },
+    "after": {
+      "isPlaying": false,
+      "sleep": null,
+      "remaining": null,
+      "currentTimeFrozen": 4.252154,
+      "title": "睡眠定时器：未启用",
+      "badge": null,
+      "toasts": [
+        {
+          "msg": "睡眠定时器已触发，已暂停播放（定时时间到）",
+          "kind": "info",
+          "at": 1789198507923
+        }
+      ],
+      "stillPaused": true,
+      "timeStillFrozen": true
+    }
+  },
+  "trackEndMode": {
+    "armed": "track",
+    "queueLen": 6,
+    "startIndex": 0,
+    "afterEnded": {
+      "isPlaying": false,
+      "index": 0,
+      "sleep": null,
+      "currentTime": 120,
+      "advanced": false
+    }
+  },
+  "queueEndMode": {
+    "armed": "queue",
+    "queueLen": 3,
+    "startedIndex": 2,
+    "afterEnded": {
+      "isPlaying": false,
+      "index": 2,
+      "sleep": null,
+      "currentTime": 4
+    }
+  },
+  "queueMidNoStop": {
+    "before": {
+      "index": 0,
+      "queueLen": 6
+    },
+    "afterIndex": 5,
+    "advanced": true,
+    "isPlaying": true,
+    "sleepMode": "queue"
+  },
+  "cancel": {
+    "armedRemaining": 899,
+    "cleared": {
+      "sleep": null,
+      "remaining": null,
+      "armedClass": false,
+      "badge": null
+    },
+    "advancedAfterCancel": true
+  },
+  "persistence": {
+    "beforeReload": {
+      "sleep": "minute"
+    },
+    "afterReload": {
+      "sleep": null,
+      "armed": false
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "raw": "C:\\博830\\vibecoding\\nebula-player\\.devdata\\transcode-fixtures\\tone.aac",
+  "decodeMs": 67,
+  "outUrl": "media://local/Qzpc5Y2aODMw",
+  "isMediaUrl": true,
+  "urlChangedFromSource": true,
+  "mode": "graph",
+  "signalPeak": 231,
+  "ctxState": "running",
+  "audioPaused": false,
+  "elementErrorCode": null,
+  "duration": 6.04,
+  "currentTime": 2.62,
+  "afterSeek": 3.61
+}
+--- checks ---
+transcoded url returned : true
+plays through graph     : true
+duration read           : 6.04 | after seek: 3.61
+element error           : null
+CORS zeroes warnings    : 0
+(output url is a media:// cache ref; on-disk size checked separately)

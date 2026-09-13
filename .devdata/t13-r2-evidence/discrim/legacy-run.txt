@@ -1,0 +1,96 @@
+﻿npx.cmd : [33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs
+-node-api-deprecated for more details.[39m
+所在位置 行:1 字符: 168
++ ... la-player"; npx.cmd vitest run --config ".devdata/t13-r2-evidence/dis ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([33mThe CJS bu...e details.[39m:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+ RUN  v2.1.9 C:/博830/vibecoding/nebula-player/.devdata/t13-r2-evidence/discrim
+
+ ❯ mediaRoots.legacy.test.ts (9 tests | 5 failed) 18ms
+   × createMediaRoots — cold-start concurrency (regression 1) > resolves EVERY concurrent first call to the fully populated set 8ms
+     → expected 0 to be greater than 0
+   × createMediaRoots — refresh (regression 2) > applies a folder that only appeared after the first population 3ms
+     → expected [ 'C:\music' ] to include 'C:\newdir'
+   × createMediaRoots — refresh (regression 2) > can be replaced again and drops directories that are gone 1ms
+     → expected [ 'C:\newdir' ] to include 'C:\third'
+   × createMediaRoots — refresh (regression 2) > a set() during an in-flight populate wins over that populate 1ms
+     → expected [ 'C:\slow' ] to include 'C:\manual'
+   × createMediaRoots — refresh (regression 2) > refresh() records the library even when nothing was served yet 1ms
+     → expected [] to include 'C:\scanned'
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 5 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  mediaRoots.legacy.test.ts > createMediaRoots — cold-start concurrency (regression 1) > resolves EVERY concurrent
+ first call to the fully populated set
+AssertionError: expected 0 to be greater than 0
+ ❯ mediaRoots.legacy.test.ts:33:24
+     31| 
+     32|     for (const r of results) {
+     33|       expect(r.length).toBeGreaterThan(0) // a latch would hand out []
+       |                        ^
+     34|       expect(r).toContain(dirOf('/music/song.mp3'))
+     35|       expect(r).toContain(resolve('/cache/covers'))
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/5]⎯
+
+ FAIL  mediaRoots.legacy.test.ts > createMediaRoots — refresh (regression 2) > applies a folder that only appeared afte
+r the first population
+AssertionError: expected [ 'C:\music' ] to include 'C:\newdir'
+ ❯ mediaRoots.legacy.test.ts:91:29
+     89|     tracks = [...tracks, { path: '/newdir/b.flac' }]
+     90|     await roots.refresh()
+     91|     expect(roots.current()).toContain(dirOf('/newdir/b.flac'))
+       |                             ^
+     92|   })
+     93| 
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/5]⎯
+
+ FAIL  mediaRoots.legacy.test.ts > createMediaRoots — refresh (regression 2) > can be replaced again and drops director
+ies that are gone
+AssertionError: expected [ 'C:\newdir' ] to include 'C:\third'
+ ❯ mediaRoots.legacy.test.ts:104:29
+    102|     tracks = [{ path: '/third/c.mp3' }]
+    103|     await roots.refresh()
+    104|     expect(roots.current()).toContain(dirOf('/third/c.mp3'))
+       |                             ^
+    105|     expect(roots.current()).not.toContain(dirOf('/newdir/b.flac'))
+    106|   })
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/5]⎯
+
+ FAIL  mediaRoots.legacy.test.ts > createMediaRoots — refresh (regression 2) > a set() during an in-flight populate win
+s over that populate
+AssertionError: expected [ 'C:\slow' ] to include 'C:\manual'
+ ❯ mediaRoots.legacy.test.ts:137:29
+    135|     await inFlight
+    136| 
+    137|     expect(roots.current()).toContain(resolve('/manual'))
+       |                             ^
+    138|     expect(roots.current()).not.toContain(dirOf('/slow/a.mp3'))
+    139|   })
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/5]⎯
+
+ FAIL  mediaRoots.legacy.test.ts > createMediaRoots — refresh (regression 2) > refresh() records the library even when 
+nothing was served yet
+AssertionError: expected [] to include 'C:\scanned'
+ ❯ mediaRoots.legacy.test.ts:148:29
+    146|     tracks = [{ path: '/scanned/d.mp3' }]
+    147|     await roots.refresh()
+    148|     expect(roots.current()).toContain(dirOf('/scanned/d.mp3'))
+       |                             ^
+    149|     expect(await roots.get()).toContain(dirOf('/scanned/d.mp3'))
+    150|   })
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/5]⎯
+
+ Test Files  1 failed (1)
+      Tests  5 failed | 4 passed (9)
+   Start at  20:34:58
+   Duration  486ms (transform 51ms, setup 0ms, collect 50ms, tests 18ms, environment 0ms, prepare 157ms)
+
+

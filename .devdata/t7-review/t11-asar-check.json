@@ -1,0 +1,26 @@
+{
+  "asar": "C:\\博830\\vibecoding\\nebula-player\\dist\\win-unpacked\\resources\\app.asar",
+  "entries": 4264,
+  "devdataEntries": 0,
+  "devdataSamples": [],
+  "scriptsEntries": 0,
+  "tmpEntries": 0,
+  "topLevel": [
+    [
+      "node_modules",
+      4251
+    ],
+    [
+      "out",
+      10
+    ],
+    [
+      "resources",
+      2
+    ],
+    [
+      "package.json",
+      1
+    ]
+  ]
+}

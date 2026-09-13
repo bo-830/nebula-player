@@ -1,0 +1,103 @@
+{
+  "gapMs": 10,
+  "typed": "ok",
+  "sent": "ok",
+  "mainLastAssistant": "第一段滴注内容。第二段滴注内容。第三段滴注内容。",
+  "miniLastAi": "第一段滴注内容。第二段滴注内容。第三段滴注内容。",
+  "persistedLastAssistant": "第一段滴注内容。第二段滴注内容。第三段滴注内容。",
+  "textExact": true,
+  "segmentsPresent": [
+    "第一段滴注内容。",
+    "第二段滴注内容。",
+    "第三段滴注内容。"
+  ],
+  "segmentsMissing": [],
+  "isPrefixOfExpected": true,
+  "truncated": false,
+  "bothWindowsAgree": true,
+  "mirrorEvents": [
+    {
+      "t": 96288.8,
+      "rawLen": 8,
+      "shown": 0
+    },
+    {
+      "t": 96309.4,
+      "rawLen": 16,
+      "shown": 0
+    },
+    {
+      "t": 96324.8,
+      "rawLen": 24,
+      "shown": 0
+    }
+  ],
+  "cursorCatchUps": [],
+  "gateway": {
+    "writtenAtMs": [
+      0,
+      21,
+      37
+    ],
+    "expectedText": "第一段滴注内容。第二段滴注内容。第三段滴注内容。",
+    "errors400": []
+  },
+  "observerEvents": [
+    {
+      "t": 96283.2,
+      "busy": false,
+      "rawLen": 0,
+      "shown": 0,
+      "msgs": 0
+    },
+    {
+      "t": 96283.5,
+      "busy": true,
+      "rawLen": 0,
+      "shown": 0,
+      "msgs": 0
+    },
+    {
+      "t": 96283.5,
+      "busy": true,
+      "rawLen": 0,
+      "shown": 0,
+      "msgs": 1
+    },
+    {
+      "t": 96288.8,
+      "busy": true,
+      "rawLen": 8,
+      "shown": 0,
+      "msgs": 1
+    },
+    {
+      "t": 96309.4,
+      "busy": true,
+      "rawLen": 16,
+      "shown": 0,
+      "msgs": 1
+    },
+    {
+      "t": 96324.8,
+      "busy": true,
+      "rawLen": 24,
+      "shown": 0,
+      "msgs": 1
+    },
+    {
+      "t": 96327.6,
+      "busy": false,
+      "rawLen": 0,
+      "shown": 24,
+      "msgs": 1
+    },
+    {
+      "t": 96328.1,
+      "busy": false,
+      "rawLen": 0,
+      "shown": 0,
+      "msgs": 2
+    }
+  ]
+}

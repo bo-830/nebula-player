@@ -1,0 +1,92 @@
+﻿{
+  "closedConfirmed": false,
+  "start": {
+    "id": "f1da4b02ccf77fda8461",
+    "title": "测试歌曲A",
+    "playing": true,
+    "cover": "f1da4b02ccf77fda8461.png"
+  },
+  "toggledTo": true,
+  "miniTargets": [
+    "http://localhost:5173/#mini"
+  ],
+  "samples": [
+    {
+      "title": "测试歌曲A",
+      "artist": "测试歌手",
+      "imgs": [
+        {
+          "natural": 512,
+          "complete": true,
+          "tail": "hNGIwMmNjZjc3ZmRhODQ2MS5wbmc"
+        }
+      ]
+    },
+    {
+      "title": "测试歌曲A",
+      "artist": "测试歌手",
+      "imgs": [
+        {
+          "natural": 512,
+          "complete": true,
+          "tail": "hNGIwMmNjZjc3ZmRhODQ2MS5wbmc"
+        }
+      ]
+    },
+    {
+      "title": "SongE",
+      "artist": "测试歌手",
+      "imgs": [
+        {
+          "natural": 512,
+          "complete": true,
+          "tail": "xZWE1ZDUyMzdiNzY1ZmJmZi5qcGc"
+        }
+      ]
+    },
+    {
+      "title": "SongE",
+      "artist": "测试歌手",
+      "imgs": [
+        {
+          "natural": 512,
+          "complete": true,
+          "tail": "xZWE1ZDUyMzdiNzY1ZmJmZi5qcGc"
+        }
+      ]
+    },
+    {
+      "title": "SongE",
+      "artist": "测试歌手",
+      "imgs": [
+        {
+          "natural": 512,
+          "complete": true,
+          "tail": "xZWE1ZDUyMzdiNzY1ZmJmZi5qcGc"
+        }
+      ]
+    },
+    {
+      "title": "长测试曲",
+      "artist": "测试歌手",
+      "imgs": []
+    },
+    {
+      "title": "长测试曲",
+      "artist": "测试歌手",
+      "imgs": []
+    },
+    {
+      "title": "长测试曲",
+      "artist": "测试歌手",
+      "imgs": []
+    }
+  ],
+  "finalMini": {
+    "title": "长测试曲",
+    "artist": "测试歌手",
+    "imgs": []
+  },
+  "synced": false,
+  "coverRendered": false
+}

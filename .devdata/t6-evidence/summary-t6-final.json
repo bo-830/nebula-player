@@ -1,0 +1,63 @@
+{
+  "label": "t6-final",
+  "stamp": "2026-09-12T07:42:29.616Z",
+  "method": "direct execFile of npm.cmd/npx.cmd shims",
+  "lint": {
+    "command": "npm.cmd run lint",
+    "exitCode": 0,
+    "logFile": ".devdata/t6-evidence/lint-t6-final.log",
+    "ms": 10240,
+    "tail": "\n> nebula-player@1.0.3 lint\n> eslint --cache .\n\n\nC:\\博830\\vibecoding\\nebula-player\\src\\renderer\\src\\components\\TrackList.tsx\n  42:23  warning  Compilation Skipped: Use of incompatible library\n\nThis API returns functions which cannot be memoized without leading to stale UI. To prevent this, by default React Compiler will skip memoizing this component/hook. However, you may see issues if values from this API are passed to other components/hooks that are memoized.\n\nC:\\博830\\vibecoding\\nebula-player\\src\\renderer\\src\\components\\TrackList.tsx:42:23\n  40 |   const [anchorIndex, setAnchorIndex] = useState<number | null>(null)\n  41 |\n> 42 |   const virtualizer = useVirtualizer({\n     |                       ^^^^^^^^^^^^^^ TanStack Virtual's `useVirtualizer()` API returns functions that cannot be memoized safely\n  43 |     count: tracks.length,\n  44 |     getScrollElement: () => parentRef.current,\n  45 |     estimateSize: () => 44,  react-hooks/incompatible-library\n\n✖ 1 problem (0 errors, 1 warning)\n\n",
+    "spawnError": null
+  },
+  "lintJson": {
+    "command": "npx.cmd eslint . --no-cache --format json",
+    "exitCode": 0,
+    "parsed": true,
+    "totalErrors": 0,
+    "totalWarnings": 1,
+    "filesWithErrors": [],
+    "rulesSummary": {
+      "warning:react-hooks/incompatible-library": 1
+    }
+  },
+  "typecheck": {
+    "node": {
+      "command": "npm.cmd run typecheck:node",
+      "exitCode": 0,
+      "logFile": ".devdata/t6-evidence/typecheck-node-t6-final.log",
+      "tail": "\n> nebula-player@1.0.3 typecheck:node\n> tsc --noEmit -p tsconfig.node.json --composite false\n\n"
+    },
+    "web": {
+      "command": "npm.cmd run typecheck:web",
+      "exitCode": 0,
+      "logFile": ".devdata/t6-evidence/typecheck-web-t6-final.log",
+      "tail": "\n> nebula-player@1.0.3 typecheck:web\n> tsc --noEmit -p tsconfig.web.json --composite false\n\n"
+    }
+  },
+  "tests": {
+    "command": "npm.cmd test -- --reporter=verbose",
+    "exitCode": 0,
+    "logFile": ".devdata/t6-evidence/tests-t6-final.log",
+    "testsLine": "Tests  106 passed (106)",
+    "filesLine": "Test Files  11 passed (11)",
+    "passedTestCount": 106,
+    "failedTestCount": 0,
+    "passedTestNames": [],
+    "failedTestNames": [],
+    "testFilesSeen": [
+      "src/renderer/src/lib/__tests__/queue.test.ts",
+      "src/renderer/src/lib/__tests__/format.test.ts",
+      "src/main/__tests__/mediaFormats.test.ts",
+      "src/main/__tests__/lrc.test.ts",
+      "src/renderer/src/lib/__tests__/sleepTimer.test.ts",
+      "src/renderer/src/lib/__tests__/lyricsOffset.test.ts",
+      "src/main/__tests__/scanner.test.ts",
+      "src/renderer/src/lib/__tests__/search.test.ts",
+      "src/renderer/src/lib/__tests__/recommend.test.ts",
+      "src/renderer/src/lib/__tests__/playerStoreSleep.test.ts",
+      "src/renderer/src/lib/__tests__/chatConfirm.test.ts"
+    ],
+    "tail": "loop)\n ✓ src/renderer/src/lib/__tests__/sleepTimer.test.ts > shouldStopOnEnded > an explicit user skip wins over ended-driven modes\n ✓ src/renderer/src/lib/__tests__/sleepTimer.test.ts > sleepFiresOnEnded > ignores the off state and countdown mode\n ✓ src/renderer/src/lib/__tests__/sleepTimer.test.ts > sleepFiresOnEnded > fires for track mode at any index and for queue mode only at the end\n ✓ src/renderer/src/lib/__tests__/lyricsOffset.test.ts > lyricsOffset — stepping > adjusts by the ±0.5s step\n ✓ src/renderer/src/lib/__tests__/lyricsOffset.test.ts > lyricsOffset — stepping > clamps to ±30s in both directions\n ✓ src/renderer/src/lib/__tests__/lyricsOffset.test.ts > lyricsOffset — stepping > rounds to 0.1s precision\n ✓ src/renderer/src/lib/__tests__/lyricsOffset.test.ts > lyricsOffset — stepping > treats non-finite input as zero rather than NaN\n ✓ src/renderer/src/lib/__tests__/lyricsOffset.test.ts > lyricsOffset — storage > stores per track and keeps trackIds isolated\n ✓ src/renderer/src/lib/__tests__/lyricsOffset.test.ts > lyricsOffset — storage > removes the entry (and the key) when the offset becomes 0\n ✓ src/renderer/src/lib/__tests__/lyricsOffset.test.ts > lyricsOffset — storage > clearOffset forgets a single track only\n ✓ src/renderer/src/lib/__tests__/lyricsOffset.test.ts > lyricsOffset — storage > ignores a null/undefined/empty trackId without writing\n ✓ src/renderer/src/lib/__tests__/lyricsOffset.test.ts > lyricsOffset — storage > survives corrupt JSON and drops non-numeric entries\n ✓ src/renderer/src/lib/__tests__/lyricsOffset.test.ts > lyricsOffset — storage > does not throw when localStorage is unavailable or missing\n ✓ src/renderer/src/lib/__tests__/lyricsOffset.test.ts > lyricsOffset — display + external store > formatOffset renders signed tenths and clamps first\n ✓ src/renderer/src/lib/__tests__/lyricsOffset.test.ts > lyricsOffset — display + external store > hasOffset is false for zero and for values that round to zero\n ✓ src/renderer/src/lib/__tests__/lyricsOffset.test.ts > lyricsOffset — display + external store > notifies subscribers on write and stops after unsubscribing\n ✓ src/renderer/src/lib/__tests__/lyricsOffset.test.ts > lyricsOffset — display + external store > getOffsetSnapshot returns a live getter for useSyncExternalStore\n ✓ src/main/__tests__/scanner.test.ts > extOf > returns the lowercase extension without the dot\n ✓ src/main/__tests__/scanner.test.ts > extOf > returns an empty string when there is no extension\n ✓ src/main/__tests__/scanner.test.ts > displayFolderName > uses the last path segment\n ✓ src/renderer/src/lib/__tests__/search.test.ts > searchTracks > matches title substrings with relevance ranking\n ✓ src/renderer/src/lib/__tests__/search.test.ts > searchTracks > matches chinese titles\n ✓ src/renderer/src/lib/__tests__/search.test.ts > searchTracks > filters by artist and album exactly\n ✓ src/renderer/src/lib/__tests__/search.test.ts > searchTracks > matches genre keywords\n ✓ src/renderer/src/lib/__tests__/search.test.ts > searchTracks > is case-insensitive\n ✓ src/renderer/src/lib/__tests__/search.test.ts > searchTracks > handles empty queries\n ✓ src/renderer/src/lib/__tests__/search.test.ts > groupers > groups artists by count\n ✓ src/renderer/src/lib/__tests__/search.test.ts > groupers > groups albums by artist+album key\n ✓ src/renderer/src/lib/__tests__/search.test.ts > groupers > groups folders by scan root\n ✓ src/renderer/src/lib/__tests__/recommend.test.ts > buildTasteProfile > aggregates artist and genre plays\n ✓ src/renderer/src/lib/__tests__/recommend.test.ts > buildTasteProfile > handles an empty history\n ✓ src/renderer/src/lib/__tests__/recommend.test.ts > recommendTracks > prefers favourite genres/artists and explains why\n ✓ src/renderer/src/lib/__tests__/recommend.test.ts > recommendTracks > penalises the most recently played tracks\n ✓ src/renderer/src/lib/__tests__/recommend.test.ts > recommendTracks > falls back to newest imports without any history\n ✓ src/renderer/src/lib/__tests__/recommend.test.ts > recommendTracks > skips missing files\n ✓ src/main/__tests__/scanner.test.ts > mapLimit > preserves input order even when tasks resolve out of order\n ✓ src/main/__tests__/scanner.test.ts > mapLimit > never runs more than `limit` tasks at once\n ✓ src/main/__tests__/scanner.test.ts > mapLimit > handles empty input and a limit larger than the item count\n ✓ src/main/__tests__/scanner.test.ts > mapLimit > receives the index alongside each item\n ✓ src/main/__tests__/scanner.test.ts > collectAudioFiles > collects supported audio recursively and skips hidden/tool dirs\n ✓ src/main/__tests__/scanner.test.ts > collectAudioFiles > does not descend into .hidden, node_modules or .git\n ✓ src/main/__tests__/scanner.test.ts > collectAudioFiles > imports a single supported file directly\n ✓ src/main/__tests__/scanner.test.ts > collectAudioFiles > returns nothing for an unsupported single file or a missing path\n ✓ src/main/__tests__/scanner.test.ts > collectAudioFiles > stops immediately when the signal is already cancelled\n ✓ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > arms a countdown, ticks the badge and pauses when it runs out\n ✓ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > cancel clears the timer and stops the clock\n ✓ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > arms both ended-driven modes without a deadline\n ✓ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > a manual skip drops an ended-driven timer but keeps a countdown\n ✓ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > pauses on the natural end of the current track (no repeat, no advance)\n ✓ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > keeps playing through the queue and only stops once the queue ends\n ✓ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > stops a single-track queue instead of looping forever\n ✓ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > never persists the timer — a restart starts with sleep off\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > destructive tool guard (tools.ts) > knows which tools are destructive\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > destructive tool guard (tools.ts) > summarises the pending operation for the confirmation bar\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > destructive tool guard (tools.ts) > does NOT execute remove_from_playlist without user approval\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > destructive tool guard (tools.ts) > cannot be self-approved: a token only authorises its own run + call\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > destructive tool guard (tools.ts) > leaves non-destructive tools untouched (no confirmation, executed at once)\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > chat confirmation flow (chatStore.ts) > pauses the turn on a destructive call and continues as soon as the user confirms\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > chat confirmation flow (chatStore.ts) > tells the model the user cancelled and keeps the sequence intact (no duplicate tool message)\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > chat confirmation flow (chatStore.ts) > runs non-destructive calls inline without any confirmation\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > chat confirmation flow (chatStore.ts) > blocks new messages while a confirmation is pending\n\n Test Files  11 passed (11)\n      Tests  106 passed (106)\n   Start at  15:43:00\n   Duration  1.02s (transform 1.32s, setup 0ms, collect 2.35s, tests 308ms, environment 3ms, prepare 2.07s)\n\n\n--- stderr ---\n\u001b[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.\u001b[39m\n"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "capturedAt": "2026-09-12T12:13:34.516Z",
+  "steps": [
+    {
+      "at": "2026-09-12T12:13:35.592Z",
+      "name": "baseline",
+      "mainTargets": 1,
+      "miniTargets": 0,
+      "mainTitle": "NEBULA Player"
+    },
+    {
+      "at": "2026-09-12T12:13:36.353Z",
+      "name": "mini-opened",
+      "miniTargets": 1,
+      "miniUrls": [
+        "http://localhost:5173/#mini"
+      ]
+    },
+    {
+      "at": "2026-09-12T12:13:38.901Z",
+      "name": "mini-closed",
+      "miniTargets": 1,
+      "mainTargets": 1,
+      "miniVisibility": "hidden",
+      "mainAlive": {
+        "title": "NEBULA Player",
+        "hasNebula": true,
+        "tracks": 7
+      }
+    }
+  ],
+  "assertions": {
+    "mini target existed before close": true,
+    "mini window is hidden after close (closeMiniWindow === hide, per src/main/mini.ts:61)": true,
+    "main target survived mini close": true,
+    "main renderer still evaluable after mini close": true,
+    "main window still shows its content (queue intact)": true
+  },
+  "allPass": true,
+  "note": "electron 进程数与端口在探针前后由外层 pwsh 记录，见同目录 R3-VERIFICATION.md 的 §3quinquies。",
+  "doneAt": "2026-09-12T12:13:38.901Z"
+}

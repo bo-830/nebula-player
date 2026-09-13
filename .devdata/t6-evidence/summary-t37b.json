@@ -1,0 +1,138 @@
+{
+  "label": "t37b",
+  "stamp": "2026-09-12T11:55:35.226Z",
+  "method": "direct execFile of npm.cmd/npx.cmd shims",
+  "lint": {
+    "command": "npm.cmd run lint",
+    "exitCode": 1,
+    "logFile": ".devdata/t6-evidence/lint-t37b.log",
+    "ms": 9943,
+    "tail": "\n> nebula-player@1.0.3 lint\n> eslint --cache .\n\n\nC:\\博830\\vibecoding\\nebula-player\\src\\main\\__tests__\\llmClientToolIds.test.ts\n  52:16  warning  Replace `·index:·0,·function:·{·name:·'remove_from_playlist',·arguments:·'{\"playlist\":\"a\"}'·}` with `⏎················index:·0,⏎················function:·{·name:·'remove_from_playlist',·arguments:·'{\"playlist\":\"a\"}'·}⏎·············`  prettier/prettier\n  53:16  warning  Replace `·index:·1,·function:·{·name:·'remove_from_playlist',·arguments:·'{\"playlist\":\"b\"}'·}` with `⏎················index:·1,⏎················function:·{·name:·'remove_from_playlist',·arguments:·'{\"playlist\":\"b\"}'·}⏎·············`  prettier/prettier\n  70:28  error    Missing return type on function                                                                                                                                                                                                           @typescript-eslint/explicit-function-return-type\n  78:19  warning  Replace `'fetch',·vi.fn(async·()·=>·idLessRound())` with `⏎······'fetch',⏎······vi.fn(async·()·=>·idLessRound())⏎····`                                                                                                                    prettier/prettier\n\nC:\\博830\\vibecoding\\nebula-player\\src\\main\\llmClient.ts\n   41:21  warning  Replace `·?·uniqueToolId(seen,·tc.id)` with `⏎······?·uniqueToolId(seen,·tc.id)⏎·····`  prettier/prettier\n  209:18  error    'i' is defined but never used                                                           @typescript-eslint/no-unused-vars\n\nC:\\博830\\vibecoding\\nebula-player\\src\\renderer\\src\\components\\MiniPlayer.tsx\n  76:6  warning  React Hook useEffect has missing dependencies: 'claimedHolder' and 'wantedHolder'. Either include them or remove the dependency array  react-hooks/exhaustive-deps\n\nC:\\博830\\vibecoding\\nebula-player\\src\\renderer\\src\\components\\TrackList.tsx\n  42:23  warning  Compilation Skipped: Use of incompatible library\n\nThis API returns functions which cannot be memoized without leading to stale UI. To prevent this, by default React Compiler will skip memoizing this component/hook. However, you may see issues if values from this API are passed to other components/hooks that are memoized.\n\nC:\\博830\\vibecoding\\nebula-player\\src\\renderer\\src\\components\\TrackList.tsx:42:23\n  40 |   const [anchorIndex, setAnchorIndex] = useState<number | null>(null)\n  41 |\n> 42 |   const virtualizer = useVirtualizer({\n     |                       ^^^^^^^^^^^^^^ TanStack Virtual's `useVirtualizer()` API returns functions that cannot be memoized safely\n  43 |     count: tracks.length,\n  44 |     getScrollElement: () => parentRef.current,\n  45 |     estimateSize: () => 44,  react-hooks/incompatible-library\n\n✖ 8 problems (2 errors, 6 warnings)\n  0 errors and 4 warnings potentially fixable with the `--fix` option.\n\n",
+    "spawnError": null
+  },
+  "lintJson": {
+    "command": "npx.cmd eslint . --no-cache --format json",
+    "exitCode": 1,
+    "parsed": true,
+    "totalErrors": 3,
+    "totalWarnings": 5,
+    "filesWithErrors": [
+      {
+        "file": "src/main/__tests__/llmClientToolIds.test.ts",
+        "errors": 1,
+        "warnings": 3,
+        "messages": [
+          {
+            "line": 52,
+            "column": 16,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·index:·0,·function:·{·name:·'remove_from_playlist',·arguments:·'{\"playlist\":\"a\"}'·}` with `⏎················index:·0,⏎················function:·{·name:·'remove_from_playlist',·arguments:·'{\"playlist\":\"a\"}'·}⏎·············`"
+          },
+          {
+            "line": 53,
+            "column": 16,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·index:·1,·function:·{·name:·'remove_from_playlist',·arguments:·'{\"playlist\":\"b\"}'·}` with `⏎················index:·1,⏎················function:·{·name:·'remove_from_playlist',·arguments:·'{\"playlist\":\"b\"}'·}⏎·············`"
+          },
+          {
+            "line": 70,
+            "column": 28,
+            "rule": "@typescript-eslint/explicit-function-return-type",
+            "severity": 2,
+            "message": "Missing return type on function."
+          },
+          {
+            "line": 78,
+            "column": 19,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `'fetch',·vi.fn(async·()·=>·idLessRound())` with `⏎······'fetch',⏎······vi.fn(async·()·=>·idLessRound())⏎····`"
+          }
+        ]
+      },
+      {
+        "file": "src/main/llmClient.ts",
+        "errors": 1,
+        "warnings": 1,
+        "messages": [
+          {
+            "line": 41,
+            "column": 21,
+            "rule": "prettier/prettier",
+            "severity": 1,
+            "message": "Replace `·?·uniqueToolId(seen,·tc.id)` with `⏎······?·uniqueToolId(seen,·tc.id)⏎·····`"
+          },
+          {
+            "line": 209,
+            "column": 18,
+            "rule": "@typescript-eslint/no-unused-vars",
+            "severity": 2,
+            "message": "'i' is defined but never used."
+          }
+        ]
+      },
+      {
+        "file": "src/renderer/src/components/MiniPlayer.tsx",
+        "errors": 1,
+        "warnings": 0,
+        "messages": [
+          {
+            "line": 11,
+            "column": 8,
+            "rule": "@typescript-eslint/no-unused-vars",
+            "severity": 2,
+            "message": "'LyricIdHolder' is defined but never used."
+          }
+        ]
+      }
+    ],
+    "rulesSummary": {
+      "warning:prettier/prettier": 4,
+      "error:@typescript-eslint/explicit-function-return-type": 1,
+      "error:@typescript-eslint/no-unused-vars": 2,
+      "warning:react-hooks/incompatible-library": 1
+    }
+  },
+  "typecheck": {
+    "node": {
+      "command": "npm.cmd run typecheck:node",
+      "exitCode": 2,
+      "logFile": ".devdata/t6-evidence/typecheck-node-t37b.log",
+      "tail": "\n> nebula-player@1.0.3 typecheck:node\n> tsc --noEmit -p tsconfig.node.json --composite false\n\nsrc/main/__tests__/mediaFormats.test.ts(75,38): error TS2353: Object literal may only specify known properties, and 'id' does not exist in type 'LyricIdHolder'.\r\nsrc/main/__tests__/mediaFormats.test.ts(76,37): error TS2353: Object literal may only specify known properties, and 'id' does not exist in type 'LyricIdHolder'.\r\nsrc/main/llmClient.ts(209,18): error TS6133: 'i' is declared but its value is never read.\r\n"
+    },
+    "web": {
+      "command": "npm.cmd run typecheck:web",
+      "exitCode": 2,
+      "logFile": ".devdata/t6-evidence/typecheck-web-t37b.log",
+      "tail": "\n> nebula-player@1.0.3 typecheck:web\n> tsc --noEmit -p tsconfig.web.json --composite false\n\nsrc/renderer/src/components/MiniPlayer.tsx(11,8): error TS6133: 'LyricIdHolder' is declared but its value is never read.\r\n"
+    }
+  },
+  "tests": {
+    "command": "npm.cmd test -- --reporter=verbose",
+    "exitCode": 0,
+    "logFile": ".devdata/t6-evidence/tests-t37b.log",
+    "testsLine": "Tests  129 passed (129)",
+    "filesLine": "Test Files  12 passed (12)",
+    "passedTestCount": 129,
+    "failedTestCount": 0,
+    "passedTestNames": [],
+    "failedTestNames": [],
+    "testFilesSeen": [
+      "src/renderer/src/lib/__tests__/sleepTimer.test.ts",
+      "src/renderer/src/lib/__tests__/lyricsOffset.test.ts",
+      "src/main/__tests__/mediaFormats.test.ts",
+      "src/renderer/src/lib/__tests__/recommend.test.ts",
+      "src/renderer/src/lib/__tests__/format.test.ts",
+      "src/renderer/src/lib/__tests__/queue.test.ts",
+      "src/main/__tests__/lrc.test.ts",
+      "src/main/__tests__/llmClientToolIds.test.ts",
+      "src/main/__tests__/scanner.test.ts",
+      "src/renderer/src/lib/__tests__/search.test.ts",
+      "src/renderer/src/lib/__tests__/playerStoreSleep.test.ts",
+      "src/renderer/src/lib/__tests__/chatConfirm.test.ts"
+    ],
+    "tail": " / .500 identically (fraction scaled by digit count)\n ✓ src/main/__tests__/lrc.test.ts > parseLrc > expands one line carrying several timestamps into several entries\n ✓ src/main/__tests__/lrc.test.ts > parseLrc > ignores metadata tags such as [ti:] and [ar:]\n ✓ src/main/__tests__/lrc.test.ts > parseLrc > sorts out-of-order timestamps ascending\n ✓ src/main/__tests__/lrc.test.ts > parseLrc > returns nothing for empty text or lines without a timestamp\n ✓ src/main/__tests__/lrc.test.ts > parseLrc > keeps an empty text for a timestamp-only line and handles CRLF\n ✓ src/main/__tests__/lrc.test.ts > parseLrc > supports 3-digit minutes (long tracks) and 1-digit seconds\n ✓ src/main/__tests__/llmClientToolIds.test.ts > fallback tool-call ids (R2) > gives two id-less calls of the same tool distinct ids within one response\n ✓ src/main/__tests__/llmClientToolIds.test.ts > fallback tool-call ids (R2) > never repeats a fallback id across successive rounds\n ✓ src/main/__tests__/llmClientToolIds.test.ts > fallback tool-call ids (R2) > de-duplicates ids that the provider itself repeats verbatim\n ✓ src/main/__tests__/llmClientToolIds.test.ts > fallback tool-call ids (R2) > keeps provider-supplied unique ids untouched\n ✓ src/main/__tests__/scanner.test.ts > extOf > returns the lowercase extension without the dot\n ✓ src/main/__tests__/scanner.test.ts > extOf > returns an empty string when there is no extension\n ✓ src/main/__tests__/scanner.test.ts > displayFolderName > uses the last path segment\n ✓ src/renderer/src/lib/__tests__/search.test.ts > searchTracks > matches title substrings with relevance ranking\n ✓ src/renderer/src/lib/__tests__/search.test.ts > searchTracks > matches chinese titles\n ✓ src/renderer/src/lib/__tests__/search.test.ts > searchTracks > filters by artist and album exactly\n ✓ src/renderer/src/lib/__tests__/search.test.ts > searchTracks > matches genre keywords\n ✓ src/renderer/src/lib/__tests__/search.test.ts > searchTracks > is case-insensitive\n ✓ src/renderer/src/lib/__tests__/search.test.ts > searchTracks > handles empty queries\n ✓ src/renderer/src/lib/__tests__/search.test.ts > groupers > groups artists by count\n ✓ src/renderer/src/lib/__tests__/search.test.ts > groupers > groups albums by artist+album key\n ✓ src/renderer/src/lib/__tests__/search.test.ts > groupers > groups folders by scan root\n ✓ src/main/__tests__/scanner.test.ts > mapLimit > preserves input order even when tasks resolve out of order\n ✓ src/main/__tests__/scanner.test.ts > mapLimit > never runs more than `limit` tasks at once\n ✓ src/main/__tests__/scanner.test.ts > mapLimit > handles empty input and a limit larger than the item count\n ✓ src/main/__tests__/scanner.test.ts > mapLimit > receives the index alongside each item\n ✓ src/main/__tests__/scanner.test.ts > collectAudioFiles > collects supported audio recursively and skips hidden/tool dirs\n ✓ src/main/__tests__/scanner.test.ts > collectAudioFiles > does not descend into .hidden, node_modules or .git\n ✓ src/main/__tests__/scanner.test.ts > collectAudioFiles > imports a single supported file directly\n ✓ src/main/__tests__/scanner.test.ts > collectAudioFiles > returns nothing for an unsupported single file or a missing path\n ✓ src/main/__tests__/scanner.test.ts > collectAudioFiles > stops immediately when the signal is already cancelled\n ✓ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > arms a countdown, ticks the badge and pauses when it runs out\n ✓ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > cancel clears the timer and stops the clock\n ✓ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > arms both ended-driven modes without a deadline\n ✓ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > a manual skip drops an ended-driven timer but keeps a countdown\n ✓ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > pauses on the natural end of the current track (no repeat, no advance)\n ✓ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > keeps playing through the queue and only stops once the queue ends\n ✓ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > stops a single-track queue instead of looping forever\n ✓ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > never persists the timer — a restart starts with sleep off\n ✓ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > wraps back to index 0 when the last track ends with no timer armed\n ✓ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > wraps back to index 0 on a manual next from the last track\n ✓ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > still wraps in 'one' mode when the user explicitly skips\n ✓ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > a multi-track queue timer fires on the first natural end in 'one' mode\n ✓ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > does not fire a 'queue' timer on a mid-queue natural end in list mode\n ✓ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > still stops immediately when a one-track queue repeats in 'one' mode\n ✓ src/renderer/src/lib/__tests__/playerStoreSleep.test.ts > playerStore sleep timer > a manual skip only drops the track timer, keeping an armed queue timer\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > destructive tool guard (tools.ts) > knows which tools are destructive\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > destructive tool guard (tools.ts) > summarises the pending operation for the confirmation bar\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > destructive tool guard (tools.ts) > does NOT execute remove_from_playlist without user approval\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > destructive tool guard (tools.ts) > cannot be self-approved: a token only authorises its own run + call\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > destructive tool guard (tools.ts) > leaves non-destructive tools untouched (no confirmation, executed at once)\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > chat confirmation flow (chatStore.ts) > pauses the turn on a destructive call and continues as soon as the user confirms\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > chat confirmation flow (chatStore.ts) > tells the model the user cancelled and keeps the sequence intact (no duplicate tool message)\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > chat confirmation flow (chatStore.ts) > runs non-destructive calls inline without any confirmation\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > chat confirmation flow (chatStore.ts) > blocks new messages while a confirmation is pending\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > chat confirmation flow (chatStore.ts) > answers every tool call of the round when the destructive one is not last\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > chat confirmation flow (chatStore.ts) > keeps the narration produced before the pause when the resumed round emits no text\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > tool_call_id uniqueness per round (R2) > collapses duplicate ids so every announced id can be answered exactly once\n ✓ src/renderer/src/lib/__tests__/chatConfirm.test.ts > tool_call_id uniqueness per round (R2) > leaves a round with unique ids untouched\n\n Test Files  12 passed (12)\n      Tests  129 passed (129)\n   Start at  19:56:04\n   Duration  838ms (transform 1.06s, setup 0ms, collect 2.00s, tests 281ms, environment 3ms, prepare 1.95s)\n\n\n--- stderr ---\n\u001b[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.\u001b[39m\n"
+  }
+}

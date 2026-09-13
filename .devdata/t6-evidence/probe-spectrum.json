@@ -1,0 +1,35 @@
+﻿{
+  "oscPeakNoSink": 255,
+  "ctxStateNoSink": "running",
+  "outputLatencyNoSink": 0.042,
+  "baseLatencyNoSink": 0.01,
+  "setSinkIdType": "function",
+  "sinkIdBefore": "",
+  "sinkIdSupported": true,
+  "setSinkIdResult": "ok",
+  "sinkIdAfter": "default",
+  "oscPeakWithSink": 255,
+  "ctxStateWithSink": "running",
+  "outputLatencyWithSink": 0.041,
+  "mediaTrack": "song-c.flac",
+  "mediaPeak": 197,
+  "mediaTimeDomainDev": 16,
+  "mediaPaused": false,
+  "mediaTime": 1.201633,
+  "mediaCtxState": "running",
+  "outputs": [
+    {
+      "id": "default",
+      "label": "Default - 扬声器 (Realtek(R) Audio)"
+    },
+    {
+      "id": "communicatio",
+      "label": "Communications - 扬声器 (Realtek(R) Audio)"
+    },
+    {
+      "id": "22def41aa174",
+      "label": "扬声器 (Realtek(R) Audio)"
+    }
+  ],
+  "engine": "window.__nebula.engine unavailable"
+}

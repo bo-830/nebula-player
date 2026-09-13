@@ -1,0 +1,51 @@
+{
+  "bundle": {
+    "asarPath": "C:\\Users\\34872\\AppData\\Local\\Programs\\nebula-player\\resources\\app.asar",
+    "bytes": 831221
+  },
+  "hits": {
+    "streamConvId": 5,
+    "closeStream": 6,
+    "22ms intervals": 1,
+    "closeStream() calls": 6
+  },
+  "regions": [
+    {
+      "label": "typewriter setInterval(...,22)",
+      "at": 772156,
+      "text": ": seed });\n  const unsub = window.api.onChatChunk((p) => {\n    if (closed || p.id !== rid || streamConvId !== rid) return;\n    accumulated += p.delta;\n    useChatStore.setState({ streamRaw: accumulated });\n    if (!streamTimer) {\n      streamTimer = setInterval(() => {\n        const s = useChatStore.getState();\n        if (!s.streamRaw) {\n          useChatStore.setState({ streamShown: 0 });\n          return;\n        }\n        if (s.streamShown >= s.streamRaw.length) {\n          closeStream();\n          useChatStore.setState({ streamShown: s.streamRaw.length });\n          return;\n        }\n        useChatStore.setState({ streamShown: Math.min(s.streamRaw.length, s.streamShown + 5) });\n      }, 22);\n    }\n  });\n  return {\n    unsub: () => {\n      closed = true;\n      unsub();\n      if (streamConvId === rid) closeStream();\n    },\n    next: async () => {\n      await new Promise((resolve) => setTimeout(resolve, 0));\n      return accumulated;\n    }\n  }"
+    },
+    {
+      "label": "chunk guard",
+      "at": 771538,
+      "text": " (streamTimer) {\n    clearInterval(streamTimer);\n    streamTimer = null;\n  }\n  streamConvId = \"\";\n}\nfunction openStream(rid, seed) {\n  let accumulated = seed;\n  let closed = false;\n  streamConvId = rid;\n  useChatStore.setState({ streamRaw: seed });\n  const unsub = window.api.onChatChunk((p) => {\n    if (closed || p.id !== rid || streamConvId !== rid) return;\n    accumulated += p.delta;\n    useChatStore.setState({ streamRaw: accumulated });\n    if (!streamTimer) {\n      streamTimer = setInterval(() => {\n        const s = useChatStore.getState();\n        if (!s.streamRaw) {\n          useChatStore.setState({ streamS"
+    },
+    {
+      "label": "closeStream definition",
+      "at": 771189,
+      "text": "n(set, get, accumulated, chips) {\n  if (get().pendingConfirm) return;\n  finishRun(set, get);\n  finalize(set, get, accumulated.trim(), chips);\n}\nlet pendingResume = null;\nlet pendingConfirmToken = \"\";\nfunction closeStream() {\n  if (streamTimer) {\n    clearInterval(streamTimer);\n    streamTimer = null;\n  }\n  streamConvId = \"\";\n}\nfunction openStream(rid, seed) {\n  let accumulated = seed;\n  let closed = false;\n  streamConvId = rid;\n  useChatStore.setState({ streamRaw: seed });\n  const unsub = window.api.onChatChunk((p) => {\n    if (closed || p.id !== rid || streamConvId !== rid) return;\n    accumu"
+    },
+    {
+      "label": "catch-up branch",
+      "at": -1,
+      "text": null
+    }
+  ],
+  "currentSource": {
+    "closeStreamBody": "function closeStream() { if (streamTimer) { clearInterval(streamTimer) streamTimer = null } streamConvId = '' } /** * subscribe to model chunks for one conversation; returns the unsubscriber. * `seed` restores the text produced before a confirmation pause, so the turn's * final bubble keeps the model's earlier narration. */",
+    "typewriter": "streamTimer = setInterval(() => { const s = useChatStore.getState() if (!s.streamRaw) { useChatStore.setState({ streamShown: 0 }) return } if (s.streamShown >= s.streamRaw.length) { closeStream() useChatStore.setState({ streamShown: s.streamRaw.length }) return } useChatStore.setState({ streamShown: Math.min(s.streamRaw.length, s.streamShown + 5) }) }, 22) } })"
+  },
+  "checks": {
+    "bundle_has_closeStream_body": true,
+    "bundle_clears_streamConvId": true,
+    "bundle_guard_uses_streamConvId": true,
+    "bundle_has_22ms_typewriter": true,
+    "bundle_catchup_calls_closeStream": false,
+    "bundle_has_plus5_step": true,
+    "source_clears_streamConvId": true,
+    "source_guard_uses_streamConvId": true,
+    "source_catchup_calls_closeStream": true,
+    "source_tick_is_22ms": true
+  },
+  "verdict": "INCONCLUSIVE — inspect the regions above"
+}

@@ -1,0 +1,29 @@
+{
+  "trackPath": "C:\\博830\\vibecoding\\nebula-player\\.devdata\\test-music\\song-c.flac",
+  "coverPath": "C:\\博830\\vibecoding\\nebula-player\\.devdata\\user\\covers\\f1da4b02ccf77fda8461.png",
+  "trackLoad": "metadata:5",
+  "coverLoad": {
+    "outcome": "loaded",
+    "w": 512
+  },
+  "userData": "C:\\博830\\vibecoding\\nebula-player\\.devdata\\user",
+  "settingsJson": {
+    "outcome": "blocked"
+  },
+  "pngOutsideRoots": {
+    "outcome": "blocked"
+  },
+  "pngViaDotDotIntoRoots": {
+    "outcome": "loaded",
+    "w": 512
+  },
+  "traversal": {
+    "outcome": "blocked"
+  },
+  "txtBeside": {
+    "outcome": "blocked"
+  },
+  "controlInsideRoot": {
+    "outcome": "blocked"
+  }
+}

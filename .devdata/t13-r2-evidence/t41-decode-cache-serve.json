@@ -1,0 +1,40 @@
+{
+  "cacheFiles": [
+    {
+      "file": "2fcfd2142ec74f4102fcc8b80f26d9d49f269d92.m4a",
+      "url": "media://local/Qzpc5Y2aODMwXHZp…",
+      "how": "loadeddata",
+      "readyState": 4,
+      "errorCode": null,
+      "duration": 6.04,
+      "loaded": true
+    },
+    {
+      "file": "88d58d8512c2aaf7a718ad3fcdc5fe377d3a201f.m4a",
+      "url": "media://local/Qzpc5Y2aODMwXHZp…",
+      "how": "loadeddata",
+      "readyState": 4,
+      "errorCode": null,
+      "duration": 6.04,
+      "loaded": true
+    }
+  ],
+  "control": {
+    "file": "settings.json",
+    "url": "media://local/Qzpc5Y2aODMwXHZp…",
+    "how": "error",
+    "readyState": 0,
+    "errorCode": 4,
+    "duration": null,
+    "loaded": false
+  },
+  "assertions": {
+    "decode-cache contains at least one transcoded artefact": true,
+    "EVERY decode-cache artefact loads (i.e. decode-cache is inside the servable roots)": true,
+    "control: settings.json via media:// is rejected": true
+  },
+  "allPass": true,
+  "capturedAt": "2026-09-12T12:12:18.370Z",
+  "userData": "C:\\博830\\vibecoding\\nebula-player\\.devdata\\user",
+  "cacheDir": "C:\\博830\\vibecoding\\nebula-player\\.devdata\\user\\decode-cache"
+}

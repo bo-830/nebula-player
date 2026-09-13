@@ -1,0 +1,30 @@
+{
+  "before": {
+    "label": "installed-1.0.3 (2026-09-12 12:27, pre-change electron-builder.yml)",
+    "path": "C:\\Users\\34872\\AppData\\Local\\Programs\\nebula-player\\resources\\app.asar",
+    "entries": 4921,
+    "devdataEntries": 620,
+    "devdataSample": [
+      "\\.devdata",
+      "\\.devdata\\shot-artists-badge.png",
+      "\\.devdata\\shot-artists.png",
+      "\\.devdata\\shot-lyrics.png"
+    ],
+    "scriptsEntries": 35,
+    "scriptsSample": [
+      "\\scripts\\diag-ai-queue.mjs",
+      "\\scripts\\diag-artist-badge.mjs",
+      "\\scripts\\diag-attach.mjs",
+      "\\scripts\\diag-audio.mjs"
+    ]
+  },
+  "after": {
+    "label": "dist (2026-09-12 15:14, post-change electron-builder.yml)",
+    "path": "C:\\博830\\vibecoding\\nebula-player\\dist\\win-unpacked\\resources\\app.asar",
+    "entries": 4264,
+    "devdataEntries": 0,
+    "devdataSample": [],
+    "scriptsEntries": 0,
+    "scriptsSample": []
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "test": "A — MIXED round (text + tool call in one response), hidden main window, driven from the mini",
+  "sent": {
+    "typed": "ok",
+    "sent": "ok"
+  },
+  "mainAssistants": [
+    "第一段：第二段：结束。"
+  ],
+  "mainLastAssistant": "第一段：第二段：结束。",
+  "miniLastAi": "第一段：第二段：结束。",
+  "bothAgree": true,
+  "seedKept": true,
+  "busy": false,
+  "streamRawLenAtRead": 0,
+  "gateway": {
+    "requests": [
+      {
+        "n": 1,
+        "emitted": [
+          "get_player_state"
+        ],
+        "emittedText": "第一段：",
+        "lastUser": "两段测试：请先给一段话再查播放器状态"
+      },
+      {
+        "n": 2,
+        "emitted": [],
+        "emittedText": "第二段：结束。",
+        "lastUser": "两段测试：请先给一段话再查播放器状态"
+      }
+    ],
+    "errors400": []
+  },
+  "observerEvents": [
+    {
+      "t": 50720,
+      "busy": false,
+      "rawLen": 0,
+      "msgs": 0
+    },
+    {
+      "t": 50720.2,
+      "busy": true,
+      "rawLen": 0,
+      "msgs": 0
+    },
+    {
+      "t": 50720.3,
+      "busy": true,
+      "rawLen": 0,
+      "msgs": 1
+    },
+    {
+      "t": 50740.5,
+      "busy": true,
+      "rawLen": 4,
+      "msgs": 1
+    },
+    {
+      "t": 50758.9,
+      "busy": true,
+      "rawLen": 11,
+      "msgs": 1
+    },
+    {
+      "t": 50764.4,
+      "busy": false,
+      "rawLen": 0,
+      "msgs": 1
+    },
+    {
+      "t": 50764.5,
+      "busy": false,
+      "rawLen": 0,
+      "msgs": 2
+    }
+  ],
+  "pass": true
+}

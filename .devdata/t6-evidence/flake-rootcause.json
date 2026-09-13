@@ -1,0 +1,64 @@
+{
+  "capturedAt": "2026-09-12T08:22:53.251Z",
+  "snapshot": [
+    {
+      "file": "src/renderer/src/lib/__tests__/playerStoreSleep.test.ts",
+      "mtime": "2026-09-12T07:14:45.004Z",
+      "size": 7123,
+      "sha1": "73ff83f7970f"
+    },
+    {
+      "file": "src/renderer/src/stores/playerStore.ts",
+      "mtime": "2026-09-12T07:25:52.312Z",
+      "size": 14041,
+      "sha1": "3efe56326f4d"
+    },
+    {
+      "file": "src/renderer/src/lib/audioEngine.ts",
+      "mtime": "2026-09-12T07:22:39.836Z",
+      "size": 19520,
+      "sha1": "e01f4c0d66d5"
+    },
+    {
+      "file": "src/renderer/src/stores/uiStore.ts",
+      "mtime": "2026-09-06T14:12:46.180Z",
+      "size": 2251,
+      "sha1": "e3eef3ac940d"
+    }
+  ],
+  "statics": {
+    "definesVolumeSpy": true,
+    "callsVolumeSpyInBeforeEach": true,
+    "callsPauseSpyInBeforeEach": true,
+    "beforeEachBlock": "beforeEach(() => {\n  vi.useFakeTimers()\n  tickers.length = 0\n  written.length = 0\n  const realSetInterval = globalThis.setInterval\n  vi.spyOn(globalThis, 'setInterval').mockImplementation((cb: () => void, ms?: number) => {\n    const id = realSetInterval(cb, ms)\n    tickers.push(id)\n    return id\n  })\n  // the engine must never reach the DOM in any test of this file (see header)\n  pauseSpy()\n  volumeSpy()\n  // a fresh app start restores nothing; every write is captured for assertions\n  const glob = globalThis as unknown as { localStorage: Storage }\n  glob.localStorage = localStorageStub(written)\n  usePlayerStore.setState({ sleep: null, sleepRemaining: null, queue: [], index: -1, mode: 'list' })\n  useUiStore.setState({ toasts: [] })\n})",
+    "eighthTestUsesSetVolume": true,
+    "assertionOnWrittenKeys": true,
+    "usesMockedPause": true,
+    "localStorageStubHasFullShape": true,
+    "stubLineNumbers": [
+      "24: const pauseSpy = (): MockInstance<() => void> =>",
+      "27: const volumeSpy = (): MockInstance<(v: number, muted?: boolean) => void> =>",
+      "64: pauseSpy()",
+      "65: volumeSpy()",
+      "81: it('arms a countdown, ticks the badge and pauses when it runs out', () => {",
+      "101: it('cancel clears the timer and stops the clock', () => {",
+      "114: it('arms both ended-driven modes without a deadline', () => {",
+      "122: it('a manual skip drops an ended-driven timer but keeps a countdown', () => {",
+      "134: it('pauses on the natural end of the current track (no repeat, no advance)', () => {",
+      "147: it('keeps playing through the queue and only stops once the queue ends', () => {",
+      "163: it('stops a single-track queue instead of looping forever', () => {",
+      "175: it('never persists the timer — a restart starts with sleep off', () => {"
+    ]
+  },
+  "singleTest": {
+    "exitCode": 0,
+    "testsLine": "Tests  1 passed | 7 skipped (8)",
+    "ranLine": "Test Files  1 passed (1)",
+    "failureLines": []
+  },
+  "wholeFile": {
+    "exitCode": 0,
+    "testsLine": "Tests  8 passed (8)",
+    "failureLines": []
+  }
+}

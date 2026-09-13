@@ -1,0 +1,106 @@
+{
+  "filesScanned": 83,
+  "t54Start": "2026-09-13T12:29:35.427Z",
+  "t54LastWrite": "2026-09-13T12:48:33.832Z",
+  "t55Start": "2026-09-13T13:32:00.000Z",
+  "changedAfterT54Start": [
+    "src/renderer/src/components/ChatPanel.tsx  8310 B  fa0f16ec596b  2026-09-13T12:48:33.832Z",
+    "src/renderer/src/components/MiniChat.tsx  7498 B  1e2d62e5b60d  2026-09-13T12:43:17.489Z",
+    "src/renderer/src/lib/tools.ts  24884 B  ee665436ef84  2026-09-13T12:48:30.881Z",
+    "src/renderer/src/lib/__tests__/chatConfirm.test.ts  40954 B  e82e5d2ef624  2026-09-13T13:37:56.095Z",
+    "src/renderer/src/stores/chatStore.ts  22970 B  3c4edd11171b  2026-09-13T13:43:18.746Z"
+  ],
+  "outOfScopeTouchedCount": 1,
+  "changedAfterT55Start": [
+    "src/renderer/src/lib/__tests__/chatConfirm.test.ts  40954 B  2026-09-13T13:37:56.095Z",
+    "src/renderer/src/stores/chatStore.ts  22970 B  2026-09-13T13:43:18.746Z"
+  ],
+  "inScopeNow": {
+    "src/renderer/src/lib/tools.ts": {
+      "size": 24884,
+      "sha1": "ee665436ef8415750ca5eed56f24e8b7adcaec77",
+      "sha12": "ee665436ef84",
+      "mtime": "2026-09-13T12:48:30.881Z",
+      "matchesClaim": true
+    },
+    "src/renderer/src/components/ChatPanel.tsx": {
+      "size": 8310,
+      "sha1": "fa0f16ec596b999a6e768da462c37020e2322665",
+      "sha12": "fa0f16ec596b",
+      "mtime": "2026-09-13T12:48:33.832Z",
+      "matchesClaim": true
+    },
+    "src/renderer/src/components/MiniChat.tsx": {
+      "size": 7498,
+      "sha1": "1e2d62e5b60d3ce160d843ed97ce655f2d8848c2",
+      "sha12": "1e2d62e5b60d",
+      "mtime": "2026-09-13T12:43:17.489Z",
+      "matchesClaim": true
+    },
+    "src/renderer/src/lib/__tests__/chatConfirm.test.ts": {
+      "size": 40954,
+      "sha1": "e82e5d2ef624bcd1ba20c41f2e48a97194c191f2",
+      "sha12": "e82e5d2ef624",
+      "mtime": "2026-09-13T13:37:56.095Z",
+      "matchesClaim": false
+    }
+  },
+  "allClaimsMatch": false,
+  "forbidden": [
+    {
+      "path": "src/main",
+      "files": 26,
+      "latestMtime": "2026-09-13T11:40:43.952Z",
+      "latestFile": "src/main/ipc.ts",
+      "touchedAfterT54Start": false
+    },
+    {
+      "path": "src/preload",
+      "files": 2,
+      "latestMtime": "2026-09-13T11:39:06.089Z",
+      "latestFile": "src/preload/index.ts",
+      "touchedAfterT54Start": false
+    },
+    {
+      "path": "src/shared",
+      "files": 1,
+      "latestMtime": "2026-09-13T11:38:25.402Z",
+      "latestFile": "src/shared/types.ts",
+      "touchedAfterT54Start": false
+    },
+    {
+      "path": "src/renderer/src/components/MiniPlayer.tsx",
+      "files": 1,
+      "latestMtime": "2026-09-13T11:47:51.415Z",
+      "latestFile": "src/renderer/src/components/MiniPlayer.tsx",
+      "touchedAfterT54Start": false
+    },
+    {
+      "path": "src/renderer/src/components/MiniSearch.tsx",
+      "files": 1,
+      "latestMtime": "2026-09-13T11:47:51.461Z",
+      "latestFile": "src/renderer/src/components/MiniSearch.tsx",
+      "touchedAfterT54Start": false
+    },
+    {
+      "path": "src/renderer/src/lib/mainWindowBridge.ts",
+      "files": 1,
+      "latestMtime": "2026-09-13T11:47:51.556Z",
+      "latestFile": "src/renderer/src/lib/mainWindowBridge.ts",
+      "touchedAfterT54Start": false
+    },
+    {
+      "path": "src/renderer/src/stores/chatStore.ts",
+      "files": 1,
+      "latestMtime": "2026-09-13T13:43:18.746Z",
+      "latestFile": "src/renderer/src/stores/chatStore.ts",
+      "touchedAfterT54Start": true
+    }
+  ],
+  "forbiddenTouched": [
+    "src/renderer/src/stores/chatStore.ts"
+  ],
+  "eslintDisableCountInInScopeFiles": 0,
+  "aggregateSha1OfSrc": "2e533debe74576f64b450cd474f84ce44a7f08cc",
+  "srcFileCount": 83
+}

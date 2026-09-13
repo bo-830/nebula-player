@@ -1,0 +1,30 @@
+{
+  "input": ".devdata/transcode-fixtures/tone.aac",
+  "ffmpeg": "C:\\博830\\vibecoding\\nebula-player\\node_modules\\ffmpeg-static\\ffmpeg.exe",
+  "before": {
+    "args": "-y -i .devdata/transcode-fixtures/tone.aac -c copy -movflags +faststart .devdata\\transcode-fixtures\\repro-before.m4a.tmp",
+    "exitCode": 4294967274,
+    "bytes": 0,
+    "lastStderrLine": "Error opening output files: Invalid argument\r"
+  },
+  "after": {
+    "args": "-y -i .devdata/transcode-fixtures/tone.aac -c copy -movflags +faststart -f mp4 .devdata\\transcode-fixtures\\repro-after.m4a.tmp",
+    "exitCode": 0,
+    "bytes": 50382,
+    "lastStderrLine": "size=      49kB time=00:00:06.01 bitrate=  67.0kbits/s speed= 368x    \r"
+  },
+  "controlRealExt": {
+    "args": "-y -i .devdata/transcode-fixtures/tone.aac -c copy -movflags +faststart .devdata\\transcode-fixtures\\repro-control.m4a",
+    "exitCode": 0,
+    "bytes": 50362
+  }
+}
+
+--- verdict ---
+BEFORE fails on `.tmp` output : true
+  -> Error opening output files: Invalid argument
+AFTER succeeds with -f mp4    : true
+control (real .m4a ext) works : true
+
+root cause confirmed: the container extension is the only difference; 
+`-f` supplies what the `.tmp` suffix cannot.
