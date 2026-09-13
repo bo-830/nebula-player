@@ -1,0 +1,32 @@
+{
+  "asarPath": "dist/win-unpacked/resources/app.asar",
+  "capturedAt": "2026-09-13T14:21:35.670Z",
+  "exists": true,
+  "bundle": {
+    "path": "out/renderer/assets/index-DHrHGVU_.js",
+    "bytes": 831337
+  },
+  "hits": {
+    "streamConvId": 5,
+    "closeStream": 5,
+    "stopRevealTimer": 2,
+    "closeStream()": 5,
+    "stopRevealTimer()": 2
+  },
+  "windows": {
+    "stopRevealTimerDef": "stopRevealTimer() {\n  if (streamTimer) {\n    clearInterval(streamTimer);\n    streamTimer = null;\n  }\n}\nfunction openStream(rid, seed) {\n  let accumulated = seed;\n  let closed = false;\n  streamConvId =",
+    "intervalBody": "streamTimer = setInterval(() => {\n        const s = useChatStore.getState();\n        if (!s.streamRaw) {\n          useChatStore.setState({ streamShown: 0 });\n          return;\n        }\n        if (s.streamShown >= s.streamRaw.length) {\n          stopRevealTimer();\n          useChatStore.setState({ streamShown: s.streamRaw.length });\n          return;\n        }\n        useChatStore.setState({ streamShown: Math.min(s.streamRaw.length, s.streamShown + 5) });\n      ",
+    "catchUpBranch": "streamShown >= s.streamRaw.length) {\n          stopRevealTimer();\n          useChatStore.setState({ streamShown: s.streamRaw.length });\n          return;\n        }\n        useChatStore.setState({ streamShown: Math.min(s.streamRaw.length, s.streamShown + 5) });",
+    "unsubWindow": "closed = true;\n      unsub();\n      if (streamConvId === rid) closeStream();\n    },\n    next: async () => {\n      await new Promise((resolve) => setTimeout(resolve, 0));\n      return accumulated;\n    }\n  };\n}\nfunction fi",
+    "stopRevealTimerBody": "\n  if (streamTimer) {\n    clearInterval(streamTimer);\n    streamTimer = null;"
+  },
+  "assertions": {
+    "NEW_stopRevealTimer_defined": true,
+    "NEW_stopRevealTimer_does_not_touch_convId": true,
+    "INTERVAL_FOUND": true,
+    "NEW_catchUp_calls_stopRevealTimer": true,
+    "OLD_catchUp_does_not_call_closeStream": true,
+    "roundEnd_unsub_still_closes": true
+  },
+  "pass": true
+}

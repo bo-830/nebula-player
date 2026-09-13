@@ -1,0 +1,17 @@
+{
+  "api": {
+    "baseURL": "https://api.deepseek.com",
+    "model": "deepseek-v4-flash",
+    "keyMode": "enc",
+    "hasKey": true,
+    "keyEnc": "djEwVHR7vXtGqN6bXa6/+14w00/GeJ81aNOP2zN0XsviZldkspszC2LPdHcOmAv93jO2wmTGNUmw6MOt2w8H6UN2"
+  },
+  "general": {
+    "closeToTray": true,
+    "alwaysOnTop": false,
+    "resumeOnLaunch": true,
+    "mediaKeys": true,
+    "scanFolders": [],
+    "updateURL": ""
+  }
+}

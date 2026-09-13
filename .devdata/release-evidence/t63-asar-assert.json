@@ -1,0 +1,29 @@
+{
+  "asarPath": "dist/win-unpacked/resources/app.asar",
+  "exists": true,
+  "capturedAt": "2026-09-13T14:19:18.624Z",
+  "bundle": {
+    "path": "out/renderer/assets/index-DHrHGVU_.js",
+    "bytes": 831337,
+    "totalRendererBundles": 1
+  },
+  "hits": {
+    "streamConvId": 5,
+    "closeStream": 5,
+    "stopRevealTimer": 2,
+    "closeStream() calls": 5,
+    "stopRevealTimer() calls": 2
+  },
+  "windows": {
+    "catchUpBranch": null,
+    "stopRevealTimerDef": "stopRevealTimer() {\n  if (streamTimer) {\n    clearInterval(streamTimer);\n    streamTimer = null;\n  }\n}\nfunction openStream(rid, seed) {\n  let accumulated = seed;\n  let closed = false;\n  streamConvId = rid;\n  useChatStore.setState({ streamRaw: seed });\n  const ",
+    "closeStreamDef": "function closeStream() {\n  if (streamTimer) {\n    clearInterval(streamTimer);\n    streamTimer = null;\n  }\n  streamConvId = \"\";\n}\nfunction stopRevealTimer() {\n  if (streamTimer) {\n    clearInterval(streamTimer);\n    streamTimer = null;\n  }\n}\nfunction openStream"
+  },
+  "assertions": {
+    "NEW_stopRevealTimer_present": true,
+    "NEW_catchUp_calls_stopRevealTimer": false,
+    "OLD_catchUp_does_not_call_closeStream": false,
+    "roundEnd_still_closes": true
+  },
+  "pass": false
+}

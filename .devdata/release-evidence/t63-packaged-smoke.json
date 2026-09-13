@@ -1,0 +1,64 @@
+{
+  "capturedAt": "2026-09-13T14:24:39.034Z",
+  "expectedText": "第1轮-甲段。第1轮-乙段。第1轮-丙段。",
+  "mainUrl": "file:///C:/Users/34872/AppData/Local/Programs/nebula-player/resources/app.asar/out/renderer/index.html",
+  "title": {
+    "hasVela": false,
+    "sample": []
+  },
+  "beforeSend": {
+    "visibility": "hidden",
+    "hasFocus": false
+  },
+  "inputSel": {
+    "count": 1,
+    "first": "输入指令或问题…（点击展开查看回复）"
+  },
+  "bubbles": [],
+  "lastAssistant": null,
+  "typed": "ok",
+  "sent": "ok",
+  "gatewayLog": {
+    "gapMs": 1500,
+    "requests": [
+      {
+        "n": 1,
+        "gapMs": 1500,
+        "lastUser": "打包态慢滴注测试",
+        "segments": [
+          "第1轮-甲段。",
+          "第1轮-乙段。",
+          "第1轮-丙段。"
+        ],
+        "expectedText": "第1轮-甲段。第1轮-乙段。第1轮-丙段。",
+        "tool": null,
+        "deltaWrittenAtMs": [
+          0,
+          1501,
+          3009
+        ],
+        "finishedAtMs": 3009
+      }
+    ],
+    "errors400": []
+  },
+  "slowDrip": {
+    "expected": "第1轮-甲段。第1轮-乙段。第1轮-丙段。",
+    "got": null,
+    "fullText": false,
+    "truncatedToFirstSegment": false
+  },
+  "miniBefore": null,
+  "miniExpanded": null,
+  "miniCollapsed": null,
+  "pass": {
+    "titleVela": false,
+    "visibleAtSend": false,
+    "slowDripFull": false,
+    "miniCollapsed360x128": false,
+    "miniExpanded360x540": false,
+    "miniRendersSearchAndChat": false,
+    "miniCollapsesBack": false,
+    "miniTitleVela": false
+  }
+}
