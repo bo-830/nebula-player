@@ -1,0 +1,34 @@
+{
+  "visibility": "hidden",
+  "turns": [
+    {
+      "i": 1,
+      "mainAssistant": "第5轮-甲段。第5轮-乙段。第5轮-丙段。",
+      "miniLastAi": "第5轮-甲段。第5轮-乙段。第5轮-丙段。",
+      "agree": true,
+      "sentinel": false
+    },
+    {
+      "i": 2,
+      "mainAssistant": "第6轮-甲段。第6轮-乙段。第6轮-丙段。",
+      "miniLastAi": "第6轮-甲段。第6轮-乙段。第6轮-丙段。",
+      "agree": true,
+      "sentinel": false
+    },
+    {
+      "i": 3,
+      "mainAssistant": "第7轮-甲段。第7轮-乙段。第7轮-丙段。",
+      "miniLastAi": "第7轮-甲段。第7轮-乙段。第7轮-丙段。",
+      "agree": true,
+      "sentinel": false
+    },
+    {
+      "i": 4,
+      "mainAssistant": "第8轮-甲段。第8轮-乙段。第8轮-丙段。",
+      "miniLastAi": "第8轮-甲段。第8轮-乙段。第8轮-丙段。",
+      "agree": true,
+      "sentinel": false
+    }
+  ],
+  "pass": true
+}

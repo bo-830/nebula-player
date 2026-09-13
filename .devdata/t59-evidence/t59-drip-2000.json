@@ -1,0 +1,136 @@
+{
+  "gapMs": 2000,
+  "visibleBeforeSend": "hidden",
+  "visibleAssertion": false,
+  "sent": {
+    "typed": "ok",
+    "sent": "ok"
+  },
+  "expectedText": "第2轮-甲段。第2轮-乙段。第2轮-丙段。",
+  "mainLastAssistant": "第2轮-甲段。第2轮-乙段。第2轮-丙段。",
+  "persistedLastAssistant": "第2轮-甲段。第2轮-乙段。第2轮-丙段。",
+  "miniLastAi": "第2轮-甲段。第2轮-乙段。第2轮-丙段。",
+  "threeWayIdentical": true,
+  "isFullText": true,
+  "segmentsSeen": 3,
+  "trace": {
+    "mirrors": [
+      "57391.1:7/0",
+      "57566:7/5",
+      "57569.4:7/7",
+      "59399:14/7",
+      "59554.8:14/12",
+      "60559.8:14/14",
+      "61406.1:21/14"
+    ],
+    "catchUps": [
+      {
+        "t": 57569.4,
+        "rawLen": 7
+      },
+      {
+        "t": 60559.8,
+        "rawLen": 14
+      }
+    ],
+    "grewAfterCatchUp": true,
+    "settleAt": 61411.5
+  },
+  "gateway": {
+    "gapMs": 2000,
+    "deltaWrittenAtMs": [
+      0,
+      2007,
+      4015
+    ],
+    "expectedText": "第2轮-甲段。第2轮-乙段。第2轮-丙段。",
+    "errors400": []
+  },
+  "fullEvents": [
+    {
+      "t": 57385.4,
+      "busy": false,
+      "rawLen": 0,
+      "shown": 0,
+      "msgs": 0
+    },
+    {
+      "t": 57386.4,
+      "busy": true,
+      "rawLen": 0,
+      "shown": 0,
+      "msgs": 0
+    },
+    {
+      "t": 57386.4,
+      "busy": true,
+      "rawLen": 0,
+      "shown": 0,
+      "msgs": 1
+    },
+    {
+      "t": 57391.1,
+      "busy": true,
+      "rawLen": 7,
+      "shown": 0,
+      "msgs": 1
+    },
+    {
+      "t": 57566,
+      "busy": true,
+      "rawLen": 7,
+      "shown": 5,
+      "msgs": 1
+    },
+    {
+      "t": 57569.4,
+      "busy": true,
+      "rawLen": 7,
+      "shown": 7,
+      "msgs": 1
+    },
+    {
+      "t": 59399,
+      "busy": true,
+      "rawLen": 14,
+      "shown": 7,
+      "msgs": 1
+    },
+    {
+      "t": 59554.8,
+      "busy": true,
+      "rawLen": 14,
+      "shown": 12,
+      "msgs": 1
+    },
+    {
+      "t": 60559.8,
+      "busy": true,
+      "rawLen": 14,
+      "shown": 14,
+      "msgs": 1
+    },
+    {
+      "t": 61406.1,
+      "busy": true,
+      "rawLen": 21,
+      "shown": 14,
+      "msgs": 1
+    },
+    {
+      "t": 61411.3,
+      "busy": false,
+      "rawLen": 0,
+      "shown": 21,
+      "msgs": 1
+    },
+    {
+      "t": 61411.5,
+      "busy": false,
+      "rawLen": 0,
+      "shown": 0,
+      "msgs": 2
+    }
+  ],
+  "pass": false
+}

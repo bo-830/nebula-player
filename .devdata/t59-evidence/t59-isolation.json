@@ -1,0 +1,14 @@
+{
+  "round1": {
+    "main": "第3轮-甲段。第3轮-乙段。第3轮-丙段。",
+    "persisted": "第3轮-甲段。第3轮-乙段。第3轮-丙段。"
+  },
+  "round2": {
+    "main": "第4轮-甲段。第4轮-乙段。第4轮-丙段。",
+    "persisted": "第4轮-甲段。第4轮-乙段。第4轮-丙段。",
+    "mini": "第4轮-甲段。第4轮-乙段。第4轮-丙段。"
+  },
+  "round2HasRound1Text": false,
+  "round2IsItsOwnText": false,
+  "pass": false
+}

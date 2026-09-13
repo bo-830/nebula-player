@@ -1,0 +1,12 @@
+{
+  "mainVisibleAtBoot": "true",
+  "miniVisibleAfterShow": "false",
+  "miniBeforeExpand": "{\"attr\":\"false\",\"hasChat\":false,\"hasSearch\":false}",
+  "appliedSize": {
+    "width": 360,
+    "height": 540
+  },
+  "miniAfterApiExpand": "{\"hidden\":false,\"attr\":\"false\",\"hasChat\":false,\"hasSearch\":false,\"bodyText\":\"未在播放\\nNEBULA PLAYER\\n播放歌曲后显示同步歌词\"}",
+  "ownButtonClick": "clicked",
+  "miniAfterOwnButton": "{\"hidden\":false,\"attr\":\"true\",\"hasChat\":true,\"title\":\"薇拉 Vela\"}"
+}

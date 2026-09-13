@@ -1,0 +1,1 @@
+.devdata\t7-review\t52-discrim\cur\src\renderer\src\stores\chatStore.ts
